@@ -18,7 +18,7 @@ module ECEN3002_Lab1(
 	input 		     [9:0]		SW,
 
 	//////////// LED //////////
-	output		     [9:0]		LEDR,
+	output	       [9:0]		LEDR,
 
 	//////////// Seg7 //////////
 	output		     [6:0]		HEX0,
@@ -30,11 +30,14 @@ module ECEN3002_Lab1(
 );
 
 
-
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
+reg [31:0] divide_by;
+reg [9:0] ledValue;
+wire clock;
+assign LEDR[8:0] = ledValue[8:0];
+assign LEDR[9] = 1;
 
 
 
@@ -42,6 +45,22 @@ module ECEN3002_Lab1(
 //  Structural coding
 //=======================================================
 
+ECEN3002_Lab1_ClockDivider CD0 (.clock_in(CLOCK_50), .divide_by(divide_by), .reset_n(KEY[0]), .clock_out(clock));
+
+
+initial begin
+    ledValue = 0;
+    divide_by = 5;
+end
+
+// Flip the LEDR[0] to match the clock
+always @ (posedge clock or negedge KEY[0])
+    begin
+       if (~KEY[0])
+            ledValue <= 0;
+        else
+            ledValue <= ledValue + 1;
+    end
 
 
 endmodule

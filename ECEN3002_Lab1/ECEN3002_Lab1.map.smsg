@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at ecen3002_lab1_clockdivider.v(17): always construct contains both blocking and non-blocking assignments File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v Line: 17
