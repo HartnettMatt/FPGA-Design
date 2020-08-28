@@ -7,12 +7,8 @@ input [31:0] divide_by;
 output reg clock_out;
 
 // clock_divider is used to keep track of how many clock_in cycles have happend since the last clock_out edge
-reg [31:0] clock_divider = 0;
+reg [31:0] clock_divider;
 
-initial begin
-  clock_out = 0;
-  clock_divider = 0;
-end
 
 always @(posedge clock_in or negedge reset_n)
   begin
