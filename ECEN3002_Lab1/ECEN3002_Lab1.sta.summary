@@ -3,99 +3,51 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -5.429
-TNS   : -105.882
-
-Type  : Slow 1100mV 85C Model Setup 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : -2.082
-TNS   : -22.079
+Slack : 14.068
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.379
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : 0.507
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.640
-TNS   : -27.309
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : -0.394
-TNS   : -7.872
-
-Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -5.483
-TNS   : -104.782
-
-Type  : Slow 1100mV 0C Model Setup 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : -2.130
-TNS   : -22.927
-
-Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
 Slack : 0.381
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : 0.487
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.900
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 13.914
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.380
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.668
-TNS   : -25.422
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : -0.394
-TNS   : -7.737
-
-Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -3.147
-TNS   : -46.709
-
-Type  : Fast 1100mV 85C Model Setup 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : -0.918
-TNS   : -8.136
-
-Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.199
+Slack : 8.897
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : 0.251
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 16.408
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.201
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.730
-TNS   : -19.268
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : 0.131
+Slack : 8.841
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -2.840
-TNS   : -40.454
-
-Type  : Fast 1100mV 0C Model Setup 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : -0.808
-TNS   : -7.444
-
-Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.190
+Slack : 16.612
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : 0.220
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.192
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.764
-TNS   : -22.832
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ECEN3002_Lab1_ClockDivider:CD0|clock_out'
-Slack : 0.138
+Slack : 8.810
 TNS   : 0.000
 
 ------------------------------------------------------------

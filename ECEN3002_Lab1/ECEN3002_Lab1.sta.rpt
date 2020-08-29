@@ -1,5 +1,5 @@
 Timing Analyzer report for ECEN3002_Lab1
-Fri Aug 28 12:23:42 2020
+Sat Aug 29 10:26:25 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -9,52 +9,53 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   1. Legal Notice
   2. Timing Analyzer Summary
   3. Parallel Compilation
-  4. Clocks
-  5. Slow 1100mV 85C Model Fmax Summary
-  6. Timing Closure Recommendations
-  7. Slow 1100mV 85C Model Setup Summary
-  8. Slow 1100mV 85C Model Hold Summary
-  9. Slow 1100mV 85C Model Recovery Summary
- 10. Slow 1100mV 85C Model Removal Summary
- 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1100mV 85C Model Metastability Summary
- 13. Slow 1100mV 0C Model Fmax Summary
- 14. Slow 1100mV 0C Model Setup Summary
- 15. Slow 1100mV 0C Model Hold Summary
- 16. Slow 1100mV 0C Model Recovery Summary
- 17. Slow 1100mV 0C Model Removal Summary
- 18. Slow 1100mV 0C Model Minimum Pulse Width Summary
- 19. Slow 1100mV 0C Model Metastability Summary
- 20. Fast 1100mV 85C Model Setup Summary
- 21. Fast 1100mV 85C Model Hold Summary
- 22. Fast 1100mV 85C Model Recovery Summary
- 23. Fast 1100mV 85C Model Removal Summary
- 24. Fast 1100mV 85C Model Minimum Pulse Width Summary
- 25. Fast 1100mV 85C Model Metastability Summary
- 26. Fast 1100mV 0C Model Setup Summary
- 27. Fast 1100mV 0C Model Hold Summary
- 28. Fast 1100mV 0C Model Recovery Summary
- 29. Fast 1100mV 0C Model Removal Summary
- 30. Fast 1100mV 0C Model Minimum Pulse Width Summary
- 31. Fast 1100mV 0C Model Metastability Summary
- 32. Multicorner Timing Analysis Summary
- 33. Board Trace Model Assignments
- 34. Input Transition Times
- 35. Signal Integrity Metrics (Slow 1100mv 0c Model)
- 36. Signal Integrity Metrics (Slow 1100mv 85c Model)
- 37. Signal Integrity Metrics (Fast 1100mv 0c Model)
- 38. Signal Integrity Metrics (Fast 1100mv 85c Model)
- 39. Setup Transfers
- 40. Hold Transfers
- 41. Report TCCS
- 42. Report RSKM
- 43. Unconstrained Paths Summary
- 44. Clock Status Summary
- 45. Unconstrained Input Ports
- 46. Unconstrained Output Ports
- 47. Unconstrained Input Ports
- 48. Unconstrained Output Ports
- 49. Timing Analyzer Messages
+  4. SDC File List
+  5. Clocks
+  6. Slow 1100mV 85C Model Fmax Summary
+  7. Timing Closure Recommendations
+  8. Slow 1100mV 85C Model Setup Summary
+  9. Slow 1100mV 85C Model Hold Summary
+ 10. Slow 1100mV 85C Model Recovery Summary
+ 11. Slow 1100mV 85C Model Removal Summary
+ 12. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 13. Slow 1100mV 85C Model Metastability Summary
+ 14. Slow 1100mV 0C Model Fmax Summary
+ 15. Slow 1100mV 0C Model Setup Summary
+ 16. Slow 1100mV 0C Model Hold Summary
+ 17. Slow 1100mV 0C Model Recovery Summary
+ 18. Slow 1100mV 0C Model Removal Summary
+ 19. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 20. Slow 1100mV 0C Model Metastability Summary
+ 21. Fast 1100mV 85C Model Setup Summary
+ 22. Fast 1100mV 85C Model Hold Summary
+ 23. Fast 1100mV 85C Model Recovery Summary
+ 24. Fast 1100mV 85C Model Removal Summary
+ 25. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 26. Fast 1100mV 85C Model Metastability Summary
+ 27. Fast 1100mV 0C Model Setup Summary
+ 28. Fast 1100mV 0C Model Hold Summary
+ 29. Fast 1100mV 0C Model Recovery Summary
+ 30. Fast 1100mV 0C Model Removal Summary
+ 31. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 32. Fast 1100mV 0C Model Metastability Summary
+ 33. Multicorner Timing Analysis Summary
+ 34. Board Trace Model Assignments
+ 35. Input Transition Times
+ 36. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 37. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 38. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 39. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 40. Setup Transfers
+ 41. Hold Transfers
+ 42. Report TCCS
+ 43. Report RSKM
+ 44. Unconstrained Paths Summary
+ 45. Clock Status Summary
+ 46. Unconstrained Input Ports
+ 47. Unconstrained Output Ports
+ 48. Unconstrained Input Ports
+ 49. Unconstrained Output Ports
+ 50. Timing Analyzer Messages
 
 
 
@@ -97,38 +98,50 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.07        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.08        ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.4%      ;
-;     Processor 3            ;   2.3%      ;
-;     Processor 4            ;   2.3%      ;
+;     Processor 2            ;   1.5%      ;
+;     Processor 3            ;   1.5%      ;
+;     Processor 4            ;   1.1%      ;
+;     Processor 5            ;   1.1%      ;
+;     Processors 6-12        ;   0.4%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                                             ;
-+------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
-; Clock Name                               ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                      ;
-+------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
-; CLOCK_50                                 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }                                 ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ECEN3002_Lab1_ClockDivider:CD0|clock_out } ;
-+------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
++-------------------------------------------------------+
+; SDC File List                                         ;
++-------------------+--------+--------------------------+
+; SDC File Path     ; Status ; Read at                  ;
++-------------------+--------+--------------------------+
+; ECEN3002_Lab1.SDC ; OK     ; Sat Aug 29 10:26:21 2020 ;
++-------------------+--------+--------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Fmax Summary                                             ;
-+------------+-----------------+------------------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                               ; Note ;
-+------------+-----------------+------------------------------------------+------+
-; 155.55 MHz ; 155.55 MHz      ; CLOCK_50                                 ;      ;
-; 324.46 MHz ; 324.46 MHz      ; ECEN3002_Lab1_ClockDivider:CD0|clock_out ;      ;
-+------------+-----------------+------------------------------------------+------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; Clock Name ; Type ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; CLOCK2_50  ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK2_50 } ;
+; CLOCK3_50  ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK3_50 } ;
+; CLOCK4_50  ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK4_50 } ;
+; CLOCK_50   ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }  ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+
+
++--------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 168.58 MHz ; 168.58 MHz      ; CLOCK_50   ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -138,24 +151,22 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+-------------------------------------------------------------------+
-; Slow 1100mV 85C Model Setup Summary                               ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -5.429 ; -105.882      ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -2.082 ; -22.079       ;
-+------------------------------------------+--------+---------------+
++-------------------------------------+
+; Slow 1100mV 85C Model Setup Summary ;
++----------+--------+-----------------+
+; Clock    ; Slack  ; End Point TNS   ;
++----------+--------+-----------------+
+; CLOCK_50 ; 14.068 ; 0.000           ;
++----------+--------+-----------------+
 
 
-+------------------------------------------------------------------+
-; Slow 1100mV 85C Model Hold Summary                               ;
-+------------------------------------------+-------+---------------+
-; Clock                                    ; Slack ; End Point TNS ;
-+------------------------------------------+-------+---------------+
-; CLOCK_50                                 ; 0.379 ; 0.000         ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 0.507 ; 0.000         ;
-+------------------------------------------+-------+---------------+
++------------------------------------+
+; Slow 1100mV 85C Model Hold Summary ;
++----------+-------+-----------------+
+; Clock    ; Slack ; End Point TNS   ;
++----------+-------+-----------------+
+; CLOCK_50 ; 0.381 ; 0.000           ;
++----------+-------+-----------------+
 
 
 ------------------------------------------
@@ -170,14 +181,13 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------------------------------+
-; Slow 1100mV 85C Model Minimum Pulse Width Summary                 ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -0.640 ; -27.309       ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -0.394 ; -7.872        ;
-+------------------------------------------+--------+---------------+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++----------+-------+--------------------------------+
+; Clock    ; Slack ; End Point TNS                  ;
++----------+-------+--------------------------------+
+; CLOCK_50 ; 8.900 ; 0.000                          ;
++----------+-------+--------------------------------+
 
 
 -----------------------------------------------
@@ -186,35 +196,32 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary                                              ;
-+------------+-----------------+------------------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                               ; Note ;
-+------------+-----------------+------------------------------------------+------+
-; 154.25 MHz ; 154.25 MHz      ; CLOCK_50                                 ;      ;
-; 319.49 MHz ; 319.49 MHz      ; ECEN3002_Lab1_ClockDivider:CD0|clock_out ;      ;
-+------------+-----------------+------------------------------------------+------+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 164.31 MHz ; 164.31 MHz      ; CLOCK_50   ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+-------------------------------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary                                ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -5.483 ; -104.782      ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -2.130 ; -22.927       ;
-+------------------------------------------+--------+---------------+
++------------------------------------+
+; Slow 1100mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; CLOCK_50 ; 13.914 ; 0.000          ;
++----------+--------+----------------+
 
 
-+------------------------------------------------------------------+
-; Slow 1100mV 0C Model Hold Summary                                ;
-+------------------------------------------+-------+---------------+
-; Clock                                    ; Slack ; End Point TNS ;
-+------------------------------------------+-------+---------------+
-; CLOCK_50                                 ; 0.381 ; 0.000         ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 0.487 ; 0.000         ;
-+------------------------------------------+-------+---------------+
++-----------------------------------+
+; Slow 1100mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; CLOCK_50 ; 0.380 ; 0.000          ;
++----------+-------+----------------+
 
 
 -----------------------------------------
@@ -229,14 +236,13 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------------------------------+
-; Slow 1100mV 0C Model Minimum Pulse Width Summary                  ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -0.668 ; -25.422       ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -0.394 ; -7.737        ;
-+------------------------------------------+--------+---------------+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
++----------+-------+-------------------------------+
+; Clock    ; Slack ; End Point TNS                 ;
++----------+-------+-------------------------------+
+; CLOCK_50 ; 8.897 ; 0.000                         ;
++----------+-------+-------------------------------+
 
 
 ----------------------------------------------
@@ -245,24 +251,22 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                               ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -3.147 ; -46.709       ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -0.918 ; -8.136        ;
-+------------------------------------------+--------+---------------+
++-------------------------------------+
+; Fast 1100mV 85C Model Setup Summary ;
++----------+--------+-----------------+
+; Clock    ; Slack  ; End Point TNS   ;
++----------+--------+-----------------+
+; CLOCK_50 ; 16.408 ; 0.000           ;
++----------+--------+-----------------+
 
 
-+------------------------------------------------------------------+
-; Fast 1100mV 85C Model Hold Summary                               ;
-+------------------------------------------+-------+---------------+
-; Clock                                    ; Slack ; End Point TNS ;
-+------------------------------------------+-------+---------------+
-; CLOCK_50                                 ; 0.199 ; 0.000         ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 0.251 ; 0.000         ;
-+------------------------------------------+-------+---------------+
++------------------------------------+
+; Fast 1100mV 85C Model Hold Summary ;
++----------+-------+-----------------+
+; Clock    ; Slack ; End Point TNS   ;
++----------+-------+-----------------+
+; CLOCK_50 ; 0.201 ; 0.000           ;
++----------+-------+-----------------+
 
 
 ------------------------------------------
@@ -277,14 +281,13 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------------------------------+
-; Fast 1100mV 85C Model Minimum Pulse Width Summary                 ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -0.730 ; -19.268       ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 0.131  ; 0.000         ;
-+------------------------------------------+--------+---------------+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++----------+-------+--------------------------------+
+; Clock    ; Slack ; End Point TNS                  ;
++----------+-------+--------------------------------+
+; CLOCK_50 ; 8.841 ; 0.000                          ;
++----------+-------+--------------------------------+
 
 
 -----------------------------------------------
@@ -293,24 +296,22 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------+
-; Fast 1100mV 0C Model Setup Summary                                ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -2.840 ; -40.454       ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -0.808 ; -7.444        ;
-+------------------------------------------+--------+---------------+
++------------------------------------+
+; Fast 1100mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; CLOCK_50 ; 16.612 ; 0.000          ;
++----------+--------+----------------+
 
 
-+------------------------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                                ;
-+------------------------------------------+-------+---------------+
-; Clock                                    ; Slack ; End Point TNS ;
-+------------------------------------------+-------+---------------+
-; CLOCK_50                                 ; 0.190 ; 0.000         ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 0.220 ; 0.000         ;
-+------------------------------------------+-------+---------------+
++-----------------------------------+
+; Fast 1100mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; CLOCK_50 ; 0.192 ; 0.000          ;
++----------+-------+----------------+
 
 
 -----------------------------------------
@@ -325,14 +326,13 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------------------------------+
-; Fast 1100mV 0C Model Minimum Pulse Width Summary                  ;
-+------------------------------------------+--------+---------------+
-; Clock                                    ; Slack  ; End Point TNS ;
-+------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -0.764 ; -22.832       ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 0.138  ; 0.000         ;
-+------------------------------------------+--------+---------------+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
++----------+-------+-------------------------------+
+; Clock    ; Slack ; End Point TNS                 ;
++----------+-------+-------------------------------+
+; CLOCK_50 ; 8.810 ; 0.000                         ;
++----------+-------+-------------------------------+
 
 
 ----------------------------------------------
@@ -341,18 +341,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                     ;
-+-------------------------------------------+----------+-------+----------+---------+---------------------+
-; Clock                                     ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+-------------------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                          ; -5.483   ; 0.190 ; N/A      ; N/A     ; -0.764              ;
-;  CLOCK_50                                 ; -5.483   ; 0.190 ; N/A      ; N/A     ; -0.764              ;
-;  ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -2.130   ; 0.220 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                           ; -127.961 ; 0.0   ; 0.0      ; 0.0     ; -35.181             ;
-;  CLOCK_50                                 ; -105.882 ; 0.000 ; N/A      ; N/A     ; -27.309             ;
-;  ECEN3002_Lab1_ClockDivider:CD0|clock_out ; -22.927  ; 0.000 ; N/A      ; N/A     ; -7.872              ;
-+-------------------------------------------+----------+-------+----------+---------+---------------------+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 13.914 ; 0.192 ; N/A      ; N/A     ; 8.810               ;
+;  CLOCK_50        ; 13.914 ; 0.192 ; N/A      ; N/A     ; 8.810               ;
+; Design-wide TNS  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  CLOCK_50        ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++------------------+--------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -681,27 +679,23 @@ No synchronizer chains to report.
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                                                 ;
-+------------------------------------------+------------------------------------------+----------+----------+----------+----------+
-; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------------------------------------+------------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                                 ; CLOCK_50                                 ; 1913     ; 0        ; 0        ; 0        ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; CLOCK_50                                 ; 1        ; 1        ; 0        ; 0        ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 67       ; 0        ; 0        ; 0        ;
-+------------------------------------------+------------------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 2101     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                                                  ;
-+------------------------------------------+------------------------------------------+----------+----------+----------+----------+
-; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------------------------------------+------------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                                 ; CLOCK_50                                 ; 1913     ; 0        ; 0        ; 0        ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; CLOCK_50                                 ; 1        ; 1        ; 0        ; 0        ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; 67       ; 0        ; 0        ; 0        ;
-+------------------------------------------+------------------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 2101     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -723,7 +717,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Clocks            ; 1     ; 1    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
 ; Unconstrained Input Port Paths  ; 56    ; 56   ;
 ; Unconstrained Output Ports      ; 9     ; 9    ;
@@ -731,14 +725,17 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Clock Status Summary                                                                                     ;
-+------------------------------------------+------------------------------------------+------+-------------+
-; Target                                   ; Clock                                    ; Type ; Status      ;
-+------------------------------------------+------------------------------------------+------+-------------+
-; CLOCK_50                                 ; CLOCK_50                                 ; Base ; Constrained ;
-; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; ECEN3002_Lab1_ClockDivider:CD0|clock_out ; Base ; Constrained ;
-+------------------------------------------+------------------------------------------+------+-------------+
++-----------------------------------------------------------------------------+
+; Clock Status Summary                                                        ;
++------------------------------------------+-----------+------+---------------+
+; Target                                   ; Clock     ; Type ; Status        ;
++------------------------------------------+-----------+------+---------------+
+; CLOCK2_50                                ; CLOCK2_50 ; Base ; Constrained   ;
+; CLOCK3_50                                ; CLOCK3_50 ; Base ; Constrained   ;
+; CLOCK4_50                                ; CLOCK4_50 ; Base ; Constrained   ;
+; CLOCK_50                                 ; CLOCK_50  ; Base ; Constrained   ;
+; ECEN3002_Lab1_ClockDivider:CD0|clock_out ;           ; Base ; Unconstrained ;
++------------------------------------------+-----------+------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -799,114 +796,114 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Fri Aug 28 12:23:38 2020
+    Info: Processing started: Sat Aug 29 10:26:19 2020
 Info: Command: quartus_sta ECEN3002_Lab1 -c ECEN3002_Lab1
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'ECEN3002_Lab1.SDC'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name ECEN3002_Lab1_ClockDivider:CD0|clock_out ECEN3002_Lab1_ClockDivider:CD0|clock_out
-    Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
-Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332104): Reading SDC File: 'ECEN3002_Lab1.SDC'
+Warning (332174): Ignored filter at ECEN3002_Lab1.sdc(15): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 15
+Warning (332049): Ignored create_clock at ECEN3002_Lab1.sdc(15): Argument <targets> is not an object ID File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 15
+    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 15
+Warning (332174): Ignored filter at ECEN3002_Lab1.sdc(16): altera_reserved_tdi could not be matched with a port File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 16
+Warning (332174): Ignored filter at ECEN3002_Lab1.sdc(16): altera_reserved_tck could not be matched with a clock File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 16
+Warning (332049): Ignored set_input_delay at ECEN3002_Lab1.sdc(16): Argument <targets> is an empty collection File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 16
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 16
+Warning (332049): Ignored set_input_delay at ECEN3002_Lab1.sdc(16): Argument -clock is not an object ID File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 16
+Warning (332174): Ignored filter at ECEN3002_Lab1.sdc(17): altera_reserved_tms could not be matched with a port File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 17
+Warning (332049): Ignored set_input_delay at ECEN3002_Lab1.sdc(17): Argument <targets> is an empty collection File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 17
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 17
+Warning (332049): Ignored set_input_delay at ECEN3002_Lab1.sdc(17): Argument -clock is not an object ID File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 17
+Warning (332174): Ignored filter at ECEN3002_Lab1.sdc(18): altera_reserved_tdo could not be matched with a port File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 18
+Warning (332049): Ignored set_output_delay at ECEN3002_Lab1.sdc(18): Argument <targets> is an empty collection File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 18
+    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 18
+Warning (332049): Ignored set_output_delay at ECEN3002_Lab1.sdc(18): Argument -clock is not an object ID File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc Line: 18
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Warning (332060): Node: ECEN3002_Lab1_ClockDivider:CD0|clock_out was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ledValue[1] is being clocked by ECEN3002_Lab1_ClockDivider:CD0|clock_out
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.429
+Info (332146): Worst-case setup slack is 14.068
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.429            -105.882 CLOCK_50 
-    Info (332119):    -2.082             -22.079 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
-Info (332146): Worst-case hold slack is 0.379
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.379               0.000 CLOCK_50 
-    Info (332119):     0.507               0.000 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.640
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -0.640             -27.309 CLOCK_50 
-    Info (332119):    -0.394              -7.872 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
-Info: Analyzing Slow 1100mV 0C Model
-Info (334003): Started post-fitting delay annotation
-Info (334004): Delay annotation completed successfully
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.483
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -5.483            -104.782 CLOCK_50 
-    Info (332119):    -2.130             -22.927 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
+    Info (332119):    14.068               0.000 CLOCK_50 
 Info (332146): Worst-case hold slack is 0.381
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.381               0.000 CLOCK_50 
-    Info (332119):     0.487               0.000 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.668
+Info (332146): Worst-case minimum pulse width slack is 8.900
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.668             -25.422 CLOCK_50 
-    Info (332119):    -0.394              -7.737 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
+    Info (332119):     8.900               0.000 CLOCK_50 
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (332060): Node: ECEN3002_Lab1_ClockDivider:CD0|clock_out was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ledValue[1] is being clocked by ECEN3002_Lab1_ClockDivider:CD0|clock_out
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 13.914
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    13.914               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.380
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.380               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 8.897
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     8.897               0.000 CLOCK_50 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
+Warning (332060): Node: ECEN3002_Lab1_ClockDivider:CD0|clock_out was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ledValue[1] is being clocked by ECEN3002_Lab1_ClockDivider:CD0|clock_out
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.147
+Info (332146): Worst-case setup slack is 16.408
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.147             -46.709 CLOCK_50 
-    Info (332119):    -0.918              -8.136 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
-Info (332146): Worst-case hold slack is 0.199
+    Info (332119):    16.408               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.201
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.199               0.000 CLOCK_50 
-    Info (332119):     0.251               0.000 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
+    Info (332119):     0.201               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.730
+Info (332146): Worst-case minimum pulse width slack is 8.841
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.730             -19.268 CLOCK_50 
-    Info (332119):     0.131               0.000 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
+    Info (332119):     8.841               0.000 CLOCK_50 
 Info: Analyzing Fast 1100mV 0C Model
+Warning (332060): Node: ECEN3002_Lab1_ClockDivider:CD0|clock_out was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ledValue[1] is being clocked by ECEN3002_Lab1_ClockDivider:CD0|clock_out
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.840
+Info (332146): Worst-case setup slack is 16.612
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.840             -40.454 CLOCK_50 
-    Info (332119):    -0.808              -7.444 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
-Info (332146): Worst-case hold slack is 0.190
+    Info (332119):    16.612               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.192
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.190               0.000 CLOCK_50 
-    Info (332119):     0.220               0.000 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
+    Info (332119):     0.192               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.764
+Info (332146): Worst-case minimum pulse width slack is 8.810
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.764             -22.832 CLOCK_50 
-    Info (332119):     0.138               0.000 ECEN3002_Lab1_ClockDivider:CD0|clock_out 
+    Info (332119):     8.810               0.000 CLOCK_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 816 megabytes
-    Info: Processing ended: Fri Aug 28 12:23:42 2020
-    Info: Elapsed time: 00:00:04
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 5240 megabytes
+    Info: Processing ended: Sat Aug 29 10:26:25 2020
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
 
