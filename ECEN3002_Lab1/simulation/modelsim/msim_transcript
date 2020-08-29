@@ -100,3 +100,5 @@ restart
 # ** Warning: (vsim-3722) C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/tb.v(16): [TFMPC] - Missing connection for port 'HEX3'.
 run
 #                    0<< Starting simulation >>
+# End time: 23:04:05 on Aug 27,2020, Elapsed time: 4:22:46
+# Errors: 0, Warnings: 11
