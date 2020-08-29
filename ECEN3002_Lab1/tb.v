@@ -2,16 +2,16 @@
 module tb();
 
   reg [9:0] testSW;
-  reg [1:0] testKEY;
+  reg [3:0] testKEY;
   reg clock;
   reg [7:0] counter;
   wire [9:0] testLED;
-  wire [7:0] testHEX0;
-  wire [7:0] testHEX1;
-  wire [7:0] testHEX2;
-  wire [7:0] testHEX3;
-  wire [7:0] testHEX4;
-  wire [7:0] testHEX5;
+  wire [6:0] testHEX0;
+  wire [6:0] testHEX1;
+  wire [6:0] testHEX2;
+  wire [6:0] testHEX3;
+  wire [6:0] testHEX4;
+  wire [6:0] testHEX5;
 
   ECEN3002_Lab1 DUT(.KEY(testKEY), .SW(testSW), .CLOCK_50(clock), .LEDR(testLED),.HEX0(testHEX0),.HEX1(testHEX1),.HEX2(testHEX2),.HEX4(testHEX4),.HEX5(testHEX5));
 

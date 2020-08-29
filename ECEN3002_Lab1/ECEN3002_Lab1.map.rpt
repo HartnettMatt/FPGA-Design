@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ECEN3002_Lab1
-Thu Aug 27 18:39:18 2020
+Fri Aug 28 12:22:56 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -15,10 +15,12 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |ECEN3002_Lab1
+ 11. Port Connectivity Checks: "ECEN3002_Lab1_ClockDivider:CD0"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Aug 27 18:39:17 2020           ;
+; Analysis & Synthesis Status     ; Successful - Fri Aug 28 12:22:56 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; ECEN3002_Lab1                                   ;
 ; Top-level Entity Name           ; ECEN3002_Lab1                                   ;
@@ -157,26 +159,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
-; Maximum used               ; 12          ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; ecen3002_lab1.v                  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v              ;         ;
-; ecen3002_lab1_clockdivider.v     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; ECEN3002_Lab1.v                  ; yes             ; Auto-Found Verilog HDL File  ; /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v              ;         ;
+; ECEN3002_Lab1_ClockDivider.v     ; yes             ; Auto-Found Verilog HDL File  ; /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1_ClockDivider.v ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -242,6 +245,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ECEN3002_Lab1 ;
++----------------+----------+---------------------------------------------------+
+; Parameter Name ; Value    ; Type                                              ;
++----------------+----------+---------------------------------------------------+
+; divide_by      ; 50000000 ; Signed Integer                                    ;
++----------------+----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "ECEN3002_Lab1_ClockDivider:CD0" ;
++-------------------+-------+----------+---------------------+
+; Port              ; Type  ; Severity ; Details             ;
++-------------------+-------+----------+---------------------+
+; divide_by[23..19] ; Input ; Info     ; Stuck at VCC        ;
+; divide_by[15..12] ; Input ; Info     ; Stuck at VCC        ;
+; divide_by[31..26] ; Input ; Info     ; Stuck at GND        ;
+; divide_by[11..8]  ; Input ; Info     ; Stuck at GND        ;
+; divide_by[6..0]   ; Input ; Info     ; Stuck at GND        ;
+; divide_by[25]     ; Input ; Info     ; Stuck at VCC        ;
+; divide_by[24]     ; Input ; Info     ; Stuck at GND        ;
+; divide_by[18]     ; Input ; Info     ; Stuck at GND        ;
+; divide_by[17]     ; Input ; Info     ; Stuck at VCC        ;
+; divide_by[16]     ; Input ; Info     ; Stuck at GND        ;
+; divide_by[7]      ; Input ; Info     ; Stuck at VCC        ;
++-------------------+-------+----------+---------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -271,7 +303,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -281,105 +313,105 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Aug 27 18:38:59 2020
+    Info: Processing started: Fri Aug 28 12:22:48 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECEN3002_Lab1 -c ECEN3002_Lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tb.v
-    Info (12023): Found entity 1: tb File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/tb.v Line: 2
-Warning (12125): Using design file ecen3002_lab1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ECEN3002_Lab1 File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 6
+    Info (12023): Found entity 1: tb File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/tb.v Line: 2
+Warning (12125): Using design file ECEN3002_Lab1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ECEN3002_Lab1 File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 6
 Info (12127): Elaborating entity "ECEN3002_Lab1" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at ecen3002_lab1.v(62): truncated value with size 32 to match size of target (10) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 62
-Warning (10034): Output port "HEX0" at ecen3002_lab1.v(24) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-Warning (10034): Output port "HEX1" at ecen3002_lab1.v(25) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-Warning (10034): Output port "HEX2" at ecen3002_lab1.v(26) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-Warning (10034): Output port "HEX3" at ecen3002_lab1.v(27) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-Warning (10034): Output port "HEX4" at ecen3002_lab1.v(28) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-Warning (10034): Output port "HEX5" at ecen3002_lab1.v(30) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
-Warning (12125): Using design file ecen3002_lab1_clockdivider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ECEN3002_Lab1_ClockDivider File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v Line: 1
-Info (12128): Elaborating entity "ECEN3002_Lab1_ClockDivider" for hierarchy "ECEN3002_Lab1_ClockDivider:CD0" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 48
+Warning (10230): Verilog HDL assignment warning at ECEN3002_Lab1.v(57): truncated value with size 32 to match size of target (10) File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 57
+Warning (10034): Output port "HEX0" at ECEN3002_Lab1.v(24) has no driver File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+Warning (10034): Output port "HEX1" at ECEN3002_Lab1.v(25) has no driver File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+Warning (10034): Output port "HEX2" at ECEN3002_Lab1.v(26) has no driver File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+Warning (10034): Output port "HEX3" at ECEN3002_Lab1.v(27) has no driver File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+Warning (10034): Output port "HEX4" at ECEN3002_Lab1.v(28) has no driver File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+Warning (10034): Output port "HEX5" at ECEN3002_Lab1.v(30) has no driver File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
+Warning (12125): Using design file ECEN3002_Lab1_ClockDivider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ECEN3002_Lab1_ClockDivider File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1_ClockDivider.v Line: 1
+Info (12128): Elaborating entity "ECEN3002_Lab1_ClockDivider" for hierarchy "ECEN3002_Lab1_ClockDivider:CD0" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 48
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[9]" is stuck at VCC File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 21
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 24
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 25
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 26
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 27
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 28
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 30
+    Warning (13410): Pin "LEDR[9]" is stuck at VCC File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 21
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 24
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 25
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 26
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 27
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 28
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 30
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.map.smsg
+Info (144001): Generated suppressed messages file /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 16 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK2_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 9
-    Warning (15610): No output dependent on input pin "CLOCK3_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 10
-    Warning (15610): No output dependent on input pin "CLOCK4_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 11
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 15
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "CLOCK2_50" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 9
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 10
+    Warning (15610): No output dependent on input pin "CLOCK4_50" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 11
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 15
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 15
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[0]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.v Line: 18
 Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 49 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Thu Aug 27 18:39:18 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 518 megabytes
+    Info: Processing ended: Fri Aug 28 12:22:56 2020
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.map.smsg.
+The suppressed messages can be found in /home/matt/Documents/FPGAdesign/ECEN3002_Lab1/ECEN3002_Lab1.map.smsg.
 
 
