@@ -20,10 +20,12 @@ module tb();
       $display ($time, "<< Starting simulation >>");
       //Initialize inputs:
       testSW = 10'b0000000000;
-      testKEY[1:0] = 1;
+      testKEY[3:0] = 1;
       clock = 1'b0;
       counter = 0;
       // Create a clock signal that has 256 cycles
+      #10 testKEY[0] = 0;
+      #10 testKEY[0] = 1;
       while(counter < 8'b11111111) begin
         #20 clock = ~clock;
         // De-assert the reset signal
