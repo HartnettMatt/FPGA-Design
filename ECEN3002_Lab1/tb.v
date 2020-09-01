@@ -20,18 +20,27 @@ module tb();
       $display ($time, "<< Starting simulation >>");
       //Initialize inputs:
       testSW = 10'b0000000000;
-      testKEY[3:0] = 1;
+      testKEY[3:0] = 4'b1110;
       clock = 1'b0;
       counter = 0;
-      // Create a clock signal that has 256 cycles
-      #10 testKEY[0] = 0;
-      #10 testKEY[0] = 1;
+      // Run a 50MHz clock
       while(counter < 8'b11111111) begin
         #20 clock = ~clock;
-        // De-assert the reset signal
+        // De-assert the reset
         if(counter > 8'b00000010)
           begin
             testKEY[0] = 1;
+          end
+
+        // Test asynchronize forcing function
+        if(counter == 8'b00111111)
+          begin
+            testSW[9:0] = 10'b0101010101;
+            testKEY[1] = 0;
+          end
+        if (counter == 8'b01000001)
+          begin
+            testKEY[1] = 1;
           end
 
         counter = counter + 1;

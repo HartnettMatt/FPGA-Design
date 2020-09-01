@@ -33,7 +33,11 @@ module ECEN3002_Lab1(
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-parameter divide_by = 12500000;
+// Running on board:
+parameter divide_by = 10000000;
+// Running testbench:
+// parameter divide_by = 5;
+
 reg [9:0] ledValue;
 reg [9:0] counter;
 wire clock;
@@ -47,7 +51,7 @@ assign LEDR[9:0] = ledValue[9:0];
 ECEN3002_Lab1_ClockDivider CD0 (.clock_in(CLOCK_50), .divide_by(divide_by), .reset_n(KEY[0]), .clock_out(clock));
 
 
-// Flip the LEDR[0] to match the clock
+// Increase the counter and syncronize LEDR to counter value (unless value is forced by KEY[1])
 always @ (posedge clock or negedge KEY[0] or negedge KEY[1])
 	begin
   	if (~KEY[0])
@@ -59,8 +63,8 @@ always @ (posedge clock or negedge KEY[0] or negedge KEY[1])
 			ledValue <= SW[9:0];
 		else if (KEY[1])
 			begin
-	    	counter <= counter + 1;
 				ledValue <= counter;
+	    	counter <= counter + 1;
 			end
     end
 

@@ -1,0 +1,19 @@
+Quartus Prime Archive log --	C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1_Hartnett.qarlog
+
+Archive:	C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1_Hartnett.qar
+Date:		Mon Aug 31 20:04:53 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.SDC
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.qpf
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.qsf
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.sdc
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1_assignment_defaults.qdf
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v
+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/tb.v
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

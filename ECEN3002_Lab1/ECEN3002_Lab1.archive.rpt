@@ -1,5 +1,5 @@
 Archive Project report for ECEN3002_Lab1
-Fri Aug 28 08:14:30 2020
+Mon Aug 31 20:04:53 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Aug 28 08:14:30 2020 ;
+; Archive Project Status ; Successful - Mon Aug 31 20:04:53 2020 ;
 ; Revision Name          ; ECEN3002_Lab1                         ;
 ; Top-level Entity Name  ; ECEN3002_Lab1                         ;
 ; Family                 ; Cyclone V                             ;
@@ -54,14 +54,14 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1.qar'
+Info: Generated archive 'C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ECEN3002_Lab1_Hartnett.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'ECEN3002_Lab1.archive.rpt'
 Info (23030): Evaluation of Tcl script d:/intelfpga/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Fri Aug 28 08:14:30 2020
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Mon Aug 31 20:04:53 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
