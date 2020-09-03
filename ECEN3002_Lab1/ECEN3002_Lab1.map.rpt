@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ECEN3002_Lab1
-Wed Sep 02 15:31:42 2020
+Thu Sep 03 17:12:35 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 02 15:31:42 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Sep 03 17:12:35 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; ECEN3002_Lab1                                   ;
 ; Top-level Entity Name           ; ECEN3002_Lab1                                   ;
@@ -161,12 +161,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.2%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -296,7 +296,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -306,7 +306,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Wed Sep 02 15:31:32 2020
+    Info: Processing started: Thu Sep 03 17:12:28 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECEN3002_Lab1 -c ECEN3002_Lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -395,9 +395,9 @@ Info (21057): Implemented 152 device resources after synthesis - the final resou
     Info (21061): Implemented 82 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 70 warnings
     Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Wed Sep 02 15:31:42 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Processing ended: Thu Sep 03 17:12:35 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +------------------------------------------+
