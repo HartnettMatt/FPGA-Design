@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dP:/cu/fpga/parameters/verilogParameters/modelsim
+vclkdiv
+Z1 !s110 1591913915
+!i10b 1
+!s100 0YaS5KT28EIfcTZ_^E3l52
+I_K^z<XdnkMUT1o@dOYa]k0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1591806122
+8../source/clkdiv.v
+F../source/clkdiv.v
+L0 5
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1591913914.000000
+Z5 !s107 ../source/params.vh|../source/clkdiv.v|../source/top.v|
+Z6 !s90 -reportprogress|300|../source/top.v|../source/clkdiv.v|+incdir+../source|
+!i113 1
+Z7 !s92 +incdir+../source
+Z8 tCvgOpt 0
+vtb_modelsim
+R1
+!i10b 1
+!s100 Zh:ZLYSAZfzLH:z`16aYE1
+I9CJzUZD7ilUga2zoje5I40
+R2
+R0
+w1591821312
+8../source/tb_modelsim.v
+F../source/tb_modelsim.v
+Z9 F../source/params.vh
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1591913915.000000
+!s107 ../source/params.vh|../source/tb_modelsim.v|
+!s90 -reportprogress|300|../source/tb_modelsim.v|+incdir+../source|
+!i113 1
+R7
+R8
+vtop
+R1
+!i10b 1
+!s100 NAem81D;Woe;NMJFD7Z051
+IeC28zPlUMmNI7im@aH2<M2
+R2
+R0
+w1591821834
+8../source/top.v
+F../source/top.v
+R9
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
