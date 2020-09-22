@@ -40,7 +40,7 @@ module Project1(
 );
 
 // `define simulation
-// `include "params.vh"
+`include "params.vh"
 
 //=======================================================
 //  REG/WIRE declarations

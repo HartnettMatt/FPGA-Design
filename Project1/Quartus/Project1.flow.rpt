@@ -1,5 +1,5 @@
 Flow report for Project1
-Thu Sep 17 17:32:44 2020
+Mon Sep 21 20:21:10 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -38,29 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Flow Summary                                                                      ;
-+---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Sep 17 17:32:38 2020           ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
-; Revision Name                   ; Project1                                        ;
-; Top-level Entity Name           ; Project1                                        ;
-; Family                          ; Cyclone V                                       ;
-; Device                          ; 5CSXFC6D6F31C6                                  ;
-; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1 / 41,910 ( < 1 % )                            ;
-; Total registers                 ; 0                                               ;
-; Total pins                      ; 99 / 499 ( 20 % )                               ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                           ;
-; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++-----------------------------+-------------------------------------------------+
+; Flow Status                 ; Flow Failed - Mon Sep 21 20:21:10 2020          ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
+; Revision Name               ; Project1                                        ;
+; Top-level Entity Name       ; Project1                                        ;
+; Family                      ; Cyclone V                                       ;
+; Device                      ; 5CSXFC6D6F31C6                                  ;
+; Timing Models               ; Final                                           ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
+; Total registers             ; N/A until Partition Merge                       ;
+; Total pins                  ; N/A until Partition Merge                       ;
+; Total virtual pins          ; N/A until Partition Merge                       ;
+; Total block memory bits     ; N/A until Partition Merge                       ;
+; Total PLLs                  ; N/A until Partition Merge                       ;
+; Total DLLs                  ; N/A until Partition Merge                       ;
++-----------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/17/2020 17:31:45 ;
+; Start date & time ; 09/21/2020 20:21:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project1            ;
 +-------------------+---------------------+
@@ -79,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1096975794739.160038550521968          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1096975794739.160074126318912          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; video_pll.cmp                          ; --            ; --          ; --         ;
@@ -99,11 +94,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4779 MB             ; 00:00:15                           ;
-; Fitter               ; 00:00:33     ; 1.0                     ; 7285 MB             ; 00:01:10                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4840 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 5213 MB             ; 00:00:05                           ;
-; Total                ; 00:00:52     ; --                      ; --                  ; 00:01:35                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4761 MB             ; 00:00:15                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:15                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,9 +105,6 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -123,9 +112,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
-quartus_fit --read_settings_files=off --write_settings_files=off Project1 -c Project1
-quartus_asm --read_settings_files=off --write_settings_files=off Project1 -c Project1
-quartus_sta Project1 -c Project1
 
 
 
