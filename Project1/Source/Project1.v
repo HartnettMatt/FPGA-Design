@@ -39,7 +39,7 @@ module Project1(
 	output		          		VGA_VS
 );
 
-// `define simulation
+`define simulation
 `include "params.vh"
 
 //=======================================================
@@ -47,8 +47,6 @@ module Project1(
 //=======================================================
 
 wire clk;
-wire vSync;
-wire hSync;
 wire hPixel;
 wire line;
 wire video_active;
@@ -59,9 +57,11 @@ wire video_active;
 assign VGA_BLANK_N = 1;
 assign VGA_SYNC_N = 0;
 
-clock c0(.clock_in(CLOCK_50), .reset(KEY[0]), .clock_out(clk));
-VTC vtc(.clock_in(clk), .vSync(vSync), .hSync(hSync), .hPixel(hPixel), .line(line), .video_active(video_active));
-PG pg(.hPixel(hPixel), .line(line), .video_active(video_active), .KEY(KEY[3:1]), .SW(SW[9:0]), .VGA_B(VGA_B), .VGA_G(VGA_G), .VGA_R(VGA_R));
+clock U0(.clock_in(CLOCK_50), .reset(KEY[0]), .clock_out(clk));
+
+VTC U1(.clock_in(clk), .reset(KEY[0]), .vSync(VGA_VS), .hSync(VGA_HS), .hPixel(hPixel), .line(line), .video_active(video_active));
+
+PG U2(.hPixel(hPixel), .line(line), .video_active(video_active), .KEY(KEY[3:1]), .SW(SW[9:0]), .VGA_B(VGA_B), .VGA_G(VGA_G), .VGA_R(VGA_R));
 
 
 endmodule
