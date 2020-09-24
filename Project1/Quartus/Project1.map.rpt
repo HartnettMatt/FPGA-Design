@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project1
-Wed Sep 23 19:22:17 2020
+Wed Sep 23 19:41:11 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -48,13 +48,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 23 19:22:17 2020           ;
+; Analysis & Synthesis Status     ; Successful - Wed Sep 23 19:41:11 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 0                                               ;
+; Total registers                 ; 33                                              ;
 ; Total pins                      ; 99                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
 ; Total HSSI TX PCSs              ; 0                                               ;
 ; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0                                               ;
+; Total PLLs                      ; 1                                               ;
 ; Total DLLs                      ; 0                                               ;
 +---------------------------------+-------------------------------------------------+
 
@@ -164,10 +164,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -187,40 +188,48 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+-----------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 0         ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 0         ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 0         ;
-;     -- 5 input functions                    ; 0         ;
-;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 0         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 99        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLOCK2_50 ;
-; Maximum fan-out                             ; 1         ;
-; Total fan-out                               ; 99        ;
-; Average fan-out                             ; 0.50      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 27           ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 45           ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 8            ;
+;     -- 5 input functions                    ; 2            ;
+;     -- 4 input functions                    ; 1            ;
+;     -- <=3 input functions                  ; 34           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 33           ;
+;                                             ;              ;
+; I/O pins                                    ; 99           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Total PLLs                                  ; 1            ;
+;     -- PLLs                                 ; 1            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 35           ;
+; Total fan-out                               ; 364          ;
+; Average fan-out                             ; 1.31         ;
++---------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Project1                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 99   ; 0            ; |Project1           ; Project1    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                        ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name    ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------+--------------+
+; |Project1                                ; 45 (0)              ; 33 (0)                    ; 0                 ; 0          ; 99   ; 0            ; |Project1                                                                              ; Project1       ; work         ;
+;    |VTC:U1|                              ; 44 (44)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                       ; VTC            ; work         ;
+;    |clock:U0|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0                                                                     ; clock          ; work         ;
+;       |video_pll:PLL|                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL                                                       ; video_pll      ; video_pll    ;
+;          |video_pll_0002:video_pll_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst                         ; video_pll_0002 ; video_pll    ;
+;             |altera_pll:altera_pll_i|    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i ; altera_pll     ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -238,10 +247,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 33    ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 33    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -538,13 +547,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
+; arriav_ff             ; 33                          ;
+;     CLR               ; 1                           ;
+;     CLR SCLR          ; 32                          ;
+; arriav_lcell_comb     ; 47                          ;
+;     arith             ; 32                          ;
+;         1 data inputs ; 32                          ;
+;     normal            ; 15                          ;
 ;         0 data inputs ; 2                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 8                           ;
 ; boundary_port         ; 99                          ;
+; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 5.90                        ;
+; Average LUT depth     ; 4.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -553,7 +572,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -563,7 +582,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Wed Sep 23 19:22:10 2020
+    Info: Processing started: Wed Sep 23 19:41:03 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -660,47 +679,42 @@ Info (12133): Instantiated megafunction "clock:U0|video_pll:PLL|video_pll_0002:v
 Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 62
 Warning (10240): Verilog HDL Always Construct warning at VTC.v(15): inferring latch(es) for variable "line", which holds its previous value in one or more paths through the always construct File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 15
 Warning (10034): Output port "vSync" at VTC.v(4) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 4
-Warning (10034): Output port "hSync" at VTC.v(5) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 5
-Warning (10034): Output port "video_active" at VTC.v(9) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 9
-Info (10041): Inferred latch for "line[0]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[1]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[2]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[3]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[4]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[5]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[6]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[7]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[8]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[9]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[10]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[11]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[12]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[13]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[14]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[15]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[16]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[17]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[18]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[19]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[20]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[21]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[22]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[23]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[24]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[25]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[26]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[27]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[28]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[29]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[30]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
-Info (10041): Inferred latch for "line[31]" at VTC.v(22) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 22
+Info (10041): Inferred latch for "line[0]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[1]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[2]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[3]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[4]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[5]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[6]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[7]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[8]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[9]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[10]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[11]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[12]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[13]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[14]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[15]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[16]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[17]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[18]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[19]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[20]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[21]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[22]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[23]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[24]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[25]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[26]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[27]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[28]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[29]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[30]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
+Info (10041): Inferred latch for "line[31]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
 Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 64
 Warning (10034): Output port "VGA_B" at PG.v(7) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v Line: 7
 Warning (10034): Output port "VGA_G" at PG.v(8) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v Line: 8
 Warning (10034): Output port "VGA_R" at PG.v(10) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v Line: 10
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i|outclk_wire[0]" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
@@ -773,7 +787,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_G[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
     Warning (13410): Pin "VGA_G[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
     Warning (13410): Pin "VGA_G[7]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_HS" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 36
     Warning (13410): Pin "VGA_R[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_R[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_R[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
@@ -784,14 +797,13 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_R[7]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 38
     Warning (13410): Pin "VGA_VS" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 40
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 18 input pin(s) that do not drive logic
+    Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK2_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 9
     Warning (15610): No output dependent on input pin "CLOCK3_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 10
     Warning (15610): No output dependent on input pin "CLOCK4_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 11
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 12
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 15
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 15
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 15
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 15
@@ -805,13 +817,15 @@ Warning (21074): Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 81 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 121 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Wed Sep 23 19:22:17 2020
-    Info: Elapsed time: 00:00:07
+    Info (21061): Implemented 72 logic cells
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 113 warnings
+    Info: Peak virtual memory: 4868 megabytes
+    Info: Processing ended: Wed Sep 23 19:41:11 2020
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 
 

@@ -1,11 +1,11 @@
 module VTC(
   input wire        clock_in,
   input             reset,
-  output            vSync,
-  output            hSync,
+  output reg        vSync,
+  output reg        hSync,
   output reg [31:0] hPixel,
   output reg [31:0] line,
-  output           video_active
+  output reg        video_active
 );
 
 `define lowRes
