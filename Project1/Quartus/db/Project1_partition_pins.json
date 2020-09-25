@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
 					"name" : "KEY[0]",
 					"strict" : false
 				}

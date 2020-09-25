@@ -11,17 +11,22 @@ module VTC(
 `define lowRes
 `include "params.vh"
 
+reg hActive;
+reg vActive;
 
 always@(posedge clock_in or negedge reset)
+// Check reset
   begin
     if(reset == 0)
       begin
         hPixel[31:0] = 0;
         line[31:0] = 0;
         hSync = 0;
+        vSync = 0;
         video_active = 0;
       end
     else if(clock_in == 1)
+// Increment hPixel and line
       begin
         if(hPixel < syncTimeH)
           begin
@@ -31,8 +36,17 @@ always@(posedge clock_in or negedge reset)
           begin
             hPixel = 0;
             hSync = 0;
+            if(line < syncTimeV)
+              begin
+                line = line + 1;
+              end
+            else
+              begin
+                line = 0;
+                vSync = 0;
+              end
           end
-
+// Create hSync signal
           if(hPixel >= pulseWidthH)
             begin
               hSync = 1;
@@ -41,8 +55,35 @@ always@(posedge clock_in or negedge reset)
             begin
               hSync = 0;
             end
+// Create vSync signal
+          if(line >= pulseWidthV)
+            begin
+              vSync = 1;
+            end
+          else
+            begin
+              vSync = 0;
+            end
 
-          if(hSync == 1 && hPixel - pulseWidthH > bPorchH && hPixel - pulseWidthH - bPorchH - dispTimeH < fPorchH)
+// Create video_active signal
+          if(hSync == 1 && hPixel - pulseWidthH > bPorchH && hPixel < syncTimeH - fPorchH)
+            begin
+              hActive = 1;
+            end
+          else
+            begin
+              hActive = 0;
+            end
+          if(vSync == 1 && line - pulseWidthV > bPorchV && line < syncTimeV - fPorchV)
+            begin
+              vActive = 1;
+            end
+          else
+            begin
+              vActive = 0;
+            end
+            
+          if(hActive & vActive)
             begin
               video_active = 1;
             end

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project1
-Wed Sep 23 19:41:11 2020
+Thu Sep 24 17:31:19 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -15,13 +15,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
- 11. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
- 12. Parameter Settings for User Entity Instance: VTC:U1
- 13. Port Connectivity Checks: "VTC:U1"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
+ 12. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
+ 13. Parameter Settings for User Entity Instance: VTC:U1
+ 14. Port Connectivity Checks: "VTC:U1"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -48,13 +49,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 23 19:41:11 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Sep 24 17:31:19 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 33                                              ;
+; Total registers                 ; 66                                              ;
 ; Total pins                      ; 99                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -172,74 +173,74 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                       ;
-+----------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+-----------+
-; File Name with User-Entered Path                                     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library   ;
-+----------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+-----------+
-; ../Source/VTC.v                                                      ; yes             ; User Verilog HDL File        ; C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v                       ;           ;
-; ../Source/PG.v                                                       ; yes             ; User Verilog HDL File        ; C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v                        ;           ;
-; ../Source/clock.v                                                    ; yes             ; User Verilog HDL File        ; C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/clock.v                     ;           ;
-; ../Source/Project1.v                                                 ; yes             ; User Verilog HDL File        ; C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v                  ;           ;
-; video_pll.v                                                          ; yes             ; User Wizard-Generated File   ; C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll.v                ; video_pll ;
-; video_pll/video_pll_0002.v                                           ; yes             ; User Verilog HDL File        ; C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll/video_pll_0002.v ; video_pll ;
-; /users/matt hartnett/documents/fpga-design/project1/source/params.vh ; yes             ; Auto-Found Unspecified File  ; /users/matt hartnett/documents/fpga-design/project1/source/params.vh                     ;           ;
-; altera_pll.v                                                         ; yes             ; Megafunction                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v                           ;           ;
-+----------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+-----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++---------------------------------------+-----------------+------------------------------+----------------------------------------------------------------+-----------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                   ; Library   ;
++---------------------------------------+-----------------+------------------------------+----------------------------------------------------------------+-----------+
+; ../Source/VTC.v                       ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project1/Source/VTC.v                            ;           ;
+; ../Source/PG.v                        ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project1/Source/PG.v                             ;           ;
+; ../Source/clock.v                     ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project1/Source/clock.v                          ;           ;
+; ../Source/Project1.v                  ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project1/Source/Project1.v                       ;           ;
+; video_pll.v                           ; yes             ; User Wizard-Generated File   ; F:/FPGADesign/Project1/Quartus/video_pll.v                     ; video_pll ;
+; video_pll/video_pll_0002.v            ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v      ; video_pll ;
+; /fpgadesign/project1/source/params.vh ; yes             ; Auto-Found Unspecified File  ; /fpgadesign/project1/source/params.vh                          ;           ;
+; altera_pll.v                          ; yes             ; Megafunction                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v ;           ;
++---------------------------------------+-----------------+------------------------------+----------------------------------------------------------------+-----------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 27           ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 45           ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 8            ;
-;     -- 5 input functions                    ; 2            ;
-;     -- 4 input functions                    ; 1            ;
-;     -- <=3 input functions                  ; 34           ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 33           ;
-;                                             ;              ;
-; I/O pins                                    ; 99           ;
-;                                             ;              ;
-; Total DSP Blocks                            ; 0            ;
-;                                             ;              ;
-; Total PLLs                                  ; 1            ;
-;     -- PLLs                                 ; 1            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 35           ;
-; Total fan-out                               ; 364          ;
-; Average fan-out                             ; 1.31         ;
-+---------------------------------------------+--------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimate of Logic utilization (ALMs needed) ; 56                 ;
+;                                             ;                    ;
+; Combinational ALUT usage for logic          ; 96                 ;
+;     -- 7 input functions                    ; 0                  ;
+;     -- 6 input functions                    ; 16                 ;
+;     -- 5 input functions                    ; 10                 ;
+;     -- 4 input functions                    ; 3                  ;
+;     -- <=3 input functions                  ; 67                 ;
+;                                             ;                    ;
+; Dedicated logic registers                   ; 66                 ;
+;                                             ;                    ;
+; I/O pins                                    ; 99                 ;
+;                                             ;                    ;
+; Total DSP Blocks                            ; 0                  ;
+;                                             ;                    ;
+; Total PLLs                                  ; 1                  ;
+;     -- PLLs                                 ; 1                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; VTC:U1|LessThan0~5 ;
+; Maximum fan-out                             ; 73                 ;
+; Total fan-out                               ; 689                ;
+; Average fan-out                             ; 1.91               ;
++---------------------------------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                        ;
-+------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name    ; Library Name ;
-+------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------+--------------+
-; |Project1                                ; 45 (0)              ; 33 (0)                    ; 0                 ; 0          ; 99   ; 0            ; |Project1                                                                              ; Project1       ; work         ;
-;    |VTC:U1|                              ; 44 (44)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                       ; VTC            ; work         ;
-;    |clock:U0|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0                                                                     ; clock          ; work         ;
-;       |video_pll:PLL|                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL                                                       ; video_pll      ; video_pll    ;
-;          |video_pll_0002:video_pll_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst                         ; video_pll_0002 ; video_pll    ;
-;             |altera_pll:altera_pll_i|    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i ; altera_pll     ; work         ;
-+------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name    ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+----------------+--------------+
+; |Project1                                ; 96 (0)              ; 66 (0)                    ; 0                 ; 0          ; 99   ; 0            ; |Project1                                                                               ; Project1       ; work         ;
+;    |VTC:U1|                              ; 95 (95)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                        ; VTC            ; work         ;
+;    |clock:U0|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0                                                                      ; clock          ; work         ;
+;       |video_pll:PLL1|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1                                                       ; video_pll      ; video_pll    ;
+;          |video_pll_0002:video_pll_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst                         ; video_pll_0002 ; video_pll    ;
+;             |altera_pll:altera_pll_i|    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i ; altera_pll     ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                              ;
-+--------+--------------+---------+--------------+--------------+----------------------------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                  ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+----------------------------------+-----------------+
-; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |Project1|clock:U0|video_pll:PLL ; video_pll.v     ;
-+--------+--------------+---------+--------------+--------------+----------------------------------+-----------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                               ;
++--------+--------------+---------+--------------+--------------+-----------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                   ; IP Include File ;
++--------+--------------+---------+--------------+--------------+-----------------------------------+-----------------+
+; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |Project1|clock:U0|video_pll:PLL1 ; video_pll.v     ;
++--------+--------------+---------+--------------+--------------+-----------------------------------+-----------------+
 
 
 +------------------------------------------------------+
@@ -247,14 +248,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 66    ;
+; Number of registers using Synchronous Clear  ; 63    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Clear ; 66    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Project1|VTC:U1|line      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -267,254 +277,259 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; dispTimeH      ; 640   ; Signed Integer                                  ;
 ; pulseWidthH    ; 96    ; Signed Integer                                  ;
 ; syncTimeH      ; 800   ; Signed Integer                                  ;
+; fPorchV        ; 10    ; Signed Integer                                  ;
+; bPorchV        ; 29    ; Signed Integer                                  ;
+; dispTimeV      ; 480   ; Signed Integer                                  ;
+; pulseWidthV    ; 2     ; Signed Integer                                  ;
+; syncTimeV      ; 521   ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i ;
-+--------------------------------------+------------------------+-----------------------------------------------------------+
-; Parameter Name                       ; Value                  ; Type                                                      ;
-+--------------------------------------+------------------------+-----------------------------------------------------------+
-; reference_clock_frequency            ; 50.0 MHz               ; String                                                    ;
-; fractional_vco_multiplier            ; false                  ; String                                                    ;
-; pll_type                             ; General                ; String                                                    ;
-; pll_subtype                          ; General                ; String                                                    ;
-; number_of_clocks                     ; 1                      ; Signed Integer                                            ;
-; operation_mode                       ; direct                 ; String                                                    ;
-; deserialization_factor               ; 4                      ; Signed Integer                                            ;
-; data_rate                            ; 0                      ; Signed Integer                                            ;
-; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                                            ;
-; output_clock_frequency0              ; 25.175644 MHz          ; String                                                    ;
-; phase_shift0                         ; 0 ps                   ; String                                                    ;
-; duty_cycle0                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency1              ; 0 MHz                  ; String                                                    ;
-; phase_shift1                         ; 0 ps                   ; String                                                    ;
-; duty_cycle1                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency2              ; 0 MHz                  ; String                                                    ;
-; phase_shift2                         ; 0 ps                   ; String                                                    ;
-; duty_cycle2                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency3              ; 0 MHz                  ; String                                                    ;
-; phase_shift3                         ; 0 ps                   ; String                                                    ;
-; duty_cycle3                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency4              ; 0 MHz                  ; String                                                    ;
-; phase_shift4                         ; 0 ps                   ; String                                                    ;
-; duty_cycle4                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency5              ; 0 MHz                  ; String                                                    ;
-; phase_shift5                         ; 0 ps                   ; String                                                    ;
-; duty_cycle5                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency6              ; 0 MHz                  ; String                                                    ;
-; phase_shift6                         ; 0 ps                   ; String                                                    ;
-; duty_cycle6                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency7              ; 0 MHz                  ; String                                                    ;
-; phase_shift7                         ; 0 ps                   ; String                                                    ;
-; duty_cycle7                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency8              ; 0 MHz                  ; String                                                    ;
-; phase_shift8                         ; 0 ps                   ; String                                                    ;
-; duty_cycle8                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency9              ; 0 MHz                  ; String                                                    ;
-; phase_shift9                         ; 0 ps                   ; String                                                    ;
-; duty_cycle9                          ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency10             ; 0 MHz                  ; String                                                    ;
-; phase_shift10                        ; 0 ps                   ; String                                                    ;
-; duty_cycle10                         ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency11             ; 0 MHz                  ; String                                                    ;
-; phase_shift11                        ; 0 ps                   ; String                                                    ;
-; duty_cycle11                         ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency12             ; 0 MHz                  ; String                                                    ;
-; phase_shift12                        ; 0 ps                   ; String                                                    ;
-; duty_cycle12                         ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency13             ; 0 MHz                  ; String                                                    ;
-; phase_shift13                        ; 0 ps                   ; String                                                    ;
-; duty_cycle13                         ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency14             ; 0 MHz                  ; String                                                    ;
-; phase_shift14                        ; 0 ps                   ; String                                                    ;
-; duty_cycle14                         ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency15             ; 0 MHz                  ; String                                                    ;
-; phase_shift15                        ; 0 ps                   ; String                                                    ;
-; duty_cycle15                         ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency16             ; 0 MHz                  ; String                                                    ;
-; phase_shift16                        ; 0 ps                   ; String                                                    ;
-; duty_cycle16                         ; 50                     ; Signed Integer                                            ;
-; output_clock_frequency17             ; 0 MHz                  ; String                                                    ;
-; phase_shift17                        ; 0 ps                   ; String                                                    ;
-; duty_cycle17                         ; 50                     ; Signed Integer                                            ;
-; clock_name_0                         ;                        ; String                                                    ;
-; clock_name_1                         ;                        ; String                                                    ;
-; clock_name_2                         ;                        ; String                                                    ;
-; clock_name_3                         ;                        ; String                                                    ;
-; clock_name_4                         ;                        ; String                                                    ;
-; clock_name_5                         ;                        ; String                                                    ;
-; clock_name_6                         ;                        ; String                                                    ;
-; clock_name_7                         ;                        ; String                                                    ;
-; clock_name_8                         ;                        ; String                                                    ;
-; clock_name_global_0                  ; false                  ; String                                                    ;
-; clock_name_global_1                  ; false                  ; String                                                    ;
-; clock_name_global_2                  ; false                  ; String                                                    ;
-; clock_name_global_3                  ; false                  ; String                                                    ;
-; clock_name_global_4                  ; false                  ; String                                                    ;
-; clock_name_global_5                  ; false                  ; String                                                    ;
-; clock_name_global_6                  ; false                  ; String                                                    ;
-; clock_name_global_7                  ; false                  ; String                                                    ;
-; clock_name_global_8                  ; false                  ; String                                                    ;
-; m_cnt_hi_div                         ; 1                      ; Signed Integer                                            ;
-; m_cnt_lo_div                         ; 1                      ; Signed Integer                                            ;
-; m_cnt_bypass_en                      ; false                  ; String                                                    ;
-; m_cnt_odd_div_duty_en                ; false                  ; String                                                    ;
-; n_cnt_hi_div                         ; 1                      ; Signed Integer                                            ;
-; n_cnt_lo_div                         ; 1                      ; Signed Integer                                            ;
-; n_cnt_bypass_en                      ; false                  ; String                                                    ;
-; n_cnt_odd_div_duty_en                ; false                  ; String                                                    ;
-; c_cnt_hi_div0                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div0                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en0                     ; false                  ; String                                                    ;
-; c_cnt_in_src0                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en0               ; false                  ; String                                                    ;
-; c_cnt_prst0                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst0                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div1                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div1                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en1                     ; false                  ; String                                                    ;
-; c_cnt_in_src1                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en1               ; false                  ; String                                                    ;
-; c_cnt_prst1                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst1                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div2                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div2                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en2                     ; false                  ; String                                                    ;
-; c_cnt_in_src2                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en2               ; false                  ; String                                                    ;
-; c_cnt_prst2                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst2                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div3                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div3                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en3                     ; false                  ; String                                                    ;
-; c_cnt_in_src3                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en3               ; false                  ; String                                                    ;
-; c_cnt_prst3                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst3                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div4                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div4                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en4                     ; false                  ; String                                                    ;
-; c_cnt_in_src4                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en4               ; false                  ; String                                                    ;
-; c_cnt_prst4                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst4                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div5                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div5                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en5                     ; false                  ; String                                                    ;
-; c_cnt_in_src5                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en5               ; false                  ; String                                                    ;
-; c_cnt_prst5                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst5                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div6                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div6                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en6                     ; false                  ; String                                                    ;
-; c_cnt_in_src6                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en6               ; false                  ; String                                                    ;
-; c_cnt_prst6                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst6                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div7                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div7                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en7                     ; false                  ; String                                                    ;
-; c_cnt_in_src7                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en7               ; false                  ; String                                                    ;
-; c_cnt_prst7                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst7                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div8                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div8                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en8                     ; false                  ; String                                                    ;
-; c_cnt_in_src8                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en8               ; false                  ; String                                                    ;
-; c_cnt_prst8                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst8                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div9                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div9                        ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en9                     ; false                  ; String                                                    ;
-; c_cnt_in_src9                        ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en9               ; false                  ; String                                                    ;
-; c_cnt_prst9                          ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst9                   ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div10                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div10                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en10                    ; false                  ; String                                                    ;
-; c_cnt_in_src10                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en10              ; false                  ; String                                                    ;
-; c_cnt_prst10                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst10                  ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div11                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div11                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en11                    ; false                  ; String                                                    ;
-; c_cnt_in_src11                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en11              ; false                  ; String                                                    ;
-; c_cnt_prst11                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst11                  ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div12                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div12                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en12                    ; false                  ; String                                                    ;
-; c_cnt_in_src12                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en12              ; false                  ; String                                                    ;
-; c_cnt_prst12                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst12                  ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div13                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div13                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en13                    ; false                  ; String                                                    ;
-; c_cnt_in_src13                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en13              ; false                  ; String                                                    ;
-; c_cnt_prst13                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst13                  ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div14                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div14                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en14                    ; false                  ; String                                                    ;
-; c_cnt_in_src14                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en14              ; false                  ; String                                                    ;
-; c_cnt_prst14                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst14                  ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div15                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div15                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en15                    ; false                  ; String                                                    ;
-; c_cnt_in_src15                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en15              ; false                  ; String                                                    ;
-; c_cnt_prst15                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst15                  ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div16                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div16                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en16                    ; false                  ; String                                                    ;
-; c_cnt_in_src16                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en16              ; false                  ; String                                                    ;
-; c_cnt_prst16                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst16                  ; 0                      ; Signed Integer                                            ;
-; c_cnt_hi_div17                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_lo_div17                       ; 1                      ; Signed Integer                                            ;
-; c_cnt_bypass_en17                    ; false                  ; String                                                    ;
-; c_cnt_in_src17                       ; ph_mux_clk             ; String                                                    ;
-; c_cnt_odd_div_duty_en17              ; false                  ; String                                                    ;
-; c_cnt_prst17                         ; 1                      ; Signed Integer                                            ;
-; c_cnt_ph_mux_prst17                  ; 0                      ; Signed Integer                                            ;
-; pll_vco_div                          ; 1                      ; Signed Integer                                            ;
-; pll_slf_rst                          ; false                  ; String                                                    ;
-; pll_bw_sel                           ; low                    ; String                                                    ;
-; pll_output_clk_frequency             ; 0 MHz                  ; String                                                    ;
-; pll_cp_current                       ; 0                      ; Signed Integer                                            ;
-; pll_bwctrl                           ; 0                      ; Signed Integer                                            ;
-; pll_fractional_division              ; 1                      ; Signed Integer                                            ;
-; pll_fractional_cout                  ; 24                     ; Signed Integer                                            ;
-; pll_dsm_out_sel                      ; 1st_order              ; String                                                    ;
-; mimic_fbclk_type                     ; gclk                   ; String                                                    ;
-; pll_fbclk_mux_1                      ; glb                    ; String                                                    ;
-; pll_fbclk_mux_2                      ; fb_1                   ; String                                                    ;
-; pll_m_cnt_in_src                     ; ph_mux_clk             ; String                                                    ;
-; pll_vcoph_div                        ; 1                      ; Signed Integer                                            ;
-; refclk1_frequency                    ; 0 MHz                  ; String                                                    ;
-; pll_clkin_0_src                      ; clk_0                  ; String                                                    ;
-; pll_clkin_1_src                      ; clk_0                  ; String                                                    ;
-; pll_clk_loss_sw_en                   ; false                  ; String                                                    ;
-; pll_auto_clk_sw_en                   ; false                  ; String                                                    ;
-; pll_manu_clk_sw_en                   ; false                  ; String                                                    ;
-; pll_clk_sw_dly                       ; 0                      ; Signed Integer                                            ;
-; pll_extclk_0_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                                    ;
-; pll_extclk_1_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                                    ;
-+--------------------------------------+------------------------+-----------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i ;
++--------------------------------------+------------------------+------------------------------------------------------------+
+; Parameter Name                       ; Value                  ; Type                                                       ;
++--------------------------------------+------------------------+------------------------------------------------------------+
+; reference_clock_frequency            ; 50.0 MHz               ; String                                                     ;
+; fractional_vco_multiplier            ; false                  ; String                                                     ;
+; pll_type                             ; General                ; String                                                     ;
+; pll_subtype                          ; General                ; String                                                     ;
+; number_of_clocks                     ; 1                      ; Signed Integer                                             ;
+; operation_mode                       ; direct                 ; String                                                     ;
+; deserialization_factor               ; 4                      ; Signed Integer                                             ;
+; data_rate                            ; 0                      ; Signed Integer                                             ;
+; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                                             ;
+; output_clock_frequency0              ; 25.175644 MHz          ; String                                                     ;
+; phase_shift0                         ; 0 ps                   ; String                                                     ;
+; duty_cycle0                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency1              ; 0 MHz                  ; String                                                     ;
+; phase_shift1                         ; 0 ps                   ; String                                                     ;
+; duty_cycle1                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency2              ; 0 MHz                  ; String                                                     ;
+; phase_shift2                         ; 0 ps                   ; String                                                     ;
+; duty_cycle2                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency3              ; 0 MHz                  ; String                                                     ;
+; phase_shift3                         ; 0 ps                   ; String                                                     ;
+; duty_cycle3                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency4              ; 0 MHz                  ; String                                                     ;
+; phase_shift4                         ; 0 ps                   ; String                                                     ;
+; duty_cycle4                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency5              ; 0 MHz                  ; String                                                     ;
+; phase_shift5                         ; 0 ps                   ; String                                                     ;
+; duty_cycle5                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency6              ; 0 MHz                  ; String                                                     ;
+; phase_shift6                         ; 0 ps                   ; String                                                     ;
+; duty_cycle6                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency7              ; 0 MHz                  ; String                                                     ;
+; phase_shift7                         ; 0 ps                   ; String                                                     ;
+; duty_cycle7                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency8              ; 0 MHz                  ; String                                                     ;
+; phase_shift8                         ; 0 ps                   ; String                                                     ;
+; duty_cycle8                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency9              ; 0 MHz                  ; String                                                     ;
+; phase_shift9                         ; 0 ps                   ; String                                                     ;
+; duty_cycle9                          ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency10             ; 0 MHz                  ; String                                                     ;
+; phase_shift10                        ; 0 ps                   ; String                                                     ;
+; duty_cycle10                         ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency11             ; 0 MHz                  ; String                                                     ;
+; phase_shift11                        ; 0 ps                   ; String                                                     ;
+; duty_cycle11                         ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency12             ; 0 MHz                  ; String                                                     ;
+; phase_shift12                        ; 0 ps                   ; String                                                     ;
+; duty_cycle12                         ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency13             ; 0 MHz                  ; String                                                     ;
+; phase_shift13                        ; 0 ps                   ; String                                                     ;
+; duty_cycle13                         ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency14             ; 0 MHz                  ; String                                                     ;
+; phase_shift14                        ; 0 ps                   ; String                                                     ;
+; duty_cycle14                         ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency15             ; 0 MHz                  ; String                                                     ;
+; phase_shift15                        ; 0 ps                   ; String                                                     ;
+; duty_cycle15                         ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency16             ; 0 MHz                  ; String                                                     ;
+; phase_shift16                        ; 0 ps                   ; String                                                     ;
+; duty_cycle16                         ; 50                     ; Signed Integer                                             ;
+; output_clock_frequency17             ; 0 MHz                  ; String                                                     ;
+; phase_shift17                        ; 0 ps                   ; String                                                     ;
+; duty_cycle17                         ; 50                     ; Signed Integer                                             ;
+; clock_name_0                         ;                        ; String                                                     ;
+; clock_name_1                         ;                        ; String                                                     ;
+; clock_name_2                         ;                        ; String                                                     ;
+; clock_name_3                         ;                        ; String                                                     ;
+; clock_name_4                         ;                        ; String                                                     ;
+; clock_name_5                         ;                        ; String                                                     ;
+; clock_name_6                         ;                        ; String                                                     ;
+; clock_name_7                         ;                        ; String                                                     ;
+; clock_name_8                         ;                        ; String                                                     ;
+; clock_name_global_0                  ; false                  ; String                                                     ;
+; clock_name_global_1                  ; false                  ; String                                                     ;
+; clock_name_global_2                  ; false                  ; String                                                     ;
+; clock_name_global_3                  ; false                  ; String                                                     ;
+; clock_name_global_4                  ; false                  ; String                                                     ;
+; clock_name_global_5                  ; false                  ; String                                                     ;
+; clock_name_global_6                  ; false                  ; String                                                     ;
+; clock_name_global_7                  ; false                  ; String                                                     ;
+; clock_name_global_8                  ; false                  ; String                                                     ;
+; m_cnt_hi_div                         ; 1                      ; Signed Integer                                             ;
+; m_cnt_lo_div                         ; 1                      ; Signed Integer                                             ;
+; m_cnt_bypass_en                      ; false                  ; String                                                     ;
+; m_cnt_odd_div_duty_en                ; false                  ; String                                                     ;
+; n_cnt_hi_div                         ; 1                      ; Signed Integer                                             ;
+; n_cnt_lo_div                         ; 1                      ; Signed Integer                                             ;
+; n_cnt_bypass_en                      ; false                  ; String                                                     ;
+; n_cnt_odd_div_duty_en                ; false                  ; String                                                     ;
+; c_cnt_hi_div0                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div0                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en0                     ; false                  ; String                                                     ;
+; c_cnt_in_src0                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en0               ; false                  ; String                                                     ;
+; c_cnt_prst0                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst0                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div1                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div1                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en1                     ; false                  ; String                                                     ;
+; c_cnt_in_src1                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en1               ; false                  ; String                                                     ;
+; c_cnt_prst1                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst1                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div2                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div2                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en2                     ; false                  ; String                                                     ;
+; c_cnt_in_src2                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en2               ; false                  ; String                                                     ;
+; c_cnt_prst2                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst2                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div3                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div3                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en3                     ; false                  ; String                                                     ;
+; c_cnt_in_src3                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en3               ; false                  ; String                                                     ;
+; c_cnt_prst3                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst3                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div4                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div4                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en4                     ; false                  ; String                                                     ;
+; c_cnt_in_src4                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en4               ; false                  ; String                                                     ;
+; c_cnt_prst4                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst4                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div5                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div5                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en5                     ; false                  ; String                                                     ;
+; c_cnt_in_src5                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en5               ; false                  ; String                                                     ;
+; c_cnt_prst5                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst5                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div6                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div6                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en6                     ; false                  ; String                                                     ;
+; c_cnt_in_src6                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en6               ; false                  ; String                                                     ;
+; c_cnt_prst6                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst6                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div7                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div7                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en7                     ; false                  ; String                                                     ;
+; c_cnt_in_src7                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en7               ; false                  ; String                                                     ;
+; c_cnt_prst7                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst7                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div8                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div8                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en8                     ; false                  ; String                                                     ;
+; c_cnt_in_src8                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en8               ; false                  ; String                                                     ;
+; c_cnt_prst8                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst8                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div9                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div9                        ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en9                     ; false                  ; String                                                     ;
+; c_cnt_in_src9                        ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en9               ; false                  ; String                                                     ;
+; c_cnt_prst9                          ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst9                   ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div10                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div10                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en10                    ; false                  ; String                                                     ;
+; c_cnt_in_src10                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en10              ; false                  ; String                                                     ;
+; c_cnt_prst10                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst10                  ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div11                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div11                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en11                    ; false                  ; String                                                     ;
+; c_cnt_in_src11                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en11              ; false                  ; String                                                     ;
+; c_cnt_prst11                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst11                  ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div12                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div12                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en12                    ; false                  ; String                                                     ;
+; c_cnt_in_src12                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en12              ; false                  ; String                                                     ;
+; c_cnt_prst12                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst12                  ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div13                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div13                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en13                    ; false                  ; String                                                     ;
+; c_cnt_in_src13                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en13              ; false                  ; String                                                     ;
+; c_cnt_prst13                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst13                  ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div14                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div14                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en14                    ; false                  ; String                                                     ;
+; c_cnt_in_src14                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en14              ; false                  ; String                                                     ;
+; c_cnt_prst14                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst14                  ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div15                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div15                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en15                    ; false                  ; String                                                     ;
+; c_cnt_in_src15                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en15              ; false                  ; String                                                     ;
+; c_cnt_prst15                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst15                  ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div16                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div16                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en16                    ; false                  ; String                                                     ;
+; c_cnt_in_src16                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en16              ; false                  ; String                                                     ;
+; c_cnt_prst16                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst16                  ; 0                      ; Signed Integer                                             ;
+; c_cnt_hi_div17                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_lo_div17                       ; 1                      ; Signed Integer                                             ;
+; c_cnt_bypass_en17                    ; false                  ; String                                                     ;
+; c_cnt_in_src17                       ; ph_mux_clk             ; String                                                     ;
+; c_cnt_odd_div_duty_en17              ; false                  ; String                                                     ;
+; c_cnt_prst17                         ; 1                      ; Signed Integer                                             ;
+; c_cnt_ph_mux_prst17                  ; 0                      ; Signed Integer                                             ;
+; pll_vco_div                          ; 1                      ; Signed Integer                                             ;
+; pll_slf_rst                          ; false                  ; String                                                     ;
+; pll_bw_sel                           ; low                    ; String                                                     ;
+; pll_output_clk_frequency             ; 0 MHz                  ; String                                                     ;
+; pll_cp_current                       ; 0                      ; Signed Integer                                             ;
+; pll_bwctrl                           ; 0                      ; Signed Integer                                             ;
+; pll_fractional_division              ; 1                      ; Signed Integer                                             ;
+; pll_fractional_cout                  ; 24                     ; Signed Integer                                             ;
+; pll_dsm_out_sel                      ; 1st_order              ; String                                                     ;
+; mimic_fbclk_type                     ; gclk                   ; String                                                     ;
+; pll_fbclk_mux_1                      ; glb                    ; String                                                     ;
+; pll_fbclk_mux_2                      ; fb_1                   ; String                                                     ;
+; pll_m_cnt_in_src                     ; ph_mux_clk             ; String                                                     ;
+; pll_vcoph_div                        ; 1                      ; Signed Integer                                             ;
+; refclk1_frequency                    ; 0 MHz                  ; String                                                     ;
+; pll_clkin_0_src                      ; clk_0                  ; String                                                     ;
+; pll_clkin_1_src                      ; clk_0                  ; String                                                     ;
+; pll_clk_loss_sw_en                   ; false                  ; String                                                     ;
+; pll_auto_clk_sw_en                   ; false                  ; String                                                     ;
+; pll_manu_clk_sw_en                   ; false                  ; String                                                     ;
+; pll_clk_sw_dly                       ; 0                      ; Signed Integer                                             ;
+; pll_extclk_0_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                                     ;
+; pll_extclk_1_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                                     ;
++--------------------------------------+------------------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -528,6 +543,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; dispTimeH      ; 640   ; Signed Integer             ;
 ; pulseWidthH    ; 96    ; Signed Integer             ;
 ; syncTimeH      ; 800   ; Signed Integer             ;
+; fPorchV        ; 10    ; Signed Integer             ;
+; bPorchV        ; 29    ; Signed Integer             ;
+; dispTimeV      ; 480   ; Signed Integer             ;
+; pulseWidthV    ; 2     ; Signed Integer             ;
+; syncTimeV      ; 521   ; Signed Integer             ;
 +----------------+-------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -547,23 +567,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 33                          ;
-;     CLR               ; 1                           ;
+; arriav_ff             ; 66                          ;
+;     CLR               ; 2                           ;
 ;     CLR SCLR          ; 32                          ;
-; arriav_lcell_comb     ; 47                          ;
-;     arith             ; 32                          ;
-;         1 data inputs ; 32                          ;
-;     normal            ; 15                          ;
+;     ENA CLR           ; 1                           ;
+;     ENA CLR SCLR      ; 31                          ;
+; arriav_lcell_comb     ; 98                          ;
+;     arith             ; 64                          ;
+;         1 data inputs ; 64                          ;
+;     normal            ; 34                          ;
 ;         0 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 8                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 16                          ;
 ; boundary_port         ; 99                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.90                        ;
-; Average LUT depth     ; 4.50                        ;
+; Max LUT depth         ; 6.10                        ;
+; Average LUT depth     ; 5.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -572,7 +594,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -582,40 +604,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Wed Sep 23 19:41:03 2020
+    Info: Processing started: Thu Sep 24 17:31:11 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/matt hartnett/documents/fpga-design/project1/source/tb.v
-    Info (12023): Found entity 1: tb File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/tb.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/matt hartnett/documents/fpga-design/project1/source/vtc.v
-    Info (12023): Found entity 1: VTC File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/matt hartnett/documents/fpga-design/project1/source/pg.v
-    Info (12023): Found entity 1: PG File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/matt hartnett/documents/fpga-design/project1/source/clock.v
-    Info (12023): Found entity 1: clock File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/clock.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/matt hartnett/documents/fpga-design/project1/source/project1.v
-    Info (12023): Found entity 1: Project1 File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/tb.v
+    Info (12023): Found entity 1: tb File: F:/FPGADesign/Project1/Source/tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/vtc.v
+    Info (12023): Found entity 1: VTC File: F:/FPGADesign/Project1/Source/VTC.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/pg.v
+    Info (12023): Found entity 1: PG File: F:/FPGADesign/Project1/Source/PG.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/clock.v
+    Info (12023): Found entity 1: clock File: F:/FPGADesign/Project1/Source/clock.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/project1.v
+    Info (12023): Found entity 1: Project1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file video_pll.v
-    Info (12023): Found entity 1: video_pll File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll.v Line: 8
+    Info (12023): Found entity 1: video_pll File: F:/FPGADesign/Project1/Quartus/video_pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file video_pll/video_pll_0002.v
-    Info (12023): Found entity 1: video_pll_0002 File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll/video_pll_0002.v Line: 2
+    Info (12023): Found entity 1: video_pll_0002 File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 2
 Info (12127): Elaborating entity "Project1" for the top level hierarchy
-Warning (10034): Output port "LEDR" at Project1.v(21) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-Warning (10034): Output port "HEX0" at Project1.v(24) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-Warning (10034): Output port "HEX1" at Project1.v(25) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-Warning (10034): Output port "HEX2" at Project1.v(26) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-Warning (10034): Output port "HEX3" at Project1.v(27) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-Warning (10034): Output port "HEX4" at Project1.v(28) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-Warning (10034): Output port "HEX5" at Project1.v(29) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-Warning (10034): Output port "VGA_CLK" at Project1.v(34) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 34
-Info (12128): Elaborating entity "clock" for hierarchy "clock:U0" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 60
-Info (12128): Elaborating entity "video_pll" for hierarchy "clock:U0|video_pll:PLL" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/clock.v Line: 10
-Info (12128): Elaborating entity "video_pll_0002" for hierarchy "clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll.v Line: 20
-Info (12128): Elaborating entity "altera_pll" for hierarchy "clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
+Warning (10034): Output port "LEDR" at Project1.v(21) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+Warning (10034): Output port "HEX0" at Project1.v(24) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+Warning (10034): Output port "HEX1" at Project1.v(25) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+Warning (10034): Output port "HEX2" at Project1.v(26) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+Warning (10034): Output port "HEX3" at Project1.v(27) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+Warning (10034): Output port "HEX4" at Project1.v(28) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+Warning (10034): Output port "HEX5" at Project1.v(29) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+Warning (10034): Output port "VGA_CLK" at Project1.v(34) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 34
+Info (12128): Elaborating entity "clock" for hierarchy "clock:U0" File: F:/FPGADesign/Project1/Source/Project1.v Line: 60
+Info (12128): Elaborating entity "video_pll" for hierarchy "clock:U0|video_pll:PLL1" File: F:/FPGADesign/Project1/Source/clock.v Line: 10
+Info (12128): Elaborating entity "video_pll_0002" for hierarchy "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst" File: F:/FPGADesign/Project1/Quartus/video_pll.v Line: 20
+Info (12128): Elaborating entity "altera_pll" for hierarchy "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
-Info (12133): Instantiated megafunction "clock:U0|video_pll:PLL|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
+Info (12133): Instantiated megafunction "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" with the following parameter: File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -676,155 +698,117 @@ Info (12133): Instantiated megafunction "clock:U0|video_pll:PLL|video_pll_0002:v
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 62
-Warning (10240): Verilog HDL Always Construct warning at VTC.v(15): inferring latch(es) for variable "line", which holds its previous value in one or more paths through the always construct File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 15
-Warning (10034): Output port "vSync" at VTC.v(4) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 4
-Info (10041): Inferred latch for "line[0]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[1]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[2]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[3]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[4]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[5]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[6]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[7]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[8]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[9]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[10]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[11]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[12]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[13]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[14]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[15]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[16]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[17]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[18]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[19]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[20]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[21]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[22]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[23]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[24]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[25]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[26]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[27]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[28]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[29]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[30]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (10041): Inferred latch for "line[31]" at VTC.v(24) File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/VTC.v Line: 24
-Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 64
-Warning (10034): Output port "VGA_B" at PG.v(7) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v Line: 7
-Warning (10034): Output port "VGA_G" at PG.v(8) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v Line: 8
-Warning (10034): Output port "VGA_R" at PG.v(10) has no driver File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/PG.v Line: 10
+Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: F:/FPGADesign/Project1/Source/Project1.v Line: 64
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "VGA_BLANK_N" is stuck at VCC File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 32
-    Warning (13410): Pin "VGA_B[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[7]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_CLK" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 34
-    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[7]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[7]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 38
-    Warning (13410): Pin "VGA_VS" is stuck at GND File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 40
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "VGA_BLANK_N" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 32
+    Warning (13410): Pin "VGA_B[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_B[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_B[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_B[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_B[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_B[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_B[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_B[7]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
+    Warning (13410): Pin "VGA_CLK" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 34
+    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[7]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[7]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 38
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 16 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK2_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 9
-    Warning (15610): No output dependent on input pin "CLOCK3_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 10
-    Warning (15610): No output dependent on input pin "CLOCK4_50" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 11
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 15
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Matt Hartnett/Documents/FPGA-Design/Project1/Source/Project1.v Line: 18
-Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "CLOCK2_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 9
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 10
+    Warning (15610): No output dependent on input pin "CLOCK4_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 11
+    Warning (15610): No output dependent on input pin "KEY[1]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "KEY[2]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "KEY[3]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[0]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[1]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[2]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[3]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[4]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[5]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[6]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+Info (21057): Implemented 254 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 81 output pins
-    Info (21061): Implemented 72 logic cells
+    Info (21061): Implemented 154 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 4868 megabytes
-    Info: Processing ended: Wed Sep 23 19:41:11 2020
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 107 warnings
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Thu Sep 24 17:31:19 2020
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 

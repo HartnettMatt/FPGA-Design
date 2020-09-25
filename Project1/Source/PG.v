@@ -9,4 +9,8 @@ module PG(
 	output   [7:0]	VGA_R
 );
 
+assign VGA_R = 8'hAE;
+assign VGA_G = 8'h00;
+assign VGA_B = 8'hFF;
+
 endmodule

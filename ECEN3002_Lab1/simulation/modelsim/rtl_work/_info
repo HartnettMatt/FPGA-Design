@@ -10,76 +10,76 @@ z2
 cModel Technology
 Z0 dC:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/simulation/modelsim
 vECEN3002_Lab1
-Z1 !s110 1598925029
+!s110 1600984384
 !i10b 1
-!s100 fmG]2ze3?4B^ahMIOIQgQ3
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I8PX`a5`@S>TIKno?LQ_K?3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 N_TKKjc^;0`GTZY[:0EXH1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_kA4C16;6K5G`aic8zj`S2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1598923966
+w1598925447
 8C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v
 FC:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v
 !i122 0
 L0 6 67
-Z4 OV;L;2020.1;71
+Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1598925029.000000
+!s108 1600984384.000000
 !s107 C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1|C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1.v|
 !i113 1
-Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1}
-Z8 tCvgOpt 0
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1}
+Z6 tCvgOpt 0
 n@e@c@e@n3002_@lab1
 vECEN3002_Lab1_ClockDivider
-R1
+Z7 !s110 1600984385
 !i10b 1
 !s100 RonQd8[[K17daXFkEaGhD3
-R2
+R1
 ISO_aA?h>eG0GP:M8[eEVG0
-R3
+R2
 R0
 w1598718235
 8C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v
 FC:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v
 !i122 1
 L0 1 34
-R4
+R3
 r1
 !s85 0
 31
-R5
+Z8 !s108 1600984385.000000
 !s107 C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1|C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/ecen3002_lab1_clockdivider.v|
 !i113 1
+R4
+R5
 R6
-R7
-R8
 n@e@c@e@n3002_@lab1_@clock@divider
 vtb
-!s110 1598925030
+R7
 !i10b 1
 !s100 T<G8US@c6g:mN2PC0ij222
-R2
+R1
 IN;5f1FBzc:hbc?W@dB07@0
-R3
+R2
 R0
 w1598924892
 8C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/tb.v
 FC:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/tb.v
 !i122 2
 L0 2 49
-R4
+R3
 r1
 !s85 0
 31
-!s108 1598925030.000000
+R8
 !s107 C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1|C:/Users/Matt Hartnett/Documents/FPGA-Design/ECEN3002_Lab1/tb.v|
 !i113 1
+R4
+R5
 R6
-R7
-R8
