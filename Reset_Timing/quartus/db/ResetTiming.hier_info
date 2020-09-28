@@ -1,0 +1,146 @@
+|ResetTiming
+CLOCK_50 => CLOCK_50.IN5
+KEY[0] => KEY[0].IN1
+SW[0] => Mux0.IN1
+SW[0] => Mux1.IN1
+SW[0] => Mux2.IN1
+SW[0] => Mux3.IN1
+SW[0] => Mux4.IN1
+SW[0] => Mux5.IN1
+SW[0] => Mux6.IN1
+SW[0] => Mux7.IN1
+SW[1] => Mux0.IN0
+SW[1] => Mux1.IN0
+SW[1] => Mux2.IN0
+SW[1] => Mux3.IN0
+SW[1] => Mux4.IN0
+SW[1] => Mux5.IN0
+SW[1] => Mux6.IN0
+SW[1] => Mux7.IN0
+LEDR[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ResetTiming|reset:U4
+clock => reset_n~reg0.CLK
+clock => q1.CLK
+clock => q0.CLK
+ext_reset_n => asynch_reset_n.IN0
+lock => asynch_reset_n.IN1
+reset_n <= reset_n~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ResetTiming|counter:U0
+clock => countout[0]~reg0.CLK
+clock => countout[1]~reg0.CLK
+clock => countout[2]~reg0.CLK
+clock => countout[3]~reg0.CLK
+clock => countout[4]~reg0.CLK
+clock => countout[5]~reg0.CLK
+clock => countout[6]~reg0.CLK
+clock => countout[7]~reg0.CLK
+reset_n => countout[0]~reg0.ACLR
+reset_n => countout[1]~reg0.ACLR
+reset_n => countout[2]~reg0.ACLR
+reset_n => countout[3]~reg0.ACLR
+reset_n => countout[4]~reg0.ACLR
+reset_n => countout[5]~reg0.ACLR
+reset_n => countout[6]~reg0.ACLR
+reset_n => countout[7]~reg0.ACLR
+countout[0] <= countout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[1] <= countout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[2] <= countout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[3] <= countout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[4] <= countout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[5] <= countout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[6] <= countout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[7] <= countout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ResetTiming|counter:U1
+clock => countout[0]~reg0.CLK
+clock => countout[1]~reg0.CLK
+clock => countout[2]~reg0.CLK
+clock => countout[3]~reg0.CLK
+clock => countout[4]~reg0.CLK
+clock => countout[5]~reg0.CLK
+clock => countout[6]~reg0.CLK
+clock => countout[7]~reg0.CLK
+reset_n => countout[0]~reg0.ACLR
+reset_n => countout[1]~reg0.ACLR
+reset_n => countout[2]~reg0.ACLR
+reset_n => countout[3]~reg0.ACLR
+reset_n => countout[4]~reg0.ACLR
+reset_n => countout[5]~reg0.ACLR
+reset_n => countout[6]~reg0.ACLR
+reset_n => countout[7]~reg0.ACLR
+countout[0] <= countout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[1] <= countout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[2] <= countout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[3] <= countout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[4] <= countout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[5] <= countout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[6] <= countout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[7] <= countout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ResetTiming|counter:U2
+clock => countout[0]~reg0.CLK
+clock => countout[1]~reg0.CLK
+clock => countout[2]~reg0.CLK
+clock => countout[3]~reg0.CLK
+clock => countout[4]~reg0.CLK
+clock => countout[5]~reg0.CLK
+clock => countout[6]~reg0.CLK
+clock => countout[7]~reg0.CLK
+reset_n => countout[0]~reg0.ACLR
+reset_n => countout[1]~reg0.ACLR
+reset_n => countout[2]~reg0.ACLR
+reset_n => countout[3]~reg0.ACLR
+reset_n => countout[4]~reg0.ACLR
+reset_n => countout[5]~reg0.ACLR
+reset_n => countout[6]~reg0.ACLR
+reset_n => countout[7]~reg0.ACLR
+countout[0] <= countout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[1] <= countout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[2] <= countout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[3] <= countout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[4] <= countout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[5] <= countout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[6] <= countout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[7] <= countout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ResetTiming|counter:U3
+clock => countout[0]~reg0.CLK
+clock => countout[1]~reg0.CLK
+clock => countout[2]~reg0.CLK
+clock => countout[3]~reg0.CLK
+clock => countout[4]~reg0.CLK
+clock => countout[5]~reg0.CLK
+clock => countout[6]~reg0.CLK
+clock => countout[7]~reg0.CLK
+reset_n => countout[0]~reg0.ACLR
+reset_n => countout[1]~reg0.ACLR
+reset_n => countout[2]~reg0.ACLR
+reset_n => countout[3]~reg0.ACLR
+reset_n => countout[4]~reg0.ACLR
+reset_n => countout[5]~reg0.ACLR
+reset_n => countout[6]~reg0.ACLR
+reset_n => countout[7]~reg0.ACLR
+countout[0] <= countout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[1] <= countout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[2] <= countout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[3] <= countout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[4] <= countout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[5] <= countout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[6] <= countout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[7] <= countout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
