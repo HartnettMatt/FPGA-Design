@@ -51,7 +51,7 @@ module tb();
       clock = 0;
       counter = 0;
       // Run a 50MHz clock
-      while(counter < 32'b00000000000011111111111111111111) begin
+      while(counter < 32'b00000000000111111111111111111111) begin
         #20 clock = ~clock;
         // De-assert the reset
         if(counter > 8'b00000100)

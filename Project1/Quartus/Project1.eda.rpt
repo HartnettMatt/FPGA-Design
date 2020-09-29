@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Project1
-Thu Sep 24 17:32:11 2020
+Tue Sep 29 17:37:15 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Sep 24 17:32:11 2020 ;
+; EDA Netlist Writer Status ; Successful - Tue Sep 29 17:37:15 2020 ;
 ; Revision Name             ; Project1                              ;
 ; Top-level Entity Name     ; Project1                              ;
 ; Family                    ; Cyclone V                             ;
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Sep 24 17:32:10 2020
+    Info: Processing started: Tue Sep 29 17:37:14 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Project1 -c Project1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Project1.vo in folder "F:/FPGADesign/Project1/Quartus/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4830 megabytes
-    Info: Processing ended: Thu Sep 24 17:32:11 2020
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Tue Sep 29 17:37:15 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

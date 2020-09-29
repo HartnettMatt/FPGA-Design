@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project1
-Thu Sep 24 17:31:19 2020
+Tue Sep 29 17:36:26 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Sep 24 17:31:19 2020           ;
+; Analysis & Synthesis Status     ; Successful - Tue Sep 29 17:36:26 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
@@ -194,14 +194,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 56                 ;
+; Estimate of Logic utilization (ALMs needed) ; 59                 ;
 ;                                             ;                    ;
-; Combinational ALUT usage for logic          ; 96                 ;
+; Combinational ALUT usage for logic          ; 100                ;
 ;     -- 7 input functions                    ; 0                  ;
-;     -- 6 input functions                    ; 16                 ;
-;     -- 5 input functions                    ; 10                 ;
-;     -- 4 input functions                    ; 3                  ;
-;     -- <=3 input functions                  ; 67                 ;
+;     -- 6 input functions                    ; 18                 ;
+;     -- 5 input functions                    ; 8                  ;
+;     -- 4 input functions                    ; 5                  ;
+;     -- <=3 input functions                  ; 69                 ;
 ;                                             ;                    ;
 ; Dedicated logic registers                   ; 66                 ;
 ;                                             ;                    ;
@@ -212,10 +212,10 @@ https://fpgasoftware.intel.com/eula.
 ; Total PLLs                                  ; 1                  ;
 ;     -- PLLs                                 ; 1                  ;
 ;                                             ;                    ;
-; Maximum fan-out node                        ; VTC:U1|LessThan0~5 ;
-; Maximum fan-out                             ; 73                 ;
-; Total fan-out                               ; 689                ;
-; Average fan-out                             ; 1.91               ;
+; Maximum fan-out node                        ; VTC:U1|LessThan0~8 ;
+; Maximum fan-out                             ; 69                 ;
+; Total fan-out                               ; 702                ;
+; Average fan-out                             ; 1.92               ;
 +---------------------------------------------+--------------------+
 
 
@@ -224,8 +224,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name    ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+----------------+--------------+
-; |Project1                                ; 96 (0)              ; 66 (0)                    ; 0                 ; 0          ; 99   ; 0            ; |Project1                                                                               ; Project1       ; work         ;
-;    |VTC:U1|                              ; 95 (95)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                        ; VTC            ; work         ;
+; |Project1                                ; 100 (0)             ; 66 (0)                    ; 0                 ; 0          ; 99   ; 0            ; |Project1                                                                               ; Project1       ; work         ;
+;    |VTC:U1|                              ; 99 (99)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                        ; VTC            ; work         ;
 ;    |clock:U0|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0                                                                      ; clock          ; work         ;
 ;       |video_pll:PLL1|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1                                                       ; video_pll      ; video_pll    ;
 ;          |video_pll_0002:video_pll_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst                         ; video_pll_0002 ; video_pll    ;
@@ -278,10 +278,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pulseWidthH    ; 96    ; Signed Integer                                  ;
 ; syncTimeH      ; 800   ; Signed Integer                                  ;
 ; fPorchV        ; 10    ; Signed Integer                                  ;
-; bPorchV        ; 29    ; Signed Integer                                  ;
+; bPorchV        ; 33    ; Signed Integer                                  ;
 ; dispTimeV      ; 480   ; Signed Integer                                  ;
 ; pulseWidthV    ; 2     ; Signed Integer                                  ;
-; syncTimeV      ; 521   ; Signed Integer                                  ;
+; syncTimeV      ; 525   ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -544,10 +544,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; pulseWidthH    ; 96    ; Signed Integer             ;
 ; syncTimeH      ; 800   ; Signed Integer             ;
 ; fPorchV        ; 10    ; Signed Integer             ;
-; bPorchV        ; 29    ; Signed Integer             ;
+; bPorchV        ; 33    ; Signed Integer             ;
 ; dispTimeV      ; 480   ; Signed Integer             ;
 ; pulseWidthV    ; 2     ; Signed Integer             ;
-; syncTimeV      ; 521   ; Signed Integer             ;
+; syncTimeV      ; 525   ; Signed Integer             ;
 +----------------+-------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -572,20 +572,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR SCLR          ; 32                          ;
 ;     ENA CLR           ; 1                           ;
 ;     ENA CLR SCLR      ; 31                          ;
-; arriav_lcell_comb     ; 98                          ;
+; arriav_lcell_comb     ; 102                         ;
 ;     arith             ; 64                          ;
 ;         1 data inputs ; 64                          ;
-;     normal            ; 34                          ;
+;     normal            ; 38                          ;
 ;         0 data inputs ; 2                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 10                          ;
-;         6 data inputs ; 16                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 5                           ;
+;         5 data inputs ; 8                           ;
+;         6 data inputs ; 18                          ;
 ; boundary_port         ; 99                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.10                        ;
-; Average LUT depth     ; 5.06                        ;
+; Max LUT depth         ; 6.50                        ;
+; Average LUT depth     ; 5.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -604,7 +605,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Sep 24 17:31:11 2020
+    Info: Processing started: Tue Sep 29 17:36:19 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -801,15 +802,15 @@ Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-Info (21057): Implemented 254 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 81 output pins
-    Info (21061): Implemented 154 logic cells
+    Info (21061): Implemented 158 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 107 warnings
-    Info: Peak virtual memory: 4879 megabytes
-    Info: Processing ended: Thu Sep 24 17:31:19 2020
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Tue Sep 29 17:36:26 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
 
 

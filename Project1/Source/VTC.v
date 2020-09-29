@@ -28,7 +28,7 @@ always@(posedge clock_in or negedge reset)
     else if(clock_in == 1)
 // Increment hPixel and line
       begin
-        if(hPixel < syncTimeH)
+        if(hPixel < syncTimeH-1)
           begin
             hPixel = hPixel + 1;
           end
@@ -36,7 +36,7 @@ always@(posedge clock_in or negedge reset)
           begin
             hPixel = 0;
             hSync = 0;
-            if(line < syncTimeV)
+            if(line < syncTimeV-1)
               begin
                 line = line + 1;
               end
@@ -66,7 +66,7 @@ always@(posedge clock_in or negedge reset)
             end
 
 // Create video_active signal
-          if(hSync == 1 && hPixel - pulseWidthH > bPorchH && hPixel < syncTimeH - fPorchH)
+          if(hSync == 1 && hPixel - pulseWidthH >= bPorchH && hPixel <= syncTimeH - fPorchH - 1)
             begin
               hActive = 1;
             end
@@ -74,7 +74,7 @@ always@(posedge clock_in or negedge reset)
             begin
               hActive = 0;
             end
-          if(vSync == 1 && line - pulseWidthV > bPorchV && line < syncTimeV - fPorchV)
+          if(vSync == 1 && line - pulseWidthV >= bPorchV && line <= syncTimeV - fPorchV - 1)
             begin
               vActive = 1;
             end
@@ -83,14 +83,8 @@ always@(posedge clock_in or negedge reset)
               vActive = 0;
             end
             
-          if(hActive & vActive)
-            begin
-              video_active = 1;
-            end
-          else
-            begin
-              video_active = 0;
-            end
+          video_active = hActive & vActive;
+
       end
   end
 
