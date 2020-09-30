@@ -21,70 +21,70 @@
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:01 on Sep 29,2020
+# Start time: 12:48:45 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 15:41:02 on Sep 29,2020, Elapsed time: 0:00:01
+# End time: 12:48:45 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:02 on Sep 29,2020
+# Start time: 12:48:45 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 15:41:02 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:48:45 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:02 on Sep 29,2020
+# Start time: 12:48:45 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 15:41:02 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:48:45 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:02 on Sep 29,2020
+# Start time: 12:48:45 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 15:41:02 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:48:45 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:02 on Sep 29,2020
+# Start time: 12:48:45 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 15:41:02 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:48:46 on Sep 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:02 on Sep 29,2020
+# Start time: 12:48:46 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 15:41:02 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:48:46 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 15:41:03 on Sep 29,2020
+# Start time: 12:48:46 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -99,11 +99,13 @@
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -128,9 +130,9 @@
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # add wave *
 # view structure
@@ -155,16 +157,9 @@
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
-quit -sim
-# End time: 15:45:33 on Sep 29,2020, Elapsed time: 0:04:30
-# Errors: 0, Warnings: 29
-ls
-# Project1.sft                      Project1_run_msim_rtl_verilog.do.bak  
-# Project1.vo                       modelsim.ini                          
-# Project1_iputf_input              msim_transcript                       
-# Project1_iputf_libs               rtl_work                              
-# Project1_modelsim.xrf             vsim.wlf                              
-# Project1_run_msim_rtl_verilog.do  wave.do                               
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -173,83 +168,87 @@ do Project1_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
+# Error 31: Unable to unlink file "F:/FPGADesign/Project1/Quartus/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 133: Unable to remove directory "F:/FPGADesign/Project1/Quartus/simulation/modelsim/rtl_work".
 # vlib rtl_work
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-###### Libraries for IPUTF cores
-###### End libraries for IPUTF cores
-###### MIF file copy and HDL compilation commands for IPUTF cores
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
 # 
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:45:45 on Sep 29,2020
+# Start time: 12:49:11 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 15:45:46 on Sep 29,2020, Elapsed time: 0:00:01
+# End time: 12:49:11 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:45:46 on Sep 29,2020
+# Start time: 12:49:12 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 15:45:46 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:49:12 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:45:46 on Sep 29,2020
+# Start time: 12:49:12 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 15:45:46 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:49:12 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:45:46 on Sep 29,2020
+# Start time: 12:49:12 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 15:45:46 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:49:12 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:45:46 on Sep 29,2020
+# Start time: 12:49:12 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 15:45:46 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:49:12 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:45:46 on Sep 29,2020
+# Start time: 12:49:12 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 15:45:46 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:49:12 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 12:49:13 on Sep 30,2020, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 15:45:46 on Sep 29,2020
+# Start time: 12:49:13 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -264,11 +263,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -293,15 +294,177 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Adjusting output period from 39721.946375 to 40000.000000
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 25.175 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 20000.000000
+# Info: output_clock_low_period = 20000.000000
+#                    0<< Starting simulation >>
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
+# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
+do Project1_run_msim_rtl_verilog.do
+# if ![file isdirectory Project1_iputf_libs] {
+# 	file mkdir Project1_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores
+###### End libraries for IPUTF cores
+###### MIF file copy and HDL compilation commands for IPUTF cores
+# 
+# 
+# vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:49:52 on Sep 30,2020
+# vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
+# -- Compiling module video_pll
+# 
+# Top level modules:
+# 	video_pll
+# End time: 12:49:52 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:49:52 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
+# -- Compiling module PG
+# 
+# Top level modules:
+# 	PG
+# End time: 12:49:52 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:49:52 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
+# -- Compiling module clock
+# 
+# Top level modules:
+# 	clock
+# End time: 12:49:52 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:49:52 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
+# -- Compiling module VTC
+# 
+# Top level modules:
+# 	VTC
+# End time: 12:49:52 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:49:52 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
+# -- Compiling module Project1
+# 
+# Top level modules:
+# 	Project1
+# End time: 12:49:52 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:49:52 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 12:49:53 on Sep 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 12:49:53 on Sep 30,2020, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 30
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 12:49:53 on Sep 30,2020
+# Loading work.tb
+# Loading work.Project1
+# Loading work.clock
+# Loading work.video_pll
+# Loading sv_std.std
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading work.VTC
+# Loading work.PG
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -347,14 +510,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 22020169500 ps
-run
-quit -sim
-# End time: 15:59:28 on Sep 29,2020, Elapsed time: 0:13:42
-# Errors: 0, Warnings: 29
+# 21430500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -376,70 +538,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:59:30 on Sep 29,2020
+# Start time: 12:52:10 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 15:59:30 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:52:10 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:59:30 on Sep 29,2020
+# Start time: 12:52:11 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 15:59:30 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:52:11 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:59:30 on Sep 29,2020
+# Start time: 12:52:11 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 15:59:30 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:52:11 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:59:30 on Sep 29,2020
+# Start time: 12:52:11 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 15:59:30 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:52:11 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:59:30 on Sep 29,2020
+# Start time: 12:52:11 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 15:59:30 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:52:11 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:59:30 on Sep 29,2020
+# Start time: 12:52:11 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 15:59:30 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:52:11 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 12:52:12 on Sep 30,2020, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 15:59:30 on Sep 29,2020
+# Start time: 12:52:12 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -454,11 +618,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -483,15 +649,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -537,13 +703,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:01:34 on Sep 29,2020, Elapsed time: 0:02:04
-# Errors: 0, Warnings: 29
+# 21430500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -565,70 +731,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:01:35 on Sep 29,2020
+# Start time: 12:53:13 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:01:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:53:13 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:01:35 on Sep 29,2020
+# Start time: 12:53:13 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:01:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:53:13 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:01:35 on Sep 29,2020
+# Start time: 12:53:13 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:01:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:53:13 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:01:35 on Sep 29,2020
+# Start time: 12:53:13 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:01:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:53:13 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:01:35 on Sep 29,2020
+# Start time: 12:53:13 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:01:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:53:13 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:01:35 on Sep 29,2020
+# Start time: 12:53:14 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:01:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:53:14 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 12:53:14 on Sep 30,2020, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:01:35 on Sep 29,2020
+# Start time: 12:53:14 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -643,11 +811,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -672,15 +842,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -726,13 +896,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:03:31 on Sep 29,2020, Elapsed time: 0:01:56
-# Errors: 0, Warnings: 29
+# 21430500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -754,70 +924,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:03:33 on Sep 29,2020
+# Start time: 12:57:24 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:03:33 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:57:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:03:33 on Sep 29,2020
+# Start time: 12:57:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:03:33 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:57:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:03:33 on Sep 29,2020
+# Start time: 12:57:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:03:33 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:57:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:03:33 on Sep 29,2020
+# Start time: 12:57:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:03:33 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:57:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:03:33 on Sep 29,2020
+# Start time: 12:57:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:03:33 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:57:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:03:33 on Sep 29,2020
+# Start time: 12:57:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:03:33 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 12:57:25 on Sep 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 12:57:25 on Sep 30,2020, Elapsed time: 0:04:11
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:03:33 on Sep 29,2020
+# Start time: 12:57:25 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -832,11 +1004,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -861,15 +1035,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -915,13 +1089,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 200400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:05:49 on Sep 29,2020, Elapsed time: 0:02:16
-# Errors: 0, Warnings: 29
+# 210430500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -943,70 +1117,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:05:51 on Sep 29,2020
+# Start time: 13:00:48 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:05:51 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 13:00:48 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:05:51 on Sep 29,2020
+# Start time: 13:00:48 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:05:51 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 13:00:48 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:05:51 on Sep 29,2020
+# Start time: 13:00:48 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:05:51 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 13:00:48 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:05:51 on Sep 29,2020
+# Start time: 13:00:48 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:05:51 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 13:00:48 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:05:51 on Sep 29,2020
+# Start time: 13:00:48 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:05:51 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 13:00:48 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:05:51 on Sep 29,2020
+# Start time: 13:00:48 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:05:51 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 13:00:48 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 13:00:49 on Sep 30,2020, Elapsed time: 0:03:24
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:05:51 on Sep 29,2020
+# Start time: 13:00:49 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -1021,11 +1197,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -1050,15 +1228,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -1104,13 +1282,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20400 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:08:22 on Sep 29,2020, Elapsed time: 0:02:31
-# Errors: 0, Warnings: 29
+# 21430500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -1132,70 +1310,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:23 on Sep 29,2020
+# Start time: 14:36:04 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:08:23 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:04 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:23 on Sep 29,2020
+# Start time: 14:36:04 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:08:23 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:04 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:23 on Sep 29,2020
+# Start time: 14:36:04 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:08:23 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:04 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:23 on Sep 29,2020
+# Start time: 14:36:04 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:08:23 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:05 on Sep 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:23 on Sep 29,2020
+# Start time: 14:36:05 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:08:23 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:05 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:23 on Sep 29,2020
+# Start time: 14:36:05 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:08:23 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:05 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:36:06 on Sep 30,2020, Elapsed time: 1:35:17
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:08:23 on Sep 29,2020
+# Start time: 14:36:06 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -1210,11 +1390,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -1239,15 +1421,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -1293,13 +1475,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20500 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:09:18 on Sep 29,2020, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 29
+# 21535500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -1321,135 +1503,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:20 on Sep 29,2020
+# Start time: 14:36:46 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:09:20 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:46 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:20 on Sep 29,2020
+# Start time: 14:36:46 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:09:20 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:47 on Sep 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:20 on Sep 29,2020
+# Start time: 14:36:47 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:09:20 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:47 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:20 on Sep 29,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
-# -- Compiling module VTC
-# ** Error: (vlog-13069) F:/FPGADesign/Project1/Source/VTC.v(39): near "=": syntax error, unexpected '=', expecting ++ or --.
-# ** Error: (vlog-13069) F:/FPGADesign/Project1/Source/VTC.v(52): near "=": syntax error, unexpected '='.
-# ** Error: F:/FPGADesign/Project1/Source/VTC.v(52): (vlog-13205) Syntax error found in the scope following 'hSync'. Is there a missing '::'?
-# End time: 16:09:21 on Sep 29,2020, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-# ** Error: D:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./Project1_run_msim_rtl_verilog.do line 21
-# D:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}"
-do Project1_run_msim_rtl_verilog.do
-# if ![file isdirectory Project1_iputf_libs] {
-# 	file mkdir Project1_iputf_libs
-# }
-# 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-###### Libraries for IPUTF cores
-###### End libraries for IPUTF cores
-###### MIF file copy and HDL compilation commands for IPUTF cores
-# 
-# 
-# vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:03 on Sep 29,2020
-# vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
-# -- Compiling module video_pll
-# 
-# Top level modules:
-# 	video_pll
-# End time: 16:10:03 on Sep 29,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:03 on Sep 29,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
-# -- Compiling module PG
-# 
-# Top level modules:
-# 	PG
-# End time: 16:10:03 on Sep 29,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:03 on Sep 29,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
-# -- Compiling module clock
-# 
-# Top level modules:
-# 	clock
-# End time: 16:10:03 on Sep 29,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:03 on Sep 29,2020
+# Start time: 14:36:47 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:10:03 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:47 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:03 on Sep 29,2020
+# Start time: 14:36:47 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:10:03 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:47 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:03 on Sep 29,2020
+# Start time: 14:36:47 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:10:03 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:36:47 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:36:48 on Sep 30,2020, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:10:03 on Sep 29,2020
+# Start time: 14:36:48 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -1464,11 +1583,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -1493,15 +1614,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -1547,13 +1668,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:11:43 on Sep 29,2020, Elapsed time: 0:01:40
-# Errors: 0, Warnings: 29
+# 21640500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -1575,70 +1696,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:11:43 on Sep 29,2020
+# Start time: 14:38:24 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:11:44 on Sep 29,2020, Elapsed time: 0:00:01
+# End time: 14:38:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:11:44 on Sep 29,2020
+# Start time: 14:38:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:11:44 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:38:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:11:44 on Sep 29,2020
+# Start time: 14:38:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:11:44 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:38:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:11:44 on Sep 29,2020
+# Start time: 14:38:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:11:44 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:38:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:11:44 on Sep 29,2020
+# Start time: 14:38:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:11:44 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:38:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:11:44 on Sep 29,2020
+# Start time: 14:38:24 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:11:44 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:38:24 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:38:25 on Sep 30,2020, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:11:44 on Sep 29,2020
+# Start time: 14:38:25 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -1653,11 +1776,11 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -1682,15 +1805,206 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
+# 
+# add wave -divider "VGA Out"
+# add wave testVGA_HS
+# add wave testVGA_VS
+# add wave testVGA_R
+# add wave testVGA_G
+# add wave testVGA_B
+# 
+# add wave -divider "PLL"
+# add wave DUT/U0/PLL1/outclk_0
+# add wave DUT/U0/PLL1/rst
+# add wave DUT/U0/PLL1/locked
+# 
+# add wave -divider "Clock.v"
+# add wave DUT/U0/clock_out
+# add wave DUT/U0/reset
+# 
+# add wave -divider "VTC.v"
+# add wave DUT/U1/vSync
+# add wave DUT/U1/hSync
+# add wave -radix decimal DUT/U1/hPixel
+# add wave -radix decimal DUT/U1/line
+# add wave DUT/U1/video_active
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Adjusting output period from 39721.946375 to 40000.000000
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 25.175 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 20000.000000
+# Info: output_clock_low_period = 20000.000000
+#                    0<< Starting simulation >>
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
+# run 10 ns
+# wave zoom full
+# 0 ps
+# 21640500 ps
+do Project1_run_msim_rtl_verilog.do
+# if ![file isdirectory Project1_iputf_libs] {
+# 	file mkdir Project1_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores
+###### End libraries for IPUTF cores
+###### MIF file copy and HDL compilation commands for IPUTF cores
+# 
+# 
+# vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:38:56 on Sep 30,2020
+# vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
+# -- Compiling module video_pll
+# 
+# Top level modules:
+# 	video_pll
+# End time: 14:38:56 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:38:56 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
+# -- Compiling module PG
+# 
+# Top level modules:
+# 	PG
+# End time: 14:38:56 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:38:56 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
+# -- Compiling module clock
+# 
+# Top level modules:
+# 	clock
+# End time: 14:38:56 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:38:56 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
+# -- Compiling module VTC
+# 
+# Top level modules:
+# 	VTC
+# End time: 14:38:56 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:38:56 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
+# -- Compiling module Project1
+# 
+# Top level modules:
+# 	Project1
+# End time: 14:38:56 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:38:56 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 14:38:56 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:38:57 on Sep 30,2020, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 29
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 14:38:57 on Sep 30,2020
+# Loading work.tb
+# Loading work.Project1
+# Loading work.clock
+# Loading work.video_pll
+# Loading sv_std.std
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading work.VTC
+# Loading work.PG
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# 
+# do wave.do
+# add wave -divider "Top Level"
+# add wave testKEY[0]
+# add wave clock
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -1736,13 +2050,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:13:16 on Sep 29,2020, Elapsed time: 0:01:32
-# Errors: 0, Warnings: 29
+# 21640500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -1764,70 +2078,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:17 on Sep 29,2020
+# Start time: 14:43:42 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:13:17 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:43:43 on Sep 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:17 on Sep 29,2020
+# Start time: 14:43:43 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:13:17 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:43:43 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:17 on Sep 29,2020
+# Start time: 14:43:43 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:13:18 on Sep 29,2020, Elapsed time: 0:00:01
+# End time: 14:43:43 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:18 on Sep 29,2020
+# Start time: 14:43:43 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:13:18 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:43:43 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:18 on Sep 29,2020
+# Start time: 14:43:43 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:13:18 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:43:43 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:18 on Sep 29,2020
+# Start time: 14:43:43 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:13:18 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:43:43 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:43:44 on Sep 30,2020, Elapsed time: 0:04:47
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:13:18 on Sep 29,2020
+# Start time: 14:43:44 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -1842,11 +2158,11 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -1871,15 +2187,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -1925,13 +2241,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 43399765500 ps
-quit -sim
-# End time: 16:13:34 on Sep 29,2020, Elapsed time: 0:00:16
-# Errors: 0, Warnings: 29
+# 21640500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -1953,70 +2269,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:35 on Sep 29,2020
+# Start time: 14:44:22 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:13:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:22 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:35 on Sep 29,2020
+# Start time: 14:44:22 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:13:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:22 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:35 on Sep 29,2020
+# Start time: 14:44:22 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:13:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:22 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:35 on Sep 29,2020
+# Start time: 14:44:22 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:13:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:22 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:35 on Sep 29,2020
+# Start time: 14:44:22 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:13:35 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:22 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:35 on Sep 29,2020
+# Start time: 14:44:22 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:13:36 on Sep 29,2020, Elapsed time: 0:00:01
+# End time: 14:44:22 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:44:23 on Sep 30,2020, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 29
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:13:36 on Sep 29,2020
+# Start time: 14:44:23 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -2031,11 +2349,13 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'rst'. The port definition is at: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1 File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -2060,15 +2380,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -2114,13 +2434,13 @@ do Project1_run_msim_rtl_verilog.do
 #                    0<< Starting simulation >>
 # Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 16:16:24 on Sep 29,2020, Elapsed time: 0:02:48
-# Errors: 0, Warnings: 29
+# 21640500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -2142,70 +2462,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:25 on Sep 29,2020
+# Start time: 14:44:38 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 16:16:26 on Sep 29,2020, Elapsed time: 0:00:01
+# End time: 14:44:38 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:26 on Sep 29,2020
+# Start time: 14:44:38 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 16:16:26 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:38 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:26 on Sep 29,2020
+# Start time: 14:44:38 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 16:16:26 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:38 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:26 on Sep 29,2020
+# Start time: 14:44:38 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 16:16:26 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:38 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:26 on Sep 29,2020
+# Start time: 14:44:38 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 16:16:26 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:38 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:26 on Sep 29,2020
+# Start time: 14:44:38 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:16:26 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:44:38 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:44:39 on Sep 30,2020, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 30
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:16:26 on Sep 29,2020
+# Start time: 14:44:39 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -2220,11 +2542,11 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -2249,15 +2571,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -2301,15 +2623,13 @@ do Project1_run_msim_rtl_verilog.do
 # Info: output_clock_high_period = 20000.000000
 # Info: output_clock_low_period = 20000.000000
 #                    0<< Starting simulation >>
-# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
-# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 20600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-quit -sim
-# End time: 17:39:40 on Sep 29,2020, Elapsed time: 1:23:14
-# Errors: 0, Warnings: 29
+# 21640500 ps
 do Project1_run_msim_rtl_verilog.do
 # if ![file isdirectory Project1_iputf_libs] {
 # 	file mkdir Project1_iputf_libs
@@ -2331,70 +2651,72 @@ do Project1_run_msim_rtl_verilog.do
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:39:41 on Sep 29,2020
+# Start time: 14:46:17 on Sep 30,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 17:39:41 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:46:17 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:39:41 on Sep 29,2020
+# Start time: 14:46:17 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 17:39:41 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:46:17 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:39:41 on Sep 29,2020
+# Start time: 14:46:17 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 17:39:41 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:46:17 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:39:41 on Sep 29,2020
+# Start time: 14:46:17 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 17:39:41 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:46:17 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:39:41 on Sep 29,2020
+# Start time: 14:46:17 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 17:39:41 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:46:17 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:39:41 on Sep 29,2020
+# Start time: 14:46:17 on Sep 30,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 17:39:41 on Sep 29,2020, Elapsed time: 0:00:00
+# End time: 14:46:17 on Sep 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:46:18 on Sep 30,2020, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 29
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 17:39:41 on Sep 29,2020
+# Start time: 14:46:18 on Sep 30,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -2409,11 +2731,11 @@ do Project1_run_msim_rtl_verilog.do
 # Loading altera_lnsim_ver.altera_generic_pll_functions
 # Loading altera_lnsim_ver.generic_pll
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 25
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK2_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK3_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'CLOCK4_50'.
-# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(25): [TFMPC] - Missing connection for port 'HEX3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -2438,15 +2760,15 @@ do Project1_run_msim_rtl_verilog.do
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
 # 
 # do wave.do
-# add wave -divider "Inputs"
+# add wave -divider "Top Level"
 # add wave testKEY[0]
 # add wave clock
-# add wave -radix hexadecimal counter
+# add wave DUT/reset
 # 
 # add wave -divider "VGA Out"
 # add wave testVGA_HS
@@ -2490,11 +2812,390 @@ do Project1_run_msim_rtl_verilog.do
 # Info: output_clock_high_period = 20000.000000
 # Info: output_clock_low_period = 20000.000000
 #                    0<< Starting simulation >>
-# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
-# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 100600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
 # run 10 ns
 # wave zoom full
 # 0 ps
-# 44040265500 ps
-# End time: 17:47:43 on Sep 29,2020, Elapsed time: 0:08:02
+# 105640500 ps
+do Project1_run_msim_rtl_verilog.do
+# if ![file isdirectory Project1_iputf_libs] {
+# 	file mkdir Project1_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores
+###### End libraries for IPUTF cores
+###### MIF file copy and HDL compilation commands for IPUTF cores
+# 
+# 
+# vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:38 on Sep 30,2020
+# vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
+# -- Compiling module video_pll
+# 
+# Top level modules:
+# 	video_pll
+# End time: 14:46:38 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:38 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
+# -- Compiling module PG
+# 
+# Top level modules:
+# 	PG
+# End time: 14:46:38 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:38 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
+# -- Compiling module clock
+# 
+# Top level modules:
+# 	clock
+# End time: 14:46:38 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:38 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
+# -- Compiling module VTC
+# 
+# Top level modules:
+# 	VTC
+# End time: 14:46:38 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:38 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
+# -- Compiling module Project1
+# 
+# Top level modules:
+# 	Project1
+# End time: 14:46:38 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:38 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 14:46:38 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:46:39 on Sep 30,2020, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 29
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 14:46:39 on Sep 30,2020
+# Loading work.tb
+# Loading work.Project1
+# Loading work.clock
+# Loading work.video_pll
+# Loading sv_std.std
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading work.VTC
+# Loading work.PG
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# 
+# do wave.do
+# add wave -divider "Top Level"
+# add wave testKEY[0]
+# add wave clock
+# add wave DUT/reset
+# 
+# add wave -divider "VGA Out"
+# add wave testVGA_HS
+# add wave testVGA_VS
+# add wave testVGA_R
+# add wave testVGA_G
+# add wave testVGA_B
+# 
+# add wave -divider "PLL"
+# add wave DUT/U0/PLL1/outclk_0
+# add wave DUT/U0/PLL1/rst
+# add wave DUT/U0/PLL1/locked
+# 
+# add wave -divider "Clock.v"
+# add wave DUT/U0/clock_out
+# add wave DUT/U0/reset
+# 
+# add wave -divider "VTC.v"
+# add wave DUT/U1/vSync
+# add wave DUT/U1/hSync
+# add wave -radix decimal DUT/U1/hPixel
+# add wave -radix decimal DUT/U1/line
+# add wave DUT/U1/video_active
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Adjusting output period from 39721.946375 to 40000.000000
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 25.175 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 20000.000000
+# Info: output_clock_low_period = 20000.000000
+#                    0<< Starting simulation >>
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 10000600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
+# run 10 ns
+# wave zoom full
+# 0 ps
+# 10500640500 ps
+do Project1_run_msim_rtl_verilog.do
+# if ![file isdirectory Project1_iputf_libs] {
+# 	file mkdir Project1_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores
+###### End libraries for IPUTF cores
+###### MIF file copy and HDL compilation commands for IPUTF cores
+# 
+# 
+# vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:47:01 on Sep 30,2020
+# vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
+# -- Compiling module video_pll
+# 
+# Top level modules:
+# 	video_pll
+# End time: 14:47:02 on Sep 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:47:02 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
+# -- Compiling module PG
+# 
+# Top level modules:
+# 	PG
+# End time: 14:47:02 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:47:02 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
+# -- Compiling module clock
+# 
+# Top level modules:
+# 	clock
+# End time: 14:47:02 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:47:02 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
+# -- Compiling module VTC
+# 
+# Top level modules:
+# 	VTC
+# End time: 14:47:02 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:47:02 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
+# -- Compiling module Project1
+# 
+# Top level modules:
+# 	Project1
+# End time: 14:47:02 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:47:02 on Sep 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 14:47:02 on Sep 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# End time: 14:47:03 on Sep 30,2020, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 29
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 14:47:03 on Sep 30,2020
+# Loading work.tb
+# Loading work.Project1
+# Loading work.clock
+# Loading work.video_pll
+# Loading sv_std.std
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading work.VTC
+# Loading work.PG
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 21, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/Project1/Quartus/../Source/tb.v Line: 24
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/../Source/tb.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'video_pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U0/PLL1/video_pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo Line: 46
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'hPixel'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'line'. The port definition is at: F:/FPGADesign/Project1/Source/VTC.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1 File: F:/FPGADesign/Project1/Source/Project1.v Line: 76
+# 
+# do wave.do
+# add wave -divider "Top Level"
+# add wave testKEY[0]
+# add wave clock
+# add wave DUT/reset
+# 
+# add wave -divider "VGA Out"
+# add wave testVGA_HS
+# add wave testVGA_VS
+# add wave testVGA_R
+# add wave testVGA_G
+# add wave testVGA_B
+# 
+# add wave -divider "PLL"
+# add wave DUT/U0/PLL1/outclk_0
+# add wave DUT/U0/PLL1/rst
+# add wave DUT/U0/PLL1/locked
+# 
+# add wave -divider "Clock.v"
+# add wave DUT/U0/clock_out
+# add wave DUT/U0/reset
+# 
+# add wave -divider "VTC.v"
+# add wave DUT/U1/vSync
+# add wave DUT/U1/hSync
+# add wave -radix decimal DUT/U1/hPixel
+# add wave -radix decimal DUT/U1/line
+# add wave DUT/U1/video_active
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Adjusting output period from 39721.946375 to 40000.000000
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb.DUT.U0.PLL1.video_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 25.175 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 20000.000000
+# Info: output_clock_low_period = 20000.000000
+#                    0<< Starting simulation >>
+# ** Note: $stop    : F:/FPGADesign/Project1/Quartus/../Source/tb.v(52)
+#    Time: 100000600 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/Project1/Quartus/../Source/tb.v line 52
+# run 10 ns
+# wave zoom full
+# 0 ps
+# 105000640500 ps
+# End time: 15:52:00 on Sep 30,2020, Elapsed time: 1:04:57
 # Errors: 0, Warnings: 29

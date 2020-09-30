@@ -18,7 +18,7 @@ module Project1(
 	input 		     [9:0]		SW,
 
 	//////////// LED //////////
-	output		     [9:0]		LEDR,
+	output 		     [9:0]		LEDR,
 
 	//////////// Seg7 //////////
 	output		     [6:0]		HEX0,
@@ -50,18 +50,49 @@ wire clk;
 wire hPixel;
 wire line;
 wire video_active;
+wire reset;
 
 //=======================================================
 //  Structural coding
 //=======================================================
 assign VGA_BLANK_N = 1;
 assign VGA_SYNC_N = 0;
+assign LEDR = 10'b0000000000;
+assign HEX0 = 7'b0000000;
+assign HEX1 = 7'b0000000;
+assign HEX1 = 7'b0000000;
+assign HEX2 = 7'b0000000;
+assign HEX3 = 7'b0000000;
+assign HEX4 = 7'b0000000;
+assign HEX5 = 7'b0000000;
 
-clock U0(.clock_in(CLOCK_50), .reset(KEY[0]), .clock_out(clk));
+clock U0(
+	.clock_in(CLOCK_50),
+	.reset(reset),
+	.key(KEY[0]),
+	.clock_out(clk)
+	);
 
-VTC U1(.clock_in(clk), .reset(KEY[0]), .vSync(VGA_VS), .hSync(VGA_HS), .hPixel(hPixel), .line(line), .video_active(video_active));
+VTC U1(
+	.clock_in(clk),
+	.reset(reset),
+	.vSync(VGA_VS),
+	.hSync(VGA_HS),
+	.hPixel(hPixel),
+	.line(line),
+	.video_active(video_active)
+	);
 
-PG U2(.hPixel(hPixel), .line(line), .video_active(video_active), .KEY(KEY[3:1]), .SW(SW[9:0]), .VGA_B(VGA_B), .VGA_G(VGA_G), .VGA_R(VGA_R));
+PG U2(
+	.hPixel(hPixel),
+	.line(line),
+	.video_active(video_active),
+	.KEY(KEY[3:1]),
+	.SW(SW[9:0]),
+	.VGA_B(VGA_B),
+	.VGA_G(VGA_G),
+	.VGA_R(VGA_R)
+	);
 
 
 endmodule

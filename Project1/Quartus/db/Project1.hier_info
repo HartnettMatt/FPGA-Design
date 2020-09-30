@@ -3,7 +3,7 @@ CLOCK2_50 => ~NO_FANOUT~
 CLOCK3_50 => ~NO_FANOUT~
 CLOCK4_50 => ~NO_FANOUT~
 CLOCK_50 => CLOCK_50.IN1
-KEY[0] => KEY[0].IN2
+KEY[0] => KEY[0].IN1
 KEY[1] => KEY[1].IN1
 KEY[2] => KEY[2].IN1
 KEY[3] => KEY[3].IN1
@@ -102,9 +102,9 @@ VGA_VS << VTC:U1.vSync
 
 |Project1|clock:U0
 clock_in => clock_in.IN1
-reset => clock_out.IN1
-reset => _.IN1
-clock_out <= clock_out.DB_MAX_OUTPUT_PORT_TYPE
+key => reset.IN1
+reset <= reset.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= video_pll:PLL1.outclk_0
 
 
 |Project1|clock:U0|video_pll:PLL1
@@ -362,8 +362,8 @@ clock_in => hPixel[29]~reg0.CLK
 clock_in => hPixel[30]~reg0.CLK
 clock_in => hPixel[31]~reg0.CLK
 reset => video_active~reg0.ACLR
-reset => vSync~reg0.ACLR
-reset => hSync~reg0.ACLR
+reset => vSync~reg0.PRESET
+reset => hSync~reg0.PRESET
 reset => line[0]~reg0.ACLR
 reset => line[1]~reg0.ACLR
 reset => line[2]~reg0.ACLR

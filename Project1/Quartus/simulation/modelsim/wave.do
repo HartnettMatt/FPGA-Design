@@ -1,7 +1,7 @@
-add wave -divider "Inputs"
+add wave -divider "Top Level"
 add wave testKEY[0]
 add wave clock
-add wave -radix hexadecimal counter
+add wave DUT/reset
 
 add wave -divider "VGA Out"
 add wave testVGA_HS

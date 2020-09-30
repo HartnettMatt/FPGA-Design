@@ -9,9 +9,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-###### Libraries for IPUTF cores 
-###### End libraries for IPUTF cores 
-###### MIF file copy and HDL compilation commands for IPUTF cores 
+###### Libraries for IPUTF cores
+###### End libraries for IPUTF cores
+###### MIF file copy and HDL compilation commands for IPUTF cores
 
 
 vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
@@ -25,7 +25,9 @@ vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
 
-add wave *
+do wave.do
 view structure
 view signals
 run -all
+run 10 ns
+wave zoom full

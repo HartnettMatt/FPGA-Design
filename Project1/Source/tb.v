@@ -4,7 +4,6 @@ module tb();
   reg [9:0] testSW;
   reg [3:0] testKEY;
   reg clock;
-  reg [31:0] counter;
   wire [9:0] testLED;
   wire [6:0] testHEX0;
   wire [6:0] testHEX1;
@@ -49,18 +48,12 @@ module tb();
       testSW = 10'b0000000000;
       testKEY[3:0] = 4'b1110;
       clock = 0;
-      counter = 0;
-      // Run a 50MHz clock
-      while(counter < 32'b00000000000111111111111111111111) begin
-        #20 clock = ~clock;
-        // De-assert the reset
-        if(counter > 8'b00000100)
-          begin
-            testKEY[0] = 1;
-          end
+      #600 testKEY[0] = 1;
+      #100000000 $stop;
+    end
+    always
+      #20 clock = ~clock;
 
-        counter = counter + 1;
-      end
-  end
+
 
 endmodule
