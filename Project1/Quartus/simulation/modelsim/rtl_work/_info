@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dF:/FPGADesign/Project1/Quartus/simulation/modelsim
 vclock
-Z1 !s110 1601509344
+Z1 !s110 1601514838
 !i10b 1
 !s100 1ZAZMzV8F5I>gP@_JO1@L2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1601509344.000000
+Z5 !s108 1601514838.000000
 !s107 F:/FPGADesign/Project1/Source/clock.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project1/Source|F:/FPGADesign/Project1/Source/clock.v|
 !i113 1
@@ -87,12 +87,12 @@ n@project1
 vtb
 R1
 !i10b 1
-!s100 N7zHhK2RMh;IjUO8>7XGY3
+!s100 b@O;8K^MjMK=]OE;^Dm1O0
 R2
-IRU7j2Q1a;ae^>^^VgI85U2
+If37S=mmS8cM[bTPL7>G]K1
 R3
 R0
-w1601508931
+w1601514788
 8F:/FPGADesign/Project1/Quartus/../Source/tb.v
 FF:/FPGADesign/Project1/Quartus/../Source/tb.v
 !i122 5

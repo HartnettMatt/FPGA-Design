@@ -52,7 +52,7 @@ module tb();
       #50000000 $stop;
     end
     always
-      #20 clock = ~clock;
+      #10 clock = ~clock;
 
 
 
