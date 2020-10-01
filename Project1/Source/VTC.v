@@ -27,12 +27,12 @@ always @(posedge clock_in, negedge reset)
       end
 // Increment hPixel and line
       else if(clock_in == 1) begin
-      if(hPixel < syncTimeH)
+      if(hPixel < syncTimeH -1)
           hPixel = hPixel + 1;
       else
         begin
           hPixel = 0;
-          if(line < syncTimeV)
+          if(line < syncTimeV -1)
               line = line + 1;
           else
               line = 0;

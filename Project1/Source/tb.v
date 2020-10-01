@@ -49,7 +49,7 @@ module tb();
       testKEY[3:0] = 4'b1110;
       clock = 0;
       #600 testKEY[0] = 1;
-      #100000000 $stop;
+      #50000000 $stop;
     end
     always
       #20 clock = ~clock;
