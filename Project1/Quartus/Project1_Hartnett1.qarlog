@@ -1,0 +1,30 @@
+Quartus Prime Archive log --	F:/FPGADesign/Project1/Quartus/Project1_Hartnett1.qarlog
+
+Archive:	F:/FPGADesign/Project1/Quartus/Project1_Hartnett1.qar
+Date:		Thu Oct 01 16:37:27 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+F:/FPGADesign/Project1/Quartus/Project1.SDC
+F:/FPGADesign/Project1/Quartus/Project1.qpf
+F:/FPGADesign/Project1/Quartus/Project1.qsf
+F:/FPGADesign/Project1/Quartus/Project1.sdc
+F:/FPGADesign/Project1/Quartus/Project1_assignment_defaults.qdf
+F:/FPGADesign/Project1/Quartus/video_pll.cmp
+F:/FPGADesign/Project1/Quartus/video_pll.qip
+F:/FPGADesign/Project1/Quartus/video_pll.sip
+F:/FPGADesign/Project1/Quartus/video_pll.spd
+F:/FPGADesign/Project1/Quartus/video_pll.v
+F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.qip
+F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v
+F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo
+F:/FPGADesign/Project1/Source/PG.v
+F:/FPGADesign/Project1/Source/Project1.v
+F:/FPGADesign/Project1/Source/VTC.v
+F:/FPGADesign/Project1/Source/clock.v
+F:/FPGADesign/Project1/Source/tb.v
+F:/fpgadesign/project1/source/params.vh
+	======= Total: 19 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

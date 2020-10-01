@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project1
-Wed Sep 30 18:01:53 2020
+Thu Oct 01 17:47:00 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -15,15 +15,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
   9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
- 13. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
- 14. Parameter Settings for User Entity Instance: VTC:U1
- 15. Port Connectivity Checks: "VTC:U1"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
+ 11. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
+ 12. Parameter Settings for User Entity Instance: VTC:U1
+ 13. Port Connectivity Checks: "VTC:U1"
+ 14. Port Connectivity Checks: "clock:U0|video_pll:PLL1"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -50,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 30 18:01:52 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 01 17:47:00 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
@@ -191,34 +190,34 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+-----------------+------------------------------+----------------------------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 59                 ;
-;                                             ;                    ;
-; Combinational ALUT usage for logic          ; 100                ;
-;     -- 7 input functions                    ; 0                  ;
-;     -- 6 input functions                    ; 18                 ;
-;     -- 5 input functions                    ; 8                  ;
-;     -- 4 input functions                    ; 5                  ;
-;     -- <=3 input functions                  ; 69                 ;
-;                                             ;                    ;
-; Dedicated logic registers                   ; 66                 ;
-;                                             ;                    ;
-; I/O pins                                    ; 99                 ;
-;                                             ;                    ;
-; Total DSP Blocks                            ; 0                  ;
-;                                             ;                    ;
-; Total PLLs                                  ; 1                  ;
-;     -- PLLs                                 ; 1                  ;
-;                                             ;                    ;
-; Maximum fan-out node                        ; VTC:U1|LessThan0~8 ;
-; Maximum fan-out                             ; 69                 ;
-; Total fan-out                               ; 702                ;
-; Average fan-out                             ; 1.92               ;
-+---------------------------------------------+--------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                ;
++---------------------------------------------+----------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                        ;
++---------------------------------------------+----------------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 46                                                                                           ;
+;                                             ;                                                                                              ;
+; Combinational ALUT usage for logic          ; 84                                                                                           ;
+;     -- 7 input functions                    ; 0                                                                                            ;
+;     -- 6 input functions                    ; 7                                                                                            ;
+;     -- 5 input functions                    ; 6                                                                                            ;
+;     -- 4 input functions                    ; 6                                                                                            ;
+;     -- <=3 input functions                  ; 65                                                                                           ;
+;                                             ;                                                                                              ;
+; Dedicated logic registers                   ; 66                                                                                           ;
+;                                             ;                                                                                              ;
+; I/O pins                                    ; 99                                                                                           ;
+;                                             ;                                                                                              ;
+; Total DSP Blocks                            ; 0                                                                                            ;
+;                                             ;                                                                                              ;
+; Total PLLs                                  ; 1                                                                                            ;
+;     -- PLLs                                 ; 1                                                                                            ;
+;                                             ;                                                                                              ;
+; Maximum fan-out node                        ; clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
+; Maximum fan-out                             ; 69                                                                                           ;
+; Total fan-out                               ; 620                                                                                          ;
+; Average fan-out                             ; 1.78                                                                                         ;
++---------------------------------------------+----------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -226,8 +225,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name    ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+----------------+--------------+
-; |Project1                                ; 100 (0)             ; 66 (0)                    ; 0                 ; 0          ; 99   ; 0            ; |Project1                                                                               ; Project1       ; work         ;
-;    |VTC:U1|                              ; 99 (99)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                        ; VTC            ; work         ;
+; |Project1                                ; 84 (0)              ; 66 (0)                    ; 0                 ; 0          ; 99   ; 0            ; |Project1                                                                               ; Project1       ; work         ;
+;    |VTC:U1|                              ; 83 (83)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                        ; VTC            ; work         ;
 ;    |clock:U0|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0                                                                      ; clock          ; work         ;
 ;       |video_pll:PLL1|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1                                                       ; video_pll      ; video_pll    ;
 ;          |video_pll_0002:video_pll_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst                         ; video_pll_0002 ; video_pll    ;
@@ -251,33 +250,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 66    ;
-; Number of registers using Synchronous Clear  ; 63    ;
+; Number of registers using Synchronous Clear  ; 64    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 66    ;
+; Number of registers using Asynchronous Clear ; 64    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; VTC:U1|hSync                           ; 1       ;
-; VTC:U1|vSync                           ; 1       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Project1|VTC:U1|line      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -576,31 +555,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------+
+; Port Connectivity Checks: "clock:U0|video_pll:PLL1" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; rst  ; Input ; Info     ; Stuck at GND              ;
++------+-------+----------+---------------------------+
+
+
++-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 66                          ;
-;     CLR               ; 2                           ;
 ;     CLR SCLR          ; 32                          ;
-;     ENA CLR           ; 1                           ;
-;     ENA CLR SCLR      ; 31                          ;
-; arriav_lcell_comb     ; 104                         ;
+;     ENA CLR SCLR      ; 32                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 86                          ;
 ;     arith             ; 64                          ;
 ;         1 data inputs ; 64                          ;
-;     normal            ; 40                          ;
+;     normal            ; 22                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 5                           ;
-;         5 data inputs ; 8                           ;
-;         6 data inputs ; 18                          ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 7                           ;
 ; boundary_port         ; 99                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.50                        ;
-; Average LUT depth     ; 5.11                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 3.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -619,7 +604,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Wed Sep 30 18:01:40 2020
+    Info: Processing started: Thu Oct 01 17:46:53 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
 Info (20032): Parallel compilation is enabled and will use up to 12 processors
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/tb.v
@@ -637,8 +622,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file video_p
 Info (12021): Found 1 design units, including 1 entities, in source file video_pll/video_pll_0002.v
     Info (12023): Found entity 1: video_pll_0002 File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 2
 Info (12127): Elaborating entity "Project1" for the top level hierarchy
-Warning (10034): Output port "VGA_CLK" at Project1.v(34) has no driver File: F:/FPGADesign/Project1/Source/Project1.v Line: 34
-Info (12128): Elaborating entity "clock" for hierarchy "clock:U0" File: F:/FPGADesign/Project1/Source/Project1.v Line: 74
+Info (12128): Elaborating entity "clock" for hierarchy "clock:U0" File: F:/FPGADesign/Project1/Source/Project1.v Line: 75
 Info (12128): Elaborating entity "video_pll" for hierarchy "clock:U0|video_pll:PLL1" File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 Info (12128): Elaborating entity "video_pll_0002" for hierarchy "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst" File: F:/FPGADesign/Project1/Quartus/video_pll.v Line: 20
 Info (12128): Elaborating entity "altera_pll" for hierarchy "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
@@ -705,8 +689,8 @@ Info (12133): Instantiated megafunction "clock:U0|video_pll:PLL1|video_pll_0002:
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: F:/FPGADesign/Project1/Source/Project1.v Line: 84
-Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: F:/FPGADesign/Project1/Source/Project1.v Line: 95
+Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: F:/FPGADesign/Project1/Source/Project1.v Line: 85
+Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: F:/FPGADesign/Project1/Source/Project1.v Line: 96
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
@@ -770,27 +754,28 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_B[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
     Warning (13410): Pin "VGA_B[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
     Warning (13410): Pin "VGA_B[7]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_CLK" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 34
-    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[7]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_G[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_G[7]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
+    Warning (13410): Pin "VGA_R[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_R[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_R[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_R[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_R[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
+    Warning (13410): Pin "VGA_R[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_R[7]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 38
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning: RST port on the PLL is not properly connected on instance clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
+    Info: Must be connected
 Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK2_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 9
     Warning (15610): No output dependent on input pin "CLOCK3_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 10
@@ -808,15 +793,15 @@ Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 184 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 81 output pins
-    Info (21061): Implemented 158 logic cells
+    Info (21061): Implemented 84 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 99 warnings
-    Info: Peak virtual memory: 4885 megabytes
-    Info: Processing ended: Wed Sep 30 18:01:53 2020
-    Info: Elapsed time: 00:00:13
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 98 warnings
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Thu Oct 01 17:47:00 2020
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:15
 
 

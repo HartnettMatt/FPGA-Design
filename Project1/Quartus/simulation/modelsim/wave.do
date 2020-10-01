@@ -25,3 +25,4 @@ add wave DUT/U1/hSync
 add wave -radix decimal DUT/U1/hPixel
 add wave -radix decimal DUT/U1/line
 add wave DUT/U1/video_active
+add wave DUT/U1/vActive

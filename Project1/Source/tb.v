@@ -49,6 +49,8 @@ module tb();
       testKEY[3:0] = 4'b1110;
       clock = 0;
       #600 testKEY[0] = 1;
+      #1000 testKEY[0] = 0;
+      #2000 testKEY[0] = 1;
       #50000000 $stop;
     end
     always
