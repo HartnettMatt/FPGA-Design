@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Sep 24 15:52:15 2020
+Fitter Status : Successful - Wed Oct 07 11:22:39 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : ECEN3002_Lab1
 Top-level Entity Name : ECEN3002_Lab1
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 45 / 41,910 ( < 1 % )
-Total registers : 54
+Logic utilization (in ALMs) : 111 / 41,910 ( < 1 % )
+Total registers : 155
 Total pins : 70 / 499 ( 14 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )

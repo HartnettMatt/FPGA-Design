@@ -40,28 +40,30 @@ parameter divide_by = 10000000;
 
 reg [9:0] ledValue;
 reg [9:0] counter;
+wire [1:0]	sources;
+wire [1:0] control;
 wire clock;
 assign LEDR[9:0] = ledValue[9:0];
-
+assign control = sources[1:0] & KEY[1:0];
 
 //=======================================================
 //  Structural coding
 //=======================================================
 
 ECEN3002_Lab1_ClockDivider CD0 (.clock_in(CLOCK_50), .divide_by(divide_by), .reset_n(KEY[0]), .clock_out(clock));
-
+ISSP issp(.probe(KEY[1:0]), .source(sources));
 
 // Increase the counter and syncronize LEDR to counter value (unless value is forced by KEY[1])
-always @ (posedge clock or negedge KEY[0] or negedge KEY[1])
+always @ (posedge clock or negedge control[0] or negedge control[1])
 	begin
-  	if (~KEY[0])
+  	if (~control[0])
 			begin
 	      ledValue <= 0;
 				counter <= 0;
 			end
-		else if (~KEY[1])
+		else if (~control[1])
 			ledValue <= SW[9:0];
-		else if (KEY[1])
+		else if (control[1])
 			begin
 				ledValue <= counter;
 	    	counter <= counter + 1;

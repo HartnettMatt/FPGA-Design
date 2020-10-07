@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus_stp",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FFE9D2C0700",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffe9d2c06ff: jtag_client + 0x106ff (?close_device@AJI_OPEN_JS@@UEAA?AW4AJI_ERROR@@XZ + 0x36f)\n\t0x7ffe9d3112b3: sld_hapi + 0x12b3 (??1HAPI_SMO_HUB@@QEAA@XZ + 0x73)\n\t0x7ffe9d311217: sld_hapi + 0x1217 (??1HAPI_SMO_DEVICE@@QEAA@XZ + 0xa7)\n\t0x7ffe9d311344: sld_hapi + 0x1344 (??1HAPI_SMO_MANAGER@@QEAA@XZ + 0x44)\n\t0x7ffe9d3154d7: sld_hapi + 0x54d7 (_CRT_INIT + 0xeb)\n\t0x7ffe9d315759: sld_hapi + 0x5759 (__DllMainCRTStartup + 0xe1)\n\t0x7fff52647b3c: ntdll + 0x37b3c (RtlActivateActivationContextUnsafeFast + 0x11c)\n\t0x7fff52673cc0: ntdll + 0x63cc0 (LdrShutdownProcess + 0x140)\n\t0x7fff52673b5c: ntdll + 0x63b5c (RtlExitUserProcess + 0xac)\n\t0x7fff51a3e04a: KERNEL32 + 0x1e04a (ExitProcess + 0xa)\n\t0x7ffea52729a6: MSVCR120 + 0x229a6 (_initterm_e + 0x21a)\n\t 0x6778a0de: tcl86 + 0x7a0de (Tcl_Exit + 0xde)\n\t 0x67733757: tcl86 + 0x23757 (Tcl_ExitObjCmd + 0x87)\n\t 0x677261e2: tcl86 + 0x161e2 (TclNRRunCallbacks + 0x62)\n\t 0x67727a65: tcl86 + 0x17a65 (TclEvalEx + 0xa65)\n\t 0x677b6f8b: tcl86 + 0xa6f8b (Tcl_FSEvalFileEx + 0x22b)\n\t 0x677b5646: tcl86 + 0xa5646 (Tcl_EvalFile + 0x36)\n\t0x7ffea3ea2877: comp_qexe + 0x12877 (?qexe_evaluate_tcl_script@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z + 0x367)\n\t0x7ffea3ea1ac3: comp_qexe + 0x11ac3 (qexe_do_tcl + 0x343)\n\t0x7ffea3ea64c9: comp_qexe + 0x164c9 (qexe_run + 0x2d9)\n\t0x7ffea3ea7371: comp_qexe + 0x17371 (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xc1)\n\t0x7ff6d57538c1: quartus_stp + 0x38c1 (?ice_main@@YAHHPEAPEBD@Z + 0x61)\n\t0x7ffea5c33258: CCL_MSG + 0x13258 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ffea5c34a5e: CCL_MSG + 0x14a5e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ffea5db6af0: ccl_mem + 0x16af0 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffea5c32af1: CCL_MSG + 0x12af1 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff6d57544ea: quartus_stp + 0x44ea (__tmainCRTStartup + 0x10e)\n\t0x7fff51a36fd3: KERNEL32 + 0x16fd3 (BaseThreadInitThunk + 0x13)\n\t0x7fff5265cec0: ntdll + 0x4cec0 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "20.1.0",
+		"build" : "711",
+		"edition" : "Standard Edition"
+	}
+}
