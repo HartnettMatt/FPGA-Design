@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition"
 
-// DATE "10/03/2020 10:57:33"
+// DATE "10/08/2020 10:41:34"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -1272,7 +1272,7 @@ defparam \VGA_BLANK_N~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X62_Y0_N53
 cyclonev_io_obuf \VGA_B[0]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1288,7 +1288,7 @@ defparam \VGA_B[0]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X62_Y0_N36
 cyclonev_io_obuf \VGA_B[1]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1304,7 +1304,7 @@ defparam \VGA_B[1]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X54_Y0_N19
 cyclonev_io_obuf \VGA_B[2]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1320,7 +1320,7 @@ defparam \VGA_B[2]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X60_Y0_N36
 cyclonev_io_obuf \VGA_B[3]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1336,7 +1336,7 @@ defparam \VGA_B[3]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X58_Y0_N93
 cyclonev_io_obuf \VGA_B[4]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1352,7 +1352,7 @@ defparam \VGA_B[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X58_Y0_N42
 cyclonev_io_obuf \VGA_B[5]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1368,7 +1368,7 @@ defparam \VGA_B[5]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X54_Y0_N36
 cyclonev_io_obuf \VGA_B[6]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1384,7 +1384,7 @@ defparam \VGA_B[6]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X54_Y0_N53
 cyclonev_io_obuf \VGA_B[7]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1416,7 +1416,7 @@ defparam \VGA_CLK~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X76_Y0_N53
 cyclonev_io_obuf \VGA_G[0]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1432,7 +1432,7 @@ defparam \VGA_G[0]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X74_Y0_N93
 cyclonev_io_obuf \VGA_G[1]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1448,7 +1448,7 @@ defparam \VGA_G[1]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X78_Y0_N53
 cyclonev_io_obuf \VGA_G[2]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1464,7 +1464,7 @@ defparam \VGA_G[2]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X72_Y0_N53
 cyclonev_io_obuf \VGA_G[3]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1480,7 +1480,7 @@ defparam \VGA_G[3]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X74_Y0_N76
 cyclonev_io_obuf \VGA_G[4]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1496,7 +1496,7 @@ defparam \VGA_G[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X64_Y0_N53
 cyclonev_io_obuf \VGA_G[5]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1512,7 +1512,7 @@ defparam \VGA_G[5]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X72_Y0_N36
 cyclonev_io_obuf \VGA_G[6]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1528,7 +1528,7 @@ defparam \VGA_G[6]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X70_Y0_N36
 cyclonev_io_obuf \VGA_G[7]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1560,7 +1560,7 @@ defparam \VGA_HS~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X82_Y0_N93
 cyclonev_io_obuf \VGA_R[0]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1576,7 +1576,7 @@ defparam \VGA_R[0]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X82_Y0_N76
 cyclonev_io_obuf \VGA_R[1]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1592,7 +1592,7 @@ defparam \VGA_R[1]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N53
 cyclonev_io_obuf \VGA_R[2]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1608,7 +1608,7 @@ defparam \VGA_R[2]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N36
 cyclonev_io_obuf \VGA_R[3]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1624,7 +1624,7 @@ defparam \VGA_R[3]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X84_Y0_N53
 cyclonev_io_obuf \VGA_R[4]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1640,7 +1640,7 @@ defparam \VGA_R[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X86_Y0_N53
 cyclonev_io_obuf \VGA_R[5]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1656,7 +1656,7 @@ defparam \VGA_R[5]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X84_Y0_N36
 cyclonev_io_obuf \VGA_R[6]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1672,7 +1672,7 @@ defparam \VGA_R[6]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X76_Y0_N36
 cyclonev_io_obuf \VGA_R[7]~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),

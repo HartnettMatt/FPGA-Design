@@ -51,13 +51,14 @@ wire hPixel;
 wire line;
 wire video_active;
 wire reset;
-
+wire vSync;
 //=======================================================
 //  Structural coding
 //=======================================================
 assign VGA_BLANK_N = 1;
 assign VGA_SYNC_N = 0;
 assign VGA_CLK = clk;
+assign VGA_VS = vSync;
 assign LEDR = 10'b0000000000;
 assign HEX0 = 7'b0000000;
 assign HEX1 = 7'b0000000;
@@ -77,7 +78,7 @@ clock U0(
 VTC U1(
 	.clock_in(clk),
 	.reset(reset),
-	.vSync(VGA_VS),
+	.vSync(vSync),
 	.hSync(VGA_HS),
 	.hPixel(hPixel),
 	.line(line),
@@ -88,6 +89,8 @@ PG U2(
 	.hPixel(hPixel),
 	.line(line),
 	.video_active(video_active),
+	.vSync(vSync),
+	.clk(clk),
 	.KEY(KEY[3:1]),
 	.SW(SW[9:0]),
 	.VGA_B(VGA_B),
