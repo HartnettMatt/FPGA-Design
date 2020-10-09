@@ -1,5 +1,5 @@
 Archive Project report for Project1
-Thu Oct 01 16:37:27 2020
+Thu Oct 08 19:39:26 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Oct 01 16:37:27 2020 ;
+; Archive Project Status ; Successful - Thu Oct 08 19:39:26 2020 ;
 ; Revision Name          ; Project1                              ;
 ; Top-level Entity Name  ; Project1                              ;
 ; Family                 ; Cyclone V                             ;
@@ -54,14 +54,14 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory F:/FPGADesign/Project1/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'F:/FPGADesign/Project1/Quartus/Project1_Hartnett1.qar'
+Info: Generated archive 'F:/FPGADesign/Project1/Quartus/Project1.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'Project1.archive.rpt'
 Info (23030): Evaluation of Tcl script d:/intelfpga/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Thu Oct 01 16:37:27 2020
+    Info: Peak virtual memory: 4827 megabytes
+    Info: Processing ended: Thu Oct 08 19:39:26 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -77,6 +77,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; ../Source/tb.v                           ;
 ; ../Source/VTC.v                          ;
 ; /fpgadesign/project1/source/params.vh    ;
+; db/stp1_auto_stripped.stp                ;
 ; F:/FPGADesign/Project1/Source/clock.v    ;
 ; F:/FPGADesign/Project1/Source/PG.v       ;
 ; F:/FPGADesign/Project1/Source/Project1.v ;
@@ -87,6 +88,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; Project1.SDC                             ;
 ; Project1.sdc                             ;
 ; Project1_assignment_defaults.qdf         ;
+; stp1.stp                                 ;
 ; video_pll.cmp                            ;
 ; video_pll.qip                            ;
 ; video_pll.sip                            ;

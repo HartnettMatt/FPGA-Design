@@ -24,10 +24,12 @@ reg [7:0] red;
 reg [7:0] green;
 reg [7:0] blue;
 
-assign VGA_R[7:0] = red[7:0];
-assign VGA_G[7:0] = green[7:0];
-assign VGA_B[7:0] = blue[7:0];
-
+// assign VGA_R[7:0] = red[7:0];
+// assign VGA_G[7:0] = green[7:0];
+// assign VGA_B[7:0] = blue[7:0];
+assign VGA_R[7:0] = 8'b00000000;
+assign VGA_G[7:0] = 8'b11110000;
+assign VGA_B[7:0] = 8'b11111111;
 always @(posedge clk)
 begin
   if(hPixel >= box1[39:30] && hPixel <= box1[29:20] && line >= box1[19:10] && line <= box1[9:0])

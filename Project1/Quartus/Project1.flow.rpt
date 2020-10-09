@@ -1,5 +1,5 @@
 Flow report for Project1
-Thu Oct 08 10:56:36 2020
+Thu Oct 08 19:21:58 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -38,24 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Flow Failed - Thu Oct 08 10:56:36 2020          ;
-; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
-; Revision Name               ; Project1                                        ;
-; Top-level Entity Name       ; Project1                                        ;
-; Family                      ; Cyclone V                                       ;
-; Device                      ; 5CSXFC6D6F31C6                                  ;
-; Timing Models               ; Final                                           ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Thu Oct 08 19:21:58 2020           ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
+; Revision Name                   ; Project1                                        ;
+; Top-level Entity Name           ; Project1                                        ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSXFC6D6F31C6                                  ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 448 / 41,910 ( 1 % )                            ;
+; Total registers                 ; 653                                             ;
+; Total pins                      ; 99 / 499 ( 20 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 3,456 / 5,662,720 ( < 1 % )                     ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
+; Total PLLs                      ; 1 / 15 ( 7 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,40 +68,70 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/08/2020 10:56:31 ;
+; Start date & time ; 10/08/2020 19:20:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project1            ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 1096975794739.160217619015820          ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb             ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb                                     ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; ../Source/tb.v                         ; --            ; --          ; tb             ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb                                     ; --            ; --          ; tb             ;
-; EDA_TEST_BENCH_NAME                  ; tb                                     ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
-; MISC_FILE                            ; video_pll.cmp                          ; --            ; --          ; --             ;
-; MISC_FILE                            ; video_pll_sim/video_pll.vo             ; --            ; --          ; --             ;
-; NUM_PARALLEL_PROCESSORS              ; 12                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; SPD_FILE                             ; video_pll.spd                          ; --            ; --          ; --             ;
-; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                   ;
++--------------------------------------+----------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                      ; Value                                                                      ; Default Value ; Entity Name ; Section Id       ;
++--------------------------------------+----------------------------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 1096975794739.160220644437712                                              ; --            ; --          ; --               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                         ; --            ; --          ; tb               ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb                                                                         ; --            ; --          ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                                                  ; <None>        ; --          ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                            ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                  ; ../Source/tb.v                                                             ; --            ; --          ; tb               ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb                                                                         ; --            ; --          ; tb               ;
+; EDA_TEST_BENCH_NAME                  ; tb                                                                         ; --            ; --          ; eda_simulation   ;
+; EDA_TIME_SCALE                       ; 1 ps                                                                       ; --            ; --          ; eda_simulation   ;
+; ENABLE_SIGNALTAP                     ; On                                                                         ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                         ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                            ; video_pll.cmp                                                              ; --            ; --          ; --               ;
+; MISC_FILE                            ; video_pll_sim/video_pll.vo                                                 ; --            ; --          ; --               ;
+; NUM_PARALLEL_PROCESSORS              ; 12                                                                         ; --            ; --          ; --               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                     ; --            ; --          ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                     ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                     ; --            ; --          ; Top              ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                        ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                      ; --            ; --          ; --               ;
+; SLD_FILE                             ; db/stp1_auto_stripped.stp                                                  ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334528                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=128                                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=128                                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=1                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=0                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=2                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=1                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=21                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=27                                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=27                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_Project1_auto_signaltap_0_1_f4aa, ; --            ; --          ; auto_signaltap_0 ;
+; SPD_FILE                             ; video_pll.spd                                                              ; --            ; --          ; --               ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                         ; --            ; --          ; --               ;
+; USE_SIGNALTAP_FILE                   ; stp1.stp                                                                   ; --            ; --          ; --               ;
++--------------------------------------+----------------------------------------------------------------------------+---------------+-------------+------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -104,8 +139,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4767 MB             ; 00:00:14                           ;
-; Total                ; 00:00:06     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4905 MB             ; 00:00:32                           ;
+; Partition Merge      ; 00:00:02     ; 1.0                     ; 4941 MB             ; 00:00:02                           ;
+; Fitter               ; 00:00:29     ; 1.0                     ; 7061 MB             ; 00:00:54                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4846 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:10     ; 1.6                     ; 5316 MB             ; 00:00:14                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4838 MB             ; 00:00:03                           ;
+; Total                ; 00:01:09     ; --                      ; --                  ; 00:01:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,13 +155,23 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge      ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
+quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1 --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Project1 -c Project1 --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Project1 -c Project1 --recompile=on
+quartus_asm --read_settings_files=off --write_settings_files=off Project1 -c Project1
+quartus_sta Project1 -c Project1
+quartus_eda --read_settings_files=off --write_settings_files=off Project1 -c Project1
 
 
 
