@@ -1,5 +1,5 @@
 Flow report for Project1
-Thu Oct 08 19:21:58 2020
+Mon Oct 12 23:07:16 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Oct 08 19:21:58 2020           ;
+; Flow Status                     ; Successful - Mon Oct 12 23:07:16 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 448 / 41,910 ( 1 % )                            ;
-; Total registers                 ; 653                                             ;
+; Logic utilization (in ALMs)     ; 338 / 41,910 ( < 1 % )                          ;
+; Total registers                 ; 642                                             ;
 ; Total pins                      ; 99 / 499 ( 20 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 3,456 / 5,662,720 ( < 1 % )                     ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/08/2020 19:20:45 ;
+; Start date & time ; 10/12/2020 23:05:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project1            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                                                      ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+----------------------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 1096975794739.160220644437712                                              ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 198112243637453.160256551304780                                            ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                         ; --            ; --          ; tb               ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb                                                                         ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                ; --            ; --          ; eda_simulation   ;
@@ -118,6 +118,7 @@ https://fpgasoftware.intel.com/eula.
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                     ; --            ; --          ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                               ; --            ; --          ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=2                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_Project1_auto_signaltap_0_1_d3be, ; --            ; --          ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=1                                              ; --            ; --          ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                             ; --            ; --          ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                          ; --            ; --          ; auto_signaltap_0 ;
@@ -127,7 +128,6 @@ https://fpgasoftware.intel.com/eula.
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=21                                               ; --            ; --          ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=27                                                           ; --            ; --          ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=27                                              ; --            ; --          ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_Project1_auto_signaltap_0_1_f4aa, ; --            ; --          ; auto_signaltap_0 ;
 ; SPD_FILE                             ; video_pll.spd                                                              ; --            ; --          ; --               ;
 ; SYNTHESIS_ONLY_QIP                   ; On                                                                         ; --            ; --          ; --               ;
 ; USE_SIGNALTAP_FILE                   ; stp1.stp                                                                   ; --            ; --          ; --               ;
@@ -139,13 +139,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4905 MB             ; 00:00:32                           ;
-; Partition Merge      ; 00:00:02     ; 1.0                     ; 4941 MB             ; 00:00:02                           ;
-; Fitter               ; 00:00:29     ; 1.0                     ; 7061 MB             ; 00:00:54                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4846 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.6                     ; 5316 MB             ; 00:00:14                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4838 MB             ; 00:00:03                           ;
-; Total                ; 00:01:09     ; --                      ; --                  ; 00:01:51                           ;
+; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4951 MB             ; 00:00:38                           ;
+; Fitter               ; 00:01:00     ; 1.1                     ; 7585 MB             ; 00:03:03                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4850 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.3                     ; 5311 MB             ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4839 MB             ; 00:00:03                           ;
+; Total                ; 00:01:53     ; --                      ; --                  ; 00:04:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -155,7 +154,6 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Fitter               ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -166,9 +164,8 @@ https://fpgasoftware.intel.com/eula.
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1 --recompile=on
-quartus_cdb --read_settings_files=on --write_settings_files=off Project1 -c Project1 --merge=on --recompile=on
-quartus_fit --read_settings_files=off --write_settings_files=off Project1 -c Project1 --recompile=on
+quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
+quartus_fit --read_settings_files=off --write_settings_files=off Project1 -c Project1
 quartus_asm --read_settings_files=off --write_settings_files=off Project1 -c Project1
 quartus_sta Project1 -c Project1
 quartus_eda --read_settings_files=off --write_settings_files=off Project1 -c Project1

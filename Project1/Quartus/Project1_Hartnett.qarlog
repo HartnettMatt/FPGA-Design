@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	F:/FPGADesign/Project1/Quartus/Project1_Hartnett.qarlog
 
 Archive:	F:/FPGADesign/Project1/Quartus/Project1_Hartnett.qar
-Date:		Wed Sep 30 19:15:19 2020
+Date:		Mon Oct 12 23:11:05 2020
 Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 	=========== Files Selected: ===========
@@ -10,6 +10,8 @@ F:/FPGADesign/Project1/Quartus/Project1.qpf
 F:/FPGADesign/Project1/Quartus/Project1.qsf
 F:/FPGADesign/Project1/Quartus/Project1.sdc
 F:/FPGADesign/Project1/Quartus/Project1_assignment_defaults.qdf
+F:/FPGADesign/Project1/Quartus/db/stp1_auto_stripped.stp
+F:/FPGADesign/Project1/Quartus/stp1.stp
 F:/FPGADesign/Project1/Quartus/video_pll.cmp
 F:/FPGADesign/Project1/Quartus/video_pll.qip
 F:/FPGADesign/Project1/Quartus/video_pll.sip
@@ -24,7 +26,7 @@ F:/FPGADesign/Project1/Source/VTC.v
 F:/FPGADesign/Project1/Source/clock.v
 F:/FPGADesign/Project1/Source/tb.v
 F:/fpgadesign/project1/source/params.vh
-	======= Total: 19 files to archive =======
+	======= Total: 21 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

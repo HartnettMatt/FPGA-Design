@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="05c779365ebd058014a1"/>
+    <hash md5_digest_80b="583b2dd9a8ac2d7e09cd"/>
   </project>
   <file_info>
     <file device="5CSXFC6D6F31C6" path="Project1.sof" usercode="0xFFFFFFFF"/>
@@ -34,7 +34,7 @@
         <parameter name="SLD_HPS_TRIGGER_OUT_ENABLED" type="dec" value="0"/>
         <parameter name="SLD_HPS_EVENT_ENABLED" type="dec" value="0"/>
         <parameter name="SLD_HPS_EVENT_ID" type="dec" value="0"/>
-        <parameter name="sld_advanced_trigger_entity" type="unknown" value="sld_reserved_Project1_auto_signaltap_0_1_f4aa,"/>
+        <parameter name="sld_advanced_trigger_entity" type="unknown" value="sld_reserved_Project1_auto_signaltap_0_1_d3be,"/>
         <parameter name="sld_trigger_level_pipeline" type="unknown" value="1"/>
         <parameter name="sld_trigger_pipeline" type="unknown" value="0"/>
         <parameter name="sld_ram_pipeline" type="unknown" value="0"/>

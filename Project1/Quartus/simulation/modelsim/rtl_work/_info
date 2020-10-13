@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dF:/FPGADesign/Project1/Quartus/simulation/modelsim
 vclock
-Z1 !s110 1602206720
+Z1 !s110 1602566147
 !i10b 1
 !s100 4i;bK]6_Y;CUjDO]W^8Fe2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1602206720.000000
+Z5 !s108 1602566147.000000
 !s107 F:/FPGADesign/Project1/Source/clock.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project1/Source|F:/FPGADesign/Project1/Source/clock.v|
 !i113 1
@@ -60,7 +60,7 @@ R7
 R8
 n@p@g
 vProject1
-Z10 !s110 1602206721
+R1
 !i10b 1
 !s100 POA4WEN`FLhic1WRQi7Bl2
 R2
@@ -77,7 +77,7 @@ R4
 r1
 !s85 0
 31
-Z11 !s108 1602206721.000000
+R5
 !s107 F:/FPGADesign/Project1/Source/params.vh|F:/FPGADesign/Project1/Source/Project1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project1/Source|F:/FPGADesign/Project1/Source/Project1.v|
 !i113 1
@@ -86,7 +86,7 @@ R7
 R8
 n@project1
 vtb
-R10
+R1
 !i10b 1
 !s100 @31koLi8K<B`S6Un;z6cF0
 R2
@@ -102,7 +102,7 @@ R4
 r1
 !s85 0
 31
-R11
+R5
 !s107 F:/FPGADesign/Project1/Quartus/../Source/tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project1/Quartus/../Source|F:/FPGADesign/Project1/Quartus/../Source/tb.v|
 !i113 1
@@ -132,7 +132,7 @@ R5
 !i113 1
 R8
 vVTC
-R10
+R1
 !i10b 1
 !s100 o6]I3IVS0GYYQCzeYM=Rb3
 R2
@@ -149,7 +149,7 @@ R4
 r1
 !s85 0
 31
-R11
+R5
 !s107 F:/FPGADesign/Project1/Source/params.vh|F:/FPGADesign/Project1/Source/VTC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project1/Source|F:/FPGADesign/Project1/Source/VTC.v|
 !i113 1

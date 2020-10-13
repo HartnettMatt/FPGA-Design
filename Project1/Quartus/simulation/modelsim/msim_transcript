@@ -21,70 +21,70 @@
 # 
 # vlog "F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:25:20 on Oct 08,2020
+# Start time: 23:15:47 on Oct 12,2020
 # vlog -reportprogress 300 F:/FPGADesign/Project1/Quartus/video_pll_sim/video_pll.vo 
 # -- Compiling module video_pll
 # 
 # Top level modules:
 # 	video_pll
-# End time: 19:25:20 on Oct 08,2020, Elapsed time: 0:00:00
+# End time: 23:15:47 on Oct 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/PG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:25:20 on Oct 08,2020
+# Start time: 23:15:47 on Oct 12,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/PG.v 
 # -- Compiling module PG
 # 
 # Top level modules:
 # 	PG
-# End time: 19:25:20 on Oct 08,2020, Elapsed time: 0:00:00
+# End time: 23:15:47 on Oct 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/clock.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:25:20 on Oct 08,2020
+# Start time: 23:15:47 on Oct 12,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/clock.v 
 # -- Compiling module clock
 # 
 # Top level modules:
 # 	clock
-# End time: 19:25:21 on Oct 08,2020, Elapsed time: 0:00:01
+# End time: 23:15:47 on Oct 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/VTC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:25:21 on Oct 08,2020
+# Start time: 23:15:47 on Oct 12,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/VTC.v 
 # -- Compiling module VTC
 # 
 # Top level modules:
 # 	VTC
-# End time: 19:25:21 on Oct 08,2020, Elapsed time: 0:00:00
+# End time: 23:15:47 on Oct 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Source {F:/FPGADesign/Project1/Source/Project1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:25:21 on Oct 08,2020
+# Start time: 23:15:47 on Oct 12,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Source" F:/FPGADesign/Project1/Source/Project1.v 
 # -- Compiling module Project1
 # 
 # Top level modules:
 # 	Project1
-# End time: 19:25:21 on Oct 08,2020, Elapsed time: 0:00:00
+# End time: 23:15:47 on Oct 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project1/Quartus/../Source {F:/FPGADesign/Project1/Quartus/../Source/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:25:21 on Oct 08,2020
+# Start time: 23:15:47 on Oct 12,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/Project1/Quartus/../Source" F:/FPGADesign/Project1/Quartus/../Source/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 19:25:21 on Oct 08,2020, Elapsed time: 0:00:00
+# End time: 23:15:47 on Oct 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 19:25:21 on Oct 08,2020
+# Start time: 23:15:48 on Oct 12,2020
 # Loading work.tb
 # Loading work.Project1
 # Loading work.clock
@@ -188,5 +188,5 @@
 # wave zoom full
 # 0 ps
 # 52503790500 ps
-# End time: 19:53:03 on Oct 08,2020, Elapsed time: 0:27:42
+# End time: 23:31:40 on Oct 12,2020, Elapsed time: 0:15:52
 # Errors: 0, Warnings: 29

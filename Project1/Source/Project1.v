@@ -60,6 +60,7 @@ assign VGA_SYNC_N = 0;
 assign VGA_CLK = clk;
 assign VGA_VS = vSync;
 assign LEDR[9:1] = 9'b000000000;
+assign LEDR[0] = video_active;
 assign HEX0 = 7'b0000000;
 assign HEX1 = 7'b0000000;
 assign HEX1 = 7'b0000000;
@@ -67,7 +68,6 @@ assign HEX2 = 7'b0000000;
 assign HEX3 = 7'b0000000;
 assign HEX4 = 7'b0000000;
 assign HEX5 = 7'b0000000;
-assign LEDR[0] = video_active;
 
 clock U0(
 	.clock_in(CLOCK_50),
