@@ -14,8 +14,9 @@ module PG(
 `define lowRes
 `include "params.vh"
 
-reg [39:0] box1;
-reg [23:0] box1Color;
+
+reg [39:0] box1;      //Encoding for the location of the box - box1[39:20] is left right bound, box1[19:0] is top bottom bound
+reg [23:0] box1Color; 
 
 reg [39:0] box2;
 reg [23:0] box2Color;
@@ -44,10 +45,6 @@ assign VGA_R[7:0] = red[7:0];
 assign VGA_G[7:0] = green[7:0];
 assign VGA_B[7:0] = blue[7:0];
 
-
-// assign VGA_R[7:0] = 8'b00000000;
-// assign VGA_G[7:0] = 8'b11110000;
-// assign VGA_B[7:0] = 8'b11111111;
 always @(*)
 begin
   if(hPixel >= box1[39:30] && hPixel <= box1[29:20] && line >= box1[19:10] && line <= box1[9:0])
@@ -72,7 +69,7 @@ end
 
 always@(negedge vSync)
   begin
-  // Neither are pressed
+  // Control the position of the box
   case (KEY[2:1])
     2'b11 :
     begin
@@ -115,6 +112,7 @@ always@(negedge vSync)
     end
   endcase
 
+// Control the color of the box
   box1Color[6:0] = 7'b1111111 * SW[0];
   box1Color[7] = SW[1];
   box1Color[14:8] = 7'b1111111 * SW[2];
