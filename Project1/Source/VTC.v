@@ -35,29 +35,35 @@ always @(posedge clock_in, negedge reset)
       end
     end
 
+//modified by RR
 always@(posedge clock_in)
 // Create hSync signal
-          if(hPixel < pulseWidthH)
+          if((hPixel >= dispTimeH + fPorchH) && (hPixel < dispTimeH + fPorchH + pulseWidthH))
               hSync = 0;
           else
               hSync = 1;
+
+// modified by RR
 always @(posedge clock_in)
 // Create vSync signal
-          if(line < pulseWidthV)
+          if(line >= (dispTimeV + fPorchV) && (line < dispTimeV + fPorchV + pulseWidthV))
               vSync = 0;
           else
               vSync = 1;
 
+// modified by RR
 // Create video_active signal
   // Horizontal Active
   always@(posedge clock_in)
-      if(hSync == 1 && hPixel - pulseWidthH >= bPorchH && hPixel <= syncTimeH - fPorchH - 1)
+      if(hPixel < dispTimeH)
           hActive = 1;
       else
           hActive = 0;
+
+// modified by RR
 // Vertical Active
   always@(posedge clock_in)
-      if(vSync == 1 && line - pulseWidthV >= bPorchV && line <= syncTimeV - fPorchV - 1)
+      if(line < dispTimeV)
           vActive = 1;
       else
           vActive = 0;

@@ -1,0 +1,97 @@
+Restore Archived Project report for Project1
+Tue Oct 13 09:30:20 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Oct 13 09:30:20 2020 ;
+; Revision Name                   ; Project1                              ;
+; Top-level Entity Name           ; Project1                              ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'F:/FPGADesign/Project1.qar' into the 'F:/FPGADesign/Project1_restored/' directory
+Info: Generated report 'Project1.restore.rpt'
+Info (23030): Evaluation of Tcl script d:/intelfpga/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Tue Oct 13 09:30:20 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++------------------------------------------+
+; Files Restored                           ;
++------------------------------------------+
+; File Name                                ;
++------------------------------------------+
+; qar_info.json                            ;
+; Quartus/Project1.SDC                     ;
+; Quartus/Project1.qpf                     ;
+; Quartus/Project1.qsf                     ;
+; Quartus/Project1_assignment_defaults.qdf ;
+; Quartus/db/stp1_auto_stripped.stp        ;
+; Quartus/stp1.stp                         ;
+; Quartus/video_pll.cmp                    ;
+; Quartus/video_pll.qip                    ;
+; Quartus/video_pll.sip                    ;
+; Quartus/video_pll.spd                    ;
+; Quartus/video_pll.v                      ;
+; Quartus/video_pll/video_pll_0002.qip     ;
+; Quartus/video_pll/video_pll_0002.v       ;
+; Quartus/video_pll_sim/video_pll.vo       ;
+; Source/PG.v                              ;
+; Source/Project1.v                        ;
+; Source/VTC.v                             ;
+; Source/clock.v                           ;
+; Source/tb.v                              ;
+; source/params.vh                         ;
++------------------------------------------+
+
+
++----------------------+
+; Files Not Restored   ;
++----------------------+
+; File Name            ;
++----------------------+
+; Quartus/Project1.sdc ;
++----------------------+
+
+

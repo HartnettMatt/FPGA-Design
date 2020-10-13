@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project1
-Mon Oct 12 23:05:46 2020
+Tue Oct 13 11:37:50 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -16,25 +16,20 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for sld_signaltap:auto_signaltap_0
- 16. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
- 17. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
- 18. Parameter Settings for User Entity Instance: VTC:U1
- 19. Parameter Settings for User Entity Instance: PG:U2
- 20. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 21. Port Connectivity Checks: "VTC:U1"
- 22. Port Connectivity Checks: "clock:U0|video_pll:PLL1"
- 23. Signal Tap Logic Analyzer Settings
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0
- 26. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 27. Elapsed Time Per Partition
- 28. Connections to In-System Debugging Instance "auto_signaltap_0"
- 29. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Source assignments for sld_signaltap:auto_signaltap_0
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
+ 15. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
+ 16. Parameter Settings for User Entity Instance: VTC:U1
+ 17. Parameter Settings for User Entity Instance: PG:U2
+ 18. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 19. Port Connectivity Checks: "clock:U0|video_pll:PLL1"
+ 20. Signal Tap Logic Analyzer Settings
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -61,13 +56,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 12 23:05:46 2020           ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 13 11:37:50 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 607                                             ;
+; Total registers                 ; 617                                             ;
 ; Total pins                      ; 99                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 3,456                                           ;
@@ -267,16 +262,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 369                      ;
+; Estimate of Logic utilization (ALMs needed) ; 366                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 466                      ;
+; Combinational ALUT usage for logic          ; 419                      ;
 ;     -- 7 input functions                    ; 1                        ;
-;     -- 6 input functions                    ; 86                       ;
+;     -- 6 input functions                    ; 88                       ;
 ;     -- 5 input functions                    ; 63                       ;
-;     -- 4 input functions                    ; 42                       ;
-;     -- <=3 input functions                  ; 274                      ;
+;     -- 4 input functions                    ; 45                       ;
+;     -- <=3 input functions                  ; 222                      ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 607                      ;
+; Dedicated logic registers                   ; 617                      ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 99                       ;
 ; Total MLAB memory bits                      ; 0                        ;
@@ -289,8 +284,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 349                      ;
-; Total fan-out                               ; 4321                     ;
-; Average fan-out                             ; 3.30                     ;
+; Total fan-out                               ; 4286                     ;
+; Average fan-out                             ; 3.37                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -299,8 +294,9 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                                            ; Entity Name                                   ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------+--------------+
-; |Project1                                                                                                                               ; 466 (2)             ; 607 (0)                   ; 3456              ; 0          ; 99   ; 0            ; |Project1                                                                                                                                                                                                                                                                                                                                                                                      ; Project1                                      ; work         ;
-;    |VTC:U1|                                                                                                                             ; 160 (160)           ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                                                                                                                                                                                                                                                                                                                               ; VTC                                           ; work         ;
+; |Project1                                                                                                                               ; 419 (0)             ; 617 (0)                   ; 3456              ; 0          ; 99   ; 0            ; |Project1                                                                                                                                                                                                                                                                                                                                                                                      ; Project1                                      ; work         ;
+;    |PG:U2|                                                                                                                              ; 27 (27)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|PG:U2                                                                                                                                                                                                                                                                                                                                                                                ; PG                                            ; work         ;
+;    |VTC:U1|                                                                                                                             ; 88 (88)             ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                                                                                                                                                                                                                                                                                                                               ; VTC                                           ; work         ;
 ;    |clock:U0|                                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0                                                                                                                                                                                                                                                                                                                                                                             ; clock                                         ; work         ;
 ;       |video_pll:PLL1|                                                                                                                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1                                                                                                                                                                                                                                                                                                                                                              ; video_pll                                     ; video_pll    ;
 ;          |video_pll_0002:video_pll_inst|                                                                                                ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst                                                                                                                                                                                                                                                                                                                                ; video_pll_0002                                ; video_pll    ;
@@ -381,39 +377,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                                                          ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                                          ; Reason for Removal                                                                                                                                                                                 ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|segment_shift_clk_ena                                                      ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_enable_delayed                                                ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[0] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[0] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[1] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[1] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[2] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[2] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[3] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[3] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[4] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[4] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[5] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[5] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[6] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[6] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[0]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[0]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[1]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[1]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[2]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[2]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[3]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[3]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[4]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[4]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[5]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[5]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[6]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[6]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13..15]                       ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
-; Total Number of Removed Registers = 18                                                                                                                                                 ;                                                                                                                                                                                                    ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                ; Reason for Removal        ; Registers Removed due to This Register                                                                                                                        ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[15] ; Stuck at GND              ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[14], ;
-;                                                                                                                                                              ; due to stuck port data_in ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13]  ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; PG:U2|box1[0..2,5]                     ; Stuck at GND due to stuck port data_in ;
+; PG:U2|box1[7]                          ; Stuck at VCC due to stuck port data_in ;
+; PG:U2|box1[9..11]                      ; Stuck at GND due to stuck port data_in ;
+; PG:U2|box1[12]                         ; Stuck at VCC due to stuck port data_in ;
+; PG:U2|box1[14]                         ; Stuck at GND due to stuck port data_in ;
+; PG:U2|box1[15]                         ; Stuck at VCC due to stuck port data_in ;
+; PG:U2|box1[17,19..21]                  ; Stuck at GND due to stuck port data_in ;
+; PG:U2|box1[22,25,28]                   ; Stuck at VCC due to stuck port data_in ;
+; PG:U2|box1[29..32,35]                  ; Stuck at GND due to stuck port data_in ;
+; PG:U2|box1[37]                         ; Stuck at VCC due to stuck port data_in ;
+; PG:U2|box1[39]                         ; Stuck at GND due to stuck port data_in ;
+; PG:U2|box1Color[1..6]                  ; Merged with PG:U2|box1Color[0]         ;
+; PG:U2|box1[26,27,34,38]                ; Merged with PG:U2|box1[24]             ;
+; PG:U2|box1[4,8,18]                     ; Merged with PG:U2|box1[13]             ;
+; PG:U2|box1Color[8,9,11..14]            ; Merged with PG:U2|box1Color[10]        ;
+; PG:U2|box1Color[17..22]                ; Merged with PG:U2|box1Color[16]        ;
+; PG:U2|box1[33,36]                      ; Merged with PG:U2|box1[23]             ;
+; PG:U2|box1[3,6]                        ; Merged with PG:U2|box1[16]             ;
+; Total Number of Removed Registers = 54 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -421,7 +409,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 607   ;
+; Total registers                              ; 617   ;
 ; Number of registers using Synchronous Clear  ; 162   ;
 ; Number of registers using Synchronous Load   ; 135   ;
 ; Number of registers using Asynchronous Clear ; 227   ;
@@ -448,29 +436,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[5]                                                                                                                                                   ; 1       ;
 ; Total number of inverted registers = 10                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[1]                                                                                                                                                                                                                     ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[14]                                                                                                                                                                                                                    ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[5]                                                                                                                                                                                              ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_len_reg[21]                                                                                                                                                                                                                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|word_counter[0]                                                                                                                                                                                                        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|counter[0]                                                                                                                                                                                        ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; Yes        ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|WORD_SR[1]                                                                                                                                                                                                             ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|offset_count                                                                                                                                                                                      ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[1]                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[1]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]              ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 32 LEs               ; 20 LEs                 ; Yes        ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -852,16 +817,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "VTC:U1"                                                                                                                       ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                     ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-; hPixel ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "hPixel[31..1]" have no fanouts ;
-; line   ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "line[31..1]" have no fanouts   ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Port Connectivity Checks: "clock:U0|video_pll:PLL1" ;
 +------+-------+----------+---------------------------+
@@ -885,105 +840,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 68                          ;
+; arriav_ff             ; 78                          ;
 ;     CLR SCLR          ; 32                          ;
 ;     ENA CLR SCLR      ; 32                          ;
-;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 163                         ;
-;     arith             ; 121                         ;
-;         1 data inputs ; 120                         ;
-;         2 data inputs ; 1                           ;
-;     normal            ; 42                          ;
+;     plain             ; 14                          ;
+; arriav_lcell_comb     ; 118                         ;
+;     arith             ; 64                          ;
+;         1 data inputs ; 64                          ;
+;     normal            ; 54                          ;
 ;         0 data inputs ; 2                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 5                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 8                           ;
 ;         5 data inputs ; 9                           ;
-;         6 data inputs ; 17                          ;
+;         6 data inputs ; 19                          ;
 ; boundary_port         ; 100                         ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.60                        ;
-; Average LUT depth     ; 4.22                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 3.24                        ;
 +-----------------------+-----------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0 ;
-+-----------------------+--------------------------------------------------------+
-; Type                  ; Count                                                  ;
-+-----------------------+--------------------------------------------------------+
-; arriav_ff             ; 449                                                    ;
-;     CLR               ; 7                                                      ;
-;     CLR SLD           ; 55                                                     ;
-;     ENA               ; 59                                                     ;
-;     ENA CLR           ; 42                                                     ;
-;     ENA CLR SCLR      ; 22                                                     ;
-;     ENA SCLR          ; 27                                                     ;
-;     ENA SCLR SLD      ; 33                                                     ;
-;     ENA SLD           ; 28                                                     ;
-;     SCLR SLD          ; 9                                                      ;
-;     plain             ; 167                                                    ;
-; arriav_lcell_comb     ; 212                                                    ;
-;     arith             ; 74                                                     ;
-;         0 data inputs ; 4                                                      ;
-;         1 data inputs ; 69                                                     ;
-;         2 data inputs ; 1                                                      ;
-;     normal            ; 138                                                    ;
-;         0 data inputs ; 2                                                      ;
-;         1 data inputs ; 8                                                      ;
-;         2 data inputs ; 9                                                      ;
-;         3 data inputs ; 10                                                     ;
-;         4 data inputs ; 22                                                     ;
-;         5 data inputs ; 30                                                     ;
-;         6 data inputs ; 57                                                     ;
-; boundary_port         ; 169                                                    ;
-; stratixv_ram_block    ; 27                                                     ;
-;                       ;                                                        ;
-; Max LUT depth         ; 4.10                                                   ;
-; Average LUT depth     ; 1.29                                                   ;
-+-----------------------+--------------------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; arriav_ff             ; 90                                       ;
-;     CLR               ; 5                                        ;
-;     ENA               ; 30                                       ;
-;     ENA CLR           ; 22                                       ;
-;     ENA CLR SLD       ; 10                                       ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; arriav_lcell_comb     ; 91                                       ;
-;     extend            ; 1                                        ;
-;         7 data inputs ; 1                                        ;
-;     normal            ; 90                                       ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 4                                        ;
-;         2 data inputs ; 20                                       ;
-;         3 data inputs ; 14                                       ;
-;         4 data inputs ; 15                                       ;
-;         5 data inputs ; 24                                       ;
-;         6 data inputs ; 12                                       ;
-; boundary_port         ; 107                                      ;
-;                       ;                                          ;
-; Max LUT depth         ; 3.00                                     ;
-; Average LUT depth     ; 1.33                                     ;
-+-----------------------+------------------------------------------+
-
-
-+-----------------------------------------------+
-; Elapsed Time Per Partition                    ;
-+--------------------------------+--------------+
-; Partition Name                 ; Elapsed Time ;
-+--------------------------------+--------------+
-; sld_signaltap:auto_signaltap_0 ; 00:00:00     ;
-; sld_hub:auto_hub               ; 00:00:00     ;
-; Top                            ; 00:00:01     ;
-+--------------------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -993,31 +879,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------+---------------+-----------+--------------------------------+-------------------+----------------------------------------------------------------------------------------------+---------+
 ; LEDR[0]              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|video_active                                                                          ; N/A     ;
 ; LEDR[0]              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|video_active                                                                          ; N/A     ;
-; VGA_B[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_B[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_B[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_B[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_B[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_B[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_B[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_B[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_G[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_G[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_G[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_G[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_G[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_G[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_G[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
-; VGA_G[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~VCC                                                                                         ; N/A     ;
+; VGA_B[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
+; VGA_B[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
+; VGA_B[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
+; VGA_B[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
+; VGA_B[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
+; VGA_B[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
+; VGA_B[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
+; VGA_B[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[7]~1                                                                             ; N/A     ;
+; VGA_G[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
+; VGA_G[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
+; VGA_G[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
+; VGA_G[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
+; VGA_G[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
+; VGA_G[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
+; VGA_G[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
+; VGA_G[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[7]~1                                                                             ; N/A     ;
 ; VGA_HS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|hSync                                                                                 ; N/A     ;
-; VGA_R[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_R[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_R[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_R[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_R[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_R[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_R[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
-; VGA_R[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ~GND                                                                                         ; N/A     ;
+; VGA_R[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
+; VGA_R[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
+; VGA_R[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
+; VGA_R[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
+; VGA_R[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
+; VGA_R[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
+; VGA_R[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
+; VGA_R[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[7]~1                                                                             ; N/A     ;
 ; VGA_VS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|vSync                                                                                 ; N/A     ;
 ; VGA_VS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|vSync                                                                                 ; N/A     ;
 ; VGA_VS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|vSync                                                                                 ; N/A     ;
@@ -1063,7 +949,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Mon Oct 12 23:05:13 2020
+    Info: Processing started: Tue Oct 13 11:37:29 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
 Info (20032): Parallel compilation is enabled and will use up to 12 processors
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/tb.v
@@ -1081,7 +967,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file video_p
 Info (12021): Found 1 design units, including 1 entities, in source file video_pll/video_pll_0002.v
     Info (12023): Found entity 1: video_pll_0002 File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 2
 Info (12127): Elaborating entity "Project1" for the top level hierarchy
-Info (12128): Elaborating entity "clock" for hierarchy "clock:U0" File: F:/FPGADesign/Project1/Source/Project1.v Line: 77
+Info (12128): Elaborating entity "clock" for hierarchy "clock:U0" File: F:/FPGADesign/Project1/Source/Project1.v Line: 79
 Info (12128): Elaborating entity "video_pll" for hierarchy "clock:U0|video_pll:PLL1" File: F:/FPGADesign/Project1/Source/clock.v Line: 11
 Info (12128): Elaborating entity "video_pll_0002" for hierarchy "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst" File: F:/FPGADesign/Project1/Quartus/video_pll.v Line: 20
 Info (12128): Elaborating entity "altera_pll" for hierarchy "clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 85
@@ -1148,15 +1034,12 @@ Info (12133): Instantiated megafunction "clock:U0|video_pll:PLL1|video_pll_0002:
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: F:/FPGADesign/Project1/Source/Project1.v Line: 87
-Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: F:/FPGADesign/Project1/Source/Project1.v Line: 100
-Warning (10858): Verilog HDL warning at PG.v(17): object box1 used but never assigned File: F:/FPGADesign/Project1/Source/PG.v Line: 17
-Warning (10858): Verilog HDL warning at PG.v(18): object box1Color used but never assigned File: F:/FPGADesign/Project1/Source/PG.v Line: 18
+Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: F:/FPGADesign/Project1/Source/Project1.v Line: 89
+Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: F:/FPGADesign/Project1/Source/Project1.v Line: 102
 Warning (10858): Verilog HDL warning at PG.v(20): object box2 used but never assigned File: F:/FPGADesign/Project1/Source/PG.v Line: 20
 Warning (10858): Verilog HDL warning at PG.v(21): object box2Color used but never assigned File: F:/FPGADesign/Project1/Source/PG.v Line: 21
-Warning (10036): Verilog HDL or VHDL warning at PG.v(23): object "red" assigned a value but never read File: F:/FPGADesign/Project1/Source/PG.v Line: 23
-Warning (10036): Verilog HDL or VHDL warning at PG.v(24): object "green" assigned a value but never read File: F:/FPGADesign/Project1/Source/PG.v Line: 24
-Warning (10036): Verilog HDL or VHDL warning at PG.v(25): object "blue" assigned a value but never read File: F:/FPGADesign/Project1/Source/PG.v Line: 25
+Warning (10030): Net "box2" at PG.v(20) has no driver or initial value, using a default initial value '0' File: F:/FPGADesign/Project1/Source/PG.v Line: 20
+Warning (10030): Net "box2Color" at PG.v(21) has no driver or initial value, using a default initial value '0' File: F:/FPGADesign/Project1/Source/PG.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_ela_trigger_mpo.tdf
     Info (12023): Found entity 1: sld_ela_trigger_mpo File: F:/FPGADesign/Project1/Quartus/db/sld_ela_trigger_mpo.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_reserved_project1_auto_signaltap_0_1_d3be.v
@@ -1183,7 +1066,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: F:/FPGADesign/Project1/Quartus/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2020.10.12.23:05:31 Progress: Loading sld94cb748c/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2020.10.13.11:37:42 Progress: Loading sld94cb748c/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1206,7 +1089,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
     Warning (13410): Pin "LEDR[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
@@ -1217,109 +1099,75 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[7]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 21
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 24
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 25
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 26
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 27
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 28
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 29
     Warning (13410): Pin "VGA_BLANK_N" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 32
-    Warning (13410): Pin "VGA_B[0]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[1]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[2]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[3]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_B[7]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 33
-    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[4]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[5]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[6]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_G[7]" is stuck at VCC File: F:/FPGADesign/Project1/Source/Project1.v Line: 35
-    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[2]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[3]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[4]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[5]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[6]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
-    Warning (13410): Pin "VGA_R[7]" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 37
     Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: F:/FPGADesign/Project1/Source/Project1.v Line: 38
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (286031): Timing-Driven Synthesis is running on partition "sld_signaltap:auto_signaltap_0"
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 63 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 14 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Warning (21074): Design contains 16 input pin(s) that do not drive logic
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK2_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 9
     Warning (15610): No output dependent on input pin "CLOCK3_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 10
     Warning (15610): No output dependent on input pin "CLOCK4_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 11
     Warning (15610): No output dependent on input pin "KEY[1]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
-    Warning (15610): No output dependent on input pin "SW[0]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[1]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[2]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[3]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[4]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[5]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[6]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-Info (21057): Implemented 973 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 934 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 82 output pins
-    Info (21061): Implemented 841 logic cells
+    Info (21061): Implemented 802 logic cells
     Info (21064): Implemented 27 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 104 warnings
-    Info: Peak virtual memory: 4951 megabytes
-    Info: Processing ended: Mon Oct 12 23:05:46 2020
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
+    Info: Peak virtual memory: 4943 megabytes
+    Info: Processing ended: Tue Oct 13 11:37:50 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:36
 
 
