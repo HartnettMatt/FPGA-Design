@@ -349,6 +349,8 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to VGA_VS -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=27" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=27" -section_id auto_signaltap_0
+set_global_assignment -name EDA_TEST_BENCH_FILE ../Source/tb.v -section_id tb
+set_global_assignment -name VERILOG_FILE ../Source/PG_B.v
 set_global_assignment -name VERILOG_FILE ../Source/tb.v
 set_global_assignment -name VERILOG_FILE ../Source/VTC.v
 set_global_assignment -name VERILOG_FILE ../Source/PG.v
@@ -358,7 +360,7 @@ set_global_assignment -name VERILOG_FILE ../Source/Project1.v
 set_global_assignment -name SDC_FILE Project1.SDC
 set_global_assignment -name QIP_FILE video_pll.qip
 set_global_assignment -name SIP_FILE video_pll.sip
-set_global_assignment -name EDA_TEST_BENCH_FILE ../Source/tb.v -section_id tb
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name QIP_FILE buffer.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

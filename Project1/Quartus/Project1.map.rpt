@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project1
-Tue Oct 13 11:37:50 2020
+Thu Oct 15 17:34:15 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -15,21 +15,25 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Source assignments for sld_signaltap:auto_signaltap_0
- 14. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
- 15. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
- 16. Parameter Settings for User Entity Instance: VTC:U1
- 17. Parameter Settings for User Entity Instance: PG:U2
- 18. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 19. Port Connectivity Checks: "clock:U0|video_pll:PLL1"
- 20. Signal Tap Logic Analyzer Settings
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Connections to In-System Debugging Instance "auto_signaltap_0"
- 24. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|altsyncram_7ij2:altsyncram1
+ 14. Source assignments for sld_signaltap:auto_signaltap_0
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |Project1
+ 16. Parameter Settings for User Entity Instance: clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i
+ 17. Parameter Settings for User Entity Instance: VTC:U1
+ 18. Parameter Settings for User Entity Instance: PG_B:U2
+ 19. Parameter Settings for User Entity Instance: PG_B:U2|buffer:b0|altsyncram:altsyncram_component
+ 20. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "clock:U0|video_pll:PLL1"
+ 23. Signal Tap Logic Analyzer Settings
+ 24. In-System Memory Content Editor Settings
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 28. Analysis & Synthesis Messages
 
 
 
@@ -56,16 +60,16 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 13 11:37:50 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 15 17:34:15 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 617                                             ;
+; Total registers                 ; 686                                             ;
 ; Total pins                      ; 99                                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 3,456                                           ;
+; Total block memory bits         ; 4,992                                           ;
 ; Total DSP Blocks                ; 0                                               ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
@@ -186,21 +190,37 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                      ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------+-------------+
+; ../Source/PG_B.v                                                   ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project1/Source/PG_B.v                                                              ;             ;
 ; ../Source/VTC.v                                                    ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project1/Source/VTC.v                                                               ;             ;
-; ../Source/PG.v                                                     ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project1/Source/PG.v                                                                ;             ;
 ; ../Source/clock.v                                                  ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project1/Source/clock.v                                                             ;             ;
 ; ../Source/Project1.v                                               ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project1/Source/Project1.v                                                          ;             ;
 ; video_pll.v                                                        ; yes             ; User Wizard-Generated File                   ; F:/FPGADesign/Project1/Quartus/video_pll.v                                                        ; video_pll   ;
 ; video_pll/video_pll_0002.v                                         ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v                                         ; video_pll   ;
+; buffer.v                                                           ; yes             ; User Wizard-Generated File                   ; F:/FPGADesign/Project1/Quartus/buffer.v                                                           ;             ;
 ; /fpgadesign/project1/source/params.vh                              ; yes             ; Auto-Found Unspecified File                  ; /fpgadesign/project1/source/params.vh                                                             ;             ;
 ; altera_pll.v                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v                                    ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                  ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                           ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                     ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                  ;             ;
+; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/aglobal201.inc                                  ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                   ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altrom.inc                                      ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altram.inc                                      ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altdpram.inc                                    ;             ;
+; db/altsyncram_i5i1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; F:/FPGADesign/Project1/Quartus/db/altsyncram_i5i1.tdf                                             ;             ;
+; db/altsyncram_7ij2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; F:/FPGADesign/Project1/Quartus/db/altsyncram_7ij2.tdf                                             ;             ;
+; buffer.mif                                                         ; yes             ; Auto-Found Memory Initialization File        ; F:/FPGADesign/Project1/Quartus/buffer.mif                                                         ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                             ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                   ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv               ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                  ;             ;
 ; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_signaltap.vhd                               ;             ;
 ; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                          ;             ;
 ; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_ela_control.vhd                             ;             ;
 ; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                ;             ;
 ; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/lpm_constant.inc                                ;             ;
 ; dffeea.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/dffeea.inc                                      ;             ;
-; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/aglobal201.inc                                  ;             ;
 ; sld_ela_trigger.tdf                                                ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_ela_trigger.tdf                             ;             ;
 ; db/sld_ela_trigger_mpo.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; F:/FPGADesign/Project1/Quartus/db/sld_ela_trigger_mpo.tdf                                         ;             ;
 ; db/sld_reserved_project1_auto_signaltap_0_1_d3be.v                 ; yes             ; Encrypted Auto-Generated Megafunction        ; F:/FPGADesign/Project1/Quartus/db/sld_reserved_project1_auto_signaltap_0_1_d3be.v                 ;             ;
@@ -208,14 +228,6 @@ https://fpgasoftware.intel.com/eula.
 ; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                   ;             ;
 ; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                    ;             ;
 ; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                          ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                  ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                           ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                     ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                  ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                   ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altrom.inc                                      ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altram.inc                                      ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altdpram.inc                                    ;             ;
 ; db/altsyncram_ob84.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; F:/FPGADesign/Project1/Quartus/db/altsyncram_ob84.tdf                                             ;             ;
 ; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altdpram.tdf                                    ;             ;
 ; memmodes.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/others/maxplus2/memmodes.inc                                  ;             ;
@@ -243,9 +255,6 @@ https://fpgasoftware.intel.com/eula.
 ; db/cmpr_c9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/FPGADesign/Project1/Quartus/db/cmpr_c9c.tdf                                                    ;             ;
 ; db/cntr_kri.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/FPGADesign/Project1/Quartus/db/cntr_kri.tdf                                                    ;             ;
 ; db/cmpr_99c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/FPGADesign/Project1/Quartus/db/cmpr_99c.tdf                                                    ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                  ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                   ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv               ;             ;
 ; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                     ; altera_sld  ;
 ; db/ip/sld94cb748c/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/alt_sld_fab.v                                    ; alt_sld_fab ;
 ; db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
@@ -262,20 +271,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 366                      ;
+; Estimate of Logic utilization (ALMs needed) ; 434                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 419                      ;
-;     -- 7 input functions                    ; 1                        ;
-;     -- 6 input functions                    ; 88                       ;
-;     -- 5 input functions                    ; 63                       ;
-;     -- 4 input functions                    ; 45                       ;
-;     -- <=3 input functions                  ; 222                      ;
+; Combinational ALUT usage for logic          ; 548                      ;
+;     -- 7 input functions                    ; 5                        ;
+;     -- 6 input functions                    ; 136                      ;
+;     -- 5 input functions                    ; 89                       ;
+;     -- 4 input functions                    ; 58                       ;
+;     -- <=3 input functions                  ; 260                      ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 617                      ;
+; Dedicated logic registers                   ; 686                      ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 99                       ;
 ; Total MLAB memory bits                      ; 0                        ;
-; Total block memory bits                     ; 3456                     ;
+; Total block memory bits                     ; 4992                     ;
 ;                                             ;                          ;
 ; Total DSP Blocks                            ; 0                        ;
 ;                                             ;                          ;
@@ -283,9 +292,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
-; Maximum fan-out                             ; 349                      ;
-; Total fan-out                               ; 4286                     ;
-; Average fan-out                             ; 3.37                     ;
+; Maximum fan-out                             ; 460                      ;
+; Total fan-out                               ; 5599                     ;
+; Average fan-out                             ; 3.75                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -294,21 +303,27 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                                            ; Entity Name                                   ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------+--------------+
-; |Project1                                                                                                                               ; 419 (0)             ; 617 (0)                   ; 3456              ; 0          ; 99   ; 0            ; |Project1                                                                                                                                                                                                                                                                                                                                                                                      ; Project1                                      ; work         ;
-;    |PG:U2|                                                                                                                              ; 27 (27)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|PG:U2                                                                                                                                                                                                                                                                                                                                                                                ; PG                                            ; work         ;
-;    |VTC:U1|                                                                                                                             ; 88 (88)             ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                                                                                                                                                                                                                                                                                                                               ; VTC                                           ; work         ;
+; |Project1                                                                                                                               ; 548 (2)             ; 686 (0)                   ; 4992              ; 0          ; 99   ; 0            ; |Project1                                                                                                                                                                                                                                                                                                                                                                                      ; Project1                                      ; work         ;
+;    |PG_B:U2|                                                                                                                            ; 133 (92)            ; 51 (0)                    ; 1536              ; 0          ; 0    ; 0            ; |Project1|PG_B:U2                                                                                                                                                                                                                                                                                                                                                                              ; PG_B                                          ; work         ;
+;       |buffer:b0|                                                                                                                       ; 41 (0)              ; 51 (0)                    ; 1536              ; 0          ; 0    ; 0            ; |Project1|PG_B:U2|buffer:b0                                                                                                                                                                                                                                                                                                                                                                    ; buffer                                        ; work         ;
+;          |altsyncram:altsyncram_component|                                                                                              ; 41 (0)              ; 51 (0)                    ; 1536              ; 0          ; 0    ; 0            ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                                                                    ; altsyncram                                    ; work         ;
+;             |altsyncram_i5i1:auto_generated|                                                                                            ; 41 (0)              ; 51 (0)                    ; 1536              ; 0          ; 0    ; 0            ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated                                                                                                                                                                                                                                                                                                     ; altsyncram_i5i1                               ; work         ;
+;                |altsyncram_7ij2:altsyncram1|                                                                                            ; 0 (0)               ; 0 (0)                     ; 1536              ; 0          ; 0    ; 0            ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|altsyncram_7ij2:altsyncram1                                                                                                                                                                                                                                                                         ; altsyncram_7ij2                               ; work         ;
+;                |sld_mod_ram_rom:mgl_prim2|                                                                                              ; 41 (26)             ; 51 (43)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                                                                                           ; sld_mod_ram_rom                               ; work         ;
+;                   |sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|                                                               ; 15 (15)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr                                                                                                                                                                                                                     ; sld_rom_sr                                    ; work         ;
+;    |VTC:U1|                                                                                                                             ; 87 (87)             ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|VTC:U1                                                                                                                                                                                                                                                                                                                                                                               ; VTC                                           ; work         ;
 ;    |clock:U0|                                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0                                                                                                                                                                                                                                                                                                                                                                             ; clock                                         ; work         ;
 ;       |video_pll:PLL1|                                                                                                                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1                                                                                                                                                                                                                                                                                                                                                              ; video_pll                                     ; video_pll    ;
 ;          |video_pll_0002:video_pll_inst|                                                                                                ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst                                                                                                                                                                                                                                                                                                                                ; video_pll_0002                                ; video_pll    ;
 ;             |altera_pll:altera_pll_i|                                                                                                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                                                        ; altera_pll                                    ; work         ;
-;    |sld_hub:auto_hub|                                                                                                                   ; 91 (1)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                                     ; sld_hub                                       ; altera_sld   ;
-;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 90 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                                                                     ; alt_sld_fab_with_jtag_input                   ; altera_sld   ;
-;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 90 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                                                                  ; alt_sld_fab                                   ; alt_sld_fab  ;
-;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 90 (1)              ; 90 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                                                              ; alt_sld_fab_alt_sld_fab                       ; alt_sld_fab  ;
-;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 89 (0)              ; 85 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                                                                  ; alt_sld_fab_alt_sld_fab_sldfabric             ; alt_sld_fab  ;
-;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 89 (56)             ; 85 (57)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                                                                     ; sld_jtag_hub                                  ; work         ;
+;    |sld_hub:auto_hub|                                                                                                                   ; 113 (1)             ; 118 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                                     ; sld_hub                                       ; altera_sld   ;
+;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 112 (0)             ; 118 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                                                                     ; alt_sld_fab_with_jtag_input                   ; altera_sld   ;
+;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 112 (0)             ; 118 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                                                                  ; alt_sld_fab                                   ; alt_sld_fab  ;
+;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 112 (1)             ; 118 (6)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                                                              ; alt_sld_fab_alt_sld_fab                       ; alt_sld_fab  ;
+;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 111 (0)             ; 112 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                                                                  ; alt_sld_fab_alt_sld_fab_sldfabric             ; alt_sld_fab  ;
+;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 111 (77)            ; 112 (84)                  ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                                                                     ; sld_jtag_hub                                  ; work         ;
 ;                      |sld_rom_sr:hub_info_reg|                                                                                          ; 15 (15)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg                                             ; sld_rom_sr                                    ; work         ;
-;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 18 (18)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm                                           ; sld_shadow_jsm                                ; altera_sld   ;
+;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 19 (19)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm                                           ; sld_shadow_jsm                                ; altera_sld   ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                                                     ; 212 (2)             ; 449 (30)                  ; 3456              ; 0          ; 0    ; 0            ; |Project1|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                                                                       ; sld_signaltap                                 ; work         ;
 ;       |sld_signaltap_impl:sld_signaltap_body|                                                                                           ; 210 (0)             ; 419 (0)                   ; 3456              ; 0          ; 0    ; 0            ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body                                                                                                                                                                                                                                                                                                                 ; sld_signaltap_impl                            ; work         ;
 ;          |sld_signaltap_implb:sld_signaltap_body|                                                                                       ; 210 (67)            ; 419 (182)                 ; 3456              ; 0          ; 0    ; 0            ; |Project1|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body                                                                                                                                                                                                                                                                          ; sld_signaltap_implb                           ; work         ;
@@ -353,13 +368,14 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                          ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ob84:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 27           ; 128          ; 27           ; 3456 ; None ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF        ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------------+
+; PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|altsyncram_7ij2:altsyncram1|ALTSYNCRAM                                                                               ; AUTO ; True Dual Port   ; 64           ; 24           ; 64           ; 24           ; 1536 ; buffer.mif ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ob84:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 27           ; 128          ; 27           ; 3456 ; None       ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -368,6 +384,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                                                                                                                                                                                                                                         ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 ; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |Project1|clock:U0|video_pll:PLL1                                                                                                                                                                                                                                                                                       ; video_pll.v     ;
+; Altera ; ROM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |Project1|PG_B:U2|buffer:b0                                                                                                                                                                                                                                                                                             ; buffer.v        ;
 ; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                           ;                 ;
 ; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                       ;                 ;
 ; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Project1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_presplit:presplit                                             ;                 ;
@@ -377,44 +394,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; PG:U2|box1[0..2,5]                     ; Stuck at GND due to stuck port data_in ;
-; PG:U2|box1[7]                          ; Stuck at VCC due to stuck port data_in ;
-; PG:U2|box1[9..11]                      ; Stuck at GND due to stuck port data_in ;
-; PG:U2|box1[12]                         ; Stuck at VCC due to stuck port data_in ;
-; PG:U2|box1[14]                         ; Stuck at GND due to stuck port data_in ;
-; PG:U2|box1[15]                         ; Stuck at VCC due to stuck port data_in ;
-; PG:U2|box1[17,19..21]                  ; Stuck at GND due to stuck port data_in ;
-; PG:U2|box1[22,25,28]                   ; Stuck at VCC due to stuck port data_in ;
-; PG:U2|box1[29..32,35]                  ; Stuck at GND due to stuck port data_in ;
-; PG:U2|box1[37]                         ; Stuck at VCC due to stuck port data_in ;
-; PG:U2|box1[39]                         ; Stuck at GND due to stuck port data_in ;
-; PG:U2|box1Color[1..6]                  ; Merged with PG:U2|box1Color[0]         ;
-; PG:U2|box1[26,27,34,38]                ; Merged with PG:U2|box1[24]             ;
-; PG:U2|box1[4,8,18]                     ; Merged with PG:U2|box1[13]             ;
-; PG:U2|box1Color[8,9,11..14]            ; Merged with PG:U2|box1Color[10]        ;
-; PG:U2|box1Color[17..22]                ; Merged with PG:U2|box1Color[16]        ;
-; PG:U2|box1[33,36]                      ; Merged with PG:U2|box1[23]             ;
-; PG:U2|box1[3,6]                        ; Merged with PG:U2|box1[16]             ;
-; Total Number of Removed Registers = 54 ;                                        ;
-+----------------------------------------+----------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 617   ;
+; Total registers                              ; 686   ;
 ; Number of registers using Synchronous Clear  ; 162   ;
-; Number of registers using Synchronous Load   ; 135   ;
-; Number of registers using Asynchronous Clear ; 227   ;
+; Number of registers using Synchronous Load   ; 192   ;
+; Number of registers using Asynchronous Clear ; 274   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 305   ;
+; Number of registers using Clock Enable       ; 376   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -436,6 +426,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[5]                                                                                                                                                   ; 1       ;
 ; Total number of inverted registers = 10                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[1]                                        ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|word_counter[2] ;
+; 18:1               ; 4 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; Yes        ; |Project1|PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[0]      ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Project1|PG_B:U2|vCount[4]                                                                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|altsyncram_7ij2:altsyncram1 ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                    ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                     ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -732,22 +745,83 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------+
-; Parameter Settings for User Entity Instance: PG:U2 ;
-+----------------+-------+---------------------------+
-; Parameter Name ; Value ; Type                      ;
-+----------------+-------+---------------------------+
-; fPorchH        ; 16    ; Signed Integer            ;
-; bPorchH        ; 48    ; Signed Integer            ;
-; dispTimeH      ; 640   ; Signed Integer            ;
-; pulseWidthH    ; 96    ; Signed Integer            ;
-; syncTimeH      ; 800   ; Signed Integer            ;
-; fPorchV        ; 10    ; Signed Integer            ;
-; bPorchV        ; 33    ; Signed Integer            ;
-; dispTimeV      ; 480   ; Signed Integer            ;
-; pulseWidthV    ; 2     ; Signed Integer            ;
-; syncTimeV      ; 525   ; Signed Integer            ;
-+----------------+-------+---------------------------+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PG_B:U2 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; fPorchH        ; 16    ; Signed Integer              ;
+; bPorchH        ; 48    ; Signed Integer              ;
+; dispTimeH      ; 640   ; Signed Integer              ;
+; pulseWidthH    ; 96    ; Signed Integer              ;
+; syncTimeH      ; 800   ; Signed Integer              ;
+; fPorchV        ; 10    ; Signed Integer              ;
+; bPorchV        ; 33    ; Signed Integer              ;
+; dispTimeV      ; 480   ; Signed Integer              ;
+; pulseWidthV    ; 2     ; Signed Integer              ;
+; syncTimeV      ; 525   ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PG_B:U2|buffer:b0|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------+
+; Parameter Name                     ; Value                ; Type                               ;
++------------------------------------+----------------------+------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                            ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                     ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                            ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                            ;
+; WIDTH_A                            ; 24                   ; Signed Integer                     ;
+; WIDTHAD_A                          ; 6                    ; Signed Integer                     ;
+; NUMWORDS_A                         ; 64                   ; Signed Integer                     ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                            ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                            ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                            ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; WIDTH_B                            ; 1                    ; Untyped                            ;
+; WIDTHAD_B                          ; 1                    ; Untyped                            ;
+; NUMWORDS_B                         ; 1                    ; Untyped                            ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                            ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                            ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                            ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                            ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                            ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                            ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                            ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                            ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                            ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                     ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                            ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                            ;
+; BYTE_SIZE                          ; 8                    ; Untyped                            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                            ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                            ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                            ;
+; INIT_FILE                          ; buffer.mif           ; Untyped                            ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                            ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                            ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                            ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                            ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                            ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                            ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                            ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_i5i1      ; Untyped                            ;
++------------------------------------+----------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -817,6 +891,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                              ;
++-------------------------------------------+---------------------------------------------------+
+; Name                                      ; Value                                             ;
++-------------------------------------------+---------------------------------------------------+
+; Number of entity instances                ; 1                                                 ;
+; Entity Instance                           ; PG_B:U2|buffer:b0|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                               ;
+;     -- WIDTH_A                            ; 24                                                ;
+;     -- NUMWORDS_A                         ; 64                                                ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
+;     -- WIDTH_B                            ; 1                                                 ;
+;     -- NUMWORDS_B                         ; 1                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
++-------------------------------------------+---------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Port Connectivity Checks: "clock:U0|video_pll:PLL1" ;
 +------+-------+----------+---------------------------+
@@ -835,31 +929,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; In-System Memory Content Editor Settings                                                                                                     ;
++----------------+-------------+-------+-------+------------+----------------------------------------------------------------------------------+
+; Instance Index ; Instance ID ; Width ; Depth ; Mode       ; Hierarchy Location                                                               ;
++----------------+-------------+-------+-------+------------+----------------------------------------------------------------------------------+
+; 0              ; NONE        ; 24    ; 64    ; Read/Write ; PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated ;
++----------------+-------------+-------+-------+------------+----------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 78                          ;
+; arriav_ff             ; 119                         ;
+;     CLR               ; 7                           ;
 ;     CLR SCLR          ; 32                          ;
+;     ENA               ; 8                           ;
+;     ENA CLR           ; 12                          ;
 ;     ENA CLR SCLR      ; 32                          ;
-;     plain             ; 14                          ;
-; arriav_lcell_comb     ; 118                         ;
+;     ENA SLD           ; 24                          ;
+;     plain             ; 4                           ;
+; arriav_lcell_comb     ; 223                         ;
 ;     arith             ; 64                          ;
 ;         1 data inputs ; 64                          ;
-;     normal            ; 54                          ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 157                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 9                           ;
-;         6 data inputs ; 19                          ;
-; boundary_port         ; 100                         ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 38                          ;
+;         4 data inputs ; 24                          ;
+;         5 data inputs ; 28                          ;
+;         6 data inputs ; 56                          ;
+; boundary_port         ; 127                         ;
 ; generic_pll           ; 1                           ;
+; stratixv_ram_block    ; 24                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.24                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.01                        ;
 +-----------------------+-----------------------------+
 
 
@@ -868,7 +977,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -879,31 +988,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------+---------------+-----------+--------------------------------+-------------------+----------------------------------------------------------------------------------------------+---------+
 ; LEDR[0]              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|video_active                                                                          ; N/A     ;
 ; LEDR[0]              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|video_active                                                                          ; N/A     ;
-; VGA_B[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
-; VGA_B[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
-; VGA_B[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
-; VGA_B[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
-; VGA_B[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
-; VGA_B[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
-; VGA_B[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[0]~0                                                                             ; N/A     ;
-; VGA_B[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_B[7]~1                                                                             ; N/A     ;
-; VGA_G[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
-; VGA_G[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
-; VGA_G[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
-; VGA_G[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
-; VGA_G[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
-; VGA_G[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
-; VGA_G[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[0]~0                                                                             ; N/A     ;
-; VGA_G[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_G[7]~1                                                                             ; N/A     ;
+; VGA_B[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[0]~0                                                                           ; N/A     ;
+; VGA_B[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[1]~1                                                                           ; N/A     ;
+; VGA_B[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[2]~2                                                                           ; N/A     ;
+; VGA_B[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[3]~3                                                                           ; N/A     ;
+; VGA_B[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[4]~4                                                                           ; N/A     ;
+; VGA_B[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[5]~5                                                                           ; N/A     ;
+; VGA_B[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[6]~6                                                                           ; N/A     ;
+; VGA_B[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_B[7]~7                                                                           ; N/A     ;
+; VGA_G[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[0]~0                                                                           ; N/A     ;
+; VGA_G[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[1]~1                                                                           ; N/A     ;
+; VGA_G[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[2]~2                                                                           ; N/A     ;
+; VGA_G[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[3]~3                                                                           ; N/A     ;
+; VGA_G[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[4]~4                                                                           ; N/A     ;
+; VGA_G[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[5]~5                                                                           ; N/A     ;
+; VGA_G[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[6]~6                                                                           ; N/A     ;
+; VGA_G[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_G[7]~7                                                                           ; N/A     ;
 ; VGA_HS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|hSync                                                                                 ; N/A     ;
-; VGA_R[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
-; VGA_R[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
-; VGA_R[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
-; VGA_R[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
-; VGA_R[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
-; VGA_R[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
-; VGA_R[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[0]~0                                                                             ; N/A     ;
-; VGA_R[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG:U2|VGA_R[7]~1                                                                             ; N/A     ;
+; VGA_R[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[0]~0                                                                           ; N/A     ;
+; VGA_R[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[1]~1                                                                           ; N/A     ;
+; VGA_R[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[2]~2                                                                           ; N/A     ;
+; VGA_R[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[3]~3                                                                           ; N/A     ;
+; VGA_R[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[4]~4                                                                           ; N/A     ;
+; VGA_R[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[5]~5                                                                           ; N/A     ;
+; VGA_R[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[6]~6                                                                           ; N/A     ;
+; VGA_R[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; PG_B:U2|VGA_R[7]~7                                                                           ; N/A     ;
 ; VGA_VS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|vSync                                                                                 ; N/A     ;
 ; VGA_VS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|vSync                                                                                 ; N/A     ;
 ; VGA_VS               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VTC:U1|vSync                                                                                 ; N/A     ;
@@ -949,9 +1058,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Tue Oct 13 11:37:29 2020
+    Info: Processing started: Thu Oct 15 17:33:52 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project1 -c Project1
 Info (20032): Parallel compilation is enabled and will use up to 12 processors
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/pg_b.v
+    Info (12023): Found entity 1: PG_B File: F:/FPGADesign/Project1/Source/PG_B.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/tb.v
     Info (12023): Found entity 1: tb File: F:/FPGADesign/Project1/Source/tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project1/source/vtc.v
@@ -966,6 +1077,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file video_p
     Info (12023): Found entity 1: video_pll File: F:/FPGADesign/Project1/Quartus/video_pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file video_pll/video_pll_0002.v
     Info (12023): Found entity 1: video_pll_0002 File: F:/FPGADesign/Project1/Quartus/video_pll/video_pll_0002.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file buffer.v
+    Info (12023): Found entity 1: buffer File: F:/FPGADesign/Project1/Quartus/buffer.v Line: 40
 Info (12127): Elaborating entity "Project1" for the top level hierarchy
 Info (12128): Elaborating entity "clock" for hierarchy "clock:U0" File: F:/FPGADesign/Project1/Source/Project1.v Line: 79
 Info (12128): Elaborating entity "video_pll" for hierarchy "clock:U0|video_pll:PLL1" File: F:/FPGADesign/Project1/Source/clock.v Line: 11
@@ -1035,11 +1148,45 @@ Info (12133): Instantiated megafunction "clock:U0|video_pll:PLL1|video_pll_0002:
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "VTC" for hierarchy "VTC:U1" File: F:/FPGADesign/Project1/Source/Project1.v Line: 89
-Info (12128): Elaborating entity "PG" for hierarchy "PG:U2" File: F:/FPGADesign/Project1/Source/Project1.v Line: 102
-Warning (10858): Verilog HDL warning at PG.v(20): object box2 used but never assigned File: F:/FPGADesign/Project1/Source/PG.v Line: 20
-Warning (10858): Verilog HDL warning at PG.v(21): object box2Color used but never assigned File: F:/FPGADesign/Project1/Source/PG.v Line: 21
-Warning (10030): Net "box2" at PG.v(20) has no driver or initial value, using a default initial value '0' File: F:/FPGADesign/Project1/Source/PG.v Line: 20
-Warning (10030): Net "box2Color" at PG.v(21) has no driver or initial value, using a default initial value '0' File: F:/FPGADesign/Project1/Source/PG.v Line: 21
+Info (12128): Elaborating entity "PG_B" for hierarchy "PG_B:U2" File: F:/FPGADesign/Project1/Source/Project1.v Line: 102
+Info (12128): Elaborating entity "buffer" for hierarchy "PG_B:U2|buffer:b0" File: F:/FPGADesign/Project1/Source/PG_B.v Line: 37
+Info (12128): Elaborating entity "altsyncram" for hierarchy "PG_B:U2|buffer:b0|altsyncram:altsyncram_component" File: F:/FPGADesign/Project1/Quartus/buffer.v Line: 82
+Info (12130): Elaborated megafunction instantiation "PG_B:U2|buffer:b0|altsyncram:altsyncram_component" File: F:/FPGADesign/Project1/Quartus/buffer.v Line: 82
+Info (12133): Instantiated megafunction "PG_B:U2|buffer:b0|altsyncram:altsyncram_component" with the following parameter: File: F:/FPGADesign/Project1/Quartus/buffer.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "buffer.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=NONE"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "64"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "6"
+    Info (12134): Parameter "width_a" = "24"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i5i1.tdf
+    Info (12023): Found entity 1: altsyncram_i5i1 File: F:/FPGADesign/Project1/Quartus/db/altsyncram_i5i1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_i5i1" for hierarchy "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7ij2.tdf
+    Info (12023): Found entity 1: altsyncram_7ij2 File: F:/FPGADesign/Project1/Quartus/db/altsyncram_7ij2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_7ij2" for hierarchy "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|altsyncram_7ij2:altsyncram1" File: F:/FPGADesign/Project1/Quartus/db/altsyncram_i5i1.tdf Line: 35
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: F:/FPGADesign/Project1/Quartus/db/altsyncram_i5i1.tdf Line: 36
+Info (12130): Elaborated megafunction instantiation "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: F:/FPGADesign/Project1/Quartus/db/altsyncram_i5i1.tdf Line: 36
+Info (12133): Instantiated megafunction "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: F:/FPGADesign/Project1/Quartus/db/altsyncram_i5i1.tdf Line: 36
+    Info (12134): Parameter "CVALUE" = "000000000000000000000000"
+    Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
+    Info (12134): Parameter "IS_READABLE" = "1"
+    Info (12134): Parameter "NODE_NAME" = "0"
+    Info (12134): Parameter "NUMWORDS" = "64"
+    Info (12134): Parameter "SHIFT_COUNT_BITS" = "5"
+    Info (12134): Parameter "WIDTH_WORD" = "24"
+    Info (12134): Parameter "WIDTHAD" = "6"
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "PG_B:U2|buffer:b0|altsyncram:altsyncram_component|altsyncram_i5i1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 799
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_ela_trigger_mpo.tdf
     Info (12023): Found entity 1: sld_ela_trigger_mpo File: F:/FPGADesign/Project1/Quartus/db/sld_ela_trigger_mpo.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_reserved_project1_auto_signaltap_0_1_d3be.v
@@ -1066,7 +1213,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: F:/FPGADesign/Project1/Quartus/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2020.10.13.11:37:42 Progress: Loading sld94cb748c/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2020.10.15.17:34:05 Progress: Loading sld94cb748c/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1085,7 +1232,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/ip/s
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 142
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: F:/FPGADesign/Project1/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
@@ -1149,25 +1296,33 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 14 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance clock:U0|video_pll:PLL1|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK2_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 9
     Warning (15610): No output dependent on input pin "CLOCK3_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 10
     Warning (15610): No output dependent on input pin "CLOCK4_50" File: F:/FPGADesign/Project1/Source/Project1.v Line: 11
     Warning (15610): No output dependent on input pin "KEY[1]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "KEY[2]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "KEY[3]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[0]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[1]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[2]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[3]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[4]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[5]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[6]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
     Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project1/Source/Project1.v Line: 18
-Info (21057): Implemented 934 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1125 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 82 output pins
-    Info (21061): Implemented 802 logic cells
-    Info (21064): Implemented 27 RAM segments
+    Info (21061): Implemented 969 logic cells
+    Info (21064): Implemented 51 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4943 megabytes
-    Info: Processing ended: Tue Oct 13 11:37:50 2020
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 72 warnings
+    Info: Peak virtual memory: 4944 megabytes
+    Info: Processing ended: Thu Oct 15 17:34:15 2020
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:41
 
 

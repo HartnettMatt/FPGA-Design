@@ -88,7 +88,7 @@ VTC U1(
 	.video_active(video_active)
 	);
 
-PG U2(
+PG_B U2(
 	.hPixel(hPixel),
 	.line(line),
 	.video_active(video_active),

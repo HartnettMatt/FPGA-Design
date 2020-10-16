@@ -1,0 +1,22 @@
+% DEPTH and WIDTH are decimal values %
+% RADIX values can be BIN, DEC, or HEX %
+% Address : Data %
+% [A0..Ax] : D , address range 0 to x contain value D (each address gets this value %
+% [A0..Ax] : D0 D1 , A0 gets D0, A1 gets D1, A2 gets D0, etc %
+% A : D0 D1 D2 , address A gets D0, address+1 gets D1, etc %
+DEPTH = 64;
+WIDTH = 24;
+ADDRESS_RADIX = DEC;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+% Red, Green, Blue %
+[0..7] : ffffff;
+[8..15] : ff0000;
+[16..23] : 00ff00;
+[24..31] : 0000ff;
+[32..39] : 204060;
+[40..47] : 406020;
+[48..55] : 602040;
+[56..63] : 000000;
+END;
