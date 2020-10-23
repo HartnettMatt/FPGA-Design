@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="7d879d6b4ef71c8afa6b"/>
+  </project>
+  <file_info>
+    <file device="5CSXFC6D6F31C6" path="component_tutorial.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="embedded_system:U0" name="U0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME embedded_system HAS_SOPCINFO 1 GENERATION_ID 1603406013"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

@@ -1,5 +1,5 @@
 Fitter report for Project1
-Thu Oct 15 17:35:06 2020
+Thu Oct 22 15:51:46 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Thu Oct 15 17:35:06 2020           ;
+; Fitter Status                   ; Successful - Thu Oct 22 15:51:46 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project1                                        ;
 ; Top-level Entity Name           ; Project1                                        ;
@@ -156,22 +156,22 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.16        ;
+; Average used               ; 1.14        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.2%      ;
-;     Processor 3            ;   2.0%      ;
-;     Processor 4            ;   2.0%      ;
-;     Processor 5            ;   1.2%      ;
-;     Processor 6            ;   1.2%      ;
-;     Processor 7            ;   1.2%      ;
-;     Processor 8            ;   1.2%      ;
-;     Processor 9            ;   1.2%      ;
-;     Processor 10           ;   1.2%      ;
-;     Processor 11           ;   1.2%      ;
-;     Processor 12           ;   1.2%      ;
+;     Processor 2            ;   1.8%      ;
+;     Processor 3            ;   1.7%      ;
+;     Processor 4            ;   1.7%      ;
+;     Processor 5            ;   1.1%      ;
+;     Processor 6            ;   1.1%      ;
+;     Processor 7            ;   1.1%      ;
+;     Processor 8            ;   1.1%      ;
+;     Processor 9            ;   1.1%      ;
+;     Processor 10           ;   1.1%      ;
+;     Processor 11           ;   1.1%      ;
+;     Processor 12           ;   1.1%      ;
 +----------------------------+-------------+
 
 
@@ -2393,7 +2393,7 @@ Info (332111): Found 7 clocks
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:13
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:24
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:06
@@ -2405,19 +2405,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 16% of the available device resources in the region that extends from location X0_Y0 to location X10_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 2.88 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
+Info (11888): Total time spent on timing analysis during the Fitter is 2.91 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
 Info (144001): Generated suppressed messages file F:/FPGADesign/Project1/Quartus/Project1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 7525 megabytes
-    Info: Processing ended: Thu Oct 15 17:35:07 2020
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:03:02
+    Info: Peak virtual memory: 7524 megabytes
+    Info: Processing ended: Thu Oct 22 15:51:47 2020
+    Info: Elapsed time: 00:01:11
+    Info: Total CPU time (on all processors): 00:03:00
 
 
 +----------------------------+

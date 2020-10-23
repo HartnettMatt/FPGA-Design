@@ -78,16 +78,6 @@ while {$x1 <= 56} {
   }
 }
 
-set x2 8
-while {$x2 <= 56} {
-  puts "x2 is $x2"
-  write_content_to_memory -instance_index 0 -start_address $x2 -word_count 1 -content $color2 -content_in_hex
-  after 500
-  if {$x2 > 48} {
-    set x2 0
-  } else {
-    set x2 [expr {$x2 + 8}]
-  }
-}
+
 end_memory_edit
 project_close
