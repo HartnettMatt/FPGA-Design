@@ -1,0 +1,35 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate F:\FPGADesign\component_tutorial\embedded_system.qsys --block-symbol-file --output-directory=F:\FPGADesign\component_tutorial\embedded_system --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading component_tutorial/embedded_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding reg32_avalon_interface_0 [reg32_avalon_interface 1.0]
+Progress: Parameterizing module reg32_avalon_interface_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: embedded_system.reg32_avalon_interface_0: reg32_avalon_interface_0.avalon_slave_0 must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate F:\FPGADesign\component_tutorial\embedded_system.qsys --synthesis=VERILOG --output-directory=F:\FPGADesign\component_tutorial\embedded_system\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading component_tutorial/embedded_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding reg32_avalon_interface_0 [reg32_avalon_interface 1.0]
+Progress: Parameterizing module reg32_avalon_interface_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: embedded_system.reg32_avalon_interface_0: reg32_avalon_interface_0.avalon_slave_0 must be connected to an Avalon-MM master
+Info: embedded_system: Generating embedded_system "embedded_system" for QUARTUS_SYNTH
+Info: reg32_avalon_interface_0: "embedded_system" instantiated reg32_avalon_interface "reg32_avalon_interface_0"
+Info: rst_controller: "embedded_system" instantiated altera_reset_controller "rst_controller"
+Info: embedded_system: Done "embedded_system" with 3 modules, 6 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

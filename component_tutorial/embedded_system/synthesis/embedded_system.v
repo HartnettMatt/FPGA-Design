@@ -9,18 +9,70 @@ module embedded_system (
 		output wire [31:0] to_hex_readdata  // to_hex.readdata
 	);
 
-	wire    rst_controller_reset_out_reset; // rst_controller:reset_out -> reg32_avalon_interface_0:resetn
+	wire  [31:0] master_0_master_readdata;                                             // mm_interconnect_0:master_0_master_readdata -> master_0:master_readdata
+	wire         master_0_master_waitrequest;                                          // mm_interconnect_0:master_0_master_waitrequest -> master_0:master_waitrequest
+	wire  [31:0] master_0_master_address;                                              // master_0:master_address -> mm_interconnect_0:master_0_master_address
+	wire         master_0_master_read;                                                 // master_0:master_read -> mm_interconnect_0:master_0_master_read
+	wire   [3:0] master_0_master_byteenable;                                           // master_0:master_byteenable -> mm_interconnect_0:master_0_master_byteenable
+	wire         master_0_master_readdatavalid;                                        // mm_interconnect_0:master_0_master_readdatavalid -> master_0:master_readdatavalid
+	wire         master_0_master_write;                                                // master_0:master_write -> mm_interconnect_0:master_0_master_write
+	wire  [31:0] master_0_master_writedata;                                            // master_0:master_writedata -> mm_interconnect_0:master_0_master_writedata
+	wire         mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_chipselect; // mm_interconnect_0:reg32_avalon_interface_0_avalon_slave_0_chipselect -> reg32_avalon_interface_0:chipselect
+	wire  [31:0] mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_readdata;   // reg32_avalon_interface_0:readdata -> mm_interconnect_0:reg32_avalon_interface_0_avalon_slave_0_readdata
+	wire         mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_read;       // mm_interconnect_0:reg32_avalon_interface_0_avalon_slave_0_read -> reg32_avalon_interface_0:read
+	wire   [3:0] mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_byteenable; // mm_interconnect_0:reg32_avalon_interface_0_avalon_slave_0_byteenable -> reg32_avalon_interface_0:byteenable
+	wire         mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_write;      // mm_interconnect_0:reg32_avalon_interface_0_avalon_slave_0_write -> reg32_avalon_interface_0:write
+	wire  [31:0] mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_writedata;  // mm_interconnect_0:reg32_avalon_interface_0_avalon_slave_0_writedata -> reg32_avalon_interface_0:writedata
+	wire         rst_controller_reset_out_reset;                                       // rst_controller:reset_out -> [mm_interconnect_0:master_0_clk_reset_reset_bridge_in_reset_reset, mm_interconnect_0:reg32_avalon_interface_0_clock_reset_reset_bridge_in_reset_reset, reg32_avalon_interface_0:resetn]
+
+	embedded_system_master_0 #(
+		.USE_PLI     (0),
+		.PLI_PORT    (50000),
+		.FIFO_DEPTHS (2)
+	) master_0 (
+		.clk_clk              (clk_clk),                       //          clk.clk
+		.clk_reset_reset      (~reset_reset_n),                //    clk_reset.reset
+		.master_address       (master_0_master_address),       //       master.address
+		.master_readdata      (master_0_master_readdata),      //             .readdata
+		.master_read          (master_0_master_read),          //             .read
+		.master_write         (master_0_master_write),         //             .write
+		.master_writedata     (master_0_master_writedata),     //             .writedata
+		.master_waitrequest   (master_0_master_waitrequest),   //             .waitrequest
+		.master_readdatavalid (master_0_master_readdatavalid), //             .readdatavalid
+		.master_byteenable    (master_0_master_byteenable),    //             .byteenable
+		.master_reset_reset   ()                               // master_reset.reset
+	);
 
 	reg32_avalon_interface reg32_avalon_interface_0 (
-		.resetn     (~rst_controller_reset_out_reset), //    clock_reset.reset_n
-		.writedata  (),                                // avalon_slave_0.writedata
-		.readdata   (),                                //               .readdata
-		.write      (),                                //               .write
-		.read       (),                                //               .read
-		.byteenable (),                                //               .byteenable
-		.chipselect (),                                //               .chipselect
-		.clock      (clk_clk),                         //     clock_sink.clk
-		.Q_export   (to_hex_readdata)                  //    conduit_end.readdata
+		.resetn     (~rst_controller_reset_out_reset),                                      //    clock_reset.reset_n
+		.writedata  (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_writedata),  // avalon_slave_0.writedata
+		.readdata   (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_readdata),   //               .readdata
+		.write      (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_write),      //               .write
+		.read       (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_read),       //               .read
+		.byteenable (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_byteenable), //               .byteenable
+		.chipselect (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_chipselect), //               .chipselect
+		.clock      (clk_clk),                                                              //     clock_sink.clk
+		.Q_export   (to_hex_readdata)                                                       //    conduit_end.readdata
+	);
+
+	embedded_system_mm_interconnect_0 mm_interconnect_0 (
+		.clk_0_clk_clk                                                    (clk_clk),                                                              //                                                  clk_0_clk.clk
+		.master_0_clk_reset_reset_bridge_in_reset_reset                   (rst_controller_reset_out_reset),                                       //                   master_0_clk_reset_reset_bridge_in_reset.reset
+		.reg32_avalon_interface_0_clock_reset_reset_bridge_in_reset_reset (rst_controller_reset_out_reset),                                       // reg32_avalon_interface_0_clock_reset_reset_bridge_in_reset.reset
+		.master_0_master_address                                          (master_0_master_address),                                              //                                            master_0_master.address
+		.master_0_master_waitrequest                                      (master_0_master_waitrequest),                                          //                                                           .waitrequest
+		.master_0_master_byteenable                                       (master_0_master_byteenable),                                           //                                                           .byteenable
+		.master_0_master_read                                             (master_0_master_read),                                                 //                                                           .read
+		.master_0_master_readdata                                         (master_0_master_readdata),                                             //                                                           .readdata
+		.master_0_master_readdatavalid                                    (master_0_master_readdatavalid),                                        //                                                           .readdatavalid
+		.master_0_master_write                                            (master_0_master_write),                                                //                                                           .write
+		.master_0_master_writedata                                        (master_0_master_writedata),                                            //                                                           .writedata
+		.reg32_avalon_interface_0_avalon_slave_0_write                    (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_write),      //                    reg32_avalon_interface_0_avalon_slave_0.write
+		.reg32_avalon_interface_0_avalon_slave_0_read                     (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_read),       //                                                           .read
+		.reg32_avalon_interface_0_avalon_slave_0_readdata                 (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_readdata),   //                                                           .readdata
+		.reg32_avalon_interface_0_avalon_slave_0_writedata                (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_writedata),  //                                                           .writedata
+		.reg32_avalon_interface_0_avalon_slave_0_byteenable               (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_byteenable), //                                                           .byteenable
+		.reg32_avalon_interface_0_avalon_slave_0_chipselect               (mm_interconnect_0_reg32_avalon_interface_0_avalon_slave_0_chipselect)  //                                                           .chipselect
 	);
 
 	altera_reset_controller #(

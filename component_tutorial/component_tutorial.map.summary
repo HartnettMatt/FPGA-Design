@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Oct 22 16:39:09 2020
+Analysis & Synthesis Status : Successful - Thu Oct 29 16:39:58 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : component_tutorial
 Top-level Entity Name : component_tutorial
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
+Total registers : 585
 Total pins : 70
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 512
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

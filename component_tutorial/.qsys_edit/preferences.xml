@@ -3,12 +3,12 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="63" />
+   <connections preferredWidth="95" />
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library/Basic Functions/On Chip Memory,Project,Library,Library/Basic Functions" />
+   expandedCategories="Library,Library/Basic Functions,Library/Interface Protocols,Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Interface Protocols/Serial,Library/Basic Functions/Simulation; Debug and Verification,Library/Basic Functions/Bridges and Adaptors,Project" />
  <window width="1742" height="1015" x="217" y="94" />
  <hdlexample language="VERILOG" />
 </preferences>
