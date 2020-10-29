@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at adc_control.sv(39): always construct contains both blocking and non-blocking assignments File: /home/matt/Documents/FPGAdesign/lab9/source/adc_control.sv Line: 39
