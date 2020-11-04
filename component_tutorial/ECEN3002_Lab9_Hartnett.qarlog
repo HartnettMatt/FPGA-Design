@@ -1,0 +1,55 @@
+Quartus Prime Archive log --	F:/FPGADesign/component_tutorial/ECEN3002_Lab9_Hartnett.qarlog
+
+Archive:	F:/FPGADesign/component_tutorial/ECEN3002_Lab9_Hartnett.qar
+Date:		Wed Nov 04 13:45:35 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+F:/FPGADesign/component_tutorial/component_tutorial.SDC
+F:/FPGADesign/component_tutorial/component_tutorial.qpf
+F:/FPGADesign/component_tutorial/component_tutorial.qsf
+F:/FPGADesign/component_tutorial/component_tutorial.sdc
+F:/FPGADesign/component_tutorial/component_tutorial.v
+F:/FPGADesign/component_tutorial/component_tutorial_assignment_defaults.qdf
+F:/FPGADesign/component_tutorial/embedded_system.qsys
+F:/FPGADesign/component_tutorial/embedded_system.sopcinfo
+F:/FPGADesign/component_tutorial/embedded_system/embedded_system.cmp
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/embedded_system.debuginfo
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/embedded_system.qip
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/embedded_system.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_packets_to_master.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_sc_fifo.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_bytes_to_packets.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_clock_crosser.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_idle_inserter.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_idle_remover.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_jtag_interface.sdc
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_jtag_interface.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_packets_to_bytes.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_jtag_dc_streaming.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_jtag_sld_node.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_jtag_streaming.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_merlin_master_translator.sv
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_merlin_slave_translator.sv
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_reset_controller.sdc
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_reset_controller.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_reset_synchronizer.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/altera_std_synchronizer_nocut.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/embedded_system_master_0.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/embedded_system_master_0_b2p_adapter.sv
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/embedded_system_master_0_p2b_adapter.sv
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/embedded_system_master_0_timing_adt.sv
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/embedded_system_mm_interconnect_0.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/reg32.v
+F:/FPGADesign/component_tutorial/embedded_system/synthesis/submodules/reg32_avalon_interface.v
+F:/FPGADesign/component_tutorial/hex7seg.v
+F:/FPGADesign/component_tutorial/lab9.tcl
+F:/FPGADesign/component_tutorial/reg32.v
+F:/FPGADesign/component_tutorial/reg32_avalon_interface.v
+F:/FPGADesign/component_tutorial/reg32_avalon_interface_hw.tcl
+	======= Total: 44 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

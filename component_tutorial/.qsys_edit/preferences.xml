@@ -9,6 +9,6 @@
  </systemtable>
  <library
    expandedCategories="Library,Library/Basic Functions,Library/Interface Protocols,Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Interface Protocols/Serial,Library/Basic Functions/Simulation; Debug and Verification,Library/Basic Functions/Bridges and Adaptors,Project" />
- <window width="1742" height="1015" x="217" y="94" />
+ <window width="1616" height="876" x="2552" y="749" />
  <hdlexample language="VERILOG" />
 </preferences>

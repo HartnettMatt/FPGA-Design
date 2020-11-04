@@ -5,5 +5,9 @@ jtag_debug_reset_system $jpath
 set clk [jtag_debug_sense_clock $jpath]
 set rst [jtag_debug_sample_reset $jpath]
 
-#Need to verify that the memory location is correct before knowing if this works. Also need to see if value being written is valid (might be too wide)
-master_write_8 $mpath 0x10 0x55
+master_write_16 $mpath 0x0 0x5555
+puts 500
+master_write_16 $mpath 0x0 0xffff
+puts 500
+master_write_16 $mpath 0x0 0x0000
+close_service master $mpath
