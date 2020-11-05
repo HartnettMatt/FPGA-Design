@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+F:/FPGADesign/lab10/quartus {F:/FPGADesign/lab10/quartus/pll.vo}
+vlib pll
+vmap pll pll
+vlog -sv -work pll +incdir+F:/FPGADesign/lab10/quartus/pll {F:/FPGADesign/lab10/quartus/pll/pll_0002.v}
+vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/bin2bcd.sv}
+vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/adc_control.sv}
+vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/seg7.sv}
+vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/adc.sv}
+

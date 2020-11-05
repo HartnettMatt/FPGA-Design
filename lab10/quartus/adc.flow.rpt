@@ -1,5 +1,5 @@
 Flow report for adc
-Wed Nov 04 14:21:25 2020
+Thu Nov 05 15:15:46 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 04 14:21:19 2020           ;
+; Flow Status                     ; Successful - Thu Nov 05 15:15:46 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; adc                                             ;
 ; Top-level Entity Name           ; adc                                             ;
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
 ; Logic utilization (in ALMs)     ; 70 / 41,910 ( < 1 % )                           ;
-; Total registers                 ; 58                                              ;
+; Total registers                 ; 69                                              ;
 ; Total pins                      ; 73 / 499 ( 15 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                           ;
@@ -68,30 +68,39 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/04/2020 14:20:31 ;
+; Start date & time ; 11/05/2020 15:14:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; adc                 ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198112243637453.160452483104980        ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; MISC_FILE                           ; pll.cmp                                ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; SYNTHESIS_ONLY_QIP                  ; On                                     ; --            ; --          ; --         ;
-; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001  ; --          ; --         ;
-; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --            ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 198112243637453.160461448932364        ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb             ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb                                     ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; ../source/tb.sv                        ; --            ; --          ; tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb                                     ; --            ; --          ; tb             ;
+; EDA_TEST_BENCH_NAME                  ; tb                                     ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
+; MISC_FILE                            ; pll.cmp                                ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                   ; On                                     ; --            ; --          ; --             ;
+; VERILOG_INPUT_VERSION                ; SystemVerilog_2005                     ; Verilog_2001  ; --          ; --             ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES    ; Off                                    ; --            ; --          ; --             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -99,11 +108,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4882 MB             ; 00:00:18                           ;
-; Fitter               ; 00:00:31     ; 1.0                     ; 7406 MB             ; 00:01:28                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4842 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5270 MB             ; 00:00:05                           ;
-; Total                ; 00:00:51     ; --                      ; --                  ; 00:01:56                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4885 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:31     ; 1.0                     ; 7405 MB             ; 00:01:28                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4838 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.1                     ; 5265 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4830 MB             ; 00:00:01                           ;
+; Total                ; 00:00:54     ; --                      ; --                  ; 00:01:57                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +126,7 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -126,6 +137,7 @@ quartus_map --read_settings_files=on --write_settings_files=off adc -c adc
 quartus_fit --read_settings_files=off --write_settings_files=off adc -c adc
 quartus_asm --read_settings_files=off --write_settings_files=off adc -c adc
 quartus_sta adc -c adc
+quartus_eda --read_settings_files=off --write_settings_files=off adc -c adc
 
 
 

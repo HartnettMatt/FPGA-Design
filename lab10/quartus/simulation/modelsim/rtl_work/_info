@@ -1,0 +1,167 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/lab10/quartus/simulation/modelsim
+vadc
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1604614640
+!i10b 1
+!s100 FJJF1dSDBR1CnJ>iz9aUN2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]QbJC=ZjmPn?f@TA8R1<N2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1604612566
+8F:/FPGADesign/lab10/source/adc.sv
+FF:/FPGADesign/lab10/source/adc.sv
+!i122 4
+L0 7 91
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1604614640.000000
+!s107 F:/FPGADesign/lab10/source/adc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+F:/FPGADesign/lab10/source|F:/FPGADesign/lab10/source/adc.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+F:/FPGADesign/lab10/source
+Z9 tCvgOpt 0
+vadc_control
+R1
+R2
+!i10b 1
+!s100 SmfI7zd0bh>W<I0E;[BYI0
+R3
+IQKW@ZRU5A^Sn`c61aPdb43
+R4
+S1
+R0
+w1604524827
+8F:/FPGADesign/lab10/source/adc_control.sv
+FF:/FPGADesign/lab10/source/adc_control.sv
+!i122 2
+L0 19 35
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/lab10/source/adc_control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+F:/FPGADesign/lab10/source|F:/FPGADesign/lab10/source/adc_control.sv|
+!i113 1
+R7
+R8
+R9
+vbin2bcd
+R1
+R2
+!i10b 1
+!s100 6l^JmP8]D_KPC`FLPKz`z0
+R3
+IL8]EXGV`=;z_8J:JLd5O^2
+R4
+S1
+R0
+w1604612493
+8F:/FPGADesign/lab10/source/bin2bcd.sv
+FF:/FPGADesign/lab10/source/bin2bcd.sv
+!i122 1
+L0 9 30
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/lab10/source/bin2bcd.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+F:/FPGADesign/lab10/source|F:/FPGADesign/lab10/source/bin2bcd.sv|
+!i113 1
+R7
+R8
+R9
+vpll
+R1
+!s110 1604614639
+!i10b 1
+!s100 O0SK@4Sc5FS@G962fZ>_@1
+R3
+IzYJUn8ZT6[[WCaJjjSg@n0
+R4
+S1
+R0
+w1604614121
+8F:/FPGADesign/lab10/quartus/pll.vo
+FF:/FPGADesign/lab10/quartus/pll.vo
+!i122 0
+L0 32 264
+R5
+r1
+!s85 0
+31
+!s108 1604614639.000000
+!s107 F:/FPGADesign/lab10/quartus/pll.vo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+F:/FPGADesign/lab10/quartus|F:/FPGADesign/lab10/quartus/pll.vo|
+!i113 1
+R7
+!s92 -sv -work work +incdir+F:/FPGADesign/lab10/quartus
+R9
+vseg7
+R1
+R2
+!i10b 1
+!s100 oALHg6=fPMDS?c[oV71WH3
+R3
+I15>2jN=<3:QCdQg[6IfLB2
+R4
+S1
+R0
+w1604524122
+8F:/FPGADesign/lab10/source/seg7.sv
+FF:/FPGADesign/lab10/source/seg7.sv
+!i122 3
+L0 4 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/lab10/source/seg7.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+F:/FPGADesign/lab10/source|F:/FPGADesign/lab10/source/seg7.sv|
+!i113 1
+R7
+R8
+R9
+vtb
+R1
+R2
+!i10b 1
+!s100 OMiE@[`D@hiYzXKN3HEBm0
+R3
+IVU``b3hPgF;^@znf;7nPU1
+R4
+S1
+R0
+w1604611099
+8F:/FPGADesign/lab10/quartus/../source/tb.sv
+FF:/FPGADesign/lab10/quartus/../source/tb.sv
+!i122 5
+L0 2 22
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/lab10/quartus/../source/tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+F:/FPGADesign/lab10/quartus/../source|F:/FPGADesign/lab10/quartus/../source/tb.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+F:/FPGADesign/lab10/quartus/../source
+R9

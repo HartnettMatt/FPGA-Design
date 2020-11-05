@@ -73,7 +73,7 @@ always_ff @ (posedge ADC_SCLK)
 // Using the leading edge of a new conversion guarantees that
 the conversion data has been loaded.
 */
-always_comb
+always_ff @ (posedge ADC_CONVST)
     display_value <= adc_data;
 
 // Display value (implied decimal point on HEX5, range 0.000 to 4.095)

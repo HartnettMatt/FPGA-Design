@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adc
-Wed Nov 04 14:20:40 2020
+Thu Nov 05 15:14:58 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -51,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 04 14:20:40 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 05 15:14:57 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; adc                                             ;
 ; Top-level Entity Name           ; adc                                             ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 51                                              ;
+; Total registers                 ; 63                                              ;
 ; Total pins                      ; 73                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -196,7 +196,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------------------------------+
 ; Resource                                    ; Usage                                                           ;
 +---------------------------------------------+-----------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 69                                                              ;
+; Estimate of Logic utilization (ALMs needed) ; 70                                                              ;
 ;                                             ;                                                                 ;
 ; Combinational ALUT usage for logic          ; 114                                                             ;
 ;     -- 7 input functions                    ; 0                                                               ;
@@ -205,7 +205,7 @@ https://fpgasoftware.intel.com/eula.
 ;     -- 4 input functions                    ; 33                                                              ;
 ;     -- <=3 input functions                  ; 41                                                              ;
 ;                                             ;                                                                 ;
-; Dedicated logic registers                   ; 51                                                              ;
+; Dedicated logic registers                   ; 63                                                              ;
 ;                                             ;                                                                 ;
 ; I/O pins                                    ; 73                                                              ;
 ;                                             ;                                                                 ;
@@ -216,8 +216,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                 ;
 ; Maximum fan-out node                        ; pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 41                                                              ;
-; Total fan-out                               ; 732                                                             ;
-; Average fan-out                             ; 2.35                                                            ;
+; Total fan-out                               ; 756                                                             ;
+; Average fan-out                             ; 2.33                                                            ;
 +---------------------------------------------+-----------------------------------------------------------------+
 
 
@@ -226,7 +226,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------+--------------+
-; |adc                               ; 114 (10)            ; 51 (17)                   ; 0                 ; 0          ; 73   ; 0            ; |adc                                                  ; adc         ; work         ;
+; |adc                               ; 114 (10)            ; 63 (29)                   ; 0                 ; 0          ; 73   ; 0            ; |adc                                                  ; adc         ; work         ;
 ;    |adc_control:U1|                ; 45 (45)             ; 34 (34)                   ; 0                 ; 0          ; 0    ; 0            ; |adc|adc_control:U1                                   ; adc_control ; work         ;
 ;    |bin2bcd:U2|                    ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adc|bin2bcd:U2                                       ; bin2bcd     ; work         ;
 ;    |pll:U0|                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adc|pll:U0                                           ; pll         ; pll          ;
@@ -274,7 +274,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 51    ;
+; Total registers                              ; 63    ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 37    ;
@@ -318,7 +318,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name                       ; Value                  ; Type                          ;
 +--------------------------------------+------------------------+-------------------------------+
 ; reference_clock_frequency            ; 50.0 MHz               ; String                        ;
-; fractional_vco_multiplier            ; true                   ; String                        ;
+; fractional_vco_multiplier            ; false                  ; String                        ;
 ; pll_type                             ; General                ; String                        ;
 ; pll_subtype                          ; General                ; String                        ;
 ; number_of_clocks                     ; 1                      ; Signed Integer                ;
@@ -326,7 +326,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; deserialization_factor               ; 4                      ; Signed Integer                ;
 ; data_rate                            ; 0                      ; Signed Integer                ;
 ; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                ;
-; output_clock_frequency0              ; 1.000000 MHz           ; String                        ;
+; output_clock_frequency0              ; 1.171875 MHz           ; String                        ;
 ; phase_shift0                         ; 0 ps                   ; String                        ;
 ; duty_cycle0                          ; 50                     ; Signed Integer                ;
 ; output_clock_frequency1              ; 0 MHz                  ; String                        ;
@@ -574,10 +574,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 51                          ;
+; arriav_ff             ; 63                          ;
 ;     CLR               ; 5                           ;
 ;     CLR SCLR          ; 32                          ;
-;     plain             ; 14                          ;
+;     plain             ; 26                          ;
 ; arriav_lcell_comb     ; 122                         ;
 ;     arith             ; 32                          ;
 ;         1 data inputs ; 32                          ;
@@ -593,7 +593,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.64                        ;
+; Average LUT depth     ; 3.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -612,10 +612,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Wed Nov 04 14:20:31 2020
+    Info: Processing started: Thu Nov 05 15:14:48 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adc -c adc
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/lab10/source/tb.sv
+    Info (12023): Found entity 1: tb File: F:/FPGADesign/lab10/source/tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/lab10/source/bin2bcd.sv
     Info (12023): Found entity 1: bin2bcd File: F:/FPGADesign/lab10/source/bin2bcd.sv Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/lab10/source/adc_control.sv
@@ -635,11 +637,11 @@ Info (12128): Elaborating entity "altera_pll" for hierarchy "pll:U0|pll_0002:pll
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
 Info (12130): Elaborated megafunction instantiation "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/lab10/quartus/pll/pll_0002.v Line: 85
 Info (12133): Instantiated megafunction "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter: File: F:/FPGADesign/lab10/quartus/pll/pll_0002.v Line: 85
-    Info (12134): Parameter "fractional_vco_multiplier" = "true"
+    Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
     Info (12134): Parameter "number_of_clocks" = "1"
-    Info (12134): Parameter "output_clock_frequency0" = "1.000000 MHz"
+    Info (12134): Parameter "output_clock_frequency0" = "1.171875 MHz"
     Info (12134): Parameter "phase_shift0" = "0 ps"
     Info (12134): Parameter "duty_cycle0" = "50"
     Info (12134): Parameter "output_clock_frequency1" = "0 MHz"
@@ -728,16 +730,16 @@ Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
     Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
     Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
-Info (21057): Implemented 201 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 213 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 127 logic cells
+    Info (21061): Implemented 139 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 4882 megabytes
-    Info: Processing ended: Wed Nov 04 14:20:40 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Thu Nov 05 15:14:58 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+

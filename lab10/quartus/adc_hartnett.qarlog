@@ -1,0 +1,29 @@
+Quartus Prime Archive log --	F:/FPGADesign/lab10/quartus/adc_hartnett.qarlog
+
+Archive:	F:/FPGADesign/lab10/quartus/adc_hartnett.qar
+Date:		Thu Nov 05 15:38:10 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+F:/FPGADesign/lab10/quartus/adc.SDC
+F:/FPGADesign/lab10/quartus/adc.qpf
+F:/FPGADesign/lab10/quartus/adc.qsf
+F:/FPGADesign/lab10/quartus/adc.sdc
+F:/FPGADesign/lab10/quartus/adc.tcl
+F:/FPGADesign/lab10/quartus/adc_assignment_defaults.qdf
+F:/FPGADesign/lab10/quartus/output_file.cof
+F:/FPGADesign/lab10/quartus/pins.tcl
+F:/FPGADesign/lab10/quartus/pll.cmp
+F:/FPGADesign/lab10/quartus/pll.qip
+F:/FPGADesign/lab10/quartus/pll.v
+F:/FPGADesign/lab10/quartus/pll/pll_0002.qip
+F:/FPGADesign/lab10/quartus/pll/pll_0002.v
+F:/FPGADesign/lab10/source/adc.sv
+F:/FPGADesign/lab10/source/adc_control.sv
+F:/FPGADesign/lab10/source/bin2bcd.sv
+F:/FPGADesign/lab10/source/seg7.sv
+F:/FPGADesign/lab10/source/tb.sv
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

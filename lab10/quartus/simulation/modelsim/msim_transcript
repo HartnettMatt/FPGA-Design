@@ -1,0 +1,149 @@
+# Reading pref.tcl
+# do adc_run_msim_rtl_systemverilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+F:/FPGADesign/lab10/quartus {F:/FPGADesign/lab10/quartus/pll.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:19 on Nov 05,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+F:/FPGADesign/lab10/quartus" F:/FPGADesign/lab10/quartus/pll.vo 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 15:17:19 on Nov 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlib pll
+# vmap pll pll
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap pll pll 
+# Modifying modelsim.ini
+# vlog -sv -work pll +incdir+F:/FPGADesign/lab10/quartus/pll {F:/FPGADesign/lab10/quartus/pll/pll_0002.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:19 on Nov 05,2020
+# vlog -reportprogress 300 -sv -work pll "+incdir+F:/FPGADesign/lab10/quartus/pll" F:/FPGADesign/lab10/quartus/pll/pll_0002.v 
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# End time: 15:17:20 on Nov 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/bin2bcd.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:20 on Nov 05,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+F:/FPGADesign/lab10/source" F:/FPGADesign/lab10/source/bin2bcd.sv 
+# -- Compiling module bin2bcd
+# 
+# Top level modules:
+# 	bin2bcd
+# End time: 15:17:20 on Nov 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/adc_control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:20 on Nov 05,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+F:/FPGADesign/lab10/source" F:/FPGADesign/lab10/source/adc_control.sv 
+# -- Compiling module adc_control
+# 
+# Top level modules:
+# 	adc_control
+# End time: 15:17:20 on Nov 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:20 on Nov 05,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+F:/FPGADesign/lab10/source" F:/FPGADesign/lab10/source/seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 15:17:20 on Nov 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+F:/FPGADesign/lab10/source {F:/FPGADesign/lab10/source/adc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:20 on Nov 05,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+F:/FPGADesign/lab10/source" F:/FPGADesign/lab10/source/adc.sv 
+# -- Compiling module adc
+# 
+# Top level modules:
+# 	adc
+# End time: 15:17:20 on Nov 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+F:/FPGADesign/lab10/quartus/../source {F:/FPGADesign/lab10/quartus/../source/tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:20 on Nov 05,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+F:/FPGADesign/lab10/quartus/../source" F:/FPGADesign/lab10/quartus/../source/tb.sv 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 15:17:20 on Nov 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L pll -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L pll -voptargs=""+acc"" tb 
+# Start time: 15:17:20 on Nov 05,2020
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.adc
+# Loading work.pll
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading work.adc_control
+# Loading work.bin2bcd
+# Loading work.seg7
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/U0/U0/pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/lab10/quartus/pll.vo Line: 46
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/lab10/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: hierarchical_name = tb.U0.U0.pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Adjusting output period from 853970.964987 to 892000.000000
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb.U0.U0.pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb.U0.U0.pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 1.171 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 446000.000000
+# Info: output_clock_low_period = 446000.000000

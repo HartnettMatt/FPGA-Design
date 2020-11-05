@@ -1,4 +1,4 @@
-Fitter Status : Successful - Wed Nov 04 14:21:12 2020
+Fitter Status : Successful - Thu Nov 05 15:15:29 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : adc
 Top-level Entity Name : adc
@@ -6,7 +6,7 @@ Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
 Logic utilization (in ALMs) : 70 / 41,910 ( < 1 % )
-Total registers : 58
+Total registers : 69
 Total pins : 73 / 499 ( 15 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
