@@ -147,3 +147,5 @@
 # Info: sim_additional_refclk_cycles_to_lock = 0
 # Info: output_clock_high_period = 446000.000000
 # Info: output_clock_low_period = 446000.000000
+# End time: 16:09:45 on Nov 05,2020, Elapsed time: 0:52:25
+# Errors: 0, Warnings: 22
