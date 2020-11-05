@@ -10,8 +10,8 @@ module bin2bcd (input logic [11:0] binary_in, output logic [15:0] bcd_out);
 
 integer i;
 
-always @ (binary_in)
-    begin
+always_comb
+    begin : bin_to_bcd
         bcd_out = 16'd0;
         for (i = 11; i >= 0; i = i-1)
             begin

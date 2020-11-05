@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adc
-Thu Oct 29 17:06:24 2020
+Wed Nov 04 14:20:40 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -51,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 29 17:06:24 2020           ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 04 14:20:40 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; adc                                             ;
 ; Top-level Entity Name           ; adc                                             ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 63                                              ;
+; Total registers                 ; 51                                              ;
 ; Total pins                      ; 73                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -164,31 +164,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
-; ../source/bin2bcd.sv             ; yes             ; User SystemVerilog HDL File  ; /home/matt/Documents/FPGAdesign/lab9/source/bin2bcd.sv                 ;         ;
-; ../source/adc_control.sv         ; yes             ; User SystemVerilog HDL File  ; /home/matt/Documents/FPGAdesign/lab9/source/adc_control.sv             ;         ;
-; ../source/adc.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/matt/Documents/FPGAdesign/lab9/source/adc.sv                     ;         ;
-; ../source/seg7.sv                ; yes             ; User SystemVerilog HDL File  ; /home/matt/Documents/FPGAdesign/lab9/source/seg7.sv                    ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File   ; /home/matt/Documents/FPGAdesign/lab9/quartus/pll.v                     ; pll     ;
-; pll/pll_0002.v                   ; yes             ; User Verilog HDL File        ; /home/matt/Documents/FPGAdesign/lab9/quartus/pll/pll_0002.v            ; pll     ;
-; altera_pll.v                     ; yes             ; Megafunction                 ; /home/matt/intelFPGA/20.1/quartus/libraries/megafunctions/altera_pll.v ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; ../source/bin2bcd.sv             ; yes             ; User SystemVerilog HDL File  ; F:/FPGADesign/lab10/source/bin2bcd.sv                          ;         ;
+; ../source/adc_control.sv         ; yes             ; User SystemVerilog HDL File  ; F:/FPGADesign/lab10/source/adc_control.sv                      ;         ;
+; ../source/adc.sv                 ; yes             ; User SystemVerilog HDL File  ; F:/FPGADesign/lab10/source/adc.sv                              ;         ;
+; ../source/seg7.sv                ; yes             ; User SystemVerilog HDL File  ; F:/FPGADesign/lab10/source/seg7.sv                             ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File   ; F:/FPGADesign/lab10/quartus/pll.v                              ; pll     ;
+; pll/pll_0002.v                   ; yes             ; User Verilog HDL File        ; F:/FPGADesign/lab10/quartus/pll/pll_0002.v                     ; pll     ;
+; altera_pll.v                     ; yes             ; Megafunction                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------+
@@ -196,7 +196,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------------------------------+
 ; Resource                                    ; Usage                                                           ;
 +---------------------------------------------+-----------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 70                                                              ;
+; Estimate of Logic utilization (ALMs needed) ; 69                                                              ;
 ;                                             ;                                                                 ;
 ; Combinational ALUT usage for logic          ; 114                                                             ;
 ;     -- 7 input functions                    ; 0                                                               ;
@@ -205,7 +205,7 @@ https://fpgasoftware.intel.com/eula.
 ;     -- 4 input functions                    ; 33                                                              ;
 ;     -- <=3 input functions                  ; 41                                                              ;
 ;                                             ;                                                                 ;
-; Dedicated logic registers                   ; 63                                                              ;
+; Dedicated logic registers                   ; 51                                                              ;
 ;                                             ;                                                                 ;
 ; I/O pins                                    ; 73                                                              ;
 ;                                             ;                                                                 ;
@@ -216,8 +216,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                 ;
 ; Maximum fan-out node                        ; pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 41                                                              ;
-; Total fan-out                               ; 756                                                             ;
-; Average fan-out                             ; 2.33                                                            ;
+; Total fan-out                               ; 732                                                             ;
+; Average fan-out                             ; 2.35                                                            ;
 +---------------------------------------------+-----------------------------------------------------------------+
 
 
@@ -226,7 +226,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------+--------------+
-; |adc                               ; 114 (10)            ; 63 (29)                   ; 0                 ; 0          ; 73   ; 0            ; |adc                                                  ; adc         ; work         ;
+; |adc                               ; 114 (10)            ; 51 (17)                   ; 0                 ; 0          ; 73   ; 0            ; |adc                                                  ; adc         ; work         ;
 ;    |adc_control:U1|                ; 45 (45)             ; 34 (34)                   ; 0                 ; 0          ; 0    ; 0            ; |adc|adc_control:U1                                   ; adc_control ; work         ;
 ;    |bin2bcd:U2|                    ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adc|bin2bcd:U2                                       ; bin2bcd     ; work         ;
 ;    |pll:U0|                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adc|pll:U0                                           ; pll         ; pll          ;
@@ -274,7 +274,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 63    ;
+; Total registers                              ; 51    ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 37    ;
@@ -574,10 +574,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 63                          ;
+; arriav_ff             ; 51                          ;
 ;     CLR               ; 5                           ;
 ;     CLR SCLR          ; 32                          ;
-;     plain             ; 26                          ;
+;     plain             ; 14                          ;
 ; arriav_lcell_comb     ; 122                         ;
 ;     arith             ; 32                          ;
 ;         1 data inputs ; 32                          ;
@@ -593,7 +593,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.44                        ;
+; Average LUT depth     ; 3.64                        ;
 +-----------------------+-----------------------------+
 
 
@@ -612,29 +612,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Oct 29 17:06:14 2020
+    Info: Processing started: Wed Nov 04 14:20:31 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adc -c adc
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /home/matt/Documents/FPGAdesign/lab9/source/bin2bcd.sv
-    Info (12023): Found entity 1: bin2bcd File: /home/matt/Documents/FPGAdesign/lab9/source/bin2bcd.sv Line: 9
-Info (12021): Found 1 design units, including 1 entities, in source file /home/matt/Documents/FPGAdesign/lab9/source/adc_control.sv
-    Info (12023): Found entity 1: adc_control File: /home/matt/Documents/FPGAdesign/lab9/source/adc_control.sv Line: 19
-Info (12021): Found 1 design units, including 1 entities, in source file /home/matt/Documents/FPGAdesign/lab9/source/adc.sv
-    Info (12023): Found entity 1: adc File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file /home/matt/Documents/FPGAdesign/lab9/source/seg7.sv
-    Info (12023): Found entity 1: seg7 File: /home/matt/Documents/FPGAdesign/lab9/source/seg7.sv Line: 4
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/lab10/source/bin2bcd.sv
+    Info (12023): Found entity 1: bin2bcd File: F:/FPGADesign/lab10/source/bin2bcd.sv Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/lab10/source/adc_control.sv
+    Info (12023): Found entity 1: adc_control File: F:/FPGADesign/lab10/source/adc_control.sv Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/lab10/source/adc.sv
+    Info (12023): Found entity 1: adc File: F:/FPGADesign/lab10/source/adc.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/lab10/source/seg7.sv
+    Info (12023): Found entity 1: seg7 File: F:/FPGADesign/lab10/source/seg7.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: /home/matt/Documents/FPGAdesign/lab9/quartus/pll.v Line: 8
+    Info (12023): Found entity 1: pll File: F:/FPGADesign/lab10/quartus/pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file pll/pll_0002.v
-    Info (12023): Found entity 1: pll_0002 File: /home/matt/Documents/FPGAdesign/lab9/quartus/pll/pll_0002.v Line: 2
+    Info (12023): Found entity 1: pll_0002 File: F:/FPGADesign/lab10/quartus/pll/pll_0002.v Line: 2
 Info (12127): Elaborating entity "adc" for the top level hierarchy
-Info (12128): Elaborating entity "pll" for hierarchy "pll:U0" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 36
-Info (12128): Elaborating entity "pll_0002" for hierarchy "pll:U0|pll_0002:pll_inst" File: /home/matt/Documents/FPGAdesign/lab9/quartus/pll.v Line: 20
-Info (12128): Elaborating entity "altera_pll" for hierarchy "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" File: /home/matt/Documents/FPGAdesign/lab9/quartus/pll/pll_0002.v Line: 85
+Info (12128): Elaborating entity "pll" for hierarchy "pll:U0" File: F:/FPGADesign/lab10/source/adc.sv Line: 36
+Info (12128): Elaborating entity "pll_0002" for hierarchy "pll:U0|pll_0002:pll_inst" File: F:/FPGADesign/lab10/quartus/pll.v Line: 20
+Info (12128): Elaborating entity "altera_pll" for hierarchy "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/lab10/quartus/pll/pll_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" File: /home/matt/Documents/FPGAdesign/lab9/quartus/pll/pll_0002.v Line: 85
-Info (12133): Instantiated megafunction "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter: File: /home/matt/Documents/FPGAdesign/lab9/quartus/pll/pll_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/lab10/quartus/pll/pll_0002.v Line: 85
+Info (12133): Instantiated megafunction "pll:U0|pll_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter: File: F:/FPGADesign/lab10/quartus/pll/pll_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "true"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -695,54 +695,54 @@ Info (12133): Instantiated megafunction "pll:U0|pll_0002:pll_inst|altera_pll:alt
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "adc_control" for hierarchy "adc_control:U1" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 39
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:U2" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 80
-Info (12128): Elaborating entity "seg7" for hierarchy "seg7:U3" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 81
+Info (12128): Elaborating entity "adc_control" for hierarchy "adc_control:U1" File: F:/FPGADesign/lab10/source/adc.sv Line: 39
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:U2" File: F:/FPGADesign/lab10/source/adc.sv Line: 80
+Info (12128): Elaborating entity "seg7" for hierarchy "seg7:U3" File: F:/FPGADesign/lab10/source/adc.sv Line: 81
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "adc_channel[10]" is converted into an equivalent circuit using register "adc_channel[10]~_emulated" and latch "adc_channel[10]~1" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 62
-    Warning (13310): Register "adc_channel[9]" is converted into an equivalent circuit using register "adc_channel[9]~_emulated" and latch "adc_channel[9]~5" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 62
-    Warning (13310): Register "adc_channel[8]" is converted into an equivalent circuit using register "adc_channel[8]~_emulated" and latch "adc_channel[8]~9" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 62
+    Warning (13310): Register "adc_channel[10]" is converted into an equivalent circuit using register "adc_channel[10]~_emulated" and latch "adc_channel[10]~1" File: F:/FPGADesign/lab10/source/adc.sv Line: 62
+    Warning (13310): Register "adc_channel[9]" is converted into an equivalent circuit using register "adc_channel[9]~_emulated" and latch "adc_channel[9]~5" File: F:/FPGADesign/lab10/source/adc.sv Line: 62
+    Warning (13310): Register "adc_channel[8]" is converted into an equivalent circuit using register "adc_channel[8]~_emulated" and latch "adc_channel[8]~9" File: F:/FPGADesign/lab10/source/adc.sv Line: 62
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: F:/FPGADesign/lab10/source/adc.sv Line: 11
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file /home/matt/Documents/FPGAdesign/lab9/quartus/adc.map.smsg
+Info (144001): Generated suppressed messages file F:/FPGADesign/lab10/quartus/adc.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 9
-    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 9
-    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 10
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 10
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 10
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 10
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 10
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 10
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/matt/Documents/FPGAdesign/lab9/source/adc.sv Line: 10
-Info (21057): Implemented 213 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[1]" File: F:/FPGADesign/lab10/source/adc.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[2]" File: F:/FPGADesign/lab10/source/adc.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[3]" File: F:/FPGADesign/lab10/source/adc.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[3]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
+    Warning (15610): No output dependent on input pin "SW[4]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
+    Warning (15610): No output dependent on input pin "SW[5]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
+    Warning (15610): No output dependent on input pin "SW[6]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
+    Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
+    Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
+    Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/lab10/source/adc.sv Line: 10
+Info (21057): Implemented 201 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 139 logic cells
+    Info (21061): Implemented 127 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 505 megabytes
-    Info: Processing ended: Thu Oct 29 17:06:24 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Wed Nov 04 14:20:40 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /home/matt/Documents/FPGAdesign/lab9/quartus/adc.map.smsg.
+The suppressed messages can be found in F:/FPGADesign/lab10/quartus/adc.map.smsg.
 
 

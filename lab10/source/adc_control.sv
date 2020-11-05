@@ -18,8 +18,8 @@
 
 module adc_control #(parameter CONV_RATE_IN_USEC = 16)
                    (clk, reset_n, adc_clk, start_conv);
-input clk, reset_n;
-output adc_clk;
+input logic clk, reset_n;
+output logic adc_clk;
 output logic start_conv;
 
 //parameter conv_rate_in_usec = 20;
@@ -28,7 +28,7 @@ logic [31:0] count;  // [3:0] is smallest possible size
 logic clockgate;
 
 // counter to keep track of states
-always_ff
+always_ff @ (posedge clk or negedge reset_n)
     if (reset_n == 1'b0)
         count <= 0;
     else if (count < (CONV_RATE_IN_USEC - 1))
@@ -36,14 +36,14 @@ always_ff
     else
         count <= 0;
 
-always @ (negedge clk)
+always_ff @ (negedge clk)
     if (reset_n == 1'b0)
-        begin
+        begin : reset
             start_conv = 1'b0;
             clockgate = 1'b0;
         end
     else
-        begin
+        begin : convert
             start_conv <= (count == 1) || (count == 2);
             clockgate <= (count > 2 && count < 15);
         end

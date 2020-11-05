@@ -1,5 +1,5 @@
 Flow report for adc
-Thu Oct 29 17:07:15 2020
+Wed Nov 04 14:21:25 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Oct 29 17:07:09 2020           ;
+; Flow Status                     ; Successful - Wed Nov 04 14:21:19 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; adc                                             ;
 ; Top-level Entity Name           ; adc                                             ;
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
 ; Logic utilization (in ALMs)     ; 70 / 41,910 ( < 1 % )                           ;
-; Total registers                 ; 71                                              ;
+; Total registers                 ; 58                                              ;
 ; Total pins                      ; 73 / 499 ( 15 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/29/2020 17:06:14 ;
+; Start date & time ; 11/04/2020 14:20:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; adc                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 207432540240832.160401277413325        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 198112243637453.160452483104980        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; pll.cmp                                ; --            ; --          ; --         ;
@@ -99,24 +99,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 496 MB              ; 00:00:21                           ;
-; Fitter               ; 00:00:38     ; 1.0                     ; 1941 MB             ; 00:01:06                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 530 MB              ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 861 MB              ; 00:00:06                           ;
-; Total                ; 00:00:57     ; --                      ; --                  ; 00:01:39                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4882 MB             ; 00:00:18                           ;
+; Fitter               ; 00:00:31     ; 1.0                     ; 7406 MB             ; 00:01:28                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4842 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5270 MB             ; 00:00:05                           ;
+; Total                ; 00:00:51     ; --                      ; --                  ; 00:01:56                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+----------------------+------------------+----------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
-+----------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis ; the-daedalus     ; Ubuntu 18.04.4 ; 18         ; x86_64         ;
-; Fitter               ; the-daedalus     ; Ubuntu 18.04.4 ; 18         ; x86_64         ;
-; Assembler            ; the-daedalus     ; Ubuntu 18.04.4 ; 18         ; x86_64         ;
-; Timing Analyzer      ; the-daedalus     ; Ubuntu 18.04.4 ; 18         ; x86_64         ;
-+----------------------+------------------+----------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; StargateCommand  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------

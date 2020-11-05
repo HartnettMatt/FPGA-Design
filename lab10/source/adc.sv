@@ -5,16 +5,16 @@ Based on long CONVST pulse timing
 Updated to set ADC channel using SW[2:0], 0 to 7
 */
 module adc (CLOCK_50, KEY, SW, LEDR, ADC_SCLK, ADC_DIN, ADC_DOUT, ADC_CONVST, HEX5, HEX4, HEX3, HEX2, GPIO);
-input         CLOCK_50;
-input  [3:0]  KEY;
-input  [9:0]  SW;
-output [9:0]  LEDR;
-output        ADC_SCLK;
-output        ADC_DIN;
-input         ADC_DOUT;
-output        ADC_CONVST;
-output [6:0]  HEX5, HEX4, HEX3, HEX2;
-output [15:0] GPIO;
+input logic         CLOCK_50;
+input logic [3:0]   KEY;
+input logic [9:0]   SW;
+output logic [9:0]  LEDR;
+output logic        ADC_SCLK;
+output logic        ADC_DIN;
+input logic         ADC_DOUT;
+output logic        ADC_CONVST;
+output logic [6:0]  HEX5, HEX4, HEX3, HEX2;
+output logic [15:0] GPIO;
 
 parameter ch0 = 12'b100010_000000;  // channel 0, single ended, unipolar output, no sleep
 parameter ch1 = 12'b110010_000000;
@@ -25,7 +25,7 @@ parameter ch5 = 12'b111010_000000;
 parameter ch6 = 12'b101110_000000;
 parameter ch7 = 12'b111110_000000;
 
-logic  [11:0] adc_channel, adc_data, display_value;
+logic [11:0] adc_channel, adc_data, display_value;
 logic [15:0] bcd_disp;
 logic        clk_1mhz, locked, reset_n;
 
@@ -36,7 +36,7 @@ assign LEDR = 10'b0;                // turn LEDs off completely
 pll U0 (.refclk(CLOCK_50), .rst(~KEY[0]), .outclk_0(clk_1mhz), .locked(locked));
 
 // ADC timing control (conversion rate in microseconds is parameter)
-adc_control #(30) U1 (.clk(clk_1mhz), .reset_n(reset_n), .adc_clk(ADC_SCLK), .start_conv(ADC_CONVST));
+adc_control #(30) U1 (.clk(clk_1mhz), .reset_n, .adc_clk(ADC_SCLK), .start_conv(ADC_CONVST));
 
 /* Output conversion channel data to ADC from shift register
    Use the start convert pulse to asynchronously load the channel value
@@ -46,9 +46,9 @@ adc_control #(30) U1 (.clk(clk_1mhz), .reset_n(reset_n), .adc_clk(ADC_SCLK), .st
    moved the assignment to ADC_DIN out of the always block.
 */
 
-always @ (negedge ADC_SCLK or posedge ADC_CONVST)
+always_ff @ (negedge ADC_SCLK or posedge ADC_CONVST)
     if (ADC_CONVST == 1'b1)
-        case (SW[2:0])
+        unique case (SW[2:0])
             3'd0:  adc_channel <= ch0;
             3'd1:  adc_channel <= ch1;
             3'd2:  adc_channel <= ch2;
@@ -66,14 +66,14 @@ assign ADC_DIN = adc_channel[11];
    The data is output at the ADC on a falling clock edge, therefore
    best to capture it on a rising clock edge.
 */
-always @ (posedge ADC_SCLK)
-        adc_data[11:0] <= {adc_data[10:0], ADC_DOUT};
+always_ff @ (posedge ADC_SCLK)
+    adc_data[11:0] <= {adc_data[10:0], ADC_DOUT};
 
 /* Move completed conversion into holding register for display
 // Using the leading edge of a new conversion guarantees that
 the conversion data has been loaded.
 */
-always @ (posedge ADC_CONVST)
+always_comb
     display_value <= adc_data;
 
 // Display value (implied decimal point on HEX5, range 0.000 to 4.095)

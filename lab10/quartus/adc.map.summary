@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Oct 29 17:06:24 2020
+Analysis & Synthesis Status : Successful - Wed Nov 04 14:20:40 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : adc
 Top-level Entity Name : adc
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 63
+Total registers : 51
 Total pins : 73
 Total virtual pins : 0
 Total block memory bits : 0
