@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project2
-Thu Nov 05 16:43:13 2020
+Thu Nov 12 17:46:48 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -15,12 +15,20 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i
- 11. Port Connectivity Checks: "clock:clk_U0|pll:PLL1"
- 12. Port Connectivity Checks: "clock:clk_U0"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Source assignments for issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |Project2
+ 14. Parameter Settings for User Entity Instance: clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i
+ 15. Parameter Settings for User Entity Instance: issp:issp_U0|altsource_probe_top:in_system_sources_probes_0
+ 16. Parameter Settings for User Entity Instance: issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl
+ 17. Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl"
+ 18. Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0"
+ 19. Port Connectivity Checks: "clock:clk_U0|pll:PLL1"
+ 20. Port Connectivity Checks: "clock:clk_U0"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -47,13 +55,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 05 16:43:12 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 12 17:46:48 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project2                                        ;
 ; Top-level Entity Name           ; Project2                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 0                                               ;
+; Total registers                 ; 98                                              ;
 ; Total pins                      ; 78                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -62,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
 ; Total HSSI TX PCSs              ; 0                                               ;
 ; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0                                               ;
+; Total PLLs                      ; 1                                               ;
 ; Total DLLs                      ; 0                                               ;
 +---------------------------------+-------------------------------------------------+
 
@@ -163,70 +171,114 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+-----------------------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                   ; File Name with Absolute Path                                   ; Library ;
-+----------------------------------+-----------------+-----------------------------+----------------------------------------------------------------+---------+
-; ../Source/clock.v                ; yes             ; User Verilog HDL File       ; F:/FPGADesign/Project2/Source/clock.v                          ;         ;
-; ../Source/Project2.v             ; yes             ; User Verilog HDL File       ; F:/FPGADesign/Project2/Source/Project2.v                       ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File  ; F:/FPGADesign/Project2/Quartus/pll.v                           ; pll     ;
-; pll/pll_0002.v                   ; yes             ; User Verilog HDL File       ; F:/FPGADesign/Project2/Quartus/pll/pll_0002.v                  ; pll     ;
-; altera_pll.v                     ; yes             ; Megafunction                ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v ;         ;
-+----------------------------------+-----------------+-----------------------------+----------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                      ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------+-------------+
+; ../Source/i2c.v                                                    ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/i2c.v                                                               ;             ;
+; issp/synthesis/issp.v                                              ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.v                                              ; issp        ;
+; issp/synthesis/submodules/altsource_probe_top.v                    ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v                    ; issp        ;
+; ../Source/clock.v                                                  ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/clock.v                                                             ;             ;
+; ../Source/Project2.v                                               ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/Project2.v                                                          ;             ;
+; pll.v                                                              ; yes             ; User Wizard-Generated File                   ; F:/FPGADesign/Project2/Quartus/pll.v                                                              ; pll         ;
+; pll/pll_0002.v                                                     ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Quartus/pll/pll_0002.v                                                     ; pll         ;
+; altera_pll.v                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v                                    ;             ;
+; altsource_probe.v                                                  ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe.v                               ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                   ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv               ;             ;
+; altsource_probe_body.vhd                                           ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe_body.vhd                        ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                  ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                     ; altera_sld  ;
+; db/ip/sld94cb748c/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 0                  ;
-;                                             ;                    ;
-; Combinational ALUT usage for logic          ; 0                  ;
-;     -- 7 input functions                    ; 0                  ;
-;     -- 6 input functions                    ; 0                  ;
-;     -- 5 input functions                    ; 0                  ;
-;     -- 4 input functions                    ; 0                  ;
-;     -- <=3 input functions                  ; 0                  ;
-;                                             ;                    ;
-; Dedicated logic registers                   ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 78                 ;
-;                                             ;                    ;
-; Total DSP Blocks                            ; 0                  ;
-;                                             ;                    ;
-; Maximum fan-out node                        ; AUD_ADCLRCK~output ;
-; Maximum fan-out                             ; 1                  ;
-; Total fan-out                               ; 82                 ;
-; Average fan-out                             ; 0.51               ;
-+---------------------------------------------+--------------------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 71                       ;
+;                                             ;                          ;
+; Combinational ALUT usage for logic          ; 119                      ;
+;     -- 7 input functions                    ; 0                        ;
+;     -- 6 input functions                    ; 19                       ;
+;     -- 5 input functions                    ; 27                       ;
+;     -- 4 input functions                    ; 18                       ;
+;     -- <=3 input functions                  ; 55                       ;
+;                                             ;                          ;
+; Dedicated logic registers                   ; 98                       ;
+;                                             ;                          ;
+; I/O pins                                    ; 78                       ;
+;                                             ;                          ;
+; Total DSP Blocks                            ; 0                        ;
+;                                             ;                          ;
+; Total PLLs                                  ; 1                        ;
+;     -- PLLs                                 ; 1                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 117                      ;
+; Total fan-out                               ; 827                      ;
+; Average fan-out                             ; 2.14                     ;
++---------------------------------------------+--------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Project2                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 78   ; 0            ; |Project2           ; Project2    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                  ; Entity Name                       ; Library Name ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; |Project2                                                                                                                               ; 119 (2)             ; 98 (0)                    ; 0                 ; 0          ; 78   ; 0            ; |Project2                                                                                                                                                                                                                                                                                                                                            ; Project2                          ; work         ;
+;    |clock:clk_U0|                                                                                                                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0                                                                                                                                                                                                                                                                                                                               ; clock                             ; work         ;
+;       |pll:PLL1|                                                                                                                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1                                                                                                                                                                                                                                                                                                                      ; pll                               ; pll          ;
+;          |pll_0002:pll_inst|                                                                                                            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1|pll_0002:pll_inst                                                                                                                                                                                                                                                                                                    ; pll_0002                          ; pll          ;
+;             |altera_pll:altera_pll_i|                                                                                                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                            ; altera_pll                        ; work         ;
+;    |issp:issp_U0|                                                                                                                       ; 23 (0)              ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|issp:issp_U0                                                                                                                                                                                                                                                                                                                               ; issp                              ; issp         ;
+;       |altsource_probe_top:in_system_sources_probes_0|                                                                                  ; 23 (0)              ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0                                                                                                                                                                                                                                                                                ; altsource_probe_top               ; issp         ;
+;          |altsource_probe:issp_impl|                                                                                                    ; 23 (0)              ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl                                                                                                                                                                                                                                                      ; altsource_probe                   ; work         ;
+;             |altsource_probe_body:altsource_probe_body_inst|                                                                            ; 23 (3)              ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst                                                                                                                                                                                                       ; altsource_probe_body              ; work         ;
+;                |altsource_probe_impl:\wider_source_gen:wider_source_inst|                                                               ; 20 (11)             ; 20 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst                                                                                                                                              ; altsource_probe_impl              ; work         ;
+;                   |sld_rom_sr:\no_instance_id_gen:rom_info_inst|                                                                        ; 9 (9)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\no_instance_id_gen:rom_info_inst                                                                                                 ; sld_rom_sr                        ; work         ;
+;    |sld_hub:auto_hub|                                                                                                                   ; 94 (1)              ; 78 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
+;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 93 (0)              ; 78 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
+;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 93 (0)              ; 78 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
+;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 93 (1)              ; 78 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                    ; alt_sld_fab_alt_sld_fab           ; alt_sld_fab  ;
+;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 92 (0)              ; 73 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab_alt_sld_fab_sldfabric ; alt_sld_fab  ;
+;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 92 (58)             ; 73 (45)                   ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; sld_jtag_hub                      ; work         ;
+;                      |sld_rom_sr:hub_info_reg|                                                                                          ; 15 (15)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; sld_rom_sr                        ; work         ;
+;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 19 (19)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; sld_shadow_jsm                    ; altera_sld   ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                             ;
-+--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
-; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |Project2|clock:clk_U0|pll:PLL1 ; pll.v           ;
-+--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                                                                                                              ;
++--------+---------------------------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+; Vendor ; IP Core Name                    ; Version ; Release Date ; License Type ; Entity Instance                                                                                                                                                                                                                                                               ; IP Include File ;
++--------+---------------------------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+; Altera ; Signal Tap                      ; N/A     ; N/A          ; Licensed     ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                 ;                 ;
+; Altera ; Signal Tap                      ; N/A     ; N/A          ; Licensed     ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                             ;                 ;
+; Altera ; Signal Tap                      ; N/A     ; N/A          ; Licensed     ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_presplit:presplit   ;                 ;
+; Altera ; Signal Tap                      ; N/A     ; N/A          ; Licensed     ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric ;                 ;
+; Altera ; Signal Tap                      ; N/A     ; N/A          ; Licensed     ; |Project2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_splitter:splitter   ;                 ;
+; Altera ; altera_pll                      ; 20.1    ; N/A          ; N/A          ; |Project2|clock:clk_U0|pll:PLL1                                                                                                                                                                                                                                               ; pll.v           ;
+; N/A    ; altera_in_system_sources_probes ; 20.1    ; N/A          ; N/A          ; |Project2|issp:issp_U0                                                                                                                                                                                                                                                        ; issp.qsys       ;
++--------+---------------------------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
 +------------------------------------------------------+
@@ -234,14 +286,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 98    ;
+; Number of registers using Synchronous Clear  ; 7     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 29    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 60    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                                                                                                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
+; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 3       ;
+; Total number of inverted registers = 2                                                                                                                                                                                                                                                                                          ;         ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|shift_reg[1]                                                 ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\no_instance_id_gen:rom_info_inst|word_counter[0] ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |Project2|issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\no_instance_id_gen:rom_info_inst|WORD_SR[0]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst ;
++---------------------------------+------------------------+------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value                  ; From ; To                                                                                                                                                 ;
++---------------------------------+------------------------+------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; NOT_GATE_PUSH_BACK              ; OFF                    ; -    ; -                                                                                                                                                  ;
+; POWER_UP_LEVEL                  ; LOW                    ; -    ; -                                                                                                                                                  ;
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF                    ; -    ; -                                                                                                                                                  ;
+; SYNCHRONIZER_IDENTIFICATION     ; FORCED_IF_ASYNCHRONOUS ; -    ; metastable_l2_reg[0]                                                                                                                               ;
+; AUTO_CLOCK_ENABLE_RECOGNITION   ; OFF                    ; -    ; hold_reg[2]                                                                                                                                        ;
+; AUTO_CLOCK_ENABLE_RECOGNITION   ; OFF                    ; -    ; hold_reg[1]                                                                                                                                        ;
+; AUTO_CLOCK_ENABLE_RECOGNITION   ; OFF                    ; -    ; hold_reg[0]                                                                                                                                        ;
+; SYNCHRONIZER_IDENTIFICATION     ; FORCED_IF_ASYNCHRONOUS ; -    ; metastable_l2_reg[1]                                                                                                                               ;
+; SYNCHRONIZER_IDENTIFICATION     ; FORCED_IF_ASYNCHRONOUS ; -    ; metastable_l2_reg[2]                                                                                                                               ;
+; SYNCHRONIZER_IDENTIFICATION     ; FORCED_IF_ASYNCHRONOUS ; -    ; metastable_l1_reg[0]                                                                                                                               ;
+; SYNCHRONIZER_IDENTIFICATION     ; FORCED_IF_ASYNCHRONOUS ; -    ; metastable_l1_reg[1]                                                                                                                               ;
+; SYNCHRONIZER_IDENTIFICATION     ; FORCED_IF_ASYNCHRONOUS ; -    ; metastable_l1_reg[2]                                                                                                                               ;
++---------------------------------+------------------------+------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Project2 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 3     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------------------------------------------------+
@@ -491,6 +595,78 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: issp:issp_U0|altsource_probe_top:in_system_sources_probes_0 ;
++-------------------------+-----------------+--------------------------------------------------------------+
+; Parameter Name          ; Value           ; Type                                                         ;
++-------------------------+-----------------+--------------------------------------------------------------+
+; lpm_type                ; altsource_probe ; String                                                       ;
+; lpm_hint                ; UNUSED          ; String                                                       ;
+; sld_auto_instance_index ; YES             ; String                                                       ;
+; sld_instance_index      ; 0               ; Signed Integer                                               ;
+; sld_node_info_parameter ; 4746752         ; Signed Integer                                               ;
+; sld_ir_width            ; 4               ; Signed Integer                                               ;
+; instance_id             ; NONE            ; String                                                       ;
+; probe_width             ; 1               ; Signed Integer                                               ;
+; source_width            ; 3               ; Signed Integer                                               ;
+; source_initial_value    ; 0               ; String                                                       ;
+; enable_metastability    ; YES             ; String                                                       ;
++-------------------------+-----------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl ;
++-------------------------+-----------------+----------------------------------------------------------------------------------------+
+; Parameter Name          ; Value           ; Type                                                                                   ;
++-------------------------+-----------------+----------------------------------------------------------------------------------------+
+; lpm_type                ; altsource_probe ; String                                                                                 ;
+; lpm_hint                ; UNUSED          ; String                                                                                 ;
+; sld_auto_instance_index ; YES             ; String                                                                                 ;
+; sld_instance_index      ; 0               ; Signed Integer                                                                         ;
+; SLD_NODE_INFO           ; 4746752         ; Signed Integer                                                                         ;
+; sld_ir_width            ; 4               ; Signed Integer                                                                         ;
+; instance_id             ; NONE            ; String                                                                                 ;
+; probe_width             ; 1               ; Signed Integer                                                                         ;
+; source_width            ; 3               ; Signed Integer                                                                         ;
+; source_initial_value    ; 0               ; String                                                                                 ;
+; enable_metastability    ; YES             ; String                                                                                 ;
++-------------------------+-----------------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl"                                                                  ;
++-----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                                                                                      ;
++-----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; raw_tck         ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; tdi             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; usr1            ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; jtag_state_cdr  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; jtag_state_sdr  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; jtag_state_e1dr ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; jtag_state_udr  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; jtag_state_cir  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; jtag_state_uir  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; jtag_state_tlr  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; clr             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; ena             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; ir_in           ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; ir_out          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; tdo             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++-----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0" ;
++------------+-------+----------+---------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                 ;
++------------+-------+----------+---------------------------------------------------------+
+; source_ena ; Input ; Info     ; Stuck at VCC                                            ;
++------------+-------+----------+---------------------------------------------------------+
+
+
 +---------------------------------------------------+
 ; Port Connectivity Checks: "clock:clk_U0|pll:PLL1" ;
 +------+-------+----------+-------------------------+
@@ -500,14 +676,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clock:clk_U0"                                                                            ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; lock      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clock_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock:clk_U0"                                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; lock ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -515,14 +690,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+; arriav_ff             ; 20                          ;
+;     CLR               ; 2                           ;
+;     ENA               ; 7                           ;
+;     ENA CLR           ; 2                           ;
+;     plain             ; 9                           ;
 ; arriav_io_obuf        ; 4                           ;
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
+; arriav_lcell_comb     ; 24                          ;
+;     normal            ; 24                          ;
 ;         0 data inputs ; 1                           ;
-; boundary_port         ; 78                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 5                           ;
+; boundary_port         ; 99                          ;
+; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -541,14 +727,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Nov 05 16:43:05 2020
+    Info: Processing started: Thu Nov 12 17:46:30 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Project2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c_ol.v
+    Info (12023): Found entity 1: i2c_OL File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c_nsl.v
+    Info (12023): Found entity 1: i2c_NSL File: F:/FPGADesign/Project2/Source/i2c_NSL.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c_csl.v
+    Info (12023): Found entity 1: i2c_CLS File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c.v
+    Info (12023): Found entity 1: i2c File: F:/FPGADesign/Project2/Source/i2c.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file issp/synthesis/issp.v
+    Info (12023): Found entity 1: issp File: F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file issp/synthesis/submodules/altsource_probe_top.v
+    Info (12023): Found entity 1: altsource_probe_top File: F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/clock.v
     Info (12023): Found entity 1: clock File: F:/FPGADesign/Project2/Source/clock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/project2.v
-    Info (12023): Found entity 1: Project2 File: F:/FPGADesign/Project2/Source/Project2.v Line: 6
+    Info (12023): Found entity 1: Project2 File: F:/FPGADesign/Project2/Source/Project2.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
     Info (12023): Found entity 1: pll File: F:/FPGADesign/Project2/Quartus/pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file pll/pll_0002.v
@@ -556,18 +754,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll/pll
 Info (12021): Found 1 design units, including 1 entities, in source file rom.v
     Info (12023): Found entity 1: rom File: F:/FPGADesign/Project2/Quartus/rom.v Line: 40
 Info (12127): Elaborating entity "Project2" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Project2.v(45): object "reset" assigned a value but never read File: F:/FPGADesign/Project2/Source/Project2.v Line: 45
-Warning (10034): Output port "LEDR" at Project2.v(21) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-Warning (10034): Output port "HEX0" at Project2.v(24) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-Warning (10034): Output port "HEX1" at Project2.v(25) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-Warning (10034): Output port "HEX2" at Project2.v(26) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-Warning (10034): Output port "HEX3" at Project2.v(27) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-Warning (10034): Output port "HEX4" at Project2.v(28) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-Warning (10034): Output port "HEX5" at Project2.v(29) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-Warning (10034): Output port "AUD_DACDAT" at Project2.v(36) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 36
-Warning (10034): Output port "AUD_XCK" at Project2.v(38) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 38
-Warning (10034): Output port "FPGA_I2C_SCLK" at Project2.v(41) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 41
-Info (12128): Elaborating entity "clock" for hierarchy "clock:clk_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 53
+Warning (10036): Verilog HDL or VHDL warning at Project2.v(46): object "reset" assigned a value but never read File: F:/FPGADesign/Project2/Source/Project2.v Line: 46
+Warning (10034): Output port "LEDR" at Project2.v(17) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+Warning (10034): Output port "HEX0" at Project2.v(20) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+Warning (10034): Output port "HEX1" at Project2.v(21) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+Warning (10034): Output port "HEX2" at Project2.v(22) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+Warning (10034): Output port "HEX3" at Project2.v(23) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+Warning (10034): Output port "HEX4" at Project2.v(24) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+Warning (10034): Output port "HEX5" at Project2.v(25) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+Warning (10034): Output port "AUD_DACDAT" at Project2.v(32) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 32
+Info (12128): Elaborating entity "clock" for hierarchy "clock:clk_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 54
 Info (12128): Elaborating entity "pll" for hierarchy "clock:clk_U0|pll:PLL1" File: F:/FPGADesign/Project2/Source/clock.v Line: 9
 Info (12128): Elaborating entity "pll_0002" for hierarchy "clock:clk_U0|pll:PLL1|pll_0002:pll_inst" File: F:/FPGADesign/Project2/Quartus/pll.v Line: 20
 Info (12128): Elaborating entity "altera_pll" for hierarchy "clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/Project2/Quartus/pll/pll_0002.v Line: 85
@@ -634,100 +830,144 @@ Info (12133): Instantiated megafunction "clock:clk_U0|pll:PLL1|pll_0002:pll_inst
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0]" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
+Info (12128): Elaborating entity "issp" for hierarchy "issp:issp_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 57
+Info (12128): Elaborating entity "altsource_probe_top" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0" File: F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.v Line: 25
+Info (12128): Elaborating entity "altsource_probe" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl" File: F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v Line: 55
+Info (12130): Elaborated megafunction instantiation "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl" File: F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v Line: 55
+Info (12133): Instantiated megafunction "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl" with the following parameter: File: F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v Line: 55
+    Info (12134): Parameter "lpm_type" = "altsource_probe"
+    Info (12134): Parameter "lpm_hint" = "UNUSED"
+    Info (12134): Parameter "sld_auto_instance_index" = "YES"
+    Info (12134): Parameter "sld_instance_index" = "0"
+    Info (12134): Parameter "SLD_NODE_INFO" = "4746752"
+    Info (12134): Parameter "sld_ir_width" = "4"
+    Info (12134): Parameter "instance_id" = "NONE"
+    Info (12134): Parameter "probe_width" = "1"
+    Info (12134): Parameter "source_width" = "3"
+    Info (12134): Parameter "source_initial_value" = "0"
+    Info (12134): Parameter "enable_metastability" = "YES"
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe.v Line: 169
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
+Info (12128): Elaborating entity "altsource_probe_body" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe.v Line: 205
+Info (12128): Elaborating entity "altsource_probe_impl" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe_body.vhd Line: 536
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\no_instance_id_gen:rom_info_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe_body.vhd Line: 776
+Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
+Info (11172): 2020.11.12.17:46:40 Progress: Loading sld94cb748c/alt_sld_fab_wrapper_hw.tcl
+Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
+Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
+Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
+Info (11172): Presplit: "alt_sld_fab" instantiated altera_super_splitter "presplit"
+Info (11172): Splitter: "alt_sld_fab" instantiated altera_sld_splitter "splitter"
+Info (11172): Sldfabric: "alt_sld_fab" instantiated altera_sld_jtag_hub "sldfabric"
+Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification_hub "ident"
+Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
+Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab File: F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_ident.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: F:/FPGADesign/Project2/Quartus/db/ip/sld94cb748c/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "AUD_ADCLRCK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 34
-    Warning (13040): bidirectional pin "AUD_BCLK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 35
-    Warning (13040): bidirectional pin "AUD_DACLRCK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 37
-    Warning (13040): bidirectional pin "FPGA_I2C_SDAT" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 43
+    Warning (13040): bidirectional pin "AUD_ADCLRCK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 30
+    Warning (13040): bidirectional pin "AUD_BCLK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 31
+    Warning (13040): bidirectional pin "AUD_DACLRCK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 33
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 26
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 27
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 28
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-    Warning (13410): Pin "AUD_DACDAT" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 36
-    Warning (13410): Pin "AUD_XCK" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 38
-    Warning (13410): Pin "FPGA_I2C_SCLK" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 41
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 23
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
+    Warning (13410): Pin "AUD_DACDAT" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 32
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 19 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK2_50" File: F:/FPGADesign/Project2/Source/Project2.v Line: 9
-    Warning (15610): No output dependent on input pin "CLOCK3_50" File: F:/FPGADesign/Project2/Source/Project2.v Line: 10
-    Warning (15610): No output dependent on input pin "CLOCK4_50" File: F:/FPGADesign/Project2/Source/Project2.v Line: 11
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: F:/FPGADesign/Project2/Source/Project2.v Line: 12
-    Warning (15610): No output dependent on input pin "KEY[0]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[1]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 15
-    Warning (15610): No output dependent on input pin "SW[0]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[1]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[2]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[3]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[4]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[5]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[6]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 18
-    Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: F:/FPGADesign/Project2/Source/Project2.v Line: 33
-Info (21057): Implemented 78 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
-    Info (21059): Implemented 55 output pins
+    Info (16011): Adding 14 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning: RST port on the PLL is not properly connected on instance clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
+    Info: Must be connected
+Warning (21074): Design contains 18 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK2_50" File: F:/FPGADesign/Project2/Source/Project2.v Line: 5
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: F:/FPGADesign/Project2/Source/Project2.v Line: 6
+    Warning (15610): No output dependent on input pin "CLOCK4_50" File: F:/FPGADesign/Project2/Source/Project2.v Line: 7
+    Warning (15610): No output dependent on input pin "KEY[0]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 11
+    Warning (15610): No output dependent on input pin "KEY[1]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 11
+    Warning (15610): No output dependent on input pin "KEY[2]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 11
+    Warning (15610): No output dependent on input pin "KEY[3]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 11
+    Warning (15610): No output dependent on input pin "SW[0]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[1]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[2]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[3]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[4]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[5]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[6]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[7]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
+    Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
+Info (21057): Implemented 233 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 56 output pins
     Info (21060): Implemented 4 bidirectional pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Thu Nov 05 16:43:13 2020
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:15
+    Info (21061): Implemented 149 logic cells
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4889 megabytes
+    Info: Processing ended: Thu Nov 12 17:46:48 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:34
 
 

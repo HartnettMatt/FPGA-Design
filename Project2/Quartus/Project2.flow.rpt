@@ -1,5 +1,5 @@
 Flow report for Project2
-Thu Nov 05 16:43:53 2020
+Thu Nov 12 17:47:46 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Nov 05 16:43:48 2020           ;
+; Flow Status                     ; Successful - Thu Nov 12 17:47:40 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project2                                        ;
 ; Top-level Entity Name           ; Project2                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1 / 41,910 ( < 1 % )                            ;
-; Total registers                 ; 0                                               ;
+; Logic utilization (in ALMs)     ; 70 / 41,910 ( < 1 % )                           ;
+; Total registers                 ; 102                                             ;
 ; Total pins                      ; 78 / 499 ( 16 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                           ;
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 ; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
 ; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
 ; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                                  ;
+; Total PLLs                      ; 1 / 15 ( 7 % )                                  ;
 ; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
 +---------------------------------+-------------------------------------------------+
 
@@ -68,31 +68,37 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/05/2020 16:43:06 ;
+; Start date & time ; 11/12/2020 17:46:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project2            ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198112243637453.160461978633332        ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; MISC_FILE                           ; pll.cmp                                ; --            ; --          ; --         ;
-; MISC_FILE                           ; pll_sim/pll.vo                         ; --            ; --          ; --         ;
-; MISC_FILE                           ; rom_bb.v                               ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; SPD_FILE                            ; pll.spd                                ; --            ; --          ; --         ;
-; SYNTHESIS_ONLY_QIP                  ; On                                     ; --            ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                        ;
++-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 198112243637453.160522839128908                        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; issp/synthesis/../issp.cmp                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; issp/synthesis/../../issp.qsys                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; pll.cmp                                                ; --            ; --          ; --         ;
+; MISC_FILE                           ; pll_sim/pll.vo                                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; rom_bb.v                                               ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                 ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                 ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                 ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                  ; --            ; --          ; --         ;
+; SLD_FILE                            ; issp/synthesis/issp.debuginfo                          ; --            ; --          ; --         ;
+; SLD_INFO                            ; QSYS_NAME issp HAS_SOPCINFO 1 GENERATION_ID 1605222640 ; --            ; issp        ; --         ;
+; SOPCINFO_FILE                       ; issp/synthesis/../../issp.sopcinfo                     ; --            ; --          ; --         ;
+; SPD_FILE                            ; pll.spd                                                ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --            ; --          ; --         ;
++-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -100,11 +106,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4787 MB             ; 00:00:15                           ;
-; Fitter               ; 00:00:28     ; 1.0                     ; 7285 MB             ; 00:01:13                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4840 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5207 MB             ; 00:00:04                           ;
-; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:37                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4889 MB             ; 00:00:33                           ;
+; Fitter               ; 00:00:43     ; 1.0                     ; 7472 MB             ; 00:02:30                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4836 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5272 MB             ; 00:00:06                           ;
+; Total                ; 00:01:11     ; --                      ; --                  ; 00:03:15                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

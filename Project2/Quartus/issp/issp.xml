@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.11.12.16:10:41"
+ outputDirectory="F:/FPGADesign/Project2/Quartus/issp/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CSXFC6D6F31C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6_H6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SOURCE_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SOURCE_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SOURCE_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="probes" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="probe" direction="input" role="probe" width="1" />
+  </interface>
+  <interface name="source_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="source_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="sources" kind="conduit" start="0">
+   <property name="associatedClock" value="source_clk" />
+   <property name="associatedReset" value="" />
+   <port name="source" direction="output" role="source" width="3" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="issp:1.0:AUTO_DEVICE=5CSXFC6D6F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6_H6,AUTO_GENERATION_ID=1605222640,AUTO_SOURCE_CLK_CLOCK_DOMAIN=-1,AUTO_SOURCE_CLK_CLOCK_RATE=-1,AUTO_SOURCE_CLK_RESET_DOMAIN=-1,AUTO_UNIQUE_ID=(altera_in_system_sources_probes:20.1:create_source_clock=true,create_source_clock_enable=false,device_family=Cyclone V,enable_metastability=YES,gui_use_auto_index=true,instance_id=NONE,probe_width=1,sld_auto_instance_index=YES,sld_instance_index=0,source_initial_value=0,source_width=3)"
+   instancePathKey="issp"
+   kind="issp"
+   version="1.0"
+   name="issp">
+  <parameter name="AUTO_SOURCE_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_SOURCE_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_SOURCE_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1605222640" />
+  <parameter name="AUTO_DEVICE" value="5CSXFC6D6F31C6" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6_H6" />
+  <generatedFiles>
+   <file
+       path="F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v"
+       type="VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="F:/FPGADesign/Project2/Quartus/issp.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/intelfpga/20.1/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="issp">queue size: 0 starting:issp "issp"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="issp"><![CDATA["<b>issp</b>" reuses <b>altera_in_system_sources_probes</b> "<b>submodules/altsource_probe_top</b>"]]></message>
+   <message level="Debug" culprit="issp">queue size: 0 starting:altera_in_system_sources_probes "submodules/altsource_probe_top"</message>
+   <message level="Info" culprit="in_system_sources_probes_0"><![CDATA["<b>issp</b>" instantiated <b>altera_in_system_sources_probes</b> "<b>in_system_sources_probes_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_in_system_sources_probes:20.1:create_source_clock=true,create_source_clock_enable=false,device_family=Cyclone V,enable_metastability=YES,gui_use_auto_index=true,instance_id=NONE,probe_width=1,sld_auto_instance_index=YES,sld_instance_index=0,source_initial_value=0,source_width=3"
+   instancePathKey="issp:.:in_system_sources_probes_0"
+   kind="altera_in_system_sources_probes"
+   version="20.1"
+   name="altsource_probe_top">
+  <parameter name="create_source_clock" value="true" />
+  <parameter name="instance_id" value="NONE" />
+  <parameter name="source_initial_value" value="0" />
+  <parameter name="sld_auto_instance_index" value="YES" />
+  <parameter name="sld_instance_index" value="0" />
+  <parameter name="probe_width" value="1" />
+  <parameter name="source_width" value="3" />
+  <parameter name="create_source_clock_enable" value="false" />
+  <parameter name="device_family" value="Cyclone V" />
+  <parameter name="enable_metastability" value="YES" />
+  <parameter name="gui_use_auto_index" value="true" />
+  <generatedFiles>
+   <file
+       path="F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="D:/intelfpga/20.1/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="issp" as="in_system_sources_probes_0" />
+  <messages>
+   <message level="Debug" culprit="issp">queue size: 0 starting:altera_in_system_sources_probes "submodules/altsource_probe_top"</message>
+   <message level="Info" culprit="in_system_sources_probes_0"><![CDATA["<b>issp</b>" instantiated <b>altera_in_system_sources_probes</b> "<b>in_system_sources_probes_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

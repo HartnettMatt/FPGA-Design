@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Nov 05 16:43:12 2020
+Analysis & Synthesis Status : Successful - Thu Nov 12 17:46:48 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : Project2
 Top-level Entity Name : Project2
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
+Total registers : 98
 Total pins : 78
 Total virtual pins : 0
 Total block memory bits : 0
@@ -13,5 +13,5 @@ Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
-Total PLLs : 0
+Total PLLs : 1
 Total DLLs : 0

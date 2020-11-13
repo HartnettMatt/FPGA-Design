@@ -1,0 +1,28 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate F:\FPGADesign\Project2\Quartus\issp.qsys --block-symbol-file --output-directory=F:\FPGADesign\Project2\Quartus\issp --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Quartus/issp.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 20.1]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate F:\FPGADesign\Project2\Quartus\issp.qsys --synthesis=VERILOG --output-directory=F:\FPGADesign\Project2\Quartus\issp\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Quartus/issp.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 20.1]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: issp: Generating issp "issp" for QUARTUS_SYNTH
+Info: in_system_sources_probes_0: "issp" instantiated altera_in_system_sources_probes "in_system_sources_probes_0"
+Info: issp: Done "issp" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
