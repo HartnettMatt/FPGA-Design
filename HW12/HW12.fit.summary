@@ -1,0 +1,20 @@
+Fitter Status : Successful - Wed Nov 18 21:39:03 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+Revision Name : HW12
+Top-level Entity Name : HW12
+Family : Cyclone V
+Device : 5CEFA7F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 1 / 56,480 ( < 1 % )
+Total registers : 0
+Total pins : 70 / 480 ( 15 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 7,024,640 ( 0 % )
+Total RAM Blocks : 0 / 686 ( 0 % )
+Total DSP Blocks : 0 / 156 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 7 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
