@@ -1,4 +1,4 @@
-module  i2c_CLS(
+module  i2c_CSL(
   input wire clk,
   input wire reset_n,
   output reg [3:0] CS,

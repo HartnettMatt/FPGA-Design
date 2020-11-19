@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project2
-Thu Nov 12 17:46:48 2020
+Thu Nov 19 16:19:41 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -22,13 +22,16 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
  14. Parameter Settings for User Entity Instance: clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i
  15. Parameter Settings for User Entity Instance: issp:issp_U0|altsource_probe_top:in_system_sources_probes_0
  16. Parameter Settings for User Entity Instance: issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl
- 17. Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl"
- 18. Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0"
- 19. Port Connectivity Checks: "clock:clk_U0|pll:PLL1"
- 20. Port Connectivity Checks: "clock:clk_U0"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: i2c:i2c_U0|i2c_CSL:CSL
+ 18. Parameter Settings for User Entity Instance: i2c:i2c_U0|i2c_NSL:NSL
+ 19. Parameter Settings for User Entity Instance: i2c:i2c_U0|i2c_OL:OL
+ 20. Port Connectivity Checks: "i2c:i2c_U0|i2c_OL:OL"
+ 21. Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl"
+ 22. Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0"
+ 23. Port Connectivity Checks: "clock:clk_U0|pll:PLL1"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -55,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 12 17:46:48 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 19 16:19:41 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project2                                        ;
 ; Top-level Entity Name           ; Project2                                        ;
@@ -184,6 +187,9 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                      ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------+-------------+
+; ../Source/i2c_OL.v                                                 ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/i2c_OL.v                                                            ;             ;
+; ../Source/i2c_NSL.v                                                ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/i2c_NSL.v                                                           ;             ;
+; ../Source/i2c_CSL.v                                                ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/i2c_CSL.v                                                           ;             ;
 ; ../Source/i2c.v                                                    ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/i2c.v                                                               ;             ;
 ; issp/synthesis/issp.v                                              ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.v                                              ; issp        ;
 ; issp/synthesis/submodules/altsource_probe_top.v                    ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v                    ; issp        ;
@@ -191,6 +197,7 @@ https://fpgasoftware.intel.com/eula.
 ; ../Source/Project2.v                                               ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Source/Project2.v                                                          ;             ;
 ; pll.v                                                              ; yes             ; User Wizard-Generated File                   ; F:/FPGADesign/Project2/Quartus/pll.v                                                              ; pll         ;
 ; pll/pll_0002.v                                                     ; yes             ; User Verilog HDL File                        ; F:/FPGADesign/Project2/Quartus/pll/pll_0002.v                                                     ; pll         ;
+; /fpgadesign/project2/source/i2c_states.vh                          ; yes             ; Auto-Found Unspecified File                  ; /fpgadesign/project2/source/i2c_states.vh                                                         ;             ;
 ; altera_pll.v                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v                                    ;             ;
 ; altsource_probe.v                                                  ; yes             ; Megafunction                                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe.v                               ;             ;
 ; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                   ;             ;
@@ -635,6 +642,69 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: i2c:i2c_U0|i2c_CSL:CSL ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; Wait_STATE     ; 0000  ; Unsigned Binary                            ;
+; Start_STATE    ; 0001  ; Unsigned Binary                            ;
+; Address_STATE  ; 0010  ; Unsigned Binary                            ;
+; Ack1_STATE     ; 0011  ; Unsigned Binary                            ;
+; Data1_STATE    ; 0100  ; Unsigned Binary                            ;
+; Ack2_STATE     ; 0101  ; Unsigned Binary                            ;
+; Data2_STATE    ; 0110  ; Unsigned Binary                            ;
+; Ack3_STATE     ; 0111  ; Unsigned Binary                            ;
+; Stop_STATE     ; 1000  ; Unsigned Binary                            ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: i2c:i2c_U0|i2c_NSL:NSL ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; Wait_STATE     ; 0000  ; Unsigned Binary                            ;
+; Start_STATE    ; 0001  ; Unsigned Binary                            ;
+; Address_STATE  ; 0010  ; Unsigned Binary                            ;
+; Ack1_STATE     ; 0011  ; Unsigned Binary                            ;
+; Data1_STATE    ; 0100  ; Unsigned Binary                            ;
+; Ack2_STATE     ; 0101  ; Unsigned Binary                            ;
+; Data2_STATE    ; 0110  ; Unsigned Binary                            ;
+; Ack3_STATE     ; 0111  ; Unsigned Binary                            ;
+; Stop_STATE     ; 1000  ; Unsigned Binary                            ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: i2c:i2c_U0|i2c_OL:OL ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; Wait_STATE     ; 0000  ; Unsigned Binary                          ;
+; Start_STATE    ; 0001  ; Unsigned Binary                          ;
+; Address_STATE  ; 0010  ; Unsigned Binary                          ;
+; Ack1_STATE     ; 0011  ; Unsigned Binary                          ;
+; Data1_STATE    ; 0100  ; Unsigned Binary                          ;
+; Ack2_STATE     ; 0101  ; Unsigned Binary                          ;
+; Data2_STATE    ; 0110  ; Unsigned Binary                          ;
+; Ack3_STATE     ; 0111  ; Unsigned Binary                          ;
+; Stop_STATE     ; 1000  ; Unsigned Binary                          ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "i2c:i2c_U0|i2c_OL:OL"                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i2c_sdat ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl"                                                                  ;
 +-----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -674,15 +744,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------+
 ; rst  ; Input ; Info     ; Stuck at GND            ;
 +------+-------+----------+-------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clock:clk_U0"                                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; lock ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -727,7 +788,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Nov 12 17:46:30 2020
+    Info: Processing started: Thu Nov 19 16:19:21 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Project2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -736,7 +797,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /fpgade
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c_nsl.v
     Info (12023): Found entity 1: i2c_NSL File: F:/FPGADesign/Project2/Source/i2c_NSL.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c_csl.v
-    Info (12023): Found entity 1: i2c_CLS File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 1
+    Info (12023): Found entity 1: i2c_CSL File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c.v
     Info (12023): Found entity 1: i2c File: F:/FPGADesign/Project2/Source/i2c.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file issp/synthesis/issp.v
@@ -753,8 +814,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll/pll
     Info (12023): Found entity 1: pll_0002 File: F:/FPGADesign/Project2/Quartus/pll/pll_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file rom.v
     Info (12023): Found entity 1: rom File: F:/FPGADesign/Project2/Quartus/rom.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at i2c.v(16): created implicit net for "FPGA_I2C_SDAT" File: F:/FPGADesign/Project2/Source/i2c.v Line: 16
 Info (12127): Elaborating entity "Project2" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Project2.v(46): object "reset" assigned a value but never read File: F:/FPGADesign/Project2/Source/Project2.v Line: 46
 Warning (10034): Output port "LEDR" at Project2.v(17) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
 Warning (10034): Output port "HEX0" at Project2.v(20) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
 Warning (10034): Output port "HEX1" at Project2.v(21) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
@@ -851,8 +912,14 @@ Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy 
 Info (12128): Elaborating entity "altsource_probe_body" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe.v Line: 205
 Info (12128): Elaborating entity "altsource_probe_impl" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe_body.vhd Line: 536
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "issp:issp_U0|altsource_probe_top:in_system_sources_probes_0|altsource_probe:issp_impl|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\no_instance_id_gen:rom_info_inst" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altsource_probe_body.vhd Line: 776
+Info (12128): Elaborating entity "i2c" for hierarchy "i2c:i2c_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 58
+Info (12128): Elaborating entity "i2c_CSL" for hierarchy "i2c:i2c_U0|i2c_CSL:CSL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 14
+Info (12128): Elaborating entity "i2c_NSL" for hierarchy "i2c:i2c_U0|i2c_NSL:NSL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 15
+Info (12128): Elaborating entity "i2c_OL" for hierarchy "i2c:i2c_U0|i2c_OL:OL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 16
+Warning (10034): Output port "sm_in" at i2c_OL.v(6) has no driver File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 6
+Warning (10034): Output port "i2c_sdat" at i2c_OL.v(8) has no driver File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 8
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2020.11.12.17:46:40 Progress: Loading sld94cb748c/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2020.11.19.16:19:32 Progress: Loading sld94cb748c/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -964,10 +1031,10 @@ Info (21057): Implemented 233 device resources after synthesis - the final resou
     Info (21060): Implemented 4 bidirectional pins
     Info (21061): Implemented 149 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Thu Nov 12 17:46:48 2020
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:34
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
+    Info: Peak virtual memory: 4911 megabytes
+    Info: Processing ended: Thu Nov 19 16:19:41 2020
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:35
 
 
