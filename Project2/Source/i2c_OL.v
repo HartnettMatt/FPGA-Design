@@ -3,7 +3,7 @@ module i2c_OL (
   input wire reset_n,
   input wire [3:0] CS,
   input wire [3:0] NS,
-  output reg [3:0] sm_in,
+  output reg [5:0] counter,
   output reg i2c_sdat,
   output reg ts
   );
@@ -11,7 +11,7 @@ module i2c_OL (
 
 always @ (*)
   case(CS)
-    Wait_STATE:     sm_in[2:1] = 2'b00;
+    Wait_STATE:     counter = 0;
                     i2c_sdat = 1'b1;
                     ts = 1'b0;
     Start_STATE:    i2c_sdat = 1'b0;

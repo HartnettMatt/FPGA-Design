@@ -4,14 +4,14 @@ module  i2c_NSL(
   input wire reset_n,
   input wire [3:0] CS,
   output reg [3:0] NS,
-  input wire [3:0] sm_in
+  input wire [5:0] counter
   );
 
 `include "i2c_states.vh"
 
 always @ (*)
   case(CS)
-    Wait_STATE:     if(sm_in[0] == 1'b1)
+    Wait_STATE:     if(counter > 1)
                       NS = Start_STATE;
                     else
                       NS = Wait_STATE;
