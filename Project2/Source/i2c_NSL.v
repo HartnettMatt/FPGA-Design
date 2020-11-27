@@ -11,32 +11,32 @@ module  i2c_NSL(
 
 always @ (*)
   case(CS)
-    Wait_STATE:     if(counter > 1)
+    Wait_STATE:     if(counter == 1)
                       NS = Start_STATE;
                     else
                       NS = Wait_STATE;
     Start_STATE:    NS = Address_STATE;
-    Address_STATE:  if(sm_in[1] == 1'b1)
+    Address_STATE:  if(counter == 9)
                       NS = Ack1_STATE;
                     else
                       NS = Address_STATE;
-    Ack1_STATE:     if(sm_in[2] == 1'b1)
+    Ack1_STATE:     if(counter == 10)
                       NS = Data1_STATE;
                     else
                       NS = Wait_STATE;
-    Data1_STATE:  if(sm_in[1] == 1'b1)
+    Data1_STATE:  if(counter == 18)
                       NS = Ack2_STATE;
                     else
                       NS = Data1_STATE;
-    Ack2_STATE:     if(sm_in[2] == 1'b1)
+    Ack2_STATE:     if(counter == 19)
                       NS = Data2_STATE;
                     else
                       NS = Wait_STATE;
-    Data2_STATE:  if(sm_in[1] == 1'b1)
+    Data2_STATE:  if(counter == 27)
                       NS = Ack3_STATE;
                     else
                       NS = Data2_STATE;
-    Ack3_STATE:     if(sm_in[2] == 1'b1)
+    Ack3_STATE:     if(counter == 28)
                       NS = Stop_STATE;
                     else
                       NS = Wait_STATE;

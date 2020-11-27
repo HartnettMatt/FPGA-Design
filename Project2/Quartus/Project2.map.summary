@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Nov 19 16:19:41 2020
+Analysis & Synthesis Status : Successful - Fri Nov 27 11:26:51 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : Project2
 Top-level Entity Name : Project2
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 98
+Total registers : 10
 Total pins : 78
 Total virtual pins : 0
 Total block memory bits : 0

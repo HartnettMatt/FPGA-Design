@@ -2,28 +2,24 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 10.799
-TNS   : 0.000
+Type  : Slow 1100mV 85C Model Setup 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : -8.226
+TNS   : -8.226
 
 Type  : Slow 1100mV 85C Model Setup 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 82.401
-TNS   : 0.000
+Slack : -7.987
+TNS   : -30.567
 
 Type  : Slow 1100mV 85C Model Hold 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.299
+Slack : 0.314
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.648
+Type  : Slow 1100mV 85C Model Hold 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 5.502
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 37.591
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.912
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 0.421
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -34,36 +30,28 @@ Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : 9.670
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 19.175
-TNS   : 0.000
-
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 40.965
+Slack : 40.970
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 10.882
-TNS   : 0.000
+Type  : Slow 1100mV 0C Model Setup 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : -8.177
+TNS   : -8.177
 
 Type  : Slow 1100mV 0C Model Setup 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 82.399
-TNS   : 0.000
+Slack : -7.292
+TNS   : -28.008
 
 Type  : Slow 1100mV 0C Model Hold 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.278
+Slack : 0.295
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.625
+Type  : Slow 1100mV 0C Model Hold 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 5.499
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 37.712
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.839
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 0.409
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -74,36 +62,28 @@ Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : 9.673
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 19.184
-TNS   : 0.000
-
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 40.916
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 12.844
+Slack : 40.925
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 82.805
-TNS   : 0.000
+Slack : -6.633
+TNS   : -25.289
+
+Type  : Fast 1100mV 85C Model Setup 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : -4.455
+TNS   : -4.455
 
 Type  : Fast 1100mV 85C Model Hold 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.177
+Slack : 0.178
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.273
+Type  : Fast 1100mV 85C Model Hold 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 3.040
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 38.445
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.422
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 0.462
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -114,36 +94,28 @@ Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : 9.336
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 19.149
-TNS   : 0.000
-
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 41.221
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 13.011
+Slack : 41.220
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 82.833
-TNS   : 0.000
+Slack : -5.426
+TNS   : -20.709
+
+Type  : Fast 1100mV 0C Model Setup 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : -4.325
+TNS   : -4.325
 
 Type  : Fast 1100mV 0C Model Hold 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.160
+Slack : 0.164
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.251
+Type  : Fast 1100mV 0C Model Hold 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 2.966
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 38.571
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.364
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'i2c:i2c_U0|i2c_CSL:CSL|CS[1]'
+Slack : 0.472
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -154,12 +126,8 @@ Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : 9.286
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 19.162
-TNS   : 0.000
-
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 41.207
+Slack : 41.212
 TNS   : 0.000
 
 ------------------------------------------------------------

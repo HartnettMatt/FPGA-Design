@@ -54,7 +54,7 @@ assign reset = KEY[0] & lock;
 clock clk_U0(.clock_in(CLOCK_50), .lock(lock), .clock_out(clk));
 assign AUD_XCK = clk;
 
-issp issp_U0(.probe(FPGA_I2C_SDAT), .source_clk(clk), .source({ts, FPGA_I2C_SCLK, sda_out}));
+// issp issp_U0(.probe(FPGA_I2C_SDAT), .source_clk(clk), .source({ts, FPGA_I2C_SCLK, sda_out}));
 i2c i2c_U0(.clk(clk), .reset_n(reset), .i2c_sdat(sda_out), .key(KEY[1]), .ts(ts));
 
 assign FPGA_I2C_SDAT = ts ? 1'bZ : sda_out;
