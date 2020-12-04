@@ -1,0 +1,211 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/Project2/Quartus/simulation/modelsim
+vclock
+Z1 !s110 1607047199
+!i10b 1
+!s100 LC6L^W2QfGME<?gXa]5Ub1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I48Xi84R1ichem=F3NlaY23
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604619663
+8F:/FPGADesign/Project2/Source/clock.v
+FF:/FPGADesign/Project2/Source/clock.v
+!i122 3
+L0 1 13
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1607047199.000000
+!s107 F:/FPGADesign/Project2/Source/clock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/clock.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source
+Z8 tCvgOpt 0
+vi2c
+R1
+!i10b 1
+!s100 Ldmj:5PzN>nHd42cS`AWb2
+R2
+IOcnkUUI=fZzN2B[=`BTQD3
+R3
+R0
+w1607046542
+8F:/FPGADesign/Project2/Source/i2c.v
+FF:/FPGADesign/Project2/Source/i2c.v
+Z9 FF:/FPGADesign/Project2/Source/i2c_states.vh
+!i122 2
+L0 1 30
+R4
+r1
+!s85 0
+31
+R5
+!s107 F:/FPGADesign/Project2/Source/i2c_states.vh|F:/FPGADesign/Project2/Source/i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/i2c.v|
+!i113 1
+R6
+R7
+R8
+vi2c_CSL
+Z10 !s110 1607047200
+!i10b 1
+!s100 9]kV<hc_HS@o`IMT:CAL<0
+R2
+I=;BQa<]L5AGm;mPA]HM=Y2
+R3
+R0
+w1605827955
+8F:/FPGADesign/Project2/Source/i2c_CSL.v
+FF:/FPGADesign/Project2/Source/i2c_CSL.v
+R9
+!i122 7
+L0 1 24
+R4
+r1
+!s85 0
+31
+Z11 !s108 1607047200.000000
+!s107 F:/FPGADesign/Project2/Source/i2c_states.vh|F:/FPGADesign/Project2/Source/i2c_CSL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/i2c_CSL.v|
+!i113 1
+R6
+R7
+R8
+ni2c_@c@s@l
+vi2c_NSL
+R10
+!i10b 1
+!s100 IlcU4HHXbEOil=S[8@DLa1
+R2
+I3T36<f]T?WNfeo3Q]F0[B1
+R3
+R0
+w1607040674
+8F:/FPGADesign/Project2/Source/i2c_NSL.v
+FF:/FPGADesign/Project2/Source/i2c_NSL.v
+R9
+!i122 6
+L0 2 56
+R4
+r1
+!s85 0
+31
+R11
+!s107 F:/FPGADesign/Project2/Source/i2c_states.vh|F:/FPGADesign/Project2/Source/i2c_NSL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/i2c_NSL.v|
+!i113 1
+R6
+R7
+R8
+ni2c_@n@s@l
+vi2c_OL
+R10
+!i10b 1
+!s100 e;_c2Oe;<WaIQXB1kh`ka1
+R2
+IKhmkJl?f3kf<AaCPO]W>72
+R3
+R0
+w1607046752
+8F:/FPGADesign/Project2/Source/i2c_OL.v
+FF:/FPGADesign/Project2/Source/i2c_OL.v
+R9
+!i122 5
+L0 1 88
+R4
+r1
+!s85 0
+31
+R11
+!s107 F:/FPGADesign/Project2/Source/i2c_states.vh|F:/FPGADesign/Project2/Source/i2c_OL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/i2c_OL.v|
+!i113 1
+R6
+R7
+R8
+ni2c_@o@l
+vpll
+R1
+!i10b 1
+!s100 UC3;Lj6O[Vg89zBIX1ih70
+R2
+I0BNMmkM2kdlF7i87kki@j1
+R3
+R0
+w1607036893
+8F:/FPGADesign/Project2/Quartus/pll.vo
+FF:/FPGADesign/Project2/Quartus/pll.vo
+!i122 1
+L0 32 264
+R4
+r1
+!s85 0
+31
+R5
+!s107 F:/FPGADesign/Project2/Quartus/pll.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Quartus|F:/FPGADesign/Project2/Quartus/pll.vo|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Quartus
+R8
+vProject2
+R10
+!i10b 1
+!s100 `X0f09]zWKngB0NJ8?nae3
+R2
+Icm4gOYaoOn9dJkn>4CGFE2
+R3
+R0
+w1607046222
+8F:/FPGADesign/Project2/Source/Project2.v
+FF:/FPGADesign/Project2/Source/Project2.v
+!i122 4
+Z12 L0 2 63
+R4
+r1
+!s85 0
+31
+R11
+!s107 F:/FPGADesign/Project2/Source/Project2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/Project2.v|
+!i113 1
+R6
+R7
+R8
+n@project2
+vtb
+R10
+!i10b 1
+!s100 XD5jD3ATlh38[We4a^AAa1
+R2
+I]7g46^?jmOAgZoM1YdMMH1
+R3
+R0
+w1607038551
+8F:/FPGADesign/Project2/Quartus/../Source/tb.v
+FF:/FPGADesign/Project2/Quartus/../Source/tb.v
+!i122 8
+R12
+R4
+r1
+!s85 0
+31
+R11
+!s107 F:/FPGADesign/Project2/Quartus/../Source/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Quartus/../Source|F:/FPGADesign/Project2/Quartus/../Source/tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Quartus/../Source
+R8

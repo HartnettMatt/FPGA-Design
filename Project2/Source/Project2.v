@@ -44,10 +44,11 @@ parameter n = 3;
 //  REG/WIRE declarations
 //=======================================================
 wire reset, lock, clk;
-wire sda_in, sda_out, ts;
+wire sda_in, sda_out, i2c_sclk, ts;
+// reg [15:0] data;
+wire [15:0] data;
 assign reset = KEY[0] & lock;
-
-
+assign data = 16'hA5A5;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -55,8 +56,9 @@ clock clk_U0(.clock_in(CLOCK_50), .lock(lock), .clock_out(clk));
 assign AUD_XCK = clk;
 
 // issp issp_U0(.probe(FPGA_I2C_SDAT), .source_clk(clk), .source({ts, FPGA_I2C_SCLK, sda_out}));
-i2c i2c_U0(.clk(clk), .reset_n(reset), .i2c_sdat(sda_out), .key(KEY[1]), .ts(ts));
+i2c i2c_U0(.clk(clk), .reset_n(reset), .i2c_sdat(sda_out), .i2c_sclk(i2c_sclk), .key(KEY[1]), .ts(ts), .data(data));
 
 assign FPGA_I2C_SDAT = ts ? 1'bZ : sda_out;
+assign FPGA_I2C_SCLK = i2c_sclk ? 1'b1 : clk;
 
 endmodule
