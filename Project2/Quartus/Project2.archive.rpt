@@ -1,0 +1,135 @@
+Archive Project report for Project2
+Wed Dec 09 23:03:40 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Wed Dec 09 23:03:40 2020 ;
+; Revision Name          ; Project2                              ;
+; Top-level Entity Name  ; Project2                              ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory F:/FPGADesign/Project2/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'F:/FPGADesign/Project2/Quartus/Project2_Hartnett.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Project2.archive.rpt'
+Info (23030): Evaluation of Tcl script d:/intelfpga/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Wed Dec 09 23:03:40 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------+
+; Files Archived                                   ;
++--------------------------------------------------+
+; File Name                                        ;
++--------------------------------------------------+
+; ../Source/aud.v                                  ;
+; ../Source/audio.v                                ;
+; ../Source/clock.v                                ;
+; ../Source/clockDivider.v                         ;
+; ../Source/i2c.v                                  ;
+; ../Source/i2c_CSL.v                              ;
+; ../Source/i2c_NSL.v                              ;
+; ../Source/i2c_OL.v                               ;
+; ../Source/Project2.v                             ;
+; ../Source/tb.v                                   ;
+; /fpgadesign/project2/source/address.vh           ;
+; /fpgadesign/project2/source/i2c_states.vh        ;
+; db/Project2.cmp.rdb                              ;
+; F:/FPGADesign/Project2/Source/aud.v              ;
+; F:/FPGADesign/Project2/Source/audio.v            ;
+; F:/FPGADesign/Project2/Source/clock.v            ;
+; F:/FPGADesign/Project2/Source/clockDivider.v     ;
+; F:/FPGADesign/Project2/Source/i2c.v              ;
+; F:/FPGADesign/Project2/Source/i2c_CSL.v          ;
+; F:/FPGADesign/Project2/Source/i2c_NSL.v          ;
+; F:/FPGADesign/Project2/Source/i2c_OL.v           ;
+; F:/FPGADesign/Project2/Source/issp.tcl           ;
+; F:/FPGADesign/Project2/Source/issp1.tcl          ;
+; F:/FPGADesign/Project2/Source/issp2.tcl          ;
+; F:/FPGADesign/Project2/Source/Project2.v         ;
+; F:/FPGADesign/Project2/Source/tb.v               ;
+; issp/synthesis/../../issp.qsys                   ;
+; issp/synthesis/../../issp.sopcinfo               ;
+; issp/synthesis/../issp.cmp                       ;
+; issp/synthesis/issp.debuginfo                    ;
+; issp/synthesis/issp.qip                          ;
+; issp/synthesis/issp.v                            ;
+; issp/synthesis/submodules/altsource_probe_top.v  ;
+; issp1/synthesis/../../issp1.qsys                 ;
+; issp1/synthesis/../../issp1.sopcinfo             ;
+; issp1/synthesis/../issp1.cmp                     ;
+; issp1/synthesis/issp1.debuginfo                  ;
+; issp1/synthesis/issp1.qip                        ;
+; issp1/synthesis/issp1.v                          ;
+; issp1/synthesis/submodules/altsource_probe_top.v ;
+; pll.cmp                                          ;
+; pll.qip                                          ;
+; pll.sip                                          ;
+; pll.spd                                          ;
+; pll.v                                            ;
+; pll/pll_0002.qip                                 ;
+; pll/pll_0002.v                                   ;
+; pll_sim/pll.vo                                   ;
+; Project2.qpf                                     ;
+; Project2.qsf                                     ;
+; Project2.SDC                                     ;
+; Project2.sdc                                     ;
+; Project2_assignment_defaults.qdf                 ;
+; rom.qip                                          ;
+; rom.v                                            ;
+; rom_bb.v                                         ;
+; signalprobe_qsf.tcl                              ;
+; stp.stp                                          ;
+; stp1.stp                                         ;
++--------------------------------------------------+
+
+

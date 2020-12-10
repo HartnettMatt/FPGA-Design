@@ -350,6 +350,11 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_FILE ../Source/tb.v -section_id tb
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name VERILOG_FILE ../Source/clockDivider.v
+set_global_assignment -name VERILOG_FILE ../Source/aud.v
+set_global_assignment -name VERILOG_FILE ../Source/audio.v
 set_global_assignment -name QIP_FILE issp1/synthesis/issp1.qip
 set_global_assignment -name VERILOG_FILE ../Source/tb.v
 set_global_assignment -name VERILOG_FILE ../Source/i2c_OL.v
@@ -363,4 +368,7 @@ set_global_assignment -name SDC_FILE Project2.SDC
 set_global_assignment -name QIP_FILE pll.qip
 set_global_assignment -name SIP_FILE pll.sip
 set_global_assignment -name QIP_FILE rom.qip
+set_global_assignment -name SIGNALTAP_FILE stp.stp
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SOURCE_FILE db/Project2.cmp.rdb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

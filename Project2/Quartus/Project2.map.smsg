@@ -1,2 +1,1 @@
-Warning (10268): Verilog HDL information at i2c_OL.v(17): always construct contains both blocking and non-blocking assignments File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 17
-Warning (10268): Verilog HDL information at i2c_OL.v(35): always construct contains both blocking and non-blocking assignments File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 35
+Warning (10268): Verilog HDL information at clockDivider.v(17): always construct contains both blocking and non-blocking assignments File: F:/FPGADesign/Project2/Source/clockDivider.v Line: 17

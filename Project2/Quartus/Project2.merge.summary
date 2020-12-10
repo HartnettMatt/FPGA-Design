@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Wed Dec 09 19:34:51 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+Revision Name : Project2
+Top-level Entity Name : Project2
+Family : Cyclone V
+Logic utilization (in ALMs) : 359 / 41,910 ( < 1 % )
+Total registers : 496
+Total pins : 78 / 499 ( 16 % )
+Total virtual pins : 0
+Total block memory bits : 2,304 / 5,662,720 ( < 1 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 1 / 15 ( 7 % )
+Total DLLs : 0 / 4 ( 0 % )

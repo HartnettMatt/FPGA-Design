@@ -37,33 +37,30 @@ module Project2(
 	output		          		FPGA_I2C_SCLK,
 	inout 		          		FPGA_I2C_SDAT
 );
+parameter divide_by = 200;
 
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-wire reset, lock, clk;
-wire sda_in, sda_out, i2c_sclk, ts;
+wire reset, lock, clk, clk_1;
+wire sda_in, sda_out, i2c_sclk, ts, done, ready;
 wire [3:0] CS;
-// reg [15:0] data;
-wire [15:0] data;
+reg [15:0] data;
 wire [1:0] tempKEY;
-reg ack;
-assign data = 16'h1E00;
-
-assign AUD_BCLK = clk;
-assign AUD_XCK = clk;
-
+reg ack, start;
+reg [3:0] doneCounter;
+reg [7:0] address;
 //Switch if testing with ISSP
 assign reset = KEY[0] & lock;
 // assign reset = tempKEY[0] & lock;
-
-
 //=======================================================
 //  Structural coding
 //=======================================================
 clock clk_U0(.clock_in(CLOCK_50), .lock(lock), .clock_out(clk));
+clockDivider clk_U1(.clock_in(CLOCK_50), .reset_n(reset), .divide_by(divide_by), .clock_out(clk_1));
 
-aud aud_U0(.clk(clk), .reset_n(reset), .adcdat(AUD_ADCDAT), .adclrck(AUD_ADCLRCK), .bclk(AUD_BCLK), .dacdat(AUD_DACDAT), .daclrck(AUD_DACLRCK), .xck(AUD_XCK));
+audio audio_U0(.clk(clk), .reset_n(reset), .ready(ready), .adcdat(adcdat), .adclrck(adclrck), .bclk(bclk), .dacdat(dacdat), .daclrck(daclrck), .xck(xck));
+
 
 //This section is for ACK testing using ISSP - current version is issp_U2 and issp2.tcl
 // issp issp_U0(.probe(FPGA_I2C_SDAT), .source_clk(clk), .source({ts, FPGA_I2C_SCLK, sda_out}));
@@ -72,16 +69,12 @@ aud aud_U0(.clk(clk), .reset_n(reset), .adcdat(AUD_ADCDAT), .adclrck(AUD_ADCLRCK
 // i2c i2c_TEST(.clk(clk), .reset_n(reset), .i2c_sdat(sda_out), .i2c_sclk(i2c_sclk), .key(tempKEY[1]), .ts(ts), .data(data), .CurrS(CS[3:0]));
 
 
-i2c i2c_U0(.clk(clk), .reset_n(reset), .i2c_sdat(sda_out), .i2c_sclk(i2c_sclk), .key(KEY[1]), .ts(ts), .data(data), .CurrS(CS[3:0]));
+i2c i2c_U0(.clk(clk_1), .reset_n(reset), .i2c_sdat(sda_out), .i2c_sclk(i2c_sclk), .start(start), .ts(ts), .ready(ready));
 
 assign FPGA_I2C_SDAT = ts ? 1'bZ : sda_out;
-assign FPGA_I2C_SCLK = i2c_sclk ? 1'b1 : clk;
-
+assign FPGA_I2C_SCLK = i2c_sclk ? 1'b1 : clk_1;
 always @ ( * ) begin
-	if(reset == 0)
-		ack = 0;
-	if(ts == 1 && FPGA_I2C_SDAT == 0)
-		ack = 1;
+	if(KEY[1] == 0 && reset != 0)
+		start = 1'b0;
 end
-
 endmodule

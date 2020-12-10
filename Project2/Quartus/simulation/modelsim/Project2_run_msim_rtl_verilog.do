@@ -23,6 +23,8 @@ vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesi
 vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/i2c_OL.v}
 vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/i2c_NSL.v}
 vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/i2c_CSL.v}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/audio.v}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/clockDivider.v}
 vlib pll
 vmap pll pll
 vlog -vlog01compat -work pll +incdir+F:/FPGADesign/Project2/Quartus/pll {F:/FPGADesign/Project2/Quartus/pll/pll_0002.v}

@@ -1,0 +1,37 @@
+transcript on
+if ![file isdirectory Project2_iputf_libs] {
+	file mkdir Project2_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vlog "F:/FPGADesign/Project2/Quartus/pll_sim/pll.vo"
+
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Quartus {F:/FPGADesign/Project2/Quartus/pll.vo}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/clock.v}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/Project2.v}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/i2c_OL.v}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/i2c_NSL.v}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/i2c_CSL.v}
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source {F:/FPGADesign/Project2/Source/i2c.v}
+vlib pll
+vmap pll pll
+vlog -vlog01compat -work pll +incdir+F:/FPGADesign/Project2/Quartus/pll {F:/FPGADesign/Project2/Quartus/pll/pll_0002.v}
+
+vlog -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Quartus/../Source {F:/FPGADesign/Project2/Quartus/../Source/tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L pll -voptargs="+acc"  tb
+
+add wave *
+view structure
+view signals
+run -all

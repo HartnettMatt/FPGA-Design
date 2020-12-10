@@ -1,0 +1,141 @@
+<session jtag_chain="DE-SoC [USB-1]" jtag_device="@2: 5CSEBA6(.|ES)/5CSEMA6/.. (0x02D020DD)" sof_file="">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="0"/>
+    <multi attribute="frame size" size="2" value="2560,1377"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="jtag widget size" size="2" value="348,135"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+  </global_info>
+  <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="data horizontal scroll position" value="29"/>
+      <single attribute="zoom level numerator" value="2048"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="28"/>
+      <single attribute="zoom offset denominator" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2020/12/09 19:34:29  #0">
+      <clock name="LEDR[1]" polarity="posedge" tap_mode="classic"/>
+      <config is_hps_trigger_out_selected="false" pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="256" trigger_in_enable="yes" trigger_in_node="KEY[1]" trigger_in_tap_mode="classic" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="KEY[1]" tap_mode="classic"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="FPGA_I2C_SCLK" tap_mode="classic"/>
+          <wire name="FPGA_I2C_SDAT" tap_mode="classic"/>
+          <wire name="KEY[1]" tap_mode="classic"/>
+          <wire name="LEDR[0]" tap_mode="classic"/>
+          <wire name="LEDR[2]" tap_mode="classic"/>
+          <wire name="LEDR[3]" tap_mode="classic"/>
+          <wire name="LEDR[4]" tap_mode="classic"/>
+          <wire name="LEDR[5]" tap_mode="classic"/>
+          <wire name="LEDR[6]" tap_mode="classic"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="FPGA_I2C_SCLK" tap_mode="classic"/>
+          <wire name="FPGA_I2C_SDAT" tap_mode="classic"/>
+          <wire name="KEY[1]" tap_mode="classic"/>
+          <wire name="LEDR[0]" tap_mode="classic"/>
+          <wire name="LEDR[2]" tap_mode="classic"/>
+          <wire name="LEDR[3]" tap_mode="classic"/>
+          <wire name="LEDR[4]" tap_mode="classic"/>
+          <wire name="LEDR[5]" tap_mode="classic"/>
+          <wire name="LEDR[6]" tap_mode="classic"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="FPGA_I2C_SDAT" storage_index="1" tap_mode="classic" type="unknown"/>
+          <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="FPGA_I2C_SCLK" storage_index="0" tap_mode="classic" type="unknown"/>
+          <node data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[0]" storage_index="3" tap_mode="classic" type="unknown"/>
+          <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="KEY[1]" storage_index="2" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <node is_selected="false" name="LEDR[2..5]" order="lsb_to_msb" radix="bin" type="unknown">
+            <node data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[2]" storage_index="4" tap_mode="classic" type="unknown"/>
+            <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[3]" storage_index="5" tap_mode="classic" type="unknown"/>
+            <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[4]" storage_index="6" tap_mode="classic" type="unknown"/>
+            <node data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[5]" storage_index="7" tap_mode="classic" type="unknown"/>
+          </node>
+          <node data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[6]" storage_index="8" tap_mode="classic" trigger_index="1" type="unknown"/>
+        </unified_setup_data_view>
+        <data_view>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="FPGA_I2C_SDAT" storage_index="1" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="FPGA_I2C_SCLK" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[0]" storage_index="3" tap_mode="classic" type="unknown"/>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="KEY[1]" storage_index="2" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <bus is_selected="false" name="LEDR[2..5]" order="lsb_to_msb" radix="bin" type="unknown">
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[2]" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[3]" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[4]" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[5]" storage_index="7" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[6]" storage_index="8" tap_mode="classic" trigger_index="1" type="unknown"/>
+        </data_view>
+        <setup_view>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="FPGA_I2C_SDAT" storage_index="1" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="FPGA_I2C_SCLK" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[0]" storage_index="3" tap_mode="classic" type="unknown"/>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="KEY[1]" storage_index="2" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <bus is_selected="false" name="LEDR[2..5]" order="lsb_to_msb" radix="bin" type="unknown">
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[2]" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[3]" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[4]" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[5]" storage_index="7" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="LEDR[6]" storage_index="8" tap_mode="classic" trigger_index="1" type="unknown"/>
+        </setup_view>
+        <trigger_in_editor bit_condition="falling edge" is_enabled="true" node_name="KEY[1]"/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="2CA871B9" attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2020/12/09 19:34:29  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="256" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="falling edge" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>111111111
+            <pwr_up_transitional>111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: Trig @ 2020/12/09 19:36:07 (0:0:1.5 elapsed)" power_up_mode="false" sample_depth="256" trigger_position="32">111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001111000001110000001110000001110010001010001001010001001010001001010001001010001001010001001010001001010001001010011001010000101010000101010000101010000101010000101010000101010000101010000101010010101010001101010001101010001101010001101010001101010001101010001101010001101010011101010000011110000001110000001110000001110010001010001001010001001010001001010001001010001001010001001010001001010001001010011001010000101010000101010000101010000101010000101010000101010000101010000101010010101010001101010001101010001101010001101010001101010001101010001101010001101010011101010000011110000001110000001110000001110010001010001001010001001010001001010001001010001001010001001010001001010001001010011001010000101010000101010000101010000101010000101010000101010000101010000101010010101010001101010001101010001101010001101010001101010001101010001101010001101010011101010000011110000001110000001110000001110010001010001001010001001010001001010001001010001001010001001010001001010001001010011001010000101010000101010000101010000101010000101010000101010000101010000101010010101010001101010001101010001101010001101010001101010001101010001101010001101010011101010000011110000001110000001110000001110010001010001001010001001010001001010001001010001001010001001010001001010001001010011001010000101010000101010000101010000101010000101010000101010000101010000101010010101010001101010001101010001101010001101010001101010001101010001101010001101010011101010000011110000001110000001110000001110010001010001001010001001010001001010001001010001001010001001010001001010001001010011001010000101010000101010000101010000101010000101010000101010000101010000101010010101010001101010001101010001101010001101010001101010001101010001101010001101010011101010000011110000001110000001110000001110010001010001001010001001010001001010001001010001001010001001010001001010001001010011001010000101010000101010000101010000101010000101010000101010000101010000101010010101010001101010001101010001101010001101010001101010001101010001101010001101010011101010000011110000001110000001</data>
+          <extradata>11111111111111111111111111111111T1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+</session>

@@ -1,0 +1,60 @@
+Quartus Prime Archive log --	F:/FPGADesign/Project2/Quartus/Project2_Hartnett.qarlog
+
+Archive:	F:/FPGADesign/Project2/Quartus/Project2_Hartnett.qar
+Date:		Wed Dec 09 23:03:40 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+F:/FPGADesign/Project2/Quartus/Project2.SDC
+F:/FPGADesign/Project2/Quartus/Project2.qpf
+F:/FPGADesign/Project2/Quartus/Project2.qsf
+F:/FPGADesign/Project2/Quartus/Project2.sdc
+F:/FPGADesign/Project2/Quartus/Project2_assignment_defaults.qdf
+F:/FPGADesign/Project2/Quartus/db/Project2.cmp.rdb
+F:/FPGADesign/Project2/Quartus/issp.qsys
+F:/FPGADesign/Project2/Quartus/issp.sopcinfo
+F:/FPGADesign/Project2/Quartus/issp/issp.cmp
+F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.debuginfo
+F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.qip
+F:/FPGADesign/Project2/Quartus/issp/synthesis/issp.v
+F:/FPGADesign/Project2/Quartus/issp/synthesis/submodules/altsource_probe_top.v
+F:/FPGADesign/Project2/Quartus/issp1.qsys
+F:/FPGADesign/Project2/Quartus/issp1.sopcinfo
+F:/FPGADesign/Project2/Quartus/issp1/issp1.cmp
+F:/FPGADesign/Project2/Quartus/issp1/synthesis/issp1.debuginfo
+F:/FPGADesign/Project2/Quartus/issp1/synthesis/issp1.qip
+F:/FPGADesign/Project2/Quartus/issp1/synthesis/issp1.v
+F:/FPGADesign/Project2/Quartus/issp1/synthesis/submodules/altsource_probe_top.v
+F:/FPGADesign/Project2/Quartus/pll.cmp
+F:/FPGADesign/Project2/Quartus/pll.qip
+F:/FPGADesign/Project2/Quartus/pll.sip
+F:/FPGADesign/Project2/Quartus/pll.spd
+F:/FPGADesign/Project2/Quartus/pll.v
+F:/FPGADesign/Project2/Quartus/pll/pll_0002.qip
+F:/FPGADesign/Project2/Quartus/pll/pll_0002.v
+F:/FPGADesign/Project2/Quartus/pll_sim/pll.vo
+F:/FPGADesign/Project2/Quartus/rom.qip
+F:/FPGADesign/Project2/Quartus/rom.v
+F:/FPGADesign/Project2/Quartus/rom_bb.v
+F:/FPGADesign/Project2/Quartus/signalprobe_qsf.tcl
+F:/FPGADesign/Project2/Quartus/stp.stp
+F:/FPGADesign/Project2/Quartus/stp1.stp
+F:/FPGADesign/Project2/Source/Project2.v
+F:/FPGADesign/Project2/Source/aud.v
+F:/FPGADesign/Project2/Source/audio.v
+F:/FPGADesign/Project2/Source/clock.v
+F:/FPGADesign/Project2/Source/clockDivider.v
+F:/FPGADesign/Project2/Source/i2c.v
+F:/FPGADesign/Project2/Source/i2c_CSL.v
+F:/FPGADesign/Project2/Source/i2c_NSL.v
+F:/FPGADesign/Project2/Source/i2c_OL.v
+F:/FPGADesign/Project2/Source/issp.tcl
+F:/FPGADesign/Project2/Source/issp1.tcl
+F:/FPGADesign/Project2/Source/issp2.tcl
+F:/FPGADesign/Project2/Source/tb.v
+F:/fpgadesign/project2/source/address.vh
+F:/fpgadesign/project2/source/i2c_states.vh
+	======= Total: 49 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

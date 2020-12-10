@@ -51,11 +51,11 @@ module tb();
       testSW = 10'b0000000000;
       testKEY[3:0] = 4'b1111;
       clock = 0;
-      #500 testKEY[0] = 0;
+      #50 testKEY[0] = 0;
       #500 testKEY[0] = 1;
       #500 testKEY[1] = 0;
       #600 testKEY[1] = 1;
-      #4000 $stop;
+      #400000 $stop;
     end
     always
       #10 clock = ~clock;
