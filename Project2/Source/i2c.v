@@ -5,11 +5,13 @@ module i2c (
   input wire ts,
   input wire [15:0] data,
   inout i2c_sdat,
-  output i2c_sclk
+  output i2c_sclk,
+  output wire [3:0] CurrS
   );
 
 
 wire [3:0] CS;
+assign CurrS = CS;
 wire [3:0] NS;
 wire [4:0] counter;
 `include "i2c_states.vh"

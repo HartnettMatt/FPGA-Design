@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dF:/FPGADesign/Project2/Quartus/simulation/modelsim
 vpll_0002
-!s110 1607047200
+!s110 1607557342
 !i10b 1
 !s100 bz_QDGgT8ST;@X9GU;5@z1
 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ R0
 w1604617224
 8F:/FPGADesign/Project2/Quartus/pll/pll_0002.v
 FF:/FPGADesign/Project2/Quartus/pll/pll_0002.v
-!i122 48
+!i122 101
 L0 2 85
 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1607047200.000000
+!s108 1607557342.000000
 !s107 F:/FPGADesign/Project2/Quartus/pll/pll_0002.v|
 !s90 -reportprogress|300|-vlog01compat|-work|pll|+incdir+F:/FPGADesign/Project2/Quartus/pll|F:/FPGADesign/Project2/Quartus/pll/pll_0002.v|
 !i113 1

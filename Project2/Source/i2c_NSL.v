@@ -21,7 +21,8 @@ always @ (*)
                       NS = Ack1_STATE;
                     else
                       NS = Address_STATE;
-    Ack1_STATE:     if(counter == 11 && i2c_sdat == 0)
+    // Ack1_STATE:     if(counter == 11 && i2c_sdat == 0)
+    Ack1_STATE:     if(counter == 11)
                       NS = Data1_STATE;
                     else
                       NS = Wait_STATE;

@@ -1,5 +1,5 @@
 Fitter report for Project2
-Thu Dec 03 19:05:48 2020
+Wed Dec 09 16:44:50 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -66,15 +66,15 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Thu Dec 03 19:05:48 2020           ;
+; Fitter Status                   ; Successful - Wed Dec 09 16:44:50 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project2                                        ;
 ; Top-level Entity Name           ; Project2                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 38 / 41,910 ( < 1 % )                           ;
-; Total registers                 ; 10                                              ;
+; Logic utilization (in ALMs)     ; 24 / 41,910 ( < 1 % )                           ;
+; Total registers                 ; 37                                              ;
 ; Total pins                      ; 78 / 499 ( 16 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                           ;
@@ -156,29 +156,31 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
-;     Processor 5            ;   0.2%      ;
-;     Processor 6            ;   0.2%      ;
-;     Processor 7            ;   0.2%      ;
-;     Processors 8-12        ;   0.1%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processors 7-12        ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                                                                                                                                                             ;
-+----------------------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------+------------------+-----------------------+
-; Node                                                                                   ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                          ; Destination Port ; Destination Port Name ;
-+----------------------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------+------------------+-----------------------+
-; clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0]~CLKENA0 ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                           ;                  ;                       ;
-; i2c:i2c_U0|i2c_OL:OL|counter[1]                                                        ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; i2c:i2c_U0|i2c_OL:OL|counter[1]~DUPLICATE ;                  ;                       ;
-+----------------------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------+------------------+-----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                                                                                                                                          ;
++----------------------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+----------------------------------------+------------------+-----------------------+
+; Node                                                                                   ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                       ; Destination Port ; Destination Port Name ;
++----------------------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+----------------------------------------+------------------+-----------------------+
+; clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0]~CLKENA0 ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                        ;                  ;                       ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[0]                                                           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; i2c:i2c_U0|i2c_CSL:CSL|CS[0]~DUPLICATE ;                  ;                       ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[1]                                                           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; i2c:i2c_U0|i2c_CSL:CSL|CS[1]~DUPLICATE ;                  ;                       ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[2]                                                           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; i2c:i2c_U0|i2c_CSL:CSL|CS[2]~DUPLICATE ;                  ;                       ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[3]                                                           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; i2c:i2c_U0|i2c_CSL:CSL|CS[3]~DUPLICATE ;                  ;                       ;
++----------------------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+----------------------------------------+------------------+-----------------------+
 
 
 +-----------------------------------------------------------------------------------------------+
@@ -281,8 +283,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 243 ) ; 0.00 % ( 0 / 243 )         ; 0.00 % ( 0 / 243 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 243 ) ; 0.00 % ( 0 / 243 )         ; 0.00 % ( 0 / 243 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 242 ) ; 0.00 % ( 0 / 242 )         ; 0.00 % ( 0 / 242 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 242 ) ; 0.00 % ( 0 / 242 )         ; 0.00 % ( 0 / 242 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -305,8 +307,8 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 234 )    ; N/A                     ; Source File       ; N/A                 ;       ;
-; hard_block:auto_generated_inst ; 0.00 % ( 0 / 9 )      ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 232 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
 
@@ -321,11 +323,11 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 38 / 41,910        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 38                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 40 / 41,910        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 5                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 35                 ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 24 / 41,910        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 24                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 26 / 41,910        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 17                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 9                  ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41,910         ; < 1 % ;
@@ -337,25 +339,25 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 7 / 4,191          ; < 1 % ;
-;     -- Logic LABs                                           ; 7                  ;       ;
+; Total LABs:  partially or completely used                   ; 6 / 4,191          ; < 1 % ;
+;     -- Logic LABs                                           ; 6                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 69                 ;       ;
+; Combinational ALUT usage for logic                          ; 44                 ;       ;
 ;     -- 7 input functions                                    ; 1                  ;       ;
-;     -- 6 input functions                                    ; 6                  ;       ;
-;     -- 5 input functions                                    ; 12                 ;       ;
+;     -- 6 input functions                                    ; 2                  ;       ;
+;     -- 5 input functions                                    ; 10                 ;       ;
 ;     -- 4 input functions                                    ; 3                  ;       ;
-;     -- <=3 input functions                                  ; 47                 ;       ;
+;     -- <=3 input functions                                  ; 28                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 10                 ;       ;
+; Dedicated logic registers                                   ; 37                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 9 / 83,820         ; < 1 % ;
-;         -- Secondary logic registers                        ; 1 / 83,820         ; < 1 % ;
+;         -- Primary logic registers                          ; 33 / 83,820        ; < 1 % ;
+;         -- Secondary logic registers                        ; 4 / 83,820         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
-;         -- Design implementation registers                  ; 9                  ;       ;
-;         -- Routing optimization registers                   ; 1                  ;       ;
+;         -- Design implementation registers                  ; 33                 ;       ;
+;         -- Routing optimization registers                   ; 4                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 78 / 499           ; 16 %  ;
@@ -417,11 +419,11 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.6% / 0.7% / 0.2% ;       ;
-; Maximum fan-out                                             ; 32                 ;       ;
-; Highest non-global fan-out                                  ; 32                 ;       ;
-; Total fan-out                                               ; 357                ;       ;
-; Average fan-out                                             ; 1.46               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.2% / 0.2% ;       ;
+; Maximum fan-out                                             ; 40                 ;       ;
+; Highest non-global fan-out                                  ; 21                 ;       ;
+; Total fan-out                                               ; 341                ;       ;
+; Average fan-out                                             ; 1.39               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -430,11 +432,11 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 38 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 38                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 40 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 5                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 35                   ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 24 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 24                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 26 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 17                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 9                    ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
@@ -446,16 +448,16 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 7 / 4191 ( < 1 % )   ; 0 / 4191 ( 0 % )               ;
-;     -- Logic LABs                                           ; 7                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 6 / 4191 ( < 1 % )   ; 0 / 4191 ( 0 % )               ;
+;     -- Logic LABs                                           ; 6                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 69                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 44                   ; 0                              ;
 ;     -- 7 input functions                                    ; 1                    ; 0                              ;
-;     -- 6 input functions                                    ; 6                    ; 0                              ;
-;     -- 5 input functions                                    ; 12                   ; 0                              ;
+;     -- 6 input functions                                    ; 2                    ; 0                              ;
+;     -- 5 input functions                                    ; 10                   ; 0                              ;
 ;     -- 4 input functions                                    ; 3                    ; 0                              ;
-;     -- <=3 input functions                                  ; 47                   ; 0                              ;
+;     -- <=3 input functions                                  ; 28                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
@@ -463,11 +465,11 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 ;                                                             ;                      ;                                ;
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
-;         -- Primary logic registers                          ; 9 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 1 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
+;         -- Primary logic registers                          ; 33 / 83820 ( < 1 % ) ; 0 / 83820 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 4 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
-;         -- Design implementation registers                  ; 9                    ; 0                              ;
-;         -- Routing optimization registers                   ; 1                    ; 0                              ;
+;         -- Design implementation registers                  ; 33                   ; 0                              ;
+;         -- Routing optimization registers                   ; 4                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -482,22 +484,22 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 ; PLL Reference Clock Select Block                            ; 0 / 6 ( 0 % )        ; 1 / 6 ( 16 % )                 ;
 ;                                                             ;                      ;                                ;
 ; Connections                                                 ;                      ;                                ;
-;     -- Input Connections                                    ; 20                   ; 0                              ;
-;     -- Registered Input Connections                         ; 10                   ; 0                              ;
-;     -- Output Connections                                   ; 4                    ; 16                             ;
+;     -- Input Connections                                    ; 44                   ; 0                              ;
+;     -- Registered Input Connections                         ; 37                   ; 0                              ;
+;     -- Output Connections                                   ; 4                    ; 40                             ;
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 346                  ; 50                             ;
-;     -- Registered Connections                               ; 134                  ; 0                              ;
+;     -- Total Connections                                    ; 329                  ; 75                             ;
+;     -- Registered Connections                               ; 165                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
-;     -- Top                                                  ; 8                    ; 16                             ;
-;     -- hard_block:auto_generated_inst                       ; 16                   ; 0                              ;
+;     -- Top                                                  ; 8                    ; 40                             ;
+;     -- hard_block:auto_generated_inst                       ; 40                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Partition Interface                                         ;                      ;                                ;
 ;     -- Input Ports                                          ; 19                   ; 1                              ;
-;     -- Output Ports                                         ; 55                   ; 3                              ;
+;     -- Output Ports                                         ; 55                   ; 4                              ;
 ;     -- Bidir Ports                                          ; 4                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Registered Ports                                            ;                      ;                                ;
@@ -612,7 +614,7 @@ The pin-out file can be found in F:/FPGADesign/Project2/Quartus/Project2.pin.
 ; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Input Termination ; Output Termination ; Termination Control Block ; Output Buffer Pre-emphasis ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+-------------------+--------------------+---------------------------+----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; AUD_ADCLRCK   ; AH29  ; 5A       ; 89           ; 6            ; 54           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; 1         ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off               ; Off                ; --                        ; no                         ; 0                   ; Off                         ; User                 ; 0 pF                 ; -                   ;
-; AUD_BCLK      ; AF30  ; 5A       ; 89           ; 15           ; 54           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; 1         ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off               ; Off                ; --                        ; no                         ; 0                   ; Off                         ; User                 ; 0 pF                 ; -                   ;
+; AUD_BCLK      ; AF30  ; 5A       ; 89           ; 15           ; 54           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; 1         ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off               ; Off                ; --                        ; no                         ; 0                   ; Off                         ; User                 ; 0 pF                 ; -                   ;
 ; AUD_DACLRCK   ; AG30  ; 5A       ; 89           ; 16           ; 54           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; 1         ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off               ; Off                ; --                        ; no                         ; 0                   ; Off                         ; User                 ; 0 pF                 ; -                   ;
 ; FPGA_I2C_SDAT ; Y23   ; 5A       ; 89           ; 13           ; 3            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; 1         ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off               ; Off                ; --                        ; no                         ; 0                   ; Off                         ; User                 ; 0 pF                 ; -                   ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+-------------------+--------------------+---------------------------+----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
@@ -1607,8 +1609,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; AUD_XCK       ; Missing drive strength and slew rate ;
 ; FPGA_I2C_SCLK ; Missing drive strength and slew rate ;
 ; AUD_ADCLRCK   ; Missing drive strength and slew rate ;
-; AUD_BCLK      ; Missing drive strength and slew rate ;
 ; AUD_DACLRCK   ; Missing drive strength and slew rate ;
+; AUD_BCLK      ; Missing drive strength and slew rate ;
 ; FPGA_I2C_SDAT ; Missing drive strength and slew rate ;
 +---------------+--------------------------------------+
 
@@ -1666,15 +1668,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node            ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name ; Library Name ;
 +---------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------+-------------+--------------+
-; |Project2                             ; 38.0 (1.5)           ; 39.0 (1.5)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 69 (3)              ; 10 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 78   ; 0            ; |Project2                                                                 ; Project2    ; work         ;
+; |Project2                             ; 23.5 (1.2)           ; 25.0 (1.5)                       ; 1.5 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 44 (3)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 78   ; 0            ; |Project2                                                                 ; Project2    ; work         ;
 ;    |clock:clk_U0|                     ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0                                                    ; clock       ; work         ;
 ;       |pll:PLL1|                      ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1                                           ; pll         ; pll          ;
 ;          |pll_0002:pll_inst|          ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1|pll_0002:pll_inst                         ; pll_0002    ; pll          ;
 ;             |altera_pll:altera_pll_i| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i ; altera_pll  ; work         ;
-;    |i2c:i2c_U0|                       ; 36.5 (0.0)           ; 37.5 (0.0)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 66 (0)              ; 10 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0                                                      ; i2c         ; work         ;
-;       |i2c_CSL:CSL|                   ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_CSL:CSL                                          ; i2c_CSL     ; work         ;
-;       |i2c_NSL:NSL|                   ; 6.3 (6.3)            ; 6.7 (6.7)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_NSL:NSL                                          ; i2c_NSL     ; work         ;
-;       |i2c_OL:OL|                     ; 29.0 (29.0)          ; 29.5 (29.5)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 56 (56)             ; 6 (6)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_OL:OL                                            ; i2c_OL      ; work         ;
+;    |i2c:i2c_U0|                       ; 22.3 (0.0)           ; 23.5 (0.0)                       ; 1.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 41 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0                                                      ; i2c         ; work         ;
+;       |i2c_CSL:CSL|                   ; 1.2 (1.2)            ; 1.8 (1.8)                        ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_CSL:CSL                                          ; i2c_CSL     ; work         ;
+;       |i2c_NSL:NSL|                   ; 4.1 (4.1)            ; 4.1 (4.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_NSL:NSL                                          ; i2c_NSL     ; work         ;
+;       |i2c_OL:OL|                     ; 16.6 (16.6)          ; 17.6 (17.6)                      ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 31 (31)             ; 29 (29)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_OL:OL                                            ; i2c_OL      ; work         ;
 +---------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1756,11 +1758,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AUD_XCK       ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; FPGA_I2C_SCLK ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; AUD_ADCLRCK   ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; AUD_BCLK      ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; AUD_DACLRCK   ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AUD_BCLK      ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; FPGA_I2C_SDAT ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; KEY[0]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; CLOCK_50      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[0]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[1]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +---------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
@@ -1787,14 +1789,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[9]                                 ;                   ;         ;
 ; AUD_ADCDAT                            ;                   ;         ;
 ; AUD_ADCLRCK                           ;                   ;         ;
-; AUD_BCLK                              ;                   ;         ;
 ; AUD_DACLRCK                           ;                   ;         ;
+; AUD_BCLK                              ;                   ;         ;
 ; FPGA_I2C_SDAT                         ;                   ;         ;
-; CLOCK_50                              ;                   ;         ;
 ; KEY[0]                                ;                   ;         ;
-;      - reset                          ; 1                 ; 0       ;
+;      - reset                          ; 0                 ; 0       ;
+; CLOCK_50                              ;                   ;         ;
 ; KEY[1]                                ;                   ;         ;
-;      - i2c:i2c_U0|i2c_OL:OL|counter~0 ; 0                 ; 0       ;
+;      - i2c:i2c_U0|i2c_OL:OL|counter~4 ; 0                 ; 0       ;
 +---------------------------------------+-------------------+---------+
 
 
@@ -1803,12 +1805,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+----------------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                           ; Location                   ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------------------------+----------------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y20_N1 ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; i2c:i2c_U0|i2c_OL:OL|Mux19~0                                                   ; LABCELL_X30_Y9_N39         ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; i2c:i2c_U0|i2c_OL:OL|Mux20~0                                                   ; LABCELL_X29_Y9_N39         ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; i2c:i2c_U0|i2c_OL:OL|Mux22~0                                                   ; MLABCELL_X28_Y9_N30        ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; i2c:i2c_U0|i2c_OL:OL|Selector1~0                                               ; MLABCELL_X28_Y9_N3         ; 6       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; reset                                                                          ; MLABCELL_X21_Y9_N33        ; 10      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y20_N1 ; 40      ; Clock        ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[0]~0                                             ; LABCELL_X63_Y8_N51         ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[14]~1                                            ; LABCELL_X62_Y8_N45         ; 15      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; reset                                                                          ; LABCELL_X22_Y4_N3          ; 14      ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------------------------------------------+----------------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1817,7 +1817,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+----------------------------+---------+----------------------+------------------+---------------------------+
 ; Name                                                                           ; Location                   ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------------------------+----------------------------+---------+----------------------+------------------+---------------------------+
-; clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y20_N1 ; 16      ; Global Clock         ; GCLK7            ; --                        ;
+; clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y20_N1 ; 40      ; Global Clock         ; GCLK7            ; --                        ;
 +--------------------------------------------------------------------------------+----------------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1826,14 +1826,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 91 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 41 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 2 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 9 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 8 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 5 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 11 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 20 / 289,320 ( < 1 % ) ;
+; Direct links                                ; 16 / 289,320 ( < 1 % ) ;
 ; Global clocks                               ; 1 / 16 ( 6 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -1889,12 +1889,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )          ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )         ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
-; Local interconnects                         ; 31 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 24 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 6 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 6 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 44 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 39 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 8 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 8 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 12 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 18 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 2 / 360 ( < 1 % )      ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1954,9 +1954,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 78        ; 0            ; 78        ; 0            ; 0            ; 78        ; 78        ; 0            ; 78        ; 78        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 3            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 78        ; 0            ; 78        ; 0            ; 0            ; 78        ; 78        ; 0            ; 78        ; 78        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 2            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 78           ; 0         ; 78           ; 78           ; 0         ; 0         ; 78           ; 0         ; 0         ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 75           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ;
+; Total Inapplicable ; 0         ; 78           ; 0         ; 78           ; 78           ; 0         ; 0         ; 78           ; 0         ; 0         ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 76           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ; 78           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; CLOCK2_50          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; CLOCK3_50          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -2030,11 +2030,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AUD_XCK            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; FPGA_I2C_SCLK      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; AUD_ADCLRCK        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; AUD_BCLK           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; AUD_DACLRCK        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AUD_BCLK           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; FPGA_I2C_SDAT      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -2087,7 +2087,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
 ; Source Clock(s)                                                             ; Destination Clock(s)                                                        ; Delay Added in ns ;
 +-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
-; clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 21.0              ;
+; clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 10.4              ;
 +-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -2098,38 +2098,37 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------------------------+-----------------------------------+-------------------+
 ; Source Register                   ; Destination Register              ; Delay Added in ns ;
 +-----------------------------------+-----------------------------------+-------------------+
-; i2c:i2c_U0|i2c_OL:OL|address[3]   ; i2c:i2c_U0|i2c_OL:OL|address[4]   ; 0.835             ;
-; i2c:i2c_U0|i2c_OL:OL|address[4]   ; i2c:i2c_U0|i2c_OL:OL|address[5]   ; 0.835             ;
-; i2c:i2c_U0|i2c_CSL:CSL|CS[0]      ; i2c:i2c_U0|i2c_OL:OL|address[4]   ; 0.835             ;
-; i2c:i2c_U0|i2c_CSL:CSL|CS[3]      ; i2c:i2c_U0|i2c_OL:OL|address[4]   ; 0.835             ;
-; i2c:i2c_U0|i2c_CSL:CSL|CS[2]      ; i2c:i2c_U0|i2c_OL:OL|address[4]   ; 0.835             ;
-; i2c:i2c_U0|i2c_CSL:CSL|CS[1]      ; i2c:i2c_U0|i2c_OL:OL|address[4]   ; 0.835             ;
-; i2c:i2c_U0|i2c_OL:OL|address[2]   ; i2c:i2c_U0|i2c_OL:OL|address[3]   ; 0.831             ;
-; i2c:i2c_U0|i2c_OL:OL|address[5]   ; i2c:i2c_U0|i2c_OL:OL|address[6]   ; 0.831             ;
-; i2c:i2c_U0|i2c_OL:OL|address[6]   ; i2c:i2c_U0|i2c_OL:OL|address[7]   ; 0.818             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[14] ; i2c:i2c_U0|i2c_OL:OL|data_out[15] ; 0.767             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[2]  ; i2c:i2c_U0|i2c_OL:OL|data_out[3]  ; 0.757             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[3]  ; i2c:i2c_U0|i2c_OL:OL|data_out[4]  ; 0.749             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[1]  ; i2c:i2c_U0|i2c_OL:OL|data_out[2]  ; 0.616             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[6]  ; i2c:i2c_U0|i2c_OL:OL|data_out[7]  ; 0.616             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[0]  ; i2c:i2c_U0|i2c_OL:OL|data_out[1]  ; 0.614             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[12] ; i2c:i2c_U0|i2c_OL:OL|data_out[13] ; 0.609             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[7]  ; i2c:i2c_U0|i2c_OL:OL|data_out[8]  ; 0.606             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[5]  ; i2c:i2c_U0|i2c_OL:OL|data_out[6]  ; 0.605             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[8]  ; i2c:i2c_U0|i2c_OL:OL|data_out[9]  ; 0.590             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[13] ; i2c:i2c_U0|i2c_OL:OL|data_out[14] ; 0.584             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[10] ; i2c:i2c_U0|i2c_OL:OL|data_out[11] ; 0.581             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[4]  ; i2c:i2c_U0|i2c_OL:OL|data_out[5]  ; 0.447             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[9]  ; i2c:i2c_U0|i2c_OL:OL|data_out[10] ; 0.447             ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[11] ; i2c:i2c_U0|i2c_OL:OL|data_out[12] ; 0.392             ;
-; CLOCK_50                          ; i2c:i2c_U0|i2c_OL:OL|i2c_sdat     ; 0.353             ;
-; i2c:i2c_U0|i2c_OL:OL|counter[4]   ; i2c:i2c_U0|i2c_OL:OL|counter[0]   ; 0.303             ;
-; i2c:i2c_U0|i2c_OL:OL|counter[2]   ; i2c:i2c_U0|i2c_OL:OL|counter[3]   ; 0.288             ;
-; i2c:i2c_U0|i2c_OL:OL|counter[0]   ; i2c:i2c_U0|i2c_OL:OL|counter[4]   ; 0.285             ;
-; i2c:i2c_U0|i2c_OL:OL|counter[1]   ; i2c:i2c_U0|i2c_OL:OL|counter[3]   ; 0.278             ;
-; i2c:i2c_U0|i2c_OL:OL|counter[3]   ; i2c:i2c_U0|i2c_CSL:CSL|CS[2]      ; 0.119             ;
+; i2c:i2c_U0|i2c_OL:OL|counter[4]   ; i2c:i2c_U0|i2c_OL:OL|counter[0]   ; 0.241             ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[0]      ; i2c:i2c_U0|i2c_OL:OL|data_out[0]  ; 0.231             ;
+; i2c:i2c_U0|i2c_OL:OL|counter[3]   ; i2c:i2c_U0|i2c_OL:OL|counter[0]   ; 0.220             ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[3]      ; i2c:i2c_U0|i2c_CSL:CSL|CS[1]      ; 0.219             ;
+; i2c:i2c_U0|i2c_OL:OL|counter[0]   ; i2c:i2c_U0|i2c_OL:OL|counter[1]   ; 0.218             ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[1]      ; i2c:i2c_U0|i2c_OL:OL|data_out[0]  ; 0.206             ;
+; i2c:i2c_U0|i2c_CSL:CSL|CS[2]      ; i2c:i2c_U0|i2c_CSL:CSL|CS[3]      ; 0.203             ;
+; i2c:i2c_U0|i2c_OL:OL|counter[1]   ; i2c:i2c_U0|i2c_OL:OL|counter[2]   ; 0.187             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[2]  ; i2c:i2c_U0|i2c_OL:OL|data_out[3]  ; 0.181             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[10] ; i2c:i2c_U0|i2c_OL:OL|data_out[11] ; 0.181             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[12] ; i2c:i2c_U0|i2c_OL:OL|data_out[13] ; 0.181             ;
+; i2c:i2c_U0|i2c_OL:OL|address[2]   ; i2c:i2c_U0|i2c_OL:OL|address[3]   ; 0.181             ;
+; i2c:i2c_U0|i2c_OL:OL|address[6]   ; i2c:i2c_U0|i2c_OL:OL|address[7]   ; 0.180             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[6]  ; i2c:i2c_U0|i2c_OL:OL|data_out[7]  ; 0.176             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[4]  ; i2c:i2c_U0|i2c_OL:OL|data_out[5]  ; 0.176             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[14] ; i2c:i2c_U0|i2c_OL:OL|data_out[15] ; 0.176             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[13] ; i2c:i2c_U0|i2c_OL:OL|data_out[14] ; 0.175             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[5]  ; i2c:i2c_U0|i2c_OL:OL|data_out[6]  ; 0.169             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[9]  ; i2c:i2c_U0|i2c_OL:OL|data_out[10] ; 0.169             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[3]  ; i2c:i2c_U0|i2c_OL:OL|data_out[4]  ; 0.168             ;
+; i2c:i2c_U0|i2c_OL:OL|address[5]   ; i2c:i2c_U0|i2c_OL:OL|address[6]   ; 0.167             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[1]  ; i2c:i2c_U0|i2c_OL:OL|data_out[2]  ; 0.161             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[7]  ; i2c:i2c_U0|i2c_OL:OL|data_out[8]  ; 0.161             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[11] ; i2c:i2c_U0|i2c_OL:OL|data_out[12] ; 0.161             ;
+; i2c:i2c_U0|i2c_OL:OL|address[3]   ; i2c:i2c_U0|i2c_OL:OL|address[4]   ; 0.160             ;
+; i2c:i2c_U0|i2c_OL:OL|counter[2]   ; i2c:i2c_U0|i2c_OL:OL|counter[0]   ; 0.142             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[8]  ; i2c:i2c_U0|i2c_OL:OL|data_out[9]  ; 0.071             ;
+; i2c:i2c_U0|i2c_OL:OL|address[4]   ; i2c:i2c_U0|i2c_OL:OL|address[5]   ; 0.068             ;
+; i2c:i2c_U0|i2c_OL:OL|data_out[0]  ; i2c:i2c_U0|i2c_OL:OL|data_out[1]  ; 0.044             ;
 +-----------------------------------+-----------------------------------+-------------------+
-Note: This table only shows the top 30 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 29 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2146,9 +2145,8 @@ Info (171003): Fitter is performing an Auto Fit compilation, which may decrease 
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (184020): Starting Fitter periphery placement operations
 Info (11178): Promoted 1 clock (1 global)
-    Info (11162): clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0]~CLKENA0 with 15 fanout uses global clock CLKCTRL_G7
+    Info (11162): clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0]~CLKENA0 with 36 fanout uses global clock CLKCTRL_G7
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
-Warning (335093): The Timing Analyzer is analyzing 24 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332104): Reading SDC File: 'Project2.SDC'
 Warning (332174): Ignored filter at Project2.sdc(15): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: F:/FPGADesign/Project2/Quartus/Project2.sdc Line: 15
 Warning (332049): Ignored create_clock at Project2.sdc(15): Argument <targets> is not an object ID File: F:/FPGADesign/Project2/Quartus/Project2.sdc Line: 15
@@ -2174,7 +2172,6 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: clk_U0|PLL1|pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
-    Info (332098): Cell: i2c_U0|OL|Mux22~0  from: dataa  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
 Info (332111): Found 6 clocks
@@ -2233,7 +2230,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "DRAM_RAS_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "DRAM_UDQM" is assigned to location or region, but does not exist in design
     Warning (15706): Node "DRAM_WE_N" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:11
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:10
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
@@ -2242,12 +2239,12 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X22_Y0 to location X32_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X56_Y0 to location X66_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.41 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2256,15 +2253,15 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169064): Following 4 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin AUD_ADCLRCK has a permanently disabled output enable File: F:/FPGADesign/Project2/Source/Project2.v Line: 30
-    Info (169065): Pin AUD_BCLK has a permanently disabled output enable File: F:/FPGADesign/Project2/Source/Project2.v Line: 31
     Info (169065): Pin AUD_DACLRCK has a permanently disabled output enable File: F:/FPGADesign/Project2/Source/Project2.v Line: 33
+    Info (169065): Pin AUD_BCLK has a permanently enabled output enable File: F:/FPGADesign/Project2/Source/Project2.v Line: 31
     Info (169065): Pin FPGA_I2C_SDAT has a permanently disabled output enable File: F:/FPGADesign/Project2/Source/Project2.v Line: 39
 Info (144001): Generated suppressed messages file F:/FPGADesign/Project2/Quartus/Project2.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 62 warnings
-    Info: Peak virtual memory: 7401 megabytes
-    Info: Processing ended: Thu Dec 03 19:05:49 2020
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:01:22
+Info: Quartus Prime Fitter was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 7408 megabytes
+    Info: Processing ended: Wed Dec 09 16:44:51 2020
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:01:13
 
 
 +----------------------------+

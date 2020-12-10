@@ -44,7 +44,7 @@
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSXFC6D6F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY "Project2"
-set_global_assignment -name ORIGINAL_QUARTUS_VERSION "16.0.2"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.0.2
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Standard Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:54:04 NOVEMBER 05,2020"
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
@@ -350,6 +350,7 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_FILE ../Source/tb.v -section_id tb
+set_global_assignment -name QIP_FILE issp1/synthesis/issp1.qip
 set_global_assignment -name VERILOG_FILE ../Source/tb.v
 set_global_assignment -name VERILOG_FILE ../Source/i2c_OL.v
 set_global_assignment -name VERILOG_FILE ../Source/i2c_NSL.v

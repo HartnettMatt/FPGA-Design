@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dF:/FPGADesign/Project2/Quartus/simulation/modelsim
 vclock
-Z1 !s110 1607047199
+Z1 !s110 1607557342
 !i10b 1
 !s100 LC6L^W2QfGME<?gXa]5Ub1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1607047199.000000
+Z5 !s108 1607557341.000000
 !s107 F:/FPGADesign/Project2/Source/clock.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/clock.v|
 !i113 1
@@ -34,19 +34,19 @@ Z6 o-vlog01compat -work work
 Z7 !s92 -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Source
 Z8 tCvgOpt 0
 vi2c
-R1
+Z9 !s110 1607557341
 !i10b 1
-!s100 Ldmj:5PzN>nHd42cS`AWb2
+!s100 0b5;NX;ed38cF=jRLa:C32
 R2
-IOcnkUUI=fZzN2B[=`BTQD3
+INjkP3OaWHZgTX^0E__T]N1
 R3
 R0
-w1607046542
+w1607550451
 8F:/FPGADesign/Project2/Source/i2c.v
 FF:/FPGADesign/Project2/Source/i2c.v
-Z9 FF:/FPGADesign/Project2/Source/i2c_states.vh
+Z10 FF:/FPGADesign/Project2/Source/i2c_states.vh
 !i122 2
-L0 1 30
+L0 1 32
 R4
 r1
 !s85 0
@@ -59,24 +59,24 @@ R6
 R7
 R8
 vi2c_CSL
-Z10 !s110 1607047200
+R1
 !i10b 1
 !s100 9]kV<hc_HS@o`IMT:CAL<0
 R2
 I=;BQa<]L5AGm;mPA]HM=Y2
 R3
 R0
-w1605827955
+w1607523586
 8F:/FPGADesign/Project2/Source/i2c_CSL.v
 FF:/FPGADesign/Project2/Source/i2c_CSL.v
-R9
+R10
 !i122 7
 L0 1 24
 R4
 r1
 !s85 0
 31
-Z11 !s108 1607047200.000000
+Z11 !s108 1607557342.000000
 !s107 F:/FPGADesign/Project2/Source/i2c_states.vh|F:/FPGADesign/Project2/Source/i2c_CSL.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGADesign/Project2/Source|F:/FPGADesign/Project2/Source/i2c_CSL.v|
 !i113 1
@@ -85,19 +85,19 @@ R7
 R8
 ni2c_@c@s@l
 vi2c_NSL
-R10
+R1
 !i10b 1
-!s100 IlcU4HHXbEOil=S[8@DLa1
+!s100 lT:d4nMhnj6eIf:Fm6W3>2
 R2
-I3T36<f]T?WNfeo3Q]F0[B1
+II8kTf6=C=AoTTzXzf1]7g1
 R3
 R0
-w1607040674
+w1607556478
 8F:/FPGADesign/Project2/Source/i2c_NSL.v
 FF:/FPGADesign/Project2/Source/i2c_NSL.v
-R9
+R10
 !i122 6
-L0 2 56
+L0 2 57
 R4
 r1
 !s85 0
@@ -111,19 +111,19 @@ R7
 R8
 ni2c_@n@s@l
 vi2c_OL
-R10
+R1
 !i10b 1
-!s100 e;_c2Oe;<WaIQXB1kh`ka1
+!s100 bdMom9klDl7h[CW^ncHAZ0
 R2
-IKhmkJl?f3kf<AaCPO]W>72
+IafFB>BPnJQ^DBohIGP1000
 R3
 R0
-w1607046752
+w1607544950
 8F:/FPGADesign/Project2/Source/i2c_OL.v
 FF:/FPGADesign/Project2/Source/i2c_OL.v
-R9
+R10
 !i122 5
-L0 1 88
+L0 1 90
 R4
 r1
 !s85 0
@@ -137,7 +137,7 @@ R7
 R8
 ni2c_@o@l
 vpll
-R1
+R9
 !i10b 1
 !s100 UC3;Lj6O[Vg89zBIX1ih70
 R2
@@ -161,18 +161,18 @@ R6
 !s92 -vlog01compat -work work +incdir+F:/FPGADesign/Project2/Quartus
 R8
 vProject2
-R10
+R1
 !i10b 1
-!s100 `X0f09]zWKngB0NJ8?nae3
+!s100 f<iED:P7G7QBQjklW]bW80
 R2
-Icm4gOYaoOn9dJkn>4CGFE2
+IKl:@5l@GHiQPzZcbGb7V90
 R3
 R0
-w1607046222
+w1607557337
 8F:/FPGADesign/Project2/Source/Project2.v
 FF:/FPGADesign/Project2/Source/Project2.v
 !i122 4
-Z12 L0 2 63
+L0 2 81
 R4
 r1
 !s85 0
@@ -186,18 +186,18 @@ R7
 R8
 n@project2
 vtb
-R10
+R1
 !i10b 1
-!s100 XD5jD3ATlh38[We4a^AAa1
+!s100 c5]U:gRk3[_dgJKj<WR8E1
 R2
-I]7g46^?jmOAgZoM1YdMMH1
+Ie3zjlUe`:^YzAQ]k<k4331
 R3
 R0
-w1607038551
+w1607555396
 8F:/FPGADesign/Project2/Quartus/../Source/tb.v
 FF:/FPGADesign/Project2/Quartus/../Source/tb.v
 !i122 8
-R12
+L0 2 64
 R4
 r1
 !s85 0

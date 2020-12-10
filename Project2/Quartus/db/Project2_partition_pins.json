@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
 					"name" : "FPGA_I2C_SCLK",
 					"strict" : false
 				},

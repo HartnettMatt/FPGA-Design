@@ -29,7 +29,7 @@ always @ ( posedge clk, negedge reset_n) begin
   end
 end
 
-always @ (*)
+always @ (posedge clk)
   case(CS)
     Wait_STATE:     begin
                       i2c_sdat = 1'b1;
@@ -39,11 +39,13 @@ always @ (*)
                       data_out = data;
                     end
     Start_STATE:    begin
+                      ts = 1'b0;
                       i2c_sdat = 1'b0;
                       i2c_sclk = 1'b0;
                     end
     Address_STATE:  begin
-                      if(clk == 1'b0) begin
+                      ts = 1'b0;
+                      if(clk == 1'b1) begin
                         i2c_sdat = address[7];
                         address = address << 1;
                       end
@@ -51,7 +53,7 @@ always @ (*)
     Ack1_STATE:     ts = 1'b1;
     Data1_STATE:    begin
                       ts = 1'b0;
-                      if(clk == 1'b0) begin
+                      if(clk == 1'b1) begin
                         i2c_sdat = data_out[15];
                         data_out = data_out << 1;
                       end
@@ -59,7 +61,7 @@ always @ (*)
     Ack2_STATE:     ts = 1'b1;
     Data2_STATE:    begin
                       ts = 1'b0;
-                      if(clk == 1'b0) begin
+                      if(clk == 1'b1) begin
                         i2c_sdat = data_out[15];
                         data_out = data_out << 1;
                       end

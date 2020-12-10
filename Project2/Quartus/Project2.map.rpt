@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project2
-Thu Dec 03 19:05:15 2020
+Wed Dec 09 16:44:22 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -14,10 +14,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
-  9. User-Specified and Inferred Latches
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |Project2
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i
  14. Parameter Settings for User Entity Instance: i2c:i2c_U0
  15. Parameter Settings for User Entity Instance: i2c:i2c_U0|i2c_CSL:CSL
@@ -55,13 +55,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec 03 19:05:15 2020           ;
+; Analysis & Synthesis Status     ; Successful - Wed Dec 09 16:44:22 2020           ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                   ; Project2                                        ;
 ; Top-level Entity Name           ; Project2                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 9                                               ;
+; Total registers                 ; 33                                              ;
 ; Total pins                      ; 78                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -175,57 +175,57 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                   ; Library ;
-+-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
-; ../Source/i2c_OL.v                        ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c_OL.v                         ;         ;
-; ../Source/i2c_NSL.v                       ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c_NSL.v                        ;         ;
-; ../Source/i2c_CSL.v                       ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c_CSL.v                        ;         ;
-; ../Source/i2c.v                           ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c.v                            ;         ;
-; ../Source/clock.v                         ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/clock.v                          ;         ;
-; ../Source/Project2.v                      ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/Project2.v                       ;         ;
-; pll.v                                     ; yes             ; User Wizard-Generated File   ; F:/FPGADesign/Project2/Quartus/pll.v                           ; pll     ;
-; pll/pll_0002.v                            ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Quartus/pll/pll_0002.v                  ; pll     ;
-; /fpgadesign/project2/source/i2c_states.vh ; yes             ; Auto-Found Unspecified File  ; /fpgadesign/project2/source/i2c_states.vh                      ;         ;
-; altera_pll.v                              ; yes             ; Megafunction                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v ;         ;
-+-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++--------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                 ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
++--------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+; issp1/synthesis/submodules/altsource_probe_top.v ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Quartus/issp1/synthesis/submodules/altsource_probe_top.v ; issp1   ;
+; ../Source/i2c_OL.v                               ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c_OL.v                                          ;         ;
+; ../Source/i2c_NSL.v                              ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c_NSL.v                                         ;         ;
+; ../Source/i2c_CSL.v                              ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c_CSL.v                                         ;         ;
+; ../Source/i2c.v                                  ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/i2c.v                                             ;         ;
+; ../Source/clock.v                                ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/clock.v                                           ;         ;
+; ../Source/Project2.v                             ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Source/Project2.v                                        ;         ;
+; pll.v                                            ; yes             ; User Wizard-Generated File   ; F:/FPGADesign/Project2/Quartus/pll.v                                            ; pll     ;
+; pll/pll_0002.v                                   ; yes             ; User Verilog HDL File        ; F:/FPGADesign/Project2/Quartus/pll/pll_0002.v                                   ; pll     ;
+; /fpgadesign/project2/source/i2c_states.vh        ; yes             ; Auto-Found Unspecified File  ; /fpgadesign/project2/source/i2c_states.vh                                       ;         ;
+; altera_pll.v                                     ; yes             ; Megafunction                 ; d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v                  ;         ;
++--------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 38                           ;
-;                                             ;                              ;
-; Combinational ALUT usage for logic          ; 68                           ;
-;     -- 7 input functions                    ; 1                            ;
-;     -- 6 input functions                    ; 6                            ;
-;     -- 5 input functions                    ; 12                           ;
-;     -- 4 input functions                    ; 3                            ;
-;     -- <=3 input functions                  ; 46                           ;
-;                                             ;                              ;
-; Dedicated logic registers                   ; 9                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 78                           ;
-;                                             ;                              ;
-; Total DSP Blocks                            ; 0                            ;
-;                                             ;                              ;
-; Total PLLs                                  ; 1                            ;
-;     -- PLLs                                 ; 1                            ;
-;                                             ;                              ;
-; Maximum fan-out node                        ; i2c:i2c_U0|i2c_CSL:CSL|CS[2] ;
-; Maximum fan-out                             ; 32                           ;
-; Total fan-out                               ; 348                          ;
-; Average fan-out                             ; 1.46                         ;
-+---------------------------------------------+------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                  ;
++---------------------------------------------+--------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                          ;
++---------------------------------------------+--------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 23                                                                             ;
+;                                             ;                                                                                ;
+; Combinational ALUT usage for logic          ; 43                                                                             ;
+;     -- 7 input functions                    ; 1                                                                              ;
+;     -- 6 input functions                    ; 2                                                                              ;
+;     -- 5 input functions                    ; 10                                                                             ;
+;     -- 4 input functions                    ; 3                                                                              ;
+;     -- <=3 input functions                  ; 27                                                                             ;
+;                                             ;                                                                                ;
+; Dedicated logic registers                   ; 33                                                                             ;
+;                                             ;                                                                                ;
+; I/O pins                                    ; 78                                                                             ;
+;                                             ;                                                                                ;
+; Total DSP Blocks                            ; 0                                                                              ;
+;                                             ;                                                                                ;
+; Total PLLs                                  ; 1                                                                              ;
+;     -- PLLs                                 ; 1                                                                              ;
+;                                             ;                                                                                ;
+; Maximum fan-out node                        ; clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
+; Maximum fan-out                             ; 38                                                                             ;
+; Total fan-out                               ; 323                                                                            ;
+; Average fan-out                             ; 1.36                                                                           ;
++---------------------------------------------+--------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -233,15 +233,15 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+-------------+--------------+
-; |Project2                             ; 68 (2)              ; 9 (0)                     ; 0                 ; 0          ; 78   ; 0            ; |Project2                                                                 ; Project2    ; work         ;
+; |Project2                             ; 43 (2)              ; 33 (0)                    ; 0                 ; 0          ; 78   ; 0            ; |Project2                                                                 ; Project2    ; work         ;
 ;    |clock:clk_U0|                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0                                                    ; clock       ; work         ;
 ;       |pll:PLL1|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1                                           ; pll         ; pll          ;
 ;          |pll_0002:pll_inst|          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1|pll_0002:pll_inst                         ; pll_0002    ; pll          ;
 ;             |altera_pll:altera_pll_i| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i ; altera_pll  ; work         ;
-;    |i2c:i2c_U0|                       ; 66 (0)              ; 9 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0                                                      ; i2c         ; work         ;
+;    |i2c:i2c_U0|                       ; 41 (0)              ; 33 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0                                                      ; i2c         ; work         ;
 ;       |i2c_CSL:CSL|                   ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_CSL:CSL                                          ; i2c_CSL     ; work         ;
 ;       |i2c_NSL:NSL|                   ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_NSL:NSL                                          ; i2c_NSL     ; work         ;
-;       |i2c_OL:OL|                     ; 56 (56)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_OL:OL                                            ; i2c_OL      ; work         ;
+;       |i2c_OL:OL|                     ; 31 (31)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |Project2|i2c:i2c_U0|i2c_OL:OL                                            ; i2c_OL      ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -255,38 +255,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                           ;
-+-----------------------------------------------------+--------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal            ; Free of Timing Hazards ;
-+-----------------------------------------------------+--------------------------------+------------------------+
-; i2c:i2c_U0|i2c_OL:OL|i2c_sclk                       ; i2c:i2c_U0|i2c_OL:OL|Mux20     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|i2c_sdat                       ; i2c:i2c_U0|i2c_OL:OL|Mux22     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|address[7]                     ; i2c:i2c_U0|i2c_OL:OL|Selector1 ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[15]                   ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|address[6]                     ; i2c:i2c_U0|i2c_OL:OL|Selector1 ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[14]                   ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|address[5]                     ; i2c:i2c_U0|i2c_OL:OL|Selector1 ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[13]                   ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|address[4]                     ; i2c:i2c_U0|i2c_OL:OL|Selector1 ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[12]                   ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|address[3]                     ; i2c:i2c_U0|i2c_OL:OL|Selector1 ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[11]                   ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|address[2]                     ; i2c:i2c_U0|i2c_OL:OL|Selector1 ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[10]                   ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[9]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[8]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[7]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[6]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[5]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[4]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[3]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[2]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[1]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; i2c:i2c_U0|i2c_OL:OL|data_out[0]                    ; i2c:i2c_U0|i2c_OL:OL|Mux19     ; yes                    ;
-; Number of user-specified and inferred latches = 24  ;                                ;                        ;
-+-----------------------------------------------------+--------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; i2c:i2c_U0|i2c_OL:OL|address[0,1]     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 2 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                          ;
++---------------------------------+---------------------------+----------------------------------------+
+; Register name                   ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------+---------------------------+----------------------------------------+
+; i2c:i2c_U0|i2c_OL:OL|address[0] ; Stuck at GND              ; i2c:i2c_U0|i2c_OL:OL|address[1]        ;
+;                                 ; due to stuck port data_in ;                                        ;
++---------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -294,33 +280,24 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 9     ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 9     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 20    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; No         ; |Project2|i2c:i2c_U0|i2c_OL:OL|Mux2 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Project2 ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; n              ; 3     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 9:1                ; 5 bits    ; 30 LEs        ; 5 LEs                ; 25 LEs                 ; Yes        ; |Project2|i2c:i2c_U0|i2c_OL:OL|address[5]   ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |Project2|i2c:i2c_U0|i2c_OL:OL|data_out[14] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------+
@@ -651,25 +628,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "i2c:i2c_U0"         ;
-+--------------+-------+----------+--------------+
-; Port         ; Type  ; Severity ; Details      ;
-+--------------+-------+----------+--------------+
-; data[8..7]   ; Input ; Info     ; Stuck at VCC ;
-; data[12..11] ; Input ; Info     ; Stuck at GND ;
-; data[4..3]   ; Input ; Info     ; Stuck at GND ;
-; data[15]     ; Input ; Info     ; Stuck at VCC ;
-; data[14]     ; Input ; Info     ; Stuck at GND ;
-; data[13]     ; Input ; Info     ; Stuck at VCC ;
-; data[10]     ; Input ; Info     ; Stuck at VCC ;
-; data[9]      ; Input ; Info     ; Stuck at GND ;
-; data[6]      ; Input ; Info     ; Stuck at GND ;
-; data[5]      ; Input ; Info     ; Stuck at VCC ;
-; data[2]      ; Input ; Info     ; Stuck at VCC ;
-; data[1]      ; Input ; Info     ; Stuck at GND ;
-; data[0]      ; Input ; Info     ; Stuck at VCC ;
-+--------------+-------+----------+--------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "i2c:i2c_U0"                                                                                 ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; data[8..7]   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; data[12..11] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data[4..3]   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data[15]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; data[14]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data[13]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; data[10]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; data[9]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data[6]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data[5]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; data[2]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; data[1]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data[0]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; CurrS        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------+
@@ -686,24 +664,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 9                           ;
+; arriav_ff             ; 33                          ;
 ;     CLR               ; 9                           ;
+;     ENA               ; 20                          ;
+;     plain             ; 4                           ;
 ; arriav_io_obuf        ; 4                           ;
-; arriav_lcell_comb     ; 69                          ;
+; arriav_lcell_comb     ; 45                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 68                          ;
+;     normal            ; 44                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 19                          ;
-;         3 data inputs ; 27                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 23                          ;
+;         3 data inputs ; 4                           ;
 ;         4 data inputs ; 3                           ;
-;         5 data inputs ; 12                          ;
-;         6 data inputs ; 6                           ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 2                           ;
 ; boundary_port         ; 78                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.90                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -722,10 +703,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Dec 03 19:05:08 2020
+    Info: Processing started: Wed Dec 09 16:44:15 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project2 -c Project2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file issp1/synthesis/issp1.v
+    Info (12023): Found entity 1: issp1 File: F:/FPGADesign/Project2/Quartus/issp1/synthesis/issp1.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file issp1/synthesis/submodules/altsource_probe_top.v
+    Info (12023): Found entity 1: altsource_probe_top File: F:/FPGADesign/Project2/Quartus/issp1/synthesis/submodules/altsource_probe_top.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/tb.v
     Info (12023): Found entity 1: tb File: F:/FPGADesign/Project2/Source/tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgadesign/project2/source/i2c_ol.v
@@ -751,7 +736,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll/pll
 Info (12021): Found 1 design units, including 1 entities, in source file rom.v
     Info (12023): Found entity 1: rom File: F:/FPGADesign/Project2/Quartus/rom.v Line: 40
 Info (12127): Elaborating entity "Project2" for the top level hierarchy
-Warning (10034): Output port "LEDR" at Project2.v(17) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
+Warning (10036): Verilog HDL or VHDL warning at Project2.v(50): object "ack" assigned a value but never read File: F:/FPGADesign/Project2/Source/Project2.v Line: 50
+Warning (10858): Verilog HDL warning at Project2.v(50): object led used but never assigned File: F:/FPGADesign/Project2/Source/Project2.v Line: 50
+Warning (10030): Net "led" at Project2.v(50) has no driver or initial value, using a default initial value '0' File: F:/FPGADesign/Project2/Source/Project2.v Line: 50
+Warning (10034): Output port "LEDR[8..1]" at Project2.v(17) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
 Warning (10034): Output port "HEX0" at Project2.v(20) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
 Warning (10034): Output port "HEX1" at Project2.v(21) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 21
 Warning (10034): Output port "HEX2" at Project2.v(22) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 22
@@ -759,7 +747,7 @@ Warning (10034): Output port "HEX3" at Project2.v(23) has no driver File: F:/FPG
 Warning (10034): Output port "HEX4" at Project2.v(24) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 24
 Warning (10034): Output port "HEX5" at Project2.v(25) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
 Warning (10034): Output port "AUD_DACDAT" at Project2.v(32) has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 32
-Info (12128): Elaborating entity "clock" for hierarchy "clock:clk_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 55
+Info (12128): Elaborating entity "clock" for hierarchy "clock:clk_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 64
 Info (12128): Elaborating entity "pll" for hierarchy "clock:clk_U0|pll:PLL1" File: F:/FPGADesign/Project2/Source/clock.v Line: 9
 Info (12128): Elaborating entity "pll_0002" for hierarchy "clock:clk_U0|pll:PLL1|pll_0002:pll_inst" File: F:/FPGADesign/Project2/Quartus/pll.v Line: 20
 Info (12128): Elaborating entity "altera_pll" for hierarchy "clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i" File: F:/FPGADesign/Project2/Quartus/pll/pll_0002.v Line: 85
@@ -826,97 +814,20 @@ Info (12133): Instantiated megafunction "clock:clk_U0|pll:PLL1|pll_0002:pll_inst
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "i2c" for hierarchy "i2c:i2c_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 59
-Info (12128): Elaborating entity "i2c_CSL" for hierarchy "i2c:i2c_U0|i2c_CSL:CSL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 17
-Info (12128): Elaborating entity "i2c_NSL" for hierarchy "i2c:i2c_U0|i2c_NSL:NSL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 18
-Info (12128): Elaborating entity "i2c_OL" for hierarchy "i2c:i2c_U0|i2c_OL:OL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 19
+Info (12128): Elaborating entity "i2c" for hierarchy "i2c:i2c_U0" File: F:/FPGADesign/Project2/Source/Project2.v Line: 74
+Info (12128): Elaborating entity "i2c_CSL" for hierarchy "i2c:i2c_U0|i2c_CSL:CSL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 19
+Info (12128): Elaborating entity "i2c_NSL" for hierarchy "i2c:i2c_U0|i2c_NSL:NSL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 20
+Info (12128): Elaborating entity "i2c_OL" for hierarchy "i2c:i2c_U0|i2c_OL:OL" File: F:/FPGADesign/Project2/Source/i2c.v Line: 21
 Warning (10230): Verilog HDL assignment warning at i2c_OL.v(28): truncated value with size 32 to match size of target (5) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 28
-Warning (10240): Verilog HDL Always Construct warning at i2c_OL.v(33): inferring latch(es) for variable "ts", which holds its previous value in one or more paths through the always construct File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Warning (10240): Verilog HDL Always Construct warning at i2c_OL.v(33): inferring latch(es) for variable "i2c_sdat", which holds its previous value in one or more paths through the always construct File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Warning (10240): Verilog HDL Always Construct warning at i2c_OL.v(33): inferring latch(es) for variable "i2c_sclk", which holds its previous value in one or more paths through the always construct File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Warning (10240): Verilog HDL Always Construct warning at i2c_OL.v(33): inferring latch(es) for variable "data_out", which holds its previous value in one or more paths through the always construct File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Warning (10240): Verilog HDL Always Construct warning at i2c_OL.v(33): inferring latch(es) for variable "address", which holds its previous value in one or more paths through the always construct File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[0]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[1]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[2]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[3]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[4]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[5]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[6]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "address[7]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[0]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[1]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[2]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[3]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[4]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[5]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[6]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[7]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[8]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[9]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[10]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[11]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[12]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[13]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[14]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "data_out[15]" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "i2c_sclk" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "i2c_sdat" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-Info (10041): Inferred latch for "ts" at i2c_OL.v(33) File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "AUD_BCLK" and its non-tri-state driver. File: F:/FPGADesign/Project2/Source/Project2.v Line: 31
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "AUD_ADCLRCK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 30
-    Warning (13040): bidirectional pin "AUD_BCLK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 31
     Warning (13040): bidirectional pin "AUD_DACLRCK" has no driver File: F:/FPGADesign/Project2/Source/Project2.v Line: 33
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|i2c_sclk has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 10
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[0] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|i2c_sdat has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[3] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|address[7] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[0] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[15] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|address[6] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[0] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[14] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|address[5] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[0] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[13] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|address[4] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[0] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[12] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|address[3] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[0] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[11] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|address[2] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[0] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[10] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[9] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[8] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[7] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[6] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[5] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[4] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[3] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[2] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[1] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
-Warning (13012): Latch i2c:i2c_U0|i2c_OL:OL|data_out[0] has unsafe behavior File: F:/FPGADesign/Project2/Source/i2c_OL.v Line: 33
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal i2c:i2c_U0|i2c_CSL:CSL|CS[2] File: F:/FPGADesign/Project2/Source/i2c_CSL.v Line: 13
 Warning (13008): TRI or OPNDRN buffers permanently disabled
     Warning (13010): Node "FPGA_I2C_SDAT~synth" File: F:/FPGADesign/Project2/Source/Project2.v Line: 39
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "AUD_BCLK~synth" File: F:/FPGADesign/Project2/Source/Project2.v Line: 31
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
     Warning (13410): Pin "LEDR[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
@@ -927,7 +838,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
     Warning (13410): Pin "LEDR[7]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 17
     Warning (13410): Pin "HEX0[0]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
     Warning (13410): Pin "HEX0[1]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
     Warning (13410): Pin "HEX0[2]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 20
@@ -972,10 +882,11 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX5[6]" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 25
     Warning (13410): Pin "AUD_DACDAT" is stuck at GND File: F:/FPGADesign/Project2/Source/Project2.v Line: 32
 Info (286030): Timing-Driven Synthesis is running
-Warning (20013): Ignored 20 assignments for entity "altsource_probe_top" -- entity does not exist in design
+Warning (20013): Ignored 39 assignments for entity "altsource_probe_top" -- entity does not exist in design
 Warning (20013): Ignored 19 assignments for entity "issp" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "issp1" -- entity does not exist in design
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+    Info (16011): Adding 6 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance clock:clk_U0|pll:PLL1|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
 Warning (21074): Design contains 16 input pin(s) that do not drive logic
@@ -995,16 +906,16 @@ Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
     Warning (15610): No output dependent on input pin "SW[9]" File: F:/FPGADesign/Project2/Source/Project2.v Line: 14
     Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: F:/FPGADesign/Project2/Source/Project2.v Line: 29
-Info (21057): Implemented 147 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 55 output pins
     Info (21060): Implemented 4 bidirectional pins
-    Info (21061): Implemented 68 logic cells
+    Info (21061): Implemented 43 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 143 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
     Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Thu Dec 03 19:05:15 2020
+    Info: Processing ended: Wed Dec 09 16:44:22 2020
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:14
 
 
