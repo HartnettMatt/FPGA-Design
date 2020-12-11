@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/FInal1/quartus/simulation/modelsim
+vjtag_pll_mm_interconnect_0
+!s110 1607702117
+!i10b 1
+!s100 OmWZKcTzjTlZZMROiCzeM2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IdD9DWB5M>]dC4o`5`JkSU0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1607549948
+8F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v
+FF:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v
+!i122 1
+L0 9 157
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1607702117.000000
+!s107 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v|
+!s90 -reportprogress|300|F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v|-work|mm_interconnect_0|
+!i113 1
+o-work mm_interconnect_0
+tCvgOpt 0

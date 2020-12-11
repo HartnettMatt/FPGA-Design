@@ -1,0 +1,16 @@
+in_system_sources_probes_0
+pll_reconfig_0_mgmt_avalon_slave_translator
+master_0_master_translator
+p2b_adapter
+b2p_adapter
+transacto
+p2b
+b2p
+fifo
+timing_adt
+jtag_phy_embedded_in_jtag_master
+rst_controller
+mm_interconnect_0
+pll_reconfig_0
+pll_0
+master_0

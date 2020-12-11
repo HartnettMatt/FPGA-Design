@@ -1,0 +1,564 @@
+# Reading pref.tcl
+# do Final_3002_run_msim_rtl_verilog.do
+# if ![file isdirectory Final_3002_iputf_libs] {
+# 	file mkdir Final_3002_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+# vlib Final_3002_iputf_libs/in_system_sources_probes_0
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/in_system_sources_probes_0".
+# vmap in_system_sources_probes_0 ./Final_3002_iputf_libs/in_system_sources_probes_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap in_system_sources_probes_0 ./Final_3002_iputf_libs/in_system_sources_probes_0 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/pll_reconfig_0_mgmt_avalon_slave_translator
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/pll_reconfig_0_mgmt_avalon_slave_translator".
+# vmap pll_reconfig_0_mgmt_avalon_slave_translator ./Final_3002_iputf_libs/pll_reconfig_0_mgmt_avalon_slave_translator
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap pll_reconfig_0_mgmt_avalon_slave_translator ./Final_3002_iputf_libs/pll_reconfig_0_mgmt_avalon_slave_translator 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/master_0_master_translator
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/master_0_master_translator".
+# vmap master_0_master_translator ./Final_3002_iputf_libs/master_0_master_translator
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap master_0_master_translator ./Final_3002_iputf_libs/master_0_master_translator 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/p2b_adapter
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/p2b_adapter".
+# vmap p2b_adapter ./Final_3002_iputf_libs/p2b_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap p2b_adapter ./Final_3002_iputf_libs/p2b_adapter 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/b2p_adapter
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/b2p_adapter".
+# vmap b2p_adapter ./Final_3002_iputf_libs/b2p_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap b2p_adapter ./Final_3002_iputf_libs/b2p_adapter 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/transacto
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/transacto".
+# vmap transacto ./Final_3002_iputf_libs/transacto
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap transacto ./Final_3002_iputf_libs/transacto 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/p2b
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/p2b".
+# vmap p2b ./Final_3002_iputf_libs/p2b
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap p2b ./Final_3002_iputf_libs/p2b 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/b2p
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/b2p".
+# vmap b2p ./Final_3002_iputf_libs/b2p
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap b2p ./Final_3002_iputf_libs/b2p 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/fifo
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/fifo".
+# vmap fifo ./Final_3002_iputf_libs/fifo
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap fifo ./Final_3002_iputf_libs/fifo 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/timing_adt
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/timing_adt".
+# vmap timing_adt ./Final_3002_iputf_libs/timing_adt
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap timing_adt ./Final_3002_iputf_libs/timing_adt 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/jtag_phy_embedded_in_jtag_master
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/jtag_phy_embedded_in_jtag_master".
+# vmap jtag_phy_embedded_in_jtag_master ./Final_3002_iputf_libs/jtag_phy_embedded_in_jtag_master
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap jtag_phy_embedded_in_jtag_master ./Final_3002_iputf_libs/jtag_phy_embedded_in_jtag_master 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/rst_controller
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/rst_controller".
+# vmap rst_controller ./Final_3002_iputf_libs/rst_controller
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap rst_controller ./Final_3002_iputf_libs/rst_controller 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/mm_interconnect_0
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/mm_interconnect_0".
+# vmap mm_interconnect_0 ./Final_3002_iputf_libs/mm_interconnect_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap mm_interconnect_0 ./Final_3002_iputf_libs/mm_interconnect_0 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/pll_reconfig_0
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/pll_reconfig_0".
+# vmap pll_reconfig_0 ./Final_3002_iputf_libs/pll_reconfig_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap pll_reconfig_0 ./Final_3002_iputf_libs/pll_reconfig_0 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/pll_0
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/pll_0".
+# vmap pll_0 ./Final_3002_iputf_libs/pll_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap pll_0 ./Final_3002_iputf_libs/pll_0 
+# Modifying modelsim.ini
+# vlib Final_3002_iputf_libs/master_0
+# ** Warning: (vlib-34) Library already exists at "Final_3002_iputf_libs/master_0".
+# vmap master_0 ./Final_3002_iputf_libs/master_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap master_0 ./Final_3002_iputf_libs/master_0 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog     "F:/FPGADesign/FInal1/quartus/issp/simulation/submodules/altsource_probe.v"                       -work in_system_sources_probes_0                 
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:15 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/issp/simulation/submodules/altsource_probe.v -work in_system_sources_probes_0 
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	altsource_probe
+# End time: 08:55:15 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/issp/simulation/issp.v"                                                                                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/issp/simulation/issp.v 
+# -- Compiling module issp
+# 
+# Top level modules:
+# 	issp
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_merlin_slave_translator.sv"   -work pll_reconfig_0_mgmt_avalon_slave_translator
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 -sv F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_merlin_slave_translator.sv -work pll_reconfig_0_mgmt_avalon_slave_translator 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv"  -work master_0_master_translator                 
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 -sv F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv -work master_0_master_translator 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_p2b_adapter.sv"    -work p2b_adapter                                
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 -sv F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_p2b_adapter.sv -work p2b_adapter 
+# -- Compiling module jtag_pll_master_0_p2b_adapter
+# 
+# Top level modules:
+# 	jtag_pll_master_0_p2b_adapter
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_b2p_adapter.sv"    -work b2p_adapter                                
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 -sv F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_b2p_adapter.sv -work b2p_adapter 
+# -- Compiling module jtag_pll_master_0_b2p_adapter
+# 
+# Top level modules:
+# 	jtag_pll_master_0_b2p_adapter
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v"   -work transacto                                  
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v -work transacto 
+# -- Compiling module altera_avalon_packets_to_master
+# -- Compiling module packets_to_fifo
+# -- Compiling module fifo_buffer_single_clock_fifo
+# -- Compiling module fifo_buffer_scfifo_with_controls
+# -- Compiling module fifo_buffer
+# -- Compiling module fifo_to_packet
+# -- Compiling module packets_to_master
+# 
+# Top level modules:
+# 	altera_avalon_packets_to_master
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_packets_to_bytes.v" -work p2b                                        
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_packets_to_bytes.v -work p2b 
+# -- Compiling module altera_avalon_st_packets_to_bytes
+# 
+# Top level modules:
+# 	altera_avalon_st_packets_to_bytes
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v" -work b2p                                        
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v -work b2p 
+# -- Compiling module altera_avalon_st_bytes_to_packets
+# 
+# Top level modules:
+# 	altera_avalon_st_bytes_to_packets
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_sc_fifo.v"             -work fifo                                       
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_sc_fifo.v -work fifo 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_timing_adt.sv"     -work timing_adt                                 
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 -sv F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_timing_adt.sv -work timing_adt 
+# -- Compiling module jtag_pll_master_0_timing_adt
+# 
+# Top level modules:
+# 	jtag_pll_master_0_timing_adt
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v"   -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:16 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_avalon_st_jtag_interface
+# 
+# Top level modules:
+# 	altera_avalon_st_jtag_interface
+# End time: 08:55:16 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v"          -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_jtag_control_signal_crosser
+# -- Compiling module altera_jtag_src_crosser
+# -- Compiling module altera_jtag_dc_streaming
+# 
+# Top level modules:
+# 	altera_jtag_dc_streaming
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v"              -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_jtag_sld_node
+# 
+# Top level modules:
+# 	altera_jtag_sld_node
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v"             -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_jtag_streaming
+# 
+# Top level modules:
+# 	altera_jtag_streaming
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v"    -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_avalon_st_clock_crosser
+# 
+# Top level modules:
+# 	altera_avalon_st_clock_crosser
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v"     -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_std_synchronizer_nocut
+# 
+# Top level modules:
+# 	altera_std_synchronizer_nocut
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v"    -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_avalon_st_pipeline_base
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v"     -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_avalon_st_idle_remover
+# 
+# Top level modules:
+# 	altera_avalon_st_idle_remover
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v"    -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_avalon_st_idle_inserter
+# 
+# Top level modules:
+# 	altera_avalon_st_idle_inserter
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv"  -work jtag_phy_embedded_in_jtag_master           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 -sv F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv -work jtag_phy_embedded_in_jtag_master 
+# -- Compiling module altera_avalon_st_pipeline_stage
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_stage
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v"           -work rst_controller                             
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v -work rst_controller 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v"         -work rst_controller                             
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v"        -work mm_interconnect_0                          
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:17 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v -work mm_interconnect_0 
+# -- Compiling module jtag_pll_mm_interconnect_0
+# 
+# Top level modules:
+# 	jtag_pll_mm_interconnect_0
+# End time: 08:55:17 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v"           -work pll_reconfig_0                             
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v -work pll_reconfig_0 
+# -- Compiling module altera_pll_reconfig_top
+# 
+# Top level modules:
+# 	altera_pll_reconfig_top
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v"          -work pll_reconfig_0                             
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v -work pll_reconfig_0 
+# -- Compiling module altera_pll_reconfig_core
+# ** Warning: F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module self_reset
+# -- Compiling module dprio_mux
+# -- Compiling module fpll_dprio_init
+# -- Compiling module dyn_phase_shift
+# -- Compiling module generic_lcell_comb
+# 
+# Top level modules:
+# 	altera_pll_reconfig_core
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v"           -work pll_reconfig_0                             
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v -work pll_reconfig_0 
+# -- Compiling module altera_std_synchronizer
+# 
+# Top level modules:
+# 	altera_std_synchronizer
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_pll_0.vo"                   -work pll_0                                      
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_pll_0.vo -work pll_0 
+# -- Compiling module jtag_pll_pll_0
+# 
+# Top level modules:
+# 	jtag_pll_pll_0
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0.v"                 -work master_0                                   
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0.v -work master_0 
+# -- Compiling module jtag_pll_master_0
+# 
+# Top level modules:
+# 	jtag_pll_master_0
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/jtag_pll.v"                                                                                      
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/jtag_pll.v 
+# -- Compiling module jtag_pll
+# 
+# Top level modules:
+# 	jtag_pll
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "F:/FPGADesign/FInal1/quartus/pll_sim/pll.vo"                                                                                                      
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 F:/FPGADesign/FInal1/quartus/pll_sim/pll.vo 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/FInal1/quartus {F:/FPGADesign/FInal1/quartus/pll.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/FInal1/quartus" F:/FPGADesign/FInal1/quartus/pll.vo 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/FInal1/source {F:/FPGADesign/FInal1/source/counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/FInal1/source" F:/FPGADesign/FInal1/source/counter.v 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/FInal1/source {F:/FPGADesign/FInal1/source/Final_3002.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/FInal1/source" F:/FPGADesign/FInal1/source/Final_3002.v 
+# -- Compiling module Final_3002
+# 
+# Top level modules:
+# 	Final_3002
+# End time: 08:55:18 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlib pll
+# ** Warning: (vlib-34) Library already exists at "pll".
+# vmap pll pll
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap pll pll 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work pll +incdir+F:/FPGADesign/FInal1/quartus/pll {F:/FPGADesign/FInal1/quartus/pll/pll_0002.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:18 on Dec 11,2020
+# vlog -reportprogress 300 -vlog01compat -work pll "+incdir+F:/FPGADesign/FInal1/quartus/pll" F:/FPGADesign/FInal1/quartus/pll/pll_0002.v 
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# End time: 08:55:19 on Dec 11,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGADesign/FInal1/quartus/../source {F:/FPGADesign/FInal1/quartus/../source/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:19 on Dec 11,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGADesign/FInal1/quartus/../source" F:/FPGADesign/FInal1/quartus/../source/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 08:55:19 on Dec 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L pll -L in_system_sources_probes_0 -L pll_reconfig_0_mgmt_avalon_slave_translator -L master_0_master_translator -L p2b_adapter -L b2p_adapter -L transacto -L p2b -L b2p -L fifo -L timing_adt -L jtag_phy_embedded_in_jtag_master -L rst_controller -L mm_interconnect_0 -L pll_reconfig_0 -L pll_0 -L master_0 -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L pll -L in_system_sources_probes_0 -L pll_reconfig_0_mgmt_avalon_slave_translator -L master_0_master_translator -L p2b_adapter -L b2p_adapter -L transacto -L p2b -L b2p -L fifo -L timing_adt -L jtag_phy_embedded_in_jtag_master -L rst_controller -L mm_interconnect_0 -L pll_reconfig_0 -L pll_0 -L master_0 -voptargs=""+acc"" tb 
+# Start time: 08:55:19 on Dec 11,2020
+# Loading work.tb
+# Loading work.Final_3002
+# Loading work.pll
+# Loading sv_std.std
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading work.counter
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT File: F:/FPGADesign/FInal1/quartus/../source/tb.v Line: 7
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/../source/tb.v(7): [TFMPC] - Missing connection for port 'LEDR'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/U1/pll_altera_pll_altera_pll_i_639 File: F:/FPGADesign/FInal1/quartus/pll.vo Line: 46
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) F:/FPGADesign/FInal1/quartus/pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb.DUT.U1.pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb.DUT.U1.pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 10 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 50000.000000
+# Info: output_clock_low_period = 50000.000000
+# ** Note: $stop    : F:/FPGADesign/FInal1/quartus/../source/tb.v(20)
+#    Time: 4 us  Iteration: 0  Instance: /tb
+# Break in Module tb at F:/FPGADesign/FInal1/quartus/../source/tb.v line 20
+# End time: 11:41:27 on Dec 11,2020, Elapsed time: 2:46:08
+# Errors: 0, Warnings: 24

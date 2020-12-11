@@ -1,0 +1,172 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/Final/quartus/simulation/modelsim
+valtera_avalon_packets_to_master
+Z1 !s110 1607701987
+!i10b 1
+!s100 6?VbJbmJD9WiYk_gH?N<b0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IhaZ0=l7gf>]NdUJC1JhmZ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1607549948
+Z5 8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v
+Z6 FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v
+!i122 12
+L0 22 119
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1607701987.000000
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v|
+Z9 !s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v|-work|transacto|
+!i113 1
+Z10 o-work transacto
+Z11 tCvgOpt 0
+vfifo_buffer
+R1
+!i10b 1
+!s100 Z7AbkJSBO2L?EzKFKc@J_3
+R2
+IDhCKFV6j5zVJajK<aVK1U1
+R3
+R0
+R4
+R5
+R6
+!i122 12
+L0 627 65
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v|
+R9
+!i113 1
+R10
+R11
+vfifo_buffer_scfifo_with_controls
+R1
+!i10b 1
+!s100 e8TCzQShefc@_`C7H7]WU2
+R2
+IA1fb6UTl`[onFZg>[m:DN3
+R3
+R0
+R4
+R5
+R6
+!i122 12
+L0 573 49
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11
+vfifo_buffer_single_clock_fifo
+R1
+!i10b 1
+!s100 4>:Ne9RI7RONPoE0d=czl2
+R2
+InhN<e^[JMNIL4N5HZWUGK0
+R3
+R0
+R4
+R5
+R6
+!i122 12
+L0 512 54
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11
+vfifo_to_packet
+R1
+!i10b 1
+!s100 1zz<]Va0_E`7Oj<YPKofm1
+R2
+ISkj7F[_VMjWN9PN[941bZ3
+R3
+R0
+R4
+R5
+R6
+!i122 12
+L0 697 150
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11
+vpackets_to_fifo
+R1
+!i10b 1
+!s100 af61TD?O`4R5FmKBhglek0
+R2
+I`X15YX1B>EmEH4Em9haDN3
+R3
+R0
+R4
+R5
+R6
+!i122 12
+L0 142 362
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11
+vpackets_to_master
+R1
+!i10b 1
+!s100 ozcEUlY2;`_z8Vh^Wzz=I3
+R2
+I][TC@71iHe7:MeIH4]NFY3
+R3
+R0
+R4
+R5
+R6
+!i122 12
+L0 851 390
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11

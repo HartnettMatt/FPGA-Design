@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/Final/quartus/simulation/modelsim
+valtera_avalon_st_bytes_to_packets
+!s110 1607701987
+!i10b 1
+!s100 =dEzRg1DEzLGG?<QE0l_m3
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IYMEULZBhHZBSKOYl[;^0U0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1607549948
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v
+!i122 12
+L0 19 192
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1607701987.000000
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v|-work|b2p|
+!i113 1
+o-work b2p
+tCvgOpt 0

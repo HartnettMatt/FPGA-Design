@@ -1,0 +1,289 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/Final/quartus/simulation/modelsim
+valtera_avalon_st_clock_crosser
+Z1 !s110 1607701988
+!i10b 1
+!s100 32`com@nnzI`lQlXbYZdh2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IC[h5FUbh6EPkkn1;Pc4GG0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1607549948
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v
+!i122 124
+L0 22 120
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1607701988.000000
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+Z7 o-work jtag_phy_embedded_in_jtag_master
+Z8 tCvgOpt 0
+valtera_avalon_st_idle_inserter
+R1
+!i10b 1
+!s100 iZ`;=Yc>U0Mh7D=XcWA?]3
+R2
+I`UJMKcH3][Pn^ZhmbHHA53
+R3
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v
+!i122 128
+L0 19 54
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8
+valtera_avalon_st_idle_remover
+R1
+!i10b 1
+!s100 ^=elVQoQE6]N<WX=bghco2
+R2
+I7fSD^Qk9FeFfT_K1ikh6l3
+R3
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v
+!i122 127
+L0 19 52
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8
+valtera_avalon_st_jtag_interface
+Z9 !s110 1607701987
+!i10b 1
+!s100 K=Y3BlQYoIl<jHBThb0770
+R2
+I4ZcnjOE<fYW@hOiaE2;^10
+R3
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v
+!i122 120
+L0 20 205
+R5
+r1
+!s85 0
+31
+Z10 !s108 1607701987.000000
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8
+valtera_avalon_st_pipeline_base
+R1
+!i10b 1
+!s100 Z;Oe1P`>0e?LFYzdc9MSh2
+R2
+IbP_Oa:2RNA^N9BAWddoWC1
+R3
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v
+!i122 126
+L0 22 118
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8
+valtera_avalon_st_pipeline_stage
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+R1
+!i10b 1
+!s100 P0Tn6inUZG>=8TYCUDfMb0
+R2
+I:S88?PBVajE^g7>k9nm<43
+R3
+S1
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+!i122 129
+L0 22 143
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv|
+!s90 -reportprogress|300|-sv|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+o-sv -work jtag_phy_embedded_in_jtag_master
+R8
+valtera_jtag_control_signal_crosser
+R9
+!i10b 1
+!s100 ZlaOZcc_3KLJ6o@9MRG>O0
+R2
+I:JG@6iX@J4ARf][k5jQGJ0
+R3
+R0
+R4
+Z11 8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v
+Z12 FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v
+!i122 121
+L0 30 40
+R5
+r1
+!s85 0
+31
+R10
+Z13 !s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v|
+Z14 !s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8
+valtera_jtag_dc_streaming
+R9
+!i10b 1
+!s100 W6hJOmbQE`bG>ZE[Oz6Xg0
+R2
+I_HTZjQV_LXBREEQ2UCF140
+R3
+R0
+R4
+R11
+R12
+!i122 121
+L0 135 127
+R5
+r1
+!s85 0
+31
+R10
+R13
+R14
+!i113 1
+R7
+R8
+valtera_jtag_sld_node
+R9
+!i10b 1
+!s100 BgE`8WDAfaU]gcXzYIUHZ2
+R2
+Ib2<BI7l9ThnPJe<8>8IPZ1
+R3
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v
+!i122 122
+L0 17 245
+R5
+r1
+!s85 0
+31
+R10
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8
+valtera_jtag_src_crosser
+R9
+!i10b 1
+!s100 X6c^JF@lKDI6:ZM;;G>d[1
+R2
+Il<@9iHgY=a5;U>5z29gza2
+R3
+R0
+R4
+R11
+R12
+!i122 121
+L0 72 62
+R5
+r1
+!s85 0
+31
+R10
+R13
+R14
+!i113 1
+R7
+R8
+valtera_jtag_streaming
+R9
+!i10b 1
+!s100 BzgZi=]H?21^RdMXkjodG1
+R2
+I6HZTjfK8?Q8c[CM4Kae_`2
+R3
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v
+!i122 123
+L0 18 617
+R5
+r1
+!s85 0
+31
+R10
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8
+valtera_std_synchronizer_nocut
+R1
+!i10b 1
+!s100 >>`mN<K_67AZ7in<2UQ;?1
+R2
+ImUcMAh^_jN0WA>OQ=hl?23
+R3
+R0
+R4
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v
+!i122 125
+L0 44 149
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v|
+!s90 -reportprogress|300|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v|-work|jtag_phy_embedded_in_jtag_master|
+!i113 1
+R7
+R8

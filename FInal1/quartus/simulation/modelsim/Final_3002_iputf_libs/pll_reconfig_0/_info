@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/FInal1/quartus/simulation/modelsim
+valtera_pll_reconfig_core
+Z1 !s110 1607702118
+!i10b 1
+!s100 ZCMj`EK_2ElBn52k8f_b82
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICG?JTRCFNLf2`5dfVBG>J0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1607549946
+Z5 8F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v
+Z6 FF:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v
+!i122 4
+L0 16 1675
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1607702118.000000
+Z9 !s107 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v|
+Z10 !s90 -reportprogress|300|F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v|-work|pll_reconfig_0|
+!i113 1
+Z11 o-work pll_reconfig_0
+Z12 tCvgOpt 0
+valtera_pll_reconfig_top
+R1
+!i10b 1
+!s100 If[]5^;h1KC<H0oOU^NYH3
+R2
+I__:e1K21eXXhO`<45JLYK3
+R3
+R0
+R4
+8F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v
+FF:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v
+!i122 3
+L0 16 412
+R7
+r1
+!s85 0
+31
+R8
+!s107 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v|
+!s90 -reportprogress|300|F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v|-work|pll_reconfig_0|
+!i113 1
+R11
+R12
+valtera_std_synchronizer
+R1
+!i10b 1
+!s100 fX7zRoi8Va6gia[OIzlPn2
+R2
+IeLzO4l9=hG]Xc9J1e]^F03
+R3
+R0
+R4
+8F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v
+FF:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v
+!i122 5
+L0 37 120
+R7
+r1
+!s85 0
+31
+R8
+!s107 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v|
+!s90 -reportprogress|300|F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v|-work|pll_reconfig_0|
+!i113 1
+R11
+R12
+vdprio_mux
+R1
+!i10b 1
+!s100 L=ANTnf:]M@ZW>CMCNRgZ1
+R2
+I@<Waie9Hlk:]0b=je:fz93
+R3
+R0
+R4
+R5
+R6
+!i122 4
+L0 1739 50
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdyn_phase_shift
+R1
+!i10b 1
+!s100 d0m9oO0Gn[j6fnJVWDG5[2
+R2
+I6Im_hLaRl]iPXk39S4dXM1
+R3
+R0
+R4
+R5
+R6
+!i122 4
+L0 1884 227
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vfpll_dprio_init
+R1
+!i10b 1
+!s100 XFNgm2E8K=JP`YPX99lzi3
+R2
+I]ZWJ2?1gRK91TQOK`b5n01
+R3
+R0
+R4
+R5
+R6
+!i122 4
+L0 1789 95
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vgeneric_lcell_comb
+R1
+!i10b 1
+!s100 7:2TNUQQMAmRlA4TXJcjD3
+R2
+I2g>Ko=G68H:dVe:iQIb@N1
+R3
+R0
+R4
+R5
+R6
+!i122 4
+L0 2112 73
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vself_reset
+R1
+!i10b 1
+!s100 lC`=>HJIDL`:`9=41eY^B3
+R2
+I5UilfMVfVPWVBc[2HbdQ@2
+R3
+R0
+R4
+R5
+R6
+!i122 4
+L0 1691 47
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

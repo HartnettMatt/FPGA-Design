@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/FInal1/quartus/simulation/modelsim
+valtera_reset_controller
+Z1 !s110 1607702117
+!i10b 1
+!s100 AbYPDDXoUZYQzY_kQ2LCk2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<7B2]T4PYz4Bz4AYHznQR1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1607549948
+8F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v
+FF:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v
+!i122 2
+L0 42 278
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1607702117.000000
+!s107 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
+!i113 1
+Z7 o-work rst_controller
+Z8 tCvgOpt 0
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 BQ8==cV75_ke3L4GKGWGO3
+R2
+I<G7KQThbI:OA7o23LfWBj1
+R3
+R0
+R4
+8F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v
+FF:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v
+!i122 3
+L0 24 63
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|F:/FPGADesign/FInal1/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
+!i113 1
+R7
+R8

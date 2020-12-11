@@ -1,0 +1,33 @@
+
+
+ncvlog     "F:/FPGADesign/Final/quartus/issp/simulation/submodules/altsource_probe.v"                       -work in_system_sources_probes_0                  -cdslib <<in_system_sources_probes_0>>                 
+ncvlog     "F:/FPGADesign/Final/quartus/issp/simulation/issp.v"                                                                                                                                                      
+ncvlog -sv "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_merlin_slave_translator.sv"   -work pll_reconfig_0_mgmt_avalon_slave_translator -cdslib <<pll_reconfig_0_mgmt_avalon_slave_translator>>
+ncvlog -sv "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv"  -work master_0_master_translator                  -cdslib <<master_0_master_translator>>                 
+ncvlog -sv "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_p2b_adapter.sv"    -work p2b_adapter                                 -cdslib <<p2b_adapter>>                                
+ncvlog -sv "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_b2p_adapter.sv"    -work b2p_adapter                                 -cdslib <<b2p_adapter>>                                
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_packets_to_master.v"   -work transacto                                   -cdslib <<transacto>>                                  
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_packets_to_bytes.v" -work p2b                                         -cdslib <<p2b>>                                        
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_bytes_to_packets.v" -work b2p                                         -cdslib <<b2p>>                                        
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_sc_fifo.v"             -work fifo                                        -cdslib <<fifo>>                                       
+ncvlog -sv "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0_timing_adt.sv"     -work timing_adt                                  -cdslib <<timing_adt>>                                 
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_jtag_interface.v"   -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_dc_streaming.v"          -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_sld_node.v"              -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_jtag_streaming.v"             -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_clock_crosser.v"    -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer_nocut.v"     -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_base.v"    -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_remover.v"     -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_idle_inserter.v"    -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog -sv "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_avalon_st_pipeline_stage.sv"  -work jtag_phy_embedded_in_jtag_master            -cdslib <<jtag_phy_embedded_in_jtag_master>>           
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_reset_controller.v"           -work rst_controller                              -cdslib <<rst_controller>>                             
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_reset_synchronizer.v"         -work rst_controller                              -cdslib <<rst_controller>>                             
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/jtag_pll_mm_interconnect_0.v"        -work mm_interconnect_0                           -cdslib <<mm_interconnect_0>>                          
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_top.v"           -work pll_reconfig_0                              -cdslib <<pll_reconfig_0>>                             
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_pll_reconfig_core.v"          -work pll_reconfig_0                              -cdslib <<pll_reconfig_0>>                             
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_std_synchronizer.v"           -work pll_reconfig_0                              -cdslib <<pll_reconfig_0>>                             
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/jtag_pll_pll_0.vo"                   -work pll_0                                       -cdslib <<pll_0>>                                      
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/jtag_pll_master_0.v"                 -work master_0                                    -cdslib <<master_0>>                                   
+ncvlog     "F:/FPGADesign/Final/quartus/jtag_pll/simulation/jtag_pll.v"                                                                                                                                              
+ncvlog     "F:/FPGADesign/Final/quartus/pll_sim/pll.vo"                                                                                                                                                              

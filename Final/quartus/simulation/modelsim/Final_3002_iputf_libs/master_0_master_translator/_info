@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGADesign/Final/quartus/simulation/modelsim
+valtera_merlin_master_translator
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1607701986
+!i10b 1
+!s100 fR3Ff6Pe4h_lQXBchi=m63
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IdJ<G6BU7GLd?P6JE9HFzl1
+VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1607549948
+8F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv
+FF:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv
+!i122 12
+L0 32 525
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1607701986.000000
+!s107 F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|F:/FPGADesign/Final/quartus/jtag_pll/simulation/submodules/altera_merlin_master_translator.sv|-work|master_0_master_translator|
+!i113 1
+o-sv -work master_0_master_translator
+tCvgOpt 0

@@ -1,0 +1,9 @@
+	component jtag_pll is
+		port (
+			clk_clk             : in  std_logic := 'X'; -- clk
+			pll_0_locked_export : out std_logic;        -- export
+			pll_0_outclk0_clk   : out std_logic;        -- clk
+			reset_reset_n       : in  std_logic := 'X'  -- reset_n
+		);
+	end component jtag_pll;
+
